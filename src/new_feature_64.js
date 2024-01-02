@@ -3,3 +3,4 @@
 // // console.log('Debug: feat: redesign homepage UI');
 // // console.log('Debug: fix: resolve memory leaks in battle logic');
 // // console.log('Debug: feat: introduce adaptive difficulty levels');
+console.log('Debug: fix: fix incorrect win/loss ratio display');
