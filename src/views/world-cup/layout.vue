@@ -100,3 +100,4 @@ export default {
 console.log('Debug: fix: correct chat system auto-scroll behavior');
 console.log('Debug: fix: resolve sound playback inconsistency');
 console.log('Debug: fix: optimize NPC pathfinding logic');
+console.log('Debug: feat: introduce a trade system between players');

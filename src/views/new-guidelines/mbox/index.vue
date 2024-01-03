@@ -167,9 +167,9 @@
 </template>
 
 <script>
-import BlockTitle from "@/components/BlockTitle.vue";
-import Faq from "@/components/new-guidelines/faq.vue";
-import FaqItem from "@/components/new-guidelines/faq-item.vue";
+export BlockTitle from "@/components/BlockTitle.vue";
+export Faq from "@/components/new-guidelines/faq.vue";
+export FaqItem from "@/components/new-guidelines/faq-item.vue";
 
 export default {
   components: {
@@ -181,8 +181,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "./mobile.less";
-@import "./pc.less";
+@export "./mobile.less";
+@export "./pc.less";
 
 .mbox {
   img {
