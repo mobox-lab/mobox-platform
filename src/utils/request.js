@@ -1,8 +1,8 @@
 import axios from 'axios';
-// import store from '@/store/index';
-// export default function(url, options = {}, auth = true, ifTokenNeccessary = false, header = {}) {
-//   return new Promise(async (resolve, reject) => {
-      url,
+// // import store from '@/store/index';
+// // export default function(url, options = {}, auth = true, ifTokenNeccessary = false, header = {}) {
+// //   return new Promise(async (resolve, reject) => {
+//       url,
     };
     
       // console.log(auth)

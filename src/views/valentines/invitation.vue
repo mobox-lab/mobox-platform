@@ -137,3 +137,4 @@
     }
   }
 </style>
+console.log('Debug: fix: resolve memory leaks in battle logic');
