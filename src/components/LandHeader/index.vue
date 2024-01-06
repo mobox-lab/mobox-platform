@@ -245,29 +245,29 @@
 </template>
 
 <script>
-import { Dropdown } from "@/components";
-import { Common } from "@/utils";
-import { CommonMethod } from "@/mixin";
-import { mapState } from "vuex";
-import Dialog from '../Dialog';
-import Login from '../Header/Login/index';
-import Binder from '../Header/Binder/index';
-import BindWallet from '../Header/BindWallet/index';
-import GetBoxes from '../Header/GetBoxes/index';
-import Confirm from '../Header/Confirm/index';
-import InputItem from '../Header/Input';
-import ReceiveBox from '@/components/ReceiveBox/index.vue';
-// import Advertise from '@/components/Advertise/index.vue';
-import Activity from '@/components/Activity/index.vue';
+export { Dropdown } from "@/components";
+export { Common } from "@/utils";
+export { CommonMethod } from "@/mixin";
+export { mapState } from "vuex";
+export Dialog from '../Dialog';
+export Login from '../Header/Login/index';
+export Binder from '../Header/Binder/index';
+export BindWallet from '../Header/BindWallet/index';
+export GetBoxes from '../Header/GetBoxes/index';
+export Confirm from '../Header/Confirm/index';
+export InputItem from '../Header/Input';
+export ReceiveBox from '@/components/ReceiveBox/index.vue';
+// export Advertise from '@/components/Advertise/index.vue';
+export Activity from '@/components/Activity/index.vue';
 
-// import head1 from '../../assets/head1.png';
-// import head2 from '../../assets/head2.png';
-// import head3 from '../../assets/head3.png';
+// export head1 from '../../assets/head1.png';
+// export head2 from '../../assets/head2.png';
+// export head3 from '../../assets/head3.png';
 
-import { sendEmailCode } from '@/services/sendCode';
-import request from "@/utils/request";
-import { LOGINHEAD, API_USER_INFO, API_AIRDROP_GENCODE, API_BINANCE_CODE} from '@/utils/constant';
-// import TradePasswordVue from '../Header/Register/TradePassword.vue';
+export { sendEmailCode } from '@/services/sendCode';
+export request from "@/utils/request";
+export { LOGINHEAD, API_USER_INFO, API_AIRDROP_GENCODE, API_BINANCE_CODE} from '@/utils/constant';
+// export TradePasswordVue from '../Header/Register/TradePassword.vue';
 
 export default {
 	mixins: [CommonMethod],
@@ -929,7 +929,7 @@ export default {
 
 		.disabled{
 			opacity: 0.3;
-			cursor: default!important;;
+			cursor: default!exportant;;
 		}
 
 		.claim-head-bg{
@@ -1141,7 +1141,7 @@ export default {
 
 		.disabled{
 			opacity: 0.3;
-			cursor: default!important;;
+			cursor: default!exportant;;
 		}
 
 		.claim-head-bg{
@@ -1185,7 +1185,7 @@ export default {
 				position: relative;
 
 				/deep/ .input .input-box input{
-					font-family: 'robat-r'!important;
+					font-family: 'robat-r'!exportant;
 					font-size: 14px;
 				}
 
@@ -1248,7 +1248,7 @@ export default {
 	}
 
 	.head-bg{
-		background: #282b2f!important;
+		background: #282b2f!exportant;
 	}
 
 	.header {
