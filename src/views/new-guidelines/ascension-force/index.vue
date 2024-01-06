@@ -6,7 +6,6 @@
 //           slot="left"
           :image="require('@/assets/new-guidelines/force-flow-1.png')"
         >
-          {{$t('guide_37')}}
         </flow-item>
         <flow-item
           slot="center"
