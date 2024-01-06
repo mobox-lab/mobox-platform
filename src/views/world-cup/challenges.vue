@@ -3,7 +3,6 @@
     <div class="challenges">
 //       <ul class="buttons">
 //         <li class="social" @click="showSocial">{{$t('Worldcup_17')}}</li>
-//         <li class="game" @click="showGame">{{$t('Worldcup_18')}}</li>
 //       </ul>
       <div class="reward">
         <div class="label">
