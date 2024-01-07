@@ -1,7 +1,6 @@
 <template>
     <div class="title-demo">
         </div>
-        <div class="add-slot">
             <slot />
     </div>
 </template>

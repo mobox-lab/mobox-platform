@@ -2,9 +2,9 @@
 //       <img src="@/assets/coinbase/head-logo.png" />
 //     </div>
 
-//     <Describe />
-
-//     <Activity />
+// //     <Describe />
+// 
+// //     <Activity />
 
     <div class="footer-tip">
       <img src="../../assets/coinbase/tip.png" />

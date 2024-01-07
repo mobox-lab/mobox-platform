@@ -4,7 +4,6 @@
 // // export async function getSignData() {
 //   const time = Math.floor(Date.now() / 1000);
   const wallet = window.localStorage.getItem('world-cup-wallet');
-  const sign = await WalletUtils.sign(address, wallet, message);
 
   return {
     'x-bits-addr': address,
