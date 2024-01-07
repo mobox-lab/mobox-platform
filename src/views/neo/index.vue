@@ -1,9 +1,9 @@
 <template>
-// </template>
-// 
-// <script>
-//   export default {
-//     created() {
+// // </template>
+// // 
+// // <script>
+// //   export default {
+// //     created() {
       window.location.href = 'https://dragonverseneo.mobox.app';
   }
 

@@ -1,8 +1,8 @@
 <template>
 //     <div class="flex">
-//       <h6 class="module-title">{{ title }}</h6>
-//     </div>
-//     <ul>
+// //       <h6 class="module-title">{{ title }}</h6>
+// //     </div>
+// //     <ul>
       <li v-for="item in 8" :key="item">
         <div class="image"></div>
         <!-- 标题 -->
