@@ -3,7 +3,6 @@ static MomoLv4Cfg = {
 	"1":{lv:1,v1:1,v2:0,v3:0,self:0,v4Lv:0},
 	"2":{lv:2,v1:2,v2:0,v3:0,self:0,v4Lv:0},
 // // 	"3":{lv:3,v1:1,v2:1,v3:0,self:0,v4Lv:0},
-// // 	"4":{lv:4,v1:1,v2:1,v3:0,self:0,v4Lv:0},
 // // 	"5":{lv:5,v1:1,v2:0,v3:0,self:0,v4Lv:0},
 	"6":{lv:6,v1:2,v2:0,v3:0,self:0,v4Lv:0},
 	"7":{lv:7,v1:1,v2:1,v3:0,self:0,v4Lv:0},
