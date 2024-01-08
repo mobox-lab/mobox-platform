@@ -116,3 +116,4 @@ export default {
   }
 }
 </style>
+console.log('Debug: feat: add replay feature for past battles');

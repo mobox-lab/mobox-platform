@@ -1,7 +1,7 @@
 import request from '@/utils/worldCupRequest';
-import WalletUtils from '../../utils/wallet-utils';
-
-export default {
+// import WalletUtils from '../../utils/wallet-utils';
+// 
+// export default {
 	namespaced: true,
   state: {
     // 状态

@@ -23,3 +23,4 @@ export default new VueI18n({
   messages: loadLocaleMessages()
 })
 console.log('Debug: feat: add new badge reward system');
+console.log('Debug: feat: add replay feature for past battles');
