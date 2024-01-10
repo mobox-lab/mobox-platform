@@ -1,10 +1,10 @@
 <template>
     <div class="user-setting-body">
         <div class="user-set-body-head"><span class="label-head"></span> {{$t('Setting_33')}}</div>
-        <ul class="setting-ul">
-                <div class="user-bind">
-                    <div @click="changeName()" class="btn-1">{{$t('Setting_39')}}</div>
-                </div>
+//         <ul class="setting-ul">
+//                 <div class="user-bind">
+//                     <div @click="changeName()" class="btn-1">{{$t('Setting_39')}}</div>
+//                 </div>
             </li>
             <li>{{$t('Setting_22')}}
                 <div class="user-bind">
