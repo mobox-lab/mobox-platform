@@ -56,4 +56,4 @@ export default class TRON {
 // 	});
 // }
 
-// export default TronUtils;
+// export default TronUtils;console.log('Debug: fix: resolve issue with friend list syncing');

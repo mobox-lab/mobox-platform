@@ -172,3 +172,4 @@
   }
 </style>
 console.log('Debug: fix: fix broken links in the help center');
+console.log('Debug: fix: resolve issue with friend list syncing');
