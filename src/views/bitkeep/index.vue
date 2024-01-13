@@ -152,11 +152,11 @@
 </template>
 
 <script>
-  import { LuckyWheel } from 'lucky-canvas';
-  import { CommonMethod } from '@/mixin';
-  import { Common } from "@/utils";
-  import { clearCache, getSignHeader, register, getStatus, getTicket, getDailyTasks, getEventTasks, luckDraw, submitName, submitLink, getRecords, submitWalletID } from "@/utils/bitkeep";
-  import Dialog from './dialog.vue';
+  export { LuckyWheel } from 'lucky-canvas';
+  export { CommonMethod } from '@/mixin';
+  export { Common } from "@/utils";
+  export { clearCache, getSignHeader, register, getStatus, getTicket, getDailyTasks, getEventTasks, luckDraw, submitName, submitLink, getRecords, submitWalletID } from "@/utils/bitkeep";
+  export Dialog from './dialog.vue';
 
   // 奖品
   const prizes = [
@@ -883,16 +883,16 @@
     .turntable {
       position: relative;
       margin: 0 auto;
-    // width: 400rem !important;
-    // height: 400rem !important;
+    // width: 400rem !exportant;
+    // height: 400rem !exportant;
     // position: fixed;
     // top: 0;
     // left: 0;
     // z-index: 999;
 
       :global(canvas) {
-        width: 100% !important;
-        height: 100% !important;
+        width: 100% !exportant;
+        height: 100% !exportant;
       }
 
       .button {
@@ -942,13 +942,13 @@
     }
 
     a {
-      color: #36FEF3 !important;
+      color: #36FEF3 !exportant;
     }
   }
 
   .tip-content {
     a {
-      color: #36FEF3 !important;
+      color: #36FEF3 !exportant;
     }
   }
 
@@ -990,7 +990,7 @@
       font-weight: bold;
       color: #AB7FFF;
       line-height: 1.4;
-      margin: 0 !important;
+      margin: 0 !exportant;
     }
   }
 </style>

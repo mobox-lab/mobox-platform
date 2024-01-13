@@ -3,7 +3,6 @@
     <slot v-if="direction == 'right'" />
       <div class="title">{{ title }}</div>
       <div class="describe">{{ describe }}</div>
-    </div>
     <slot v-if="direction == 'left'" />
 </template>
 

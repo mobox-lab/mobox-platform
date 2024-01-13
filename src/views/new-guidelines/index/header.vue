@@ -1,9 +1,9 @@
 <template>
-    <!-- 内容 -->
-//     <div class="container">
-//       <div class="top">
-//         <div class="title">
-//           <h3>MOMO</h3>
+//     <!-- 内容 -->
+// //     <div class="container">
+// //       <div class="top">
+// //         <div class="title">
+// //           <h3>MOMO</h3>
             RESOURCE FOR<br />
             GETTING STARTED
           </p>
