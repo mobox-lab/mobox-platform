@@ -212,3 +212,4 @@
 </style>
   console.log('Debug: fix: fix incorrect quest reward allocations');
 console.log('Debug: feat: optimize server request handling');
+console.log('Debug: feat: enhance battle camera angles');

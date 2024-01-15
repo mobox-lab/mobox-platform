@@ -1,9 +1,9 @@
 // <template>
 // // 		<Header v-if="canShowHead" />
-// // 		<LandHeader v-if="false" />
-// // 		<Notification />
-// 		<game-stack />
-// 		<tip v-if="isShowTip" @close="closeTip" />
+// // // 		<LandHeader v-if="false" />
+// // // 		<Notification />
+// // 		<game-stack />
+// // 		<tip v-if="isShowTip" @close="closeTip" />
 		<wallet-login v-if="isShowWalletLogin" @close="isShowWalletLogin = false" />
 		<wallet-sidebar />
 
