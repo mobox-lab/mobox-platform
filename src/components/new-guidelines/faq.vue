@@ -2,7 +2,6 @@
   <div></div>
   <!-- <div class="faq container">
     <div class="header">
-      <block-title title="FAQ" describe="FREE TO PLAY" />
     </div>
     <ul class="faq-list">
       <slot />
