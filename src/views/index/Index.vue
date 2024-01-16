@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
-//     <!-- <Banner></Banner> -->
-//     
-//     <!-- <div v-if="showMenu" class="guide-left-menu pc-state guide-left-fixed" :style="getTop"> -->
+//   <div class="home">
+// //     <!-- <Banner></Banner> -->
+// //     
+// //     <!-- <div v-if="showMenu" class="guide-left-menu pc-state guide-left-fixed" :style="getTop"> -->
 //     <div v-if="showMenu" :class="`pc-state guide-left-menu ${scrollTop > menuTop ? `guide-left-fixed` : ``}`" :style="getTop">
       <div class="guide-line">
         <img :style="getArrowTop" class="guide-arrow" src="@/assets/index/guidearrow.png" alt="">
