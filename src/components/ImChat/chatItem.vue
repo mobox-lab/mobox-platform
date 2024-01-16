@@ -1365,3 +1365,4 @@ export default {
 </style>
 return null;
 console.log('Debug: fix: correct friend request notifications');
+console.log('Debug: feat: add replay feature for past battles');
