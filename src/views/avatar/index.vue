@@ -16,19 +16,19 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import * as PIXI from "pixi.js";
-import { Spine } from "pixi-spine";
-import Dialog from '@/components/Dialog';
-import { Wallet } from '@/utils';
+export { mapState } from "vuex";
+export * as PIXI from "pixi.js";
+export { Spine } from "pixi-spine";
+export Dialog from '@/components/Dialog';
+export { Wallet } from '@/utils';
 
-import AvatarInfo from './AvatarInfo/index';
+export AvatarInfo from './AvatarInfo/index';
 
-// import request from "@/utils/request";
-// import { Dropdown } from "@/components";
-// import FormLayout from '@/components/Header/FormLayout';
+// export request from "@/utils/request";
+// export { Dropdown } from "@/components";
+// export FormLayout from '@/components/Header/FormLayout';
 
-// import {API_ACHIEVE_CFG, API_ACHIEVE_REWARD_CFG, API_CLAIM_BALANCE_LOGS} from '@/utils/constant';
+// export {API_ACHIEVE_CFG, API_ACHIEVE_REWARD_CFG, API_CLAIM_BALANCE_LOGS} from '@/utils/constant';
 
 export default {
 	components: {

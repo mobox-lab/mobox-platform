@@ -1,11 +1,11 @@
 const Odometer = (function(win,doc) {
     class OdometerFn {
         constructor(x, y) {
-//             this.setting = {
-
-                num : "", 
-                symbol : '',
-                dot : 0 ,
+// //             this.setting = {
+// 
+//                 num : "", 
+//                 symbol : '',
+//                 dot : 0 ,
                 delay:0
             }
             this.$parent = doc.querySelector(x);

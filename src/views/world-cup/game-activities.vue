@@ -1,6 +1,6 @@
-// <template>
-// // // <div class="game-activities">
-// // //   <div class="title">{{$t('Worldcup_18')}}</div>
+// // <template>
+// // // // <div class="game-activities">
+// // // //   <div class="title">{{$t('Worldcup_18')}}</div>
 // // //   <p class="sub-title">{{$t('Worldcup_46')}}</p>
 //   <div class="container" @mousewheel.stop>
 //     <div class="task-container" v-for="(item, index) in tasks" :key="index">

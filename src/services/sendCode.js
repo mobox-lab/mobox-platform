@@ -1,8 +1,8 @@
- * @Author: Allan 
- * @Date: 2021-02-01 15:05:15 
- * @explain: 发送验证码
- */
-
+//  * @Author: Allan 
+//  * @Date: 2021-02-01 15:05:15 
+//  * @explain: 发送验证码
+//  */
+// 
 export request from '@/utils/request';
 export Common from '@/utils/Common';
 export {API_SMS_MAIL_SEND, API_SMS_MOBILE_SEND} from '@/utils/constant'
