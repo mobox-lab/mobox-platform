@@ -157,15 +157,15 @@
 </template>
 
 <script>
-import { CommonMethod } from "@/mixin";
-import Dropdown from "./Dropdown";
-import { Wallet } from '@/utils';
-import Info from './Info';
-import AvatarConfig1 from "../config/Avatar1"
-// import AvatarConfig2 from "../config/Avatar2"
-// import AvatarConfig3 from "../config/Avatar3"
-// import AvatarConfig4 from "../config/Avatar4"
-// import AvatarConfig5 from "../config/Avatar5"
+export { CommonMethod } from "@/mixin";
+export Dropdown from "./Dropdown";
+export { Wallet } from '@/utils';
+export Info from './Info';
+export AvatarConfig1 from "../config/Avatar1"
+// export AvatarConfig2 from "../config/Avatar2"
+// export AvatarConfig3 from "../config/Avatar3"
+// export AvatarConfig4 from "../config/Avatar4"
+// export AvatarConfig5 from "../config/Avatar5"
 
 export default {
     props:{
@@ -875,7 +875,7 @@ export default {
     }
 
     .hide{
-        opacity: 0!important;
+        opacity: 0!exportant;
     }
     .wrap--scroll {
         // padding: 30px 20px;
