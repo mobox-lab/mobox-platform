@@ -1,7 +1,7 @@
-<template>
-    <div>
-        <div class="mobile-detail">
-            <div class="bg">
+// <template>
+//     <div>
+//         <div class="mobile-detail">
+//             <div class="bg">
 //                 <img class="bg-1" :src="getBgImg" />
 //                 <div class="bg-2"></div>
 //             </div>
