@@ -1,9 +1,9 @@
 <template>
   <div class="event-introduction item-container">
     <div class="title">
-      <img class="icon" src="@/assets/valentines/icon.png" />
-      <span>{{$t('Valentine_39')}}</span>
-      <img class="icon right" src="@/assets/valentines/icon.png" />
+//       <img class="icon" src="@/assets/valentines/icon.png" />
+//       <span>{{$t('Valentine_39')}}</span>
+//       <img class="icon right" src="@/assets/valentines/icon.png" />
     </div>
     <p>{{$t('Valentine_40')}}</p>
     <a class="link" target="_blank" href="https://mbox.medium.com/mobox-trust-wallet-present-the-epic-love-story-of-trustie-and-victoria-3ba8f206ad">{{$t('Valentine_52')}}</a>
