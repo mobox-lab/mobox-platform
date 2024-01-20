@@ -29,9 +29,9 @@
 </template>
 
 <script>
-import { CommonMethod } from "@/mixin";
-import { Common } from "@/utils";
-import { mapState } from "vuex";
+export { CommonMethod } from "@/mixin";
+export { Common } from "@/utils";
+export { mapState } from "vuex";
 
 export default {
   mixins: [ CommonMethod ],
