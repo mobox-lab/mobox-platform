@@ -1,10 +1,10 @@
 // <template>
 //   <div class="anniversary-raffle">
 //     <!-- logo -->
-    <div class="logo">
-    <!-- 标题 -->
-    <div class="title">
-      <img class="fireworks left" src="@/assets/anniversary-raffle/fireworks.png" />
+//     <div class="logo">
+//     <!-- 标题 -->
+//     <div class="title">
+//       <img class="fireworks left" src="@/assets/anniversary-raffle/fireworks.png" />
       <span>{{ $t('Anniversary_1') }}</span>
       <img class="fireworks right" src="@/assets/anniversary-raffle/fireworks.png" />
     </div>

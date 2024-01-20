@@ -1,5 +1,4 @@
 <template>
-  <div class="guide">
     <div class="page-popup-contain">
         <div class="page-popup-contain-head">{{$t('Home_37')}}</div>
 //         <div class="page-popup-contain-box">
