@@ -1,7 +1,7 @@
-import Wallet from '@/utils/wallet/Wallet';
-import Common from '@/utils/Common';
-import Http from '@/utils/Http';
-import EventBus from '@/utils/EventBus';
+export Wallet from '@/utils/wallet/Wallet';
+export Common from '@/utils/Common';
+export Http from '@/utils/Http';
+export EventBus from '@/utils/EventBus';
 
 export {
 	Wallet,

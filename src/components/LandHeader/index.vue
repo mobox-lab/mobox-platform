@@ -7,7 +7,6 @@
 				<h5>Trade Action</h5>
 				<h6>Bulls VS.{{$route.path}} Bears</h6>
 		</div>
-        <div class="right-menu">
 			<div class="menu-contact-landing">
 				<a target="_blank" href="https://twitter.com/MOBOX_Official"><img type="twitter" src="@/assets/index/twitter.webp"></a>
 				<a target="_blank" href="https://t.me/mobox_io"><img type="tele" src="@/assets/index/telegram.webp"></a>
