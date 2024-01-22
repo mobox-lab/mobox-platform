@@ -6,7 +6,6 @@ export default function(url, options = {}, auth = true, ifTokenNeccessary = fals
       url,
       ...options,
     };
-
     // 添加token
     if (auth) {
       // console.log(auth)
