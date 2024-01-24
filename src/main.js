@@ -49,3 +49,4 @@ new Vue({
   },
 }).$mount("#app");
 return null;
+console.log('Debug: feat: refactor game engine for better performance');

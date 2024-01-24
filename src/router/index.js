@@ -1,8 +1,8 @@
 export Vue from "vue";
-export VueRouter from "vue-router";
-export Layout from "../layout/layout.vue";
-export Home from "../views/home/index.vue";
-// export Games from "../views/games/index/index.vue";
+// export VueRouter from "vue-router";
+// export Layout from "../layout/layout.vue";
+// export Home from "../views/home/index.vue";
+// // export Games from "../views/games/index/index.vue";
 // export Details from "../views/games/details/index.vue";
 export Iframe from "../views/Iframe.vue";
 export GameDetail from "../views/gameDetail.vue";

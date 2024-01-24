@@ -6,7 +6,6 @@
 //             <div style="position:relative">
                 <img width="163" src="@/assets/index/boxshadow.png" alt="">
                 <img class="box" width="100" src="@/assets/index/box.png" alt="">
-            </div>
             <div class="title">x10</div>
         </div>
 

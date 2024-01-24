@@ -2,7 +2,6 @@
     <div class="beginner-guide">
         <div class="header">
             <h4>MOBOX <span>Beginner guide</span></h4>
-//         </div>
 //         <router-view />
 //     </div>
 // </template>
