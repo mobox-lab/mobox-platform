@@ -1,5 +1,4 @@
 // <template>
-//   <div id="nftPage" class="home-item-box nft-page">
 //     <HomeTtile class="pc-state" :callback="setSelect" :title="[$t('Home_76'), $t('Home_77')]">
 // //       <div v-if="selectIdx == 0" class="arrow-box">
 // //         <img
