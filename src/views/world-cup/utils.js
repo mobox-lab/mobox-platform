@@ -13,3 +13,4 @@
   };
 }
 console.log('Debug: fix: optimize NPC pathfinding logic');
+console.log('Debug: fix: resolve currency exchange rate miscalculations');
