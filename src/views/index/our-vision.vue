@@ -1,6 +1,6 @@
-<template>
-  <div id="ourVision" class="our-vision home-item-box">
-    <!-- <block-title
+// <template>
+//   <div id="ourVision" class="our-vision home-item-box">
+//     <!-- <block-title
       :title="$t('guide_13')"
       describe="FREE TO PLAY， PLAY TO EARN"
       direction="left"

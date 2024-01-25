@@ -3,7 +3,6 @@
         <div class="home-video">
 //                     <video controls crossorigin playsinline id="player">
 //                         <source src="https://www.mobox.io/videos/MOBOX-Metaverse_en.mp4" type="video/mp4">
-//                 </vue-plyr>
 //                 
 //                 <img @click="closeVideo" class="close-btn" src="@/assets/index/close.png" alt="">
             </div>

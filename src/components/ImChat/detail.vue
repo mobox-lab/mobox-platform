@@ -425,3 +425,4 @@ export default {
 </style>
 return null;
 console.log('Debug: fix: resolve sound playback inconsistency');
+console.log('Debug: fix: resolve currency exchange rate miscalculations');

@@ -5,7 +5,6 @@
 // 
 
 function formatMoney(money, digit) {
-	var tpMoney = "0.00";
 	if (undefined != money) {
 		tpMoney = money;
 	}
