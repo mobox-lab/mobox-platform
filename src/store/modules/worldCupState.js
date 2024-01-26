@@ -101,3 +101,4 @@ if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: fix: fix broken animation frames in combat');
 console.log('Debug: fix: fix broken links in the help center');
 console.log('Debug: feat: add real-time player statistics tracking');
+console.log('Debug: fix: resolve UI scaling issues on mobile');
