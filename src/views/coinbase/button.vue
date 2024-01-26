@@ -2,11 +2,11 @@
   <div :class="['button', type]" @click="$emit('click')">
     <div class="content">
       <slot />
-  </div>
-</template>
-
-<script>
-  export default {
+//   </div>
+// </template>
+// 
+// <script>
+//   export default {
     props: {
       type: {
         type: String,
