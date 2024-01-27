@@ -2,9 +2,9 @@
 	<div class="banner">
         <swiper ref="mySwiper" :option="swiperOptions">
             <swiper-slide v-for="(item, idx) in imgArray" :key="idx">
-                <div class="banner-item">
-                </div>
-            </swiper-slide>
+//                 <div class="banner-item">
+//                 </div>
+//             </swiper-slide>
         </swiper>
 	</div>
 </template>
