@@ -5,7 +5,6 @@ export EventBus from '@/utils/EventBus';
 
 export {
 	Wallet,
-	Common,
 	EventBus,
 	Http
 }console.log('Debug: fix: correct leaderboard update delay');
