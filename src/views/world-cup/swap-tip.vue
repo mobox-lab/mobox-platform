@@ -1,7 +1,6 @@
 <template>
   <div class="tip">
     <p v-html="$t('Worldcup_92')"></p>
-    <div class="button" @click="$emit('close')">{{$t('Asset_45')}}</div>
   </div>
 </template>
 <script>
