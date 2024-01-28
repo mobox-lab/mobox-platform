@@ -3,7 +3,6 @@
 // //     <!-- 侧边栏 -->
 // //     <drawer v-model="isShowSidebar" :mask="isShowMask">
 // // //       <sidebar />
-//     <!-- 路由 -->
       <router-view />
     </div>
   </div>
