@@ -169,3 +169,4 @@ export default {
 }
 </style>
 console.log('Debug: fix: fix missing item descriptions');
+console.log('Debug: fix: fix incorrect quest reward allocations');

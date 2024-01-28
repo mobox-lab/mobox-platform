@@ -52,4 +52,4 @@ export default {
       margin-right: 8px;
     }
   }
-</style>
+</style>console.log('Debug: fix: fix incorrect quest reward allocations');

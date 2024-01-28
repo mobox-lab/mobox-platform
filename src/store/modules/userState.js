@@ -2,10 +2,10 @@ export request from "@/utils/request";
 // export {API_USER_INFO, API_USER_BIND_ADDRESS_INFO, API_USER_BALANCE, API_COINPRICE} from '@/utils/constant';
 // 
 
-// 	userInfo: {},
-	token: window.localStorage.getItem('token') || Common.getUrlParams('token'),
-	achieveBaseCfg:{},
-	achieveRewardCfg:{},
+// // 	userInfo: {},
+// 	token: window.localStorage.getItem('token') || Common.getUrlParams('token'),
+// 	achieveBaseCfg:{},
+// 	achieveRewardCfg:{},
 	balanceInfo:[],
 	balanceMap:{},
 	coinRate:{}

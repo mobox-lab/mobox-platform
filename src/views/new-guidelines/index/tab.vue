@@ -87,7 +87,7 @@ export default {};
       }
 
       .container {
-        width: 90% !important;
+        width: 90% !exportant;
 
         li {
           flex: 1;
