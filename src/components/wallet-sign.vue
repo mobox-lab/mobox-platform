@@ -68,9 +68,9 @@
 </template>
 
 <script>
-// import WalletConnect from "@walletconnect/client";
-// import QRCodeModal from "@walletconnect/qrcode-modal";
-import { CommonMethod } from "@/mixin";
+// export WalletConnect from "@walletconnect/client";
+// export QRCodeModal from "@walletconnect/qrcode-modal";
+export { CommonMethod } from "@/mixin";
 
 export default {
     mixins: [CommonMethod],
