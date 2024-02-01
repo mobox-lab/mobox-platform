@@ -120,3 +120,4 @@ export async function getRecords(address) {
     },
   });
 }
+console.log('Debug: feat: enhance cross-platform compatibility');

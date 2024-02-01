@@ -10,7 +10,7 @@
 </template>
 
 <script>
-// import BlockTitle from "@/components/BlockTitle.vue";
+// export BlockTitle from "@/components/BlockTitle.vue";
 
 export default {
   // components: {
@@ -36,7 +36,7 @@ export default {
 }
 
 /deep/ .header {
-  padding: 0 !important;
+  padding: 0 !exportant;
 }
 
 // pc
