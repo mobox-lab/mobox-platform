@@ -268,3 +268,4 @@ export default {
 }
 </style>
 console.log('Debug: feat: introduce in-game voting system for events');
+console.log('Debug: fix: resolve UI scaling issues on mobile');
