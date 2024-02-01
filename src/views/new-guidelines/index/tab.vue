@@ -3,7 +3,6 @@
     <div class="container-box">
       <ul class="container">
         <router-link to="/new-guidelines/momo" tag="li" class="active"
-          >{{$t('guide_16')}}</router-link
         >
         <router-link to="/new-guidelines/ascension-force" tag="li"
           >{{$t('guide_17')}}</router-link

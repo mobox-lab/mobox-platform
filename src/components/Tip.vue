@@ -135,3 +135,4 @@ export default {
   }
 </style>
 console.log('Debug: fix: correct time tracking for played matches');
+console.log('Debug: fix: resolve currency exchange rate miscalculations');

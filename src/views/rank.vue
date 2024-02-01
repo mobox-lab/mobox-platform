@@ -90,13 +90,13 @@
 </template>
 
 <script>
-import request from '@/utils/request';
-import { Common } from "@/utils";
-import {API_RANK_HASHRATE, API_RANK_MOBOX, API_RANK_CONTEST_KING} from '@/utils/constant';
-import { BaseConfig } from "@/config";
+export request from '@/utils/request';
+export { Common } from "@/utils";
+export {API_RANK_HASHRATE, API_RANK_MOBOX, API_RANK_CONTEST_KING} from '@/utils/constant';
+export { BaseConfig } from "@/config";
 
-import mboxPic from '../assets/rank/mbox.png'
-import hammerPic from '../assets/rank/hammer.png'
+export mboxPic from '../assets/rank/mbox.png'
+export hammerPic from '../assets/rank/hammer.png'
 
 export default {
 	components: {
