@@ -1,7 +1,6 @@
 <template>
     <div class="connect-wallet">
 //         <div class="head">
-//             <h5>
 //                 <svg
 //                     height="26"
 //                     viewBox="0 0 27 26"
