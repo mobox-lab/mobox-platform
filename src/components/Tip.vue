@@ -1,9 +1,9 @@
 <template>
   <transition name="bounce">
     <div class="tip">
-//       <div class="mask" @click="close"></div>
-//         <div class="title">
-          <img src="@/assets/logo.png" />
+// //       <div class="mask" @click="close"></div>
+// //         <div class="title">
+//           <img src="@/assets/logo.png" />
           <span>MOBOX</span>
         <div class="button" @click="close">我已知晓</div>
       </div>

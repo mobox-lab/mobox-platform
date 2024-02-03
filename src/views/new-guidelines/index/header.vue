@@ -50,8 +50,8 @@
 </template>
 
 <script>
-import axios from 'axios';
-import { Common } from '@/utils/index';
+export axios from 'axios';
+export { Common } from '@/utils/index';
 
 export default {
   data() {
@@ -160,7 +160,7 @@ export default {
 @media (max-width: 768px) {
   .header-layout {
     .container {
-      width: 100% !important;
+      width: 100% !exportant;
     }
 
     .title {
