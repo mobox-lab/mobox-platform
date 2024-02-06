@@ -1,9 +1,9 @@
 <template>
     <div class="form-bg">
         oversea
-    </div>
-// </template>
-// 
+//     </div>
+// // </template>
+// // 
 // // import FormLayout from '../FormLayout';
 // import request from "@/utils/request";
 // import {API_USER_BIND_ADDRESS} from '@/utils/constant';

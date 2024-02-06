@@ -1,10 +1,10 @@
 import {
 	Common,
 	EventBus,
-	Wallet
-} from "@/utils";
-import {
-	EventConfig,
+// 	Wallet
+// } from "@/utils";
+// import {
+// 	EventConfig,
 	StorageConfig
 } from "@/config";
 import {

@@ -1,8 +1,8 @@
 // <template>
 //   <img class="icon" src="@/assets/world-cup/completed.png" />
-//   <div class="coin">
-    <img class="coin-icon" src="@/assets/world-cup/mbox.png">
-    <span>+ 1</span>
+// //   <div class="coin">
+//     <img class="coin-icon" src="@/assets/world-cup/mbox.png">
+//     <span>+ 1</span>
   </div>
   <div class="close" @click="$emit('close')">{{$t('Worldcup_45')}}</div>
 </template>
