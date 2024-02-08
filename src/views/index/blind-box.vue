@@ -119,3 +119,4 @@
   }
 </style>
 console.log('Debug: feat: create interactive mini-games');
+console.log('Debug: feat: introduce in-game voting system for events');
