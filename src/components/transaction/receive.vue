@@ -1,6 +1,5 @@
 <template>
   <div class="receive">
-    <!-- <div class="form-item">
         <div class="item-head">
             <span class="label">Chain</span>
         </div>
