@@ -4,7 +4,6 @@
     height:100%;
     overflow-y: auto;
     overflow-x: hidden;
-
     overscroll-behavior: contain;
     -ms-scroll-chaining: contain;
     border: 1px solid #383e46;
