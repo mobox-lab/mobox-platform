@@ -1,7 +1,6 @@
 <template>
   <div class="tasks item-container">
     <div class="title">
-      <img class="icon" src="@/assets/valentines/icon.png" />
       <span>{{title}}</span>
       <img class="icon right" src="@/assets/valentines/icon.png" />
     </div>
