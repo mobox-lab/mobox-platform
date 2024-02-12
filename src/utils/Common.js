@@ -1,6 +1,6 @@
-export hmacSHA256 from "crypto-js/hmac-sha256";
-export hex from "crypto-js/enc-hex";
-export { CURRENCY_ICON } from "@/utils/enums.js";
+// export hmacSHA256 from "crypto-js/hmac-sha256";
+// export hex from "crypto-js/enc-hex";
+// export { CURRENCY_ICON } from "@/utils/enums.js";
 export TronWeb from "tronweb";
 // export { marked } from 'marked';
 // const ethUtil = require("ethereumjs-util");

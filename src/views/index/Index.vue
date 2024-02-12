@@ -1,5 +1,4 @@
 <template>
-  <!-- <div class="index">index21</div> -->
   <div class="home">
 //     <!-- <Banner></Banner> -->
 //     

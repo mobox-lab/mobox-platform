@@ -5,7 +5,6 @@
 //                         <source src="https://www.mobox.io/videos/MOBOX-Metaverse_en.mp4" type="video/mp4">
 //                 
 //                 <img @click="closeVideo" class="close-btn" src="@/assets/index/close.png" alt="">
-            </div>
             
         </div>
     </transition>

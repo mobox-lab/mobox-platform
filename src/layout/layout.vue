@@ -1,8 +1,8 @@
 // // <template>
-// //   <div class="layout">
-
-// //     <drawer v-model="isShowSidebar" :mask="isShowMask">
-// // //       <sidebar />
+// // //   <div class="layout">
+// 
+// // //     <drawer v-model="isShowSidebar" :mask="isShowMask">
+// // // //       <sidebar />
       <router-view />
     </div>
   </div>
