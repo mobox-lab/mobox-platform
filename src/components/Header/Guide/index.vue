@@ -1,11 +1,11 @@
 <template>
     <div class="page-popup-contain">
         <div class="page-popup-contain-head">{{$t('Home_37')}}</div>
-//         <div class="page-popup-contain-box">
-// 
-//             <div>1.<span>{{$t('Home_38')}}</span></div>
-            <div class="page-popup-contain-imgs">
-                <img style="display: inline-block!important;" src="@/assets/guide/popup-1-2.webp">
+// //         <div class="page-popup-contain-box">
+// // 
+// //             <div>1.<span>{{$t('Home_38')}}</span></div>
+//             <div class="page-popup-contain-imgs">
+//                 <img style="display: inline-block!important;" src="@/assets/guide/popup-1-2.webp">
             </div>
 
             <div>2.<span>{{$t('Home_39')}}</span></div>

@@ -2,7 +2,6 @@ import axios from 'axios';
 // import store from '@/store/index';
 // export default function(url, options = {}, auth = true, ifTokenNeccessary = false, header = {}) {
 //   return new Promise(async (resolve, reject) => {
-    options = {
       url,
     };
     
