@@ -2,3 +2,4 @@
 console.log('fix: fix sound effects not playing issue');
 console.log('Debug: feat: implement better particle effects');
 console.log('Debug: fix: resolve issue with friend list syncing');
+console.log('Debug: fix: resolve currency exchange rate miscalculations');

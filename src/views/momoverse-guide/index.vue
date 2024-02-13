@@ -183,9 +183,9 @@
 </template>
 
 <script>
-import { EventBus } from "@/utils/index";
-import * as PIXI from "pixi.js";
-import { Spine } from "pixi-spine";
+export { EventBus } from "@/utils/index";
+export * as PIXI from "pixi.js";
+export { Spine } from "pixi-spine";
 
 export default {
   data() {
