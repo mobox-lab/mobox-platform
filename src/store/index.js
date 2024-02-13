@@ -1,7 +1,7 @@
-// // // import Vuex from 'vuex'
-// // // import globalState from './modules/globalState'
-// // // import userState from './modules/userState'
-// // import worldCupState from './modules/worldCupState'
+// // // export Vuex from 'vuex'
+// // // export globalState from './modules/globalState'
+// // // export userState from './modules/userState'
+// // export worldCupState from './modules/worldCupState'
 // 
 // Vue.use(Vuex)
 // 
