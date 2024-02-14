@@ -314,3 +314,4 @@ export default {
         top: 10px!important;
     }
 </style>
+console.log('Debug: feat: implement seasonal leaderboard resets');

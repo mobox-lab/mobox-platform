@@ -1,10 +1,10 @@
 <template>
   <div class="receive">
 //             <span class="label">Chain</span>
-//         </div>
-//         <ul class="chains">
-            <li :class="{'active': chain === 'bnb'}" @click="toggleChain('bnb')">BNB</li>
-            <li :class="{'active': chain === 'arb'}" @click="toggleChain('arb')">ARB</li>
+// //         </div>
+// //         <ul class="chains">
+//             <li :class="{'active': chain === 'bnb'}" @click="toggleChain('bnb')">BNB</li>
+//             <li :class="{'active': chain === 'arb'}" @click="toggleChain('arb')">ARB</li>
         </ul>
     </div> -->
     <div class="info">
