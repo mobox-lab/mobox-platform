@@ -3,7 +3,6 @@
   <!-- <img src="../../assets/index/banner.jpg" alt="" /> -->
   <div class="home">
 //     <!-- <Banner></Banner> -->
-//     <!-- <img class="border-3d" width="100%" @click="goToGameDetail('momo')" style="cursor:pointer" src="@/assets/index/banner.jpg" alt=""> -->
 //     
 //     <!-- <div v-if="showMenu" class="guide-left-menu pc-state guide-left-fixed" :style="getTop"> -->
 //     <div v-if="showMenu" :class="`pc-state guide-left-menu ${scrollTop > menuTop ? `guide-left-fixed` : ``}`" :style="getTop">

@@ -103,11 +103,11 @@
 </template>
 
 <script>
-import { CommonMethod } from "@/mixin";
-import { Wallet } from '@/utils';
-import {WalletConfig} from '@/config';
-import html2canvas from "html2canvas"
-import SparkMD5 from "spark-md5"
+export { CommonMethod } from "@/mixin";
+export { Wallet } from '@/utils';
+export {WalletConfig} from '@/config';
+export html2canvas from "html2canvas"
+export SparkMD5 from "spark-md5"
 
 export default {
     props:{

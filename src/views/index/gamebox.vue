@@ -1,9 +1,9 @@
 <template>
     <div id="gamebox" class="gamebox home-gamebox-contain home-item-box">
-        <!-- <div id="spine-momo-1"></div> -->
-        <!-- <div class="normal-title">{{$t("guide_87")}}</div> -->
-            <div class="arrow-box">
-                <img
+//         <!-- <div id="spine-momo-1"></div> -->
+//         <!-- <div class="normal-title">{{$t("guide_87")}}</div> -->
+//             <div class="arrow-box">
+//                 <img
                     @click="scrollSlide(-1, 1)"
                     class="arrow-left"
                     src="../../assets/index/arrow1.png"
