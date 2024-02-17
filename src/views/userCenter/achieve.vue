@@ -5,7 +5,6 @@
                 <div class="achieve-point">
                     <div><img width="12" src="../../assets/user/coins.png" alt=""> {{$t('Setting_28')}}</div>
                     <div class="achieve-point-text">{{overviewData.score}}</div>
-                </div>
                 <div class="achieve-reward vertical-children">
                     <div class="achieve-throphy">
                         <img src="../../assets/user/trophy.png" alt="">
