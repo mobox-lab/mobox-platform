@@ -1,5 +1,4 @@
 <template>
-  <div class="spin-container item-container">
     <img class="left-image" src="@/assets/valentines/spin-left.png" />
     <img class="momo-icon" src="@/assets/valentines/spin-momo-icon.png" />
     <img class="bottom-bg" src="@/assets/valentines/spin-bottom-bg.png" />
