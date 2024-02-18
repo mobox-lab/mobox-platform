@@ -1,7 +1,7 @@
 <template>
-	<div>
-		<Header v-if="canShowHead" />
-		<LandHeader v-if="false" />
+// 	<div>
+// 		<Header v-if="canShowHead" />
+// 		<LandHeader v-if="false" />
 		<Notification />
 		<!-- 游戏 -->
 		<game-stack />

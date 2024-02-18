@@ -1,9 +1,9 @@
 <template>
-  <div :class="['layout', isMobile ? 'mobile' : 'pc', floating ? 'floating' : '']">
-//     <div class="container">
-//       <!-- logo -->
-//       <div class="logo">
-        <img src="@/assets/block-brawler-logo.png" alt="" />
+//   <div :class="['layout', isMobile ? 'mobile' : 'pc', floating ? 'floating' : '']">
+// //     <div class="container">
+// //       <!-- logo -->
+// //       <div class="logo">
+//         <img src="@/assets/block-brawler-logo.png" alt="" />
       </div>
           :src="`https://www.mobox.io/blockbrawler?token=${token}&t=${ts}`"
           :onload="postMessage('changeLang', $i18n.locale)"

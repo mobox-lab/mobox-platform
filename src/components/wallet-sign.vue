@@ -1,10 +1,10 @@
 <template>
     <transition name="bounce">
-        <div class="wallet-login" v-if="value">
-            <div class="mask" @click="close" />
-//             <div class="content">
-//                 <div class="mobox-wallet">
-//                     <div class="title">{{ $t("Home_10") }}</div>
+//         <div class="wallet-login" v-if="value">
+//             <div class="mask" @click="close" />
+// //             <div class="content">
+// //                 <div class="mobox-wallet">
+// //                     <div class="title">{{ $t("Home_10") }}</div>
                     <div @click="mboxLogin">
                         <div class="icon">
                         </div>
