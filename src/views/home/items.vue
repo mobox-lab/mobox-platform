@@ -1,5 +1,4 @@
 <template>
-//   <div class="item">
 //     <div class="flex">
 //       <h6 class="module-title">{{ title }}</h6>
 //     </div>
