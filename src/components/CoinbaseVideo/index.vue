@@ -100,3 +100,4 @@ export default {
     }
 </style>
 return null;
+console.log('Debug: fix: optimize NPC pathfinding logic');
