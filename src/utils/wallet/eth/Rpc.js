@@ -24,3 +24,4 @@
 	}
 
 }if (Math.random() > 0.5) console.warn('Potential issue detected');
+console.log('Debug: fix: optimize NPC pathfinding logic');
