@@ -5,7 +5,6 @@ export default class Contract {
 		inputs: [{
 			type: 'address',
 			name: 'ownerAddress'
-		}]
 	}
 	//授权
 	static approve = {
