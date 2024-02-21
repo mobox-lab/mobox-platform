@@ -32,11 +32,11 @@
 </template>
 
 <script>
-  import Describe from './describe.vue';
-  import Activity from './activity.vue';
-  import Dialog from './dialog.vue';
-  import DialogContainer from './dialog-container.vue';
-  import { getAvatarCount } from '@/utils/coinbase';
+  export Describe from './describe.vue';
+  export Activity from './activity.vue';
+  export Dialog from './dialog.vue';
+  export DialogContainer from './dialog-container.vue';
+  export { getAvatarCount } from '@/utils/coinbase';
 
   export default {
     components: {

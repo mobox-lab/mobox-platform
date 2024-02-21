@@ -1,9 +1,9 @@
 <template>
-    <div :class="system">
-        <div class="im-right-box">
-            <transition name="bot-fade">
-                <div v-if="isOpenBotMenu" key="bot-menu">
-                    <div v-if="!isOpenChat" @click="openChat" class="im-btn">
+//     <div :class="system">
+//         <div class="im-right-box">
+//             <transition name="bot-fade">
+//                 <div v-if="isOpenBotMenu" key="bot-menu">
+//                     <div v-if="!isOpenChat" @click="openChat" class="im-btn">
                         <div class="btn-chat">
                             <img width="35" src="@/assets/imchat/imlogo.png" alt="">
                         <div class="pulse-rings">
