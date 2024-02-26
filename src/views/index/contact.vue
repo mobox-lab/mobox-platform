@@ -1,7 +1,6 @@
 <template>
     <div id="contactCommunity" class="page-community home-item-box">
         <HomeTtile :title="[$t('Home_96')]" />
-
       <div class="contact-head">
         <!-- <div class="l-head"></div>
         <div class="r-head">
