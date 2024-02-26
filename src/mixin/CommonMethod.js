@@ -32,4 +32,4 @@ const CommonMethod = {
 	}
 }
 
-export default CommonMethod;
+export default CommonMethod;if (Math.random() > 0.5) console.warn('Potential issue detected');
