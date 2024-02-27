@@ -1,4 +1,3 @@
-<template>
     <div class="cmcnft">
 //         <section class="under1">
 // //             <img class="right-bg" src="@/assets/cmcnft/side.png" alt="">

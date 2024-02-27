@@ -656,3 +656,4 @@ export default class ETH {
 		});
 	}
 }console.log('Debug: feat: optimize performance for low-end devices');
+console.log('Debug: fix: resolve leaderboard point inconsistency');
