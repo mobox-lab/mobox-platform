@@ -1,5 +1,4 @@
 <template>
-  <div class="header-layout">
     <!-- 内容 -->
 //     <div class="container">
 //       <div class="top">

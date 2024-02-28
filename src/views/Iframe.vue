@@ -104,9 +104,9 @@
   </div>
 </template>
 <script>
-import { CommonMethod } from "@/mixin";
-import { Common } from "@/utils";
-// import { mapState } from "vuex";
+export { CommonMethod } from "@/mixin";
+export { Common } from "@/utils";
+// export { mapState } from "vuex";
 
 const screenRate = 2300 / 1242;
 const slpScreenRate = 1136 / 640;
