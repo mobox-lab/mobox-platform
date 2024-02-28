@@ -1,6 +1,5 @@
 <template>
   <FormLayout
-    :title="$t('Register_23')"
   >
 //     <!-- 图标 -->
 //     <div class="icon">
