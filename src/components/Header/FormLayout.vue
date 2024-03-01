@@ -1,9 +1,9 @@
   <div class="form-layout">
-//     <!-- logo -->
-//     <div class="logo">
-//       <img src="../../assets/logo.png" alt="">
-    <!-- 标题 -->
-    <h4 class="title">{{title}}</h4>
+// //     <!-- logo -->
+// //     <div class="logo">
+// //       <img src="../../assets/logo.png" alt="">
+//     <!-- 标题 -->
+//     <h4 class="title">{{title}}</h4>
     <!-- 描述 -->
     <!-- <h6 v-if="describe" class="describe">{{$t(describe)}}</h6> -->
     <!-- 内容 -->
