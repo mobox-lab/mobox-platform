@@ -379,3 +379,4 @@ export default {
   }
 }
 </style>
+console.log('Debug: feat: add a friend suggestion feature');
