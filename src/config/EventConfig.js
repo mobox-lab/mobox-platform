@@ -1,4 +1,3 @@
-export default class EventConfig {
 // 	//开箱子确认
 // 	static OpenBoxConfirm = "OpenBoxConfirm";
 // 	//设置名字确认

@@ -81,21 +81,21 @@
 </template>
 
 <script>
-// import { CommonMethod } from "@/mixin";
-// import registerMixin from '@/mixin/user/register';
-// import { sendEmailCode, sendMobileCode } from '@/services/sendCode';
-// import SendCodeButton from '@/components/SendCodeButton';
-// import Button from '@/components/Button';
-// import FormLayout from '../FormLayout';
-// import InputItem from '../Input';
-import { Common } from "@/utils";
-import Dialog from '../Dialog';
-import { mapState } from "vuex";
+// export { CommonMethod } from "@/mixin";
+// export registerMixin from '@/mixin/user/register';
+// export { sendEmailCode, sendMobileCode } from '@/services/sendCode';
+// export SendCodeButton from '@/components/SendCodeButton';
+// export Button from '@/components/Button';
+// export FormLayout from '../FormLayout';
+// export InputItem from '../Input';
+export { Common } from "@/utils";
+export Dialog from '../Dialog';
+export { mapState } from "vuex";
 
-import request from "@/utils/request";
-import { CommonMethod } from "@/mixin";
-import {API_AIRDROP_LUCKY_INFO, API_AIRDROP_CLAIM_BOX} from '@/utils/constant';
-// import { API_BIND_MOBILE, API_BIND_MAIL, API_PWD_FORGOT } from '@/utils/constant';
+export request from "@/utils/request";
+export { CommonMethod } from "@/mixin";
+export {API_AIRDROP_LUCKY_INFO, API_AIRDROP_CLAIM_BOX} from '@/utils/constant';
+// export { API_BIND_MOBILE, API_BIND_MAIL, API_PWD_FORGOT } from '@/utils/constant';
 
 export default {
     props:{
@@ -335,7 +335,7 @@ export default {
 
 		.disabled{
 			opacity: 0.3;
-			cursor: default!important;;
+			cursor: default!exportant;;
 		}
 
 		.claim-head-bg{
@@ -499,7 +499,7 @@ export default {
 			}
 
             .bind-btn{
-                background: #E58B04!important;
+                background: #E58B04!exportant;
             }
 
 			.input-btn{
