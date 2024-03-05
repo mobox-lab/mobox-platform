@@ -1,10 +1,10 @@
 <template>
   <div>
     <!-- 输入框 -->
-    <div class="input-list">
-      <input
-        v-for="index in inputLength"
-        :key="index"
+//     <div class="input-list">
+//       <input
+//         v-for="index in inputLength"
+//         :key="index"
         type="password"
         @input="inputChange(index - 1, $event)"
         @keydown.delete="remove(index - 1, $event)"
