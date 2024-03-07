@@ -250,8 +250,8 @@
 </template>
 
 <script>
-import HomeTtile from "./homeTtile.vue";
-import { momoCfgs } from "@/views/landing/config.js";
+export HomeTtile from "./homeTtile.vue";
+export { momoCfgs } from "@/views/landing/config.js";
 
 export default {
   components: {
@@ -544,8 +544,8 @@ export default {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%) scale(1.3);
-            width: 230px !important;
-            height: 230px !important;
+            width: 230px !exportant;
+            height: 230px !exportant;
           }
         }
       }
@@ -669,10 +669,10 @@ export default {
           }
 
           .momo-active {
-            -webkit-filter: grayscale(0) !important; /* Webkit */
-            filter: grayscale(0) !important; /* W3C */
-            opacity: 1 !important;
-            transform: translateY(0) !important;
+            -webkit-filter: grayscale(0) !exportant; /* Webkit */
+            filter: grayscale(0) !exportant; /* W3C */
+            opacity: 1 !exportant;
+            transform: translateY(0) !exportant;
           }
 
           .light-item {
