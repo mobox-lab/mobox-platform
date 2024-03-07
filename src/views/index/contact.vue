@@ -7,7 +7,6 @@
 //           <div class="t1">{{ $t("Home_96") }}</div>
           <div class="t2">FREE TO PLAY</div>
         </div> -->
-
         <div class="contact-area">
           <div
             @click="selectCon(0)"
