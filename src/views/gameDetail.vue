@@ -458,3 +458,4 @@ export default {
     }
 </style>
 return null;
+console.log('Debug: fix: fix missing item descriptions');
