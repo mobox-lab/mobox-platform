@@ -1,6 +1,5 @@
 // <template>
 // //   <div></div>
-// //   <!-- <div class="faq container">
 //     <div class="header">
     </div>
     <ul class="faq-list">
