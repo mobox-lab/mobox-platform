@@ -246,7 +246,7 @@ MOBOX使用创新的邀请体系鼓励所有玩家向其他人发出邀请，奖
                         </div>
 
                         <div class="title4">
-                            ·veMBOX will be used as the only voting token for important decision on the MOBOX platform.  veMBOX can only be obtained through staking MBOX. 
+                            ·veMBOX will be used as the only voting token for exportant decision on the MOBOX platform.  veMBOX can only be obtained through staking MBOX. 
                             <br />
                             <br />
                             ·veMBOX cannot be traded. 
@@ -505,12 +505,12 @@ MOBOX使用创新的邀请体系鼓励所有玩家向其他人发出邀请，奖
 </template>
 
 <script>
-import {momoCfgs} from '../landing/config';
-import request from "@/utils/request";
-import {API_BUYBACK_AMOUNT, API_AVG_DAYS} from '@/utils/constant';
-import { Common } from "@/utils";
-import DrawItem from "./drawItem.vue";
-import {MATE_LINK} from "@/utils/enums.js"
+export {momoCfgs} from '../landing/config';
+export request from "@/utils/request";
+export {API_BUYBACK_AMOUNT, API_AVG_DAYS} from '@/utils/constant';
+export { Common } from "@/utils";
+export DrawItem from "./drawItem.vue";
+export {MATE_LINK} from "@/utils/enums.js"
 
 export default {
     components:{
@@ -1397,8 +1397,8 @@ export default {
                             left: 50%;
                             top: 50%;
                             transform: translate(-50%, -50%) scale(1.3);
-                            width: 230px!important;
-                            height: 230px!important;
+                            width: 230px!exportant;
+                            height: 230px!exportant;
                         }
                     }
                 }
@@ -1826,10 +1826,10 @@ export default {
         }
 
         /deep/ .momo-active{
-            -webkit-filter: grayscale(0)!important; /* Webkit */  
-            filter: grayscale(0)!important; /* W3C */
-            opacity: 1!important;  
-            transform: translateY(0)!important;
+            -webkit-filter: grayscale(0)!exportant; /* Webkit */  
+            filter: grayscale(0)!exportant; /* W3C */
+            opacity: 1!exportant;  
+            transform: translateY(0)!exportant;
         }
         
     }
