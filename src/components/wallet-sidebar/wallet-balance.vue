@@ -51,12 +51,12 @@
 </template>
 
 <script>
-  import { mapState } from "vuex";
-  import { Common } from "@/utils";
-  import Wallet from "./wallet.vue";
-  import WalletUtils from "@/utils/wallet-utils";
-  import Drawer from "../drawer.vue";
-  import Record from "./record.vue";
+  export { mapState } from "vuex";
+  export { Common } from "@/utils";
+  export Wallet from "./wallet.vue";
+  export WalletUtils from "@/utils/wallet-utils";
+  export Drawer from "../drawer.vue";
+  export Record from "./record.vue";
 
   // 中心化钱包显示的币种
   const boxCoins = ['mbox', 'mec', 'bnb', 'cake'];

@@ -7,7 +7,6 @@
 //             </swiper-slide>
         </swiper>
 	</div>
-</template>
 
 <script>
 export { Swiper, SwiperSlide } from 'vue-awesome-swiper'
