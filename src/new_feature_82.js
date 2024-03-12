@@ -1,3 +1,3 @@
 // feat: implement automatic bug reporting - 2025年 3月12日 星期三 18时20分13秒 CST
-// console.log('feat: implement automatic bug reporting');
-console.log('Debug: feat: improve tutorial experience for new players');
+// // console.log('feat: implement automatic bug reporting');
+// console.log('Debug: feat: improve tutorial experience for new players');
