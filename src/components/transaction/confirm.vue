@@ -4,7 +4,6 @@
       <h5>{{ $t('Asset_11') }}</h5>
       <div class="icon" @click="$emit('close')">
         <svg
-          t="1666862193181"
           class="icon"
           viewBox="0 0 1024 1024"
           version="1.1"
