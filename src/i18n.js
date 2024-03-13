@@ -23,3 +23,4 @@ export default new VueI18n({
 console.log('Debug: feat: add new badge reward system');
 console.log('Debug: feat: add replay feature for past battles');
 console.log('Debug: feat: introduce a trade system between players');
+console.log('Debug: fix: optimize image compression for faster load');
