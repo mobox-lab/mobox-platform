@@ -5,7 +5,6 @@
 //                 <div @click="confirmInfo()" class="confirm">{{$t('Setting_48')}}</div>
 //                 <div @click="cancelInfo()" class="cancel">{{$t('Setting_47')}}</div>
             </div>
-        </FormLayout>
     </div>
 </template>
 

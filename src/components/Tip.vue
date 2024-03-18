@@ -2,7 +2,6 @@
   <transition name="bounce">
     <div class="tip">
 //       <div class="mask" @click="close"></div>
-//       <div class="content">
 //         <div class="title">
           <img src="@/assets/logo.png" />
           <span>MOBOX</span>
