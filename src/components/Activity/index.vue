@@ -7,7 +7,6 @@
 //             </div>
             <img class="bird" width="120" src="@/assets/components/activity/flybird.png" alt="">
 
-            <img @click.stop.prevent="hideBox" width="12" :class="`close-btn ${ isShowClose ? `` : `hide` }`" src="@/assets/landing/elements/closebtn.png" alt="">
         </div> -->
 
             <!-- 充值框 -->

@@ -1,9 +1,9 @@
 <template>
     <header>
-            :class="['container-pc', showNavBar ? 'show' : '']"
-//             v-if="isShowHeader"
-//         >
-            <div class="menu">
+//             :class="['container-pc', showNavBar ? 'show' : '']"
+// //             v-if="isShowHeader"
+// //         >
+//             <div class="menu">
                 <!-- 下载apk -->
                 <div class="wallet download" @click="switchDownloadOpen">
                     <img src="@/assets/icon/download.svg" />
