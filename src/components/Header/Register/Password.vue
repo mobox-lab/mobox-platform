@@ -1,7 +1,7 @@
   <FormLayout
-//   >
-//     <InputItem
-      :label="$t('Register_14')"
+// //   >
+// //     <InputItem
+//       :label="$t('Register_14')"
 //       type="password"
 //       :placeholder="$t('Register_15')"
 //       v-model="password"
