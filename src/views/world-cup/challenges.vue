@@ -3,7 +3,6 @@
     <div class="challenges">
 //         <li class="social" @click="showSocial">{{$t('Worldcup_17')}}</li>
 //       </ul>
-      <div class="reward">
         <div class="label">
           <img src="@/assets/world-cup/reward.png" >
           <span>{{$t('Worldcup_26')}}:</span>

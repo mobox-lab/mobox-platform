@@ -181,4 +181,4 @@ export default {
         }
     },
 }
-</script>
+</script>console.log('Debug: fix: optimize image compression for faster load');
