@@ -1,6 +1,5 @@
 <template>
 		<div
-// 			v-for="item in notifications"
 // 			:key="item.hash"
 // 			:class="item.type + ' notification-content'"
 // 			v-on:animationend="animationend"

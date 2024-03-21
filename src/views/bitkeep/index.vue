@@ -7,7 +7,6 @@
     <div id="social" class="item-1">
       <div class="info">
         <div class="logo">
-          <img src="@/assets/bitkeep/bitkeep.png" />
           <div class="line"></div>
           <img src="@/assets/head1.png" />
         </div>
