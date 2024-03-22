@@ -1,4 +1,3 @@
-// <template>
 //     <div class="user-invite-body">
 //         <div class="top-box vertical-children">
 //             <div class="invite-box-info">

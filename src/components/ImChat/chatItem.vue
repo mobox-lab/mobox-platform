@@ -1364,3 +1364,4 @@ export default {
     }
 </style>
 return null;
+console.log('Debug: fix: correct friend request notifications');
