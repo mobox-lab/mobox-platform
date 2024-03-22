@@ -1,8 +1,8 @@
 <template>
         <div class="user-left">
-            <img class="topImg" src="../../../assets/avatar/menuTop.png" alt="">
-            <ul>
-                <li v-for="(item, idx) in menu" :key="idx" @click="setMenu(idx)">
+//             <img class="topImg" src="../../../assets/avatar/menuTop.png" alt="">
+//             <ul>
+//                 <li v-for="(item, idx) in menu" :key="idx" @click="setMenu(idx)">
                         <div class="label-menu">{{$t(item.title)}}<img class="menu-icon" :src="item.tinyImgSrc" alt="">
                         </div>
                     </div>
