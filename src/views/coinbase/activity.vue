@@ -1,5 +1,4 @@
 // <template>
-//   <div class="activity view-container">
 //     <h5 class="title">{{$t('CoinbaselootBrasil_40')}}</h5>
 //     <!-- 时间 -->
 //     <div class="time">

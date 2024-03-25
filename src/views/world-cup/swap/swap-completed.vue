@@ -1,4 +1,3 @@
-<template>
 //   <div class="swap-completed">
 //     <div class="title">
 //       <img src="@/assets/world-cup/completed.png" />
