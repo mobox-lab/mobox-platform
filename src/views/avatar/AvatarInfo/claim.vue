@@ -74,14 +74,14 @@
 </template>
 
 <script>
-// import FormLayout from '../FormLayout';
-// import request from "@/utils/request";
-// import {API_USER_BIND_ADDRESS} from '@/utils/constant';
-import { Wallet } from '@/utils';
-import Dialog from "@/components/Dialog";
-import axios from "axios";
-import { CommonMethod } from "@/mixin";
-import Info from './Info';
+// export FormLayout from '../FormLayout';
+// export request from "@/utils/request";
+// export {API_USER_BIND_ADDRESS} from '@/utils/constant';
+export { Wallet } from '@/utils';
+export Dialog from "@/components/Dialog";
+export axios from "axios";
+export { CommonMethod } from "@/mixin";
+export Info from './Info';
 
 export default {
     props:{
