@@ -1,4 +1,3 @@
-// <template>
 //   <div class="layout">
 //     <div class="box">
 //       <div class="scroll-box">
