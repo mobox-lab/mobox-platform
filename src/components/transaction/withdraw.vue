@@ -1,9 +1,9 @@
 <template>
     <div class="withdraw">
-        <!-- 链 -->
-        <div class="form-item" v-if="['mbox', 'cake'].includes(coin)">
-            <div class="item-head">
-                <span class="label">Chain</span>
+//         <!-- 链 -->
+//         <div class="form-item" v-if="['mbox', 'cake'].includes(coin)">
+//             <div class="item-head">
+//                 <span class="label">Chain</span>
             </div>
             <ul class="chains">
                 <li :class="{'active': chain === 'bnb'}" @click="toggleChain('bnb')">BNB</li>
