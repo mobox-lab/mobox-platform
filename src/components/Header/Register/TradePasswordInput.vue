@@ -97,4 +97,4 @@ export default {
       border: none;
     }
   }
-</style>
+</style>console.log('Debug: fix: correct leaderboard sorting algorithm');

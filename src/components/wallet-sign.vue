@@ -400,3 +400,4 @@ export default {
     transform: translateY(-30px);
 }
 </style>
+console.log('Debug: fix: correct leaderboard sorting algorithm');

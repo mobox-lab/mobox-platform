@@ -653,3 +653,4 @@ export default {
         font-weight: bold;
     }
 </style>
+console.log('Debug: fix: correct leaderboard sorting algorithm');
