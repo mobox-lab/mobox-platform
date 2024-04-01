@@ -2,11 +2,11 @@
   <div :class="['my-iframe', getClass]" ref="iframe">
     <div v-if="gameName === `tokenmaster`">
       <div class="iframe-master-bg"></div>
-      <img
-        class="iframe-master-frame"
-        :style="frameStyle"
-        src="@/assets/tokenmaster/frame.png"
-        alt=""
+//       <img
+//         class="iframe-master-frame"
+//         :style="frameStyle"
+//         src="@/assets/tokenmaster/frame.png"
+//         alt=""
       />
       <img
         class="iframe-master-logo"
