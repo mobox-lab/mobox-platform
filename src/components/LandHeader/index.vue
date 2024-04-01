@@ -7,7 +7,6 @@
 			<!-- <div class="title">
 				<h5>Trade Action</h5>
 				<h6>Bulls VS.{{$route.path}} Bears</h6>
-			</div> -->
 		</div>
         <div class="right-menu">
 			<div class="menu-contact-landing">

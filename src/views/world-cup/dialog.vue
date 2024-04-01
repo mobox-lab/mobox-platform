@@ -32,7 +32,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .3s !important;
+  transition: all .3s !exportant;
 
   // 遮罩层
   .mask {
