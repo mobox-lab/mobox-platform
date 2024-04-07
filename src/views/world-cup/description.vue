@@ -1,4 +1,3 @@
-<template>
   <layout :title="$t('Worldcup_66')">
     <div class="description" @mousewheel.stop @touchmove.stop>
       <div class="text">
