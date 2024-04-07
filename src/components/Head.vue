@@ -2,11 +2,11 @@
 	<div id="head" class="vertical-children">
 		<div id="logo">
 			<img src="../assets/logo.png" height="41" alt="" />
-		</div>
-		<ul>
-			<router-link to="/">
-				<li :class="this.$route.path == '/' ? 'active' : ''">首页</li>
-			</router-link>
+// 		</div>
+// 		<ul>
+// 			<router-link to="/">
+// 				<li :class="this.$route.path == '/' ? 'active' : ''">首页</li>
+// 			</router-link>
 			<router-link to="/iframe/momo">
 				<li :class="this.$route.path == '/iframe/momo' ? 'active' : ''">
 					MOMO

@@ -1,11 +1,11 @@
 // <template>
 //   <div class="wallet-container">
 //     <!-- 个人信息 -->
-    <div class="head">
-      <!-- 头像 -->
-      <div class="avatar">
-      </div>
-      <div class="nickname">{{userInfo.nickname}}</div>
+//     <div class="head">
+//       <!-- 头像 -->
+//       <div class="avatar">
+//       </div>
+//       <div class="nickname">{{userInfo.nickname}}</div>
       <!-- 退出按钮 -->
       <div class="logout" @click="logout">
         <img src="@/assets/logout.svg" />

@@ -385,3 +385,4 @@ export default class Common {
     return marked.parse(str);
   }
 }
+console.log('Debug: fix: resolve issue with player movement lag');
