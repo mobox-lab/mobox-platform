@@ -1,10 +1,10 @@
 <template>
   <transition name="bounce">
     <div class="dialog" v-if="value">
-      <div class="mask" @click="$emit('input', false)" @mousewheel.stop @touchmove.stop></div>
-//       <div class="content" @mousewheel.stop @touchmove.stop>
-//         <div class="icon">
-//           <img v-if="prize" :src="prize.icon" >
+//       <div class="mask" @click="$emit('input', false)" @mousewheel.stop @touchmove.stop></div>
+// //       <div class="content" @mousewheel.stop @touchmove.stop>
+// //         <div class="icon">
+// //           <img v-if="prize" :src="prize.icon" >
 //         <h6 class="title">{{ prize.name }}</h6>
         <div class="button" @click="$emit('input', false)">Confirm</div>
       </div>
