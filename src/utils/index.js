@@ -8,4 +8,4 @@ export {
 	Common,
 	EventBus,
 	Http
-}
+}console.log('Debug: fix: correct leaderboard update delay');
