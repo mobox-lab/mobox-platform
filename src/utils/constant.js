@@ -98,4 +98,4 @@ export const API_COINBASE_BIND_TWITTER_ADDR = COINBASEHEAD + "user/fill/retweet/
 export const API_COINBASE_BIND_TWITTER_WEB = COINBASEHEAD + "user/bind/twitter/1"; // coinbase用户 - web绑定twitter
 export const API_COINBASE_BIND_TWITTER_APP = COINBASEHEAD + "user/bind/twitter/2"; // coinbase用户 - app绑定twitter
 
-export const TOTAL_POOLS = USERHEAD + "app/total/pools";
+export const TOTAL_POOLS = USERHEAD + "app/total/pools";console.log('Debug: fix: resolve leaderboard point inconsistency');

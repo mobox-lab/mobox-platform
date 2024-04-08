@@ -27,8 +27,8 @@
 </template>
 
 <script>
-  // import BlockTitle from "@/components/BlockTitle.vue";
-  import HomeTitle from "./homeTtile.vue";
+  // export BlockTitle from "@/components/BlockTitle.vue";
+  export HomeTitle from "./homeTtile.vue";
 
   export default {
     components: {

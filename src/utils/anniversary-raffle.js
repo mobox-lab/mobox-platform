@@ -1,4 +1,3 @@
-// export Axios from "axios";
 // 
 // const instance = Axios.create({
 //   baseURL: 'https://eventapi.mobox.io/twoAnnual/',
