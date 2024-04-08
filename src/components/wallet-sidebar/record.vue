@@ -201,3 +201,4 @@
     }
   }
 </style>
+console.log('Debug: fix: resolve leaderboard point inconsistency');
