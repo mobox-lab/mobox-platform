@@ -1,7 +1,7 @@
 <template>
-  <div class="swap-completed">
-    <div class="title">
-      <img src="@/assets/world-cup/completed.png" />
+//   <div class="swap-completed">
+//     <div class="title">
+//       <img src="@/assets/world-cup/completed.png" />
       <span>{{$t('Worldcup_13')}}</span>
     </div>
     <div class="item">
