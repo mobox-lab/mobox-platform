@@ -6,3 +6,4 @@ console.log('Debug: fix: fix broken animation frames in combat');
 console.log('Debug: fix: resolve issue with friend list syncing');
 console.log('Debug: fix: fix incorrect win/loss ratio display');
 console.log('Debug: feat: improve AI bot strategies in battle');
+console.log('Debug: fix: fix broken animation frames in combat');
