@@ -1,9 +1,9 @@
 <template>
   <div class="games">
-    <!-- 轮播 -->
-    <div class="banner-container">
-      <div class="banner">
-        <div class="content">
+//     <!-- 轮播 -->
+//     <div class="banner-container">
+//       <div class="banner">
+//         <div class="content">
           <h6>MOMOverse</h6>
           <p>
             <span>Collect, Combine, Build</span>
