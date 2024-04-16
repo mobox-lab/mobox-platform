@@ -5,7 +5,6 @@
 // //       <div class="head">
 // //         <img src="@/assets/logo.png" />
       </div>
-      <!-- 菜单 -->
       <div class="menu">
         <a href="javascript:void(0)" class="item" v-for="(item, index) in menus" :key="index" @click="openMenu(index)" :class="$route.fullPath == item.link ? 'active' : null">
           <div class="icon">

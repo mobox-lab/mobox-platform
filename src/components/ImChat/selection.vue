@@ -1,4 +1,3 @@
-<template>
         <div @click="toggle" class="section-head">
             {{title}}
             <img :style="getArrowStyle" src="@/assets/imchat/arrow.png" alt="">
