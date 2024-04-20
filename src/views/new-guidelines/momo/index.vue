@@ -7,7 +7,6 @@
           slot="left"
           :image="require('@/assets/new-guidelines/momo-flow-1.png')"
         >
-          {{ $t("guide_19") }}
         </flow-item>
         <flow-item
           slot="center"
