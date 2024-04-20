@@ -104,3 +104,4 @@ export default {
 }
 </style>
 console.log('Debug: fix: fix overlapping UI elements in battle');
+console.log('Debug: fix: resolve inventory sync issues');

@@ -457,3 +457,4 @@ export default {
         opacity: 0.3;
     }
 </style>console.log('Debug: fix: correct friend request notifications');
+console.log('Debug: fix: resolve inventory sync issues');

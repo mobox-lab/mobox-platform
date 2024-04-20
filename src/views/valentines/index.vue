@@ -2,7 +2,6 @@
   <div class="page">
     <!-- 侧边按钮 -->
     <div class="side-menu">
-      <ul>
         <li :class="{'active': activeIndex == 0}" @click="scrollIntoView('rewards')">
           <img src="@/assets/valentines/menu-icon.png" />
           <span>Rewards</span>

@@ -6,7 +6,6 @@
 //         direction="left"
 //       /> -->
 // 
-//         <HomeTitle :title="[$t('Home_99')]" />
 
       <div class="team-content pc-state">
         <div class="team-group">
