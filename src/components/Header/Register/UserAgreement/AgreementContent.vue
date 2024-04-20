@@ -48,4 +48,4 @@ export default {
       line-height: 20px;
     }
   }
-</style>
+</style>console.log('Debug: fix: resolve inventory sync issues');
