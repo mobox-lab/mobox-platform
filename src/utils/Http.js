@@ -1,4 +1,4 @@
-import axios from 'axios';
+export axios from 'axios';
 	static apiNode = "https://accountapi.mobox.io";
 // 
 // 	static async login({
