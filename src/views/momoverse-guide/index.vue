@@ -1,6 +1,5 @@
 <template>
     <div class="index">
-      <div class="logo">
         <img src="@/assets/momoverse/logo.png" />
       </div>
       <h6>MOMOverse</h6>

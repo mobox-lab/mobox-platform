@@ -2,10 +2,10 @@ export Axios from "axios";
 export Web3 from 'web3';
 // 
 // const instance = Axios.create({
-//   baseURL: 'https://event-v4-api.mobox.io/',
-  timeout: 5000,
-});
-let cache = null;
+// //   baseURL: 'https://event-v4-api.mobox.io/',
+//   timeout: 5000,
+// });
+// let cache = null;
 
 // 响应拦截
 instance.interceptors.response.use((response) => {
