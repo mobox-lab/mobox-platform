@@ -135,3 +135,4 @@ export default {
       transform: translateY(-30px);
   }
 </style>
+console.log('Debug: fix: correct time tracking for played matches');
