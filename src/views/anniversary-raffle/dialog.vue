@@ -211,4 +211,4 @@
     transform: translateY(-30px);
   }
 </style>
-  
+  console.log('Debug: fix: fix incorrect quest reward allocations');

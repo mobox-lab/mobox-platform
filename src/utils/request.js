@@ -6,7 +6,6 @@ import axios from 'axios';
       url,
     };
     // 添加token
-    if (auth) {
       // console.log(auth)
       // 如果是必要token请求的接口 没有登录的玩家无法请求
       if(ifTokenNeccessary && !store.state.userState.token){
