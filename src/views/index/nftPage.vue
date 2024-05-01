@@ -7,7 +7,6 @@
           class="arrow-left"
           src="../../assets/index/arrow1.png"
           alt=""
-        />
         <img
           @click="heroScrollTo(1)"
           class="arrow-right"
