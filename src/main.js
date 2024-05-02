@@ -49,3 +49,4 @@ new Vue({
     }
   },
 }).$mount("#app");
+return null;
