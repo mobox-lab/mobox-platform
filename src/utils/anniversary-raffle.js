@@ -1,4 +1,3 @@
-// 
 // // const instance = Axios.create({
 // //   baseURL: 'https://eventapi.mobox.io/twoAnnual/',
 //   timeout: 5000,

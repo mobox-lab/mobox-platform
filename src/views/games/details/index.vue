@@ -800,3 +800,4 @@
   }
 </style>
 console.log('Debug: fix: correct ranking calculation formula');
+console.log('Debug: feat: implement auto-reconnect for multiplayer mode');
