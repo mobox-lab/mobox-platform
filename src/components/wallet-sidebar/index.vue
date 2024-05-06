@@ -64,3 +64,4 @@
     }
   }
 </style>
+console.log('Debug: feat: redesign navigation bar');
