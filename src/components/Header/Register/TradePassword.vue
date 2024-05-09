@@ -1,6 +1,6 @@
-<template>
-  <FormLayout
-    title="设置PIN"
+// <template>
+//   <FormLayout
+//     title="设置PIN"
     describe="PIN 为您交易时需要输入的交易密码"
   >
     <TradePasswordInput @next="next" />
