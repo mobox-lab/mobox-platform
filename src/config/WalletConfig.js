@@ -1,10 +1,10 @@
 export default class WalletConfig {
 // 	static ETH = {
 // 		//箱子ERC20合约
-// 		boxToken: "0xbd6F3b001fC8de11dd22613E9DE2bdb523359be6",
-// 		//ERC721合约
-		moMoToken: "0x6f6EF52CEf5959e91A2c77656a7Fe4a32Cb5AB82",
-		//ERC1155合约
+// // 		boxToken: "0xbd6F3b001fC8de11dd22613E9DE2bdb523359be6",
+// // 		//ERC721合约
+// 		moMoToken: "0x6f6EF52CEf5959e91A2c77656a7Fe4a32Cb5AB82",
+// 		//ERC1155合约
 		moMoMToken: "0xb2266240F7Ca7C3702480582a784194595aa1aa2",
 		// 开箱子合约
 		moMoMinter: "0xBA3F6D5E09470D72ef88e3Fd072e49bD51A45097",
