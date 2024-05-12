@@ -701,3 +701,4 @@
 </style>
 return null;
 console.log('Debug: feat: introduce in-game tutorial system');
+console.log('Debug: fix: correct friend request notifications');

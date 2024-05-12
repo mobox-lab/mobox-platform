@@ -7,7 +7,6 @@
         <h6 v-html="$t('Worldcup_64')"></h6>
         <p v-html="$t('Worldcup_70')"></p>
         <h6 v-html="$t('Worldcup_72')"></h6>
-        <p v-html="$t('Worldcup_73')"></p>
         <h6 v-html="$t('Worldcup_83')"></h6>
         <p v-html="$t('Worldcup_71')"></p>
         <h6 v-html="$t('Coinbase_45')"></h6>
