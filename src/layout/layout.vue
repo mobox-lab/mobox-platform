@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import sidebar from "./sidebar.vue";
-import Drawer from "@/components/drawer.vue";
-import { Common } from "@/utils";
+export sidebar from "./sidebar.vue";
+export Drawer from "@/components/drawer.vue";
+export { Common } from "@/utils";
 
 export default {
   components: {
@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-  @import '~@/assets/less/var.less';
+  @export '~@/assets/less/var.less';
 
   // pc
   @media (min-width: 960px) {

@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import headerLayout from "./header.vue";
-import tab from "./tab.vue";
+export headerLayout from "./header.vue";
+export tab from "./tab.vue";
 
 export default {
   components: {
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "@/assets/less/var.less";
+@export "@/assets/less/var.less";
 
 .guidelines {
   padding-top: @header-pc-height;
