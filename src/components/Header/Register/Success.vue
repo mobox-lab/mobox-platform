@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import Button from '@/components/Button';
-import FormLayout from '../FormLayout';
+export Button from '@/components/Button';
+export FormLayout from '../FormLayout';
 
 export default {
   components: {

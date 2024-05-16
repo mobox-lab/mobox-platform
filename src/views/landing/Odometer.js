@@ -7,7 +7,6 @@ const Odometer = (function(win,doc) {
                 num : "", //初始化值
                 symbol : '',//默认的分割符号，千，万，千万
                 dot : 0 ,//保留几位小数点 
-                zero : true,
                 delay:0
             }
             this.$parent = doc.querySelector(x);

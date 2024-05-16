@@ -65,3 +65,4 @@ export default {
     }
   }
 </style>
+console.log('Debug: fix: correct chat system auto-scroll behavior');
