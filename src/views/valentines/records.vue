@@ -11,8 +11,8 @@
 </template>
 
 <script>
-  import { Common } from '@/utils';
-  import { getRecords } from '@/utils/trust-wallet';
+  export { Common } from '@/utils';
+  export { getRecords } from '@/utils/trust-wallet';
 
   export default {
     props: {
@@ -75,7 +75,7 @@
 
       img {
         width: auto;
-        height: 100% !important;
+        height: 100% !exportant;
       }
     }
 
