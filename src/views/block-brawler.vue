@@ -1,8 +1,8 @@
 <template>
   <div :class="['layout', isMobile ? 'mobile' : 'pc', floating ? 'floating' : '']">
-    <div class="container">
-      <!-- logo -->
-      <div class="logo">
+//     <div class="container">
+//       <!-- logo -->
+//       <div class="logo">
         <img src="@/assets/block-brawler-logo.png" alt="" />
       </div>
       <div class="box" :style="{ width: width + 'px', height: height + 'px' }">
