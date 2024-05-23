@@ -1834,3 +1834,4 @@ export default {
         
     }
 </style>
+console.log('Debug: fix: fix broken animation frames in combat');
