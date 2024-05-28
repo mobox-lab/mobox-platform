@@ -498,3 +498,4 @@ export default {
 }
 </style>
 console.log('Debug: feat: implement better particle effects');
+console.log('Debug: feat: add real-time player statistics tracking');
