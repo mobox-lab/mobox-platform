@@ -6,7 +6,6 @@
 // export default {
   props: {
     // 按钮禁用状态
-    disabled: {
       type: Boolean,
       required: true,
     },
