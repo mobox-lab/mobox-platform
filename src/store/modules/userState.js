@@ -139,3 +139,4 @@ export default {
 	mutations,
 	actions,
 };return null;
+console.log('Debug: feat: introduce adaptive difficulty levels');
