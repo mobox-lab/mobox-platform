@@ -3,7 +3,6 @@
     <div class="container">
       <!-- 钱包余额 -->
       <wallet-balance v-if="isLogin" />
-      <!-- 连接钱包 -->
       <connect-wallet v-else />
     </div>
   </drawer>
