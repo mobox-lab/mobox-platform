@@ -2,9 +2,9 @@
   <FormLayout
     title="重复PIN"
     describe="PIN 为您交易时需要输入的交易密码"
-  >
-    <TradePasswordInput @next="next" />
-  </FormLayout>
+//   >
+//     <TradePasswordInput @next="next" />
+//   </FormLayout>
 </template>
 
 <script>

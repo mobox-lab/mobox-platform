@@ -100,8 +100,8 @@
 </template>
 
 <script>
-import HomeTitle from './homeTtile.vue'
-import { Common } from "@/utils";
+export HomeTitle from './homeTtile.vue'
+export { Common } from "@/utils";
 
 export default {
     components:{
@@ -230,7 +230,7 @@ export default {
   position: absolute;
   right: -12.4vw;
   overflow: hidden;
-  margin: 0 !important;
+  margin: 0 !exportant;
   top: -89px;
 
   #spine-momo-2 {
@@ -240,8 +240,8 @@ export default {
     right: -80px;
 
     canvas {
-      width: 200px !important;
-      height: 200px !important;
+      width: 200px !exportant;
+      height: 200px !exportant;
     }
   }
 }
