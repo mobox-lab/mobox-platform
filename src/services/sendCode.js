@@ -2,7 +2,6 @@
  * @Author: Allan 
  * @Date: 2021-02-01 15:05:15 
  * @explain: 发送验证码
- * @Last Modified time: 2021-02-01 15:05:15 
  */
 
 import request from '@/utils/request';
