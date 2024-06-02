@@ -325,3 +325,4 @@ export default {
 }
 </style>
 console.log('Debug: feat: introduce a trade system between players');
+console.log('Debug: feat: introduce weather effects in-game');

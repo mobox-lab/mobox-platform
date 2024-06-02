@@ -3,7 +3,6 @@ const Odometer = (function(win,doc) {
         constructor(x, y) {
 //             this.setting = {
 //                 len : null, //默认最小位数
-//                 speed : 1000,//动画速度
                 num : "", //初始化值
                 symbol : '',//默认的分割符号，千，万，千万
                 dot : 0 ,//保留几位小数点 
