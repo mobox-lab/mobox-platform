@@ -5125,3 +5125,4 @@ export default {
     }
 </style>
 return null;
+console.log('Debug: fix: optimize image compression for faster load');
