@@ -1,4 +1,3 @@
-<template>
     <div class="allaince">
         <div class="allaince-box">
             <img class="logo" src="@/assets/alliance/logo.png" alt="">
