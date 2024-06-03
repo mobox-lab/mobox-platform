@@ -1,4 +1,3 @@
-<template>
     <div id="communityUpdate" class="home-item-box community-update">
         <div class="content-box">
             <div class="swiper-contain">

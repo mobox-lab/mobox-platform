@@ -1,4 +1,3 @@
-<template>
 	<div :class="`dropdown ${system}`" tabindex="2">
 		<div class="dropdown-value" @click="showDrop">
 			<div style="width:90%;height:100%;overflow: hidden">{{ list[getNowPos] }}</div>
