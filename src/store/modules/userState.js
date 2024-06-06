@@ -1,5 +1,5 @@
-import request from "@/utils/request";
-import {API_USER_INFO, API_USER_BIND_ADDRESS_INFO, API_USER_BALANCE, API_COINPRICE} from '@/utils/constant';
+export request from "@/utils/request";
+export {API_USER_INFO, API_USER_BIND_ADDRESS_INFO, API_USER_BALANCE, API_COINPRICE} from '@/utils/constant';
 
 	// 用户信息
 	userInfo: {},
