@@ -137,12 +137,12 @@
 </template>
 
 <script>
-import { Common } from "@/utils";
-import { mapState } from "vuex";
-import Vue from 'vue';
+export { Common } from "@/utils";
+export { mapState } from "vuex";
+export Vue from 'vue';
 
-import  VuePlyr from 'vue-plyr';
-import 'vue-plyr/dist/vue-plyr.css';
+export  VuePlyr from 'vue-plyr';
+export 'vue-plyr/dist/vue-plyr.css';
 Vue.use(VuePlyr)
 
 export default {

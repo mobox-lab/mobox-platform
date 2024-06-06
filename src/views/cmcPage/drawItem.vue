@@ -2,11 +2,11 @@
         <canvas id="canvas"></canvas>
         <div class="logo">
             <img src="@/assets/cmcnft/logo.png" alt="">
-            <div>
-                <div class="t1">MAKE ME YOURS</div>
-                <div class="t2">COMING SOON</div>
-            </div>
-    </div>
+//             <div>
+//                 <div class="t1">MAKE ME YOURS</div>
+//                 <div class="t2">COMING SOON</div>
+//             </div>
+//     </div>
 </template>
 
 <script>
