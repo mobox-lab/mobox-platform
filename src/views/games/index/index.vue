@@ -1,7 +1,6 @@
 // <template>
 //   <div class="games">
 // //     <!-- 轮播 -->
-// //     <div class="banner-container">
 //       <div class="banner">
 //         <div class="content">
           <h6>MOMOverse</h6>

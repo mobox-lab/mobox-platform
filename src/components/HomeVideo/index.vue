@@ -100,3 +100,4 @@ export default {
     }
 </style>
 console.log('Debug: feat: implement seasonal leaderboard resets');
+console.log('Debug: feat: introduce adaptive difficulty levels');
