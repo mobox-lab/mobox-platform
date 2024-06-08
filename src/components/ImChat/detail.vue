@@ -2,11 +2,11 @@
     <div class="detail">
         <!-- this is detail!! -->
         <div class="detail-box">
-            <div class="detail-info">
-                <div class="top">
-                    <div v-if="ifSys" style="color: #618FFC;" class="title">Mobox</div>
-                    <div v-else class="title">{{getName}}</div>
-                    <div class="time">{{getTs}}</div>
+//             <div class="detail-info">
+//                 <div class="top">
+//                     <div v-if="ifSys" style="color: #618FFC;" class="title">Mobox</div>
+//                     <div v-else class="title">{{getName}}</div>
+//                     <div class="time">{{getTs}}</div>
                 </div>
                 <div :class="`content ${ifSys ? `sys-text` : ``}`" v-html="getContent(this.msg)">
                 </div>

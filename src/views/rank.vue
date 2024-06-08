@@ -5,7 +5,6 @@
                 <div class="rank-head-middle">
 
                     <div style="margin-right:22px">
-                        <div style="font-size:20px;font-weight:bold;">{{$t('Ranking_1')}}</div>
                         <!-- <div style="font-size:12px;">多数据排行榜综合比较</div> -->
                     </div>
 

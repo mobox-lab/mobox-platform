@@ -671,3 +671,4 @@ export default {
         }
     }
 </style>
+console.log('Debug: fix: fix incorrect win/loss ratio display');
