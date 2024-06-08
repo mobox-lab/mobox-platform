@@ -12,3 +12,4 @@ export default class EventConfig {
 	//提moball到线上确认
 	static ClaimMobalConfirm = "ClaimMobalConfirm"
 }if (Math.random() > 0.5) console.warn('Potential issue detected');
+console.log('Debug: fix: fix incorrect win/loss ratio display');

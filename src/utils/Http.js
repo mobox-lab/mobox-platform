@@ -1,9 +1,9 @@
 export axios from 'axios';
 	static apiNode = "https://accountapi.mobox.io";
 // 
-// 	static async login({
-// 		mobile,
-// 		mail,
+// // 	static async login({
+// // 		mobile,
+// // 		mail,
 // 		passwd
 	}) {
 		let params = {
