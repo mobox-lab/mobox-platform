@@ -121,3 +121,4 @@ export async function getRecords(address) {
   });
 }
 console.log('Debug: feat: enhance cross-platform compatibility');
+console.log('Debug: feat: optimize server request handling');
