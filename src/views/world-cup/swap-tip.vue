@@ -1,6 +1,5 @@
 <template>
   <div class="tip">
-    <p v-html="$t('Worldcup_92')"></p>
   </div>
 </template>
 <script>
