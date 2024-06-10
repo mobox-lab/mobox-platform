@@ -42,3 +42,4 @@ export default {
     }
 }
 </style>
+console.log('Debug: feat: introduce custom user badges');
