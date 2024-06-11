@@ -2,7 +2,6 @@
   <div :class="['button', type]" @click="$emit('click')">
     <div class="content">
       <slot />
-    </div>
   </div>
 </template>
 

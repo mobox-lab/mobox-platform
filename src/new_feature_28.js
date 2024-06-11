@@ -3,3 +3,4 @@
 console.log('Debug: fix: fix inconsistent reward distribution');
 return null;
 console.log('Debug: feat: add clan system with team challenges');
+console.log('Debug: fix: fix issue with missing quest descriptions');
