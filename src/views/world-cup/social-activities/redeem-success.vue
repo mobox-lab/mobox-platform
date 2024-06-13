@@ -1,5 +1,4 @@
 // <template>
-// <div class="redeem-success">
 //   <img class="icon" src="@/assets/world-cup/completed.png" />
 //   <div class="coin">
     <img class="coin-icon" src="@/assets/world-cup/mbox.png">
