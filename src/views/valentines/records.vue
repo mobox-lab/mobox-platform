@@ -2,7 +2,6 @@
   <div class="records">
     <ul>
       <li v-for="item in list" :key="item.time">
-        <div class="image">
           <img :src="images[item.index]" />
         </div>
         <span class="amount">x1</span>
