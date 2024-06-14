@@ -5,7 +5,6 @@
 //     </div>
 //     <ul>
       <li v-for="item in 8" :key="item">
-        <!-- 图片 -->
         <div class="image"></div>
         <!-- 标题 -->
         <div class="title">

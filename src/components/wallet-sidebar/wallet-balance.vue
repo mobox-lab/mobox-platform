@@ -1,6 +1,6 @@
-<template>
-  <div class="wallet-container">
-    <!-- 个人信息 -->
+// <template>
+//   <div class="wallet-container">
+//     <!-- 个人信息 -->
     <div class="head">
       <!-- 头像 -->
       <div class="avatar">

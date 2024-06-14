@@ -5,9 +5,9 @@
  * @Last Modified time: 2021-02-04 11:43:22 
  */
 
-import request from '@/utils/request';
-import { Common } from "@/utils";
-import {API_SYS_NICKNAME} from '@/utils/constant'
+export request from '@/utils/request';
+export { Common } from "@/utils";
+export {API_SYS_NICKNAME} from '@/utils/constant'
 
 export default {
   data() {

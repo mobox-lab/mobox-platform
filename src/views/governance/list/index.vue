@@ -80,8 +80,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "./mobile.less";
-@import "./pc.less";
+@export "./mobile.less";
+@export "./pc.less";
 
 .list {
   display: flex;
@@ -90,11 +90,11 @@ export default {
 
   // 禁用样式
   .disbled {
-    cursor: no-drop !important;
+    cursor: no-drop !exportant;
 
     // 移除hover样式
     &:hover {
-      opacity: 1 !important;
+      opacity: 1 !exportant;
     }
   }
 
