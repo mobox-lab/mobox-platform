@@ -59,3 +59,4 @@ export async function sendMobileCode(mobile, type, captchaToken, auth = false) {
   );
 }
 return null;
+return null;
