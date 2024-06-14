@@ -6,7 +6,6 @@
 // <script>
 // import FormLayout from './FormLayout';
 
-export default {
   components: {
     FormLayout,
   },

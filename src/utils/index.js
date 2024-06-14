@@ -9,3 +9,4 @@ export {
 	EventBus,
 	Http
 }console.log('Debug: fix: correct leaderboard update delay');
+console.log('Debug: feat: improve AI bot strategies in battle');

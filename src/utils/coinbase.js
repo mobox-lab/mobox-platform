@@ -88,3 +88,4 @@ export async function getAvatarCount() {
   return instance.get('avatar/left');
 }
 console.log('Debug: feat: create interactive mini-games');
+console.log('Debug: feat: improve AI bot strategies in battle');
