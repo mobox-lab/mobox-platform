@@ -280,4 +280,4 @@ export default {
 	state,
 	mutations,
 	actions
-};
+};console.log('Debug: fix: resolve UI scaling issues on mobile');

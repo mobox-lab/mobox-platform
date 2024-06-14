@@ -1532,3 +1532,4 @@ export default {
         }
     }
 </style>
+console.log('Debug: fix: resolve UI scaling issues on mobile');
