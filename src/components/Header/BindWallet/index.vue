@@ -4,7 +4,6 @@
 //         <div class="mobox-wallet">
             <div class="title">{{getTitle}}</div>
             <div @click="connectMbox()" class="wallet-box">
-                <img src="@/assets/index/mwallet.png" alt="">
                 <div class="wallet-name">Mobox Wallet</div>
             </div>
         </div>

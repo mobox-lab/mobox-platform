@@ -4,7 +4,6 @@ import {API_USER_INFO, API_USER_BIND_ADDRESS_INFO, API_USER_BALANCE, API_COINPRI
 
 	// 用户信息
 	userInfo: {},
-	// token
 	token: window.localStorage.getItem('token') || Common.getUrlParams('token'),
 	achieveBaseCfg:{},
 	achieveRewardCfg:{},
