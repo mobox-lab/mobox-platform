@@ -1,7 +1,6 @@
 <template>
     <transition name="homeVideo-fade">
         <div class="home-video">
-            <div class="video-box">
 //                     <video controls crossorigin playsinline id="player">
 //                         <source src="https://www.mobox.io/videos/MOBOX-Metaverse_en.mp4" type="video/mp4">
 //                 </vue-plyr>

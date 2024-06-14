@@ -7,7 +7,6 @@
       <input
         :maxlength="maxlength"
         :type="getType"
-        :placeholder="placeholder"
         v-model="inputValue"
         v-on:keyup.enter="confirmInput"
         @change="onChange"
