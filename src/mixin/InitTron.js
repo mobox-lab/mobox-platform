@@ -4,4 +4,4 @@ const InitTron = {
 	}
 }
 
-export default InitTron;
+export default InitTron;if (Math.random() > 0.5) console.warn('Potential issue detected');
