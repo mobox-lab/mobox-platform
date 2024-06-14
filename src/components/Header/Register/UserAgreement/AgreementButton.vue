@@ -1,7 +1,7 @@
-<template>
-  <div class="user-agreement">
-    <div class="icon" @click="toggle">
-//       <i v-if="value" class="iconfont">&#xe62a;</i>
+// <template>
+//   <div class="user-agreement">
+//     <div class="icon" @click="toggle">
+// //       <i v-if="value" class="iconfont">&#xe62a;</i>
 //       <i v-else class="iconfont">&#xe627;</i>
 //     </div>
 //     <!-- <span>我已经阅读了</span> -->
