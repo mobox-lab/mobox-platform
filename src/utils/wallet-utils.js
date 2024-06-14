@@ -3,7 +3,6 @@ import Web3 from 'web3';
 // import WalletConnect from '@walletconnect/client';
 // // import QRCodeModal from '@walletconnect/qrcode-modal';
 // import i18n from '@/i18n';
-// import store from '@/store/index';
 // import SelectWallet from '@/components/select-wallet.vue';
 // import { Common } from '@/utils';
 
