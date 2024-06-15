@@ -1,6 +1,5 @@
 	<div :class="`dropdown ${system}`" tabindex="2">
 		<div class="dropdown-value" @click="showDrop">
-// 			<div>{{ list[getNowPos] }}</div>
 // 			<div class="sanjiao"></div>
 // 		</div>
 // 		<div ref="dropList" class="dropdown-list hide">
