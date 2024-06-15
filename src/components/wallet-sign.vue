@@ -7,7 +7,6 @@
                     <div class="title">{{ $t("Home_10") }}</div>
                     <div @click="mboxLogin">
                         <div class="icon">
-                            <img src="@/assets/wallet-icon/wallet.png" />
                         </div>
                         <h5 class="name">Mobox Wallet</h5>
                     </div>

@@ -1296,56 +1296,56 @@
 </template>
 
 <script>
-// import Banner from '@/components/Banner';
-import { mapState } from "vuex";
-import { momoCfgs } from "@/views/landing/config.js";
-import { Common } from "@/utils";
-import Dialog from "@/components/Dialog";
-import Guide from "@/components/Header/Guide";
-// import BlockTitle from "@/components/BlockTitle.vue";
-import QRCode from "qrcodejs2";
-// import DrawItem from "../cmcPage/drawItem.vue";
-import request from "@/utils/request";
-import Guidelines from "./guidelines.vue";
-import CommunityUpdate from "./communityUpdate.vue";
-import NftPage from "./nftPage.vue";
-import GameBox from "./gamebox.vue";
-import OurVision from "./our-vision.vue";
-import BlindBox from "./blind-box.vue";
-import Contact from "./contact.vue";
-import Cooper from "./cooper.vue";
-import DownPage from "./downPage.vue";
-import HomeVideo from "@/components/HomeVideo";
-import Footer from "./footer.vue";
-import {
+// export Banner from '@/components/Banner';
+export { mapState } from "vuex";
+export { momoCfgs } from "@/views/landing/config.js";
+export { Common } from "@/utils";
+export Dialog from "@/components/Dialog";
+export Guide from "@/components/Header/Guide";
+// export BlockTitle from "@/components/BlockTitle.vue";
+export QRCode from "qrcodejs2";
+// export DrawItem from "../cmcPage/drawItem.vue";
+export request from "@/utils/request";
+export Guidelines from "./guidelines.vue";
+export CommunityUpdate from "./communityUpdate.vue";
+export NftPage from "./nftPage.vue";
+export GameBox from "./gamebox.vue";
+export OurVision from "./our-vision.vue";
+export BlindBox from "./blind-box.vue";
+export Contact from "./contact.vue";
+export Cooper from "./cooper.vue";
+export DownPage from "./downPage.vue";
+export HomeVideo from "@/components/HomeVideo";
+export Footer from "./footer.vue";
+export {
   API_BUYBACK_AMOUNT,
   API_AVG_DAYS,
   // HOME_BANNER,
 } from "@/utils/constant";
-import { MATE_LINK } from "@/utils/enums.js";
+export { MATE_LINK } from "@/utils/enums.js";
 
-import pic_zh from "@/assets/index/banner6_1.jpg";
-import pic_en from "@/assets/index/banner6_2.jpg";
-import momo_zh from "@/assets/index/banner8_1.jpg";
-import momo_en from "@/assets/index/banner8_2.jpg";
-import bw_zh from "@/assets/index/banner11_1.jpg";
-import bw_en from "@/assets/index/banner11_2.jpg";
-import tm_zh from "@/assets/index/banner23_1.jpg";
-import tm_en from "@/assets/index/banner23_2.jpg";
-import contest_zh from "@/assets/index/banner9_1.jpg";
-import contest_en from "@/assets/index/banner9_2.jpg";
-import model_zh from "@/assets/index/banner10_1.jpg";
-import model_en from "@/assets/index/banner10_2.jpg";
-import guide_zh from "@/assets/index/banner13_1.jpg";
-import guide_en from "@/assets/index/banner13_2.jpg";
-import luodi_zh from "@/assets/index/banner15_1.jpg";
-import luodi_en from "@/assets/index/banner15_2.jpg";
-import raffle_zh from "@/assets/index/banner19_1.jpg";
-import raffle_en from "@/assets/index/banner19_2.jpg";
-import cz_zh from "@/assets/index/banner26_1.jpg";
-import cz_en from "@/assets/index/banner26_2.jpg";
-import Milestone from './milestone.vue';
-import Ecosystem from './ecosystem.vue';
+export pic_zh from "@/assets/index/banner6_1.jpg";
+export pic_en from "@/assets/index/banner6_2.jpg";
+export momo_zh from "@/assets/index/banner8_1.jpg";
+export momo_en from "@/assets/index/banner8_2.jpg";
+export bw_zh from "@/assets/index/banner11_1.jpg";
+export bw_en from "@/assets/index/banner11_2.jpg";
+export tm_zh from "@/assets/index/banner23_1.jpg";
+export tm_en from "@/assets/index/banner23_2.jpg";
+export contest_zh from "@/assets/index/banner9_1.jpg";
+export contest_en from "@/assets/index/banner9_2.jpg";
+export model_zh from "@/assets/index/banner10_1.jpg";
+export model_en from "@/assets/index/banner10_2.jpg";
+export guide_zh from "@/assets/index/banner13_1.jpg";
+export guide_en from "@/assets/index/banner13_2.jpg";
+export luodi_zh from "@/assets/index/banner15_1.jpg";
+export luodi_en from "@/assets/index/banner15_2.jpg";
+export raffle_zh from "@/assets/index/banner19_1.jpg";
+export raffle_en from "@/assets/index/banner19_2.jpg";
+export cz_zh from "@/assets/index/banner26_1.jpg";
+export cz_en from "@/assets/index/banner26_2.jpg";
+export Milestone from './milestone.vue';
+export Ecosystem from './ecosystem.vue';
 
 const $ = window.$;
 
@@ -2338,8 +2338,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "./mobile.less";
-@import "./pc.less";
+@export "./mobile.less";
+@export "./pc.less";
 
 // 公用
 /deep/ .block-tag {
@@ -2750,8 +2750,8 @@ export default {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%) scale(1.3);
-            width: 230px !important;
-            height: 230px !important;
+            width: 230px !exportant;
+            height: 230px !exportant;
           }
         }
       }
@@ -2855,10 +2855,10 @@ export default {
           }
 
           .momo-active {
-            -webkit-filter: grayscale(0) !important; /* Webkit */
-            filter: grayscale(0) !important; /* W3C */
-            opacity: 1 !important;
-            transform: translateY(0) !important;
+            -webkit-filter: grayscale(0) !exportant; /* Webkit */
+            filter: grayscale(0) !exportant; /* W3C */
+            opacity: 1 !exportant;
+            transform: translateY(0) !exportant;
           }
 
           .light-item {
@@ -3914,8 +3914,8 @@ export default {
   width: 200px;
 
   canvas {
-    width: 200px !important;
-    height: 200px !important;
+    width: 200px !exportant;
+    height: 200px !exportant;
   }
 }
 
@@ -3925,7 +3925,7 @@ export default {
 //   position: absolute;
 //   right: 0;
 //   overflow: hidden;
-//   margin: 0 !important;
+//   margin: 0 !exportant;
 //   top: -89px;
 
 //   #spine-momo-2 {
@@ -3935,8 +3935,8 @@ export default {
 //     right: -80px;
 
 //     canvas {
-//       width: 200px !important;
-//       height: 200px !important;
+//       width: 200px !exportant;
+//       height: 200px !exportant;
 //     }
 //   }
 // }
