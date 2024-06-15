@@ -121,12 +121,12 @@
 </template>
 
 <script>
-import Web3 from 'web3';
-import { EthereumProvider } from '@walletconnect/ethereum-provider';
-import QRCode from "qrcodejs2";
-import request from "@/utils/request";
-import { API_WALLET_LOGIN } from "@/utils/constant";
-import { CommonMethod } from "@/mixin";
+export Web3 from 'web3';
+export { EthereumProvider } from '@walletconnect/ethereum-provider';
+export QRCode from "qrcodejs2";
+export request from "@/utils/request";
+export { API_WALLET_LOGIN } from "@/utils/constant";
+export { CommonMethod } from "@/mixin";
 
 export default {
   mixins: [CommonMethod],

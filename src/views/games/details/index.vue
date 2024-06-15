@@ -611,10 +611,10 @@
       grid-column-gap: 10px;
 
       li {
-        padding: 20px !important;
+        padding: 20px !exportant;
 
         span {
-          font-size: 28px !important;
+          font-size: 28px !exportant;
         }
       }
     }
@@ -775,7 +775,7 @@
       }
 
       .buttons {
-        display: none !important;
+        display: none !exportant;
       }
     }
 
@@ -785,7 +785,7 @@
       .info-box {
         h4 {
           font-size: 38px;
-          text-align: center !important;
+          text-align: center !exportant;
         }
       }
     }
