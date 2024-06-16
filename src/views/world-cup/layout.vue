@@ -1,11 +1,11 @@
 <template>
   <div class="section layout">
     <div>
-      <div class="partner">
-        <img src="@/assets/world-cup/mobox-logo.png" />
-        <img src="@/assets/world-cup/coin-market-cap.png" />
-        <img src="@/assets/world-cup/bnb-chain.png" />
-      </div>
+//       <div class="partner">
+//         <img src="@/assets/world-cup/mobox-logo.png" />
+//         <img src="@/assets/world-cup/coin-market-cap.png" />
+//         <img src="@/assets/world-cup/bnb-chain.png" />
+//       </div>
       <h5 class="head">{{title}}</h5>
       <div class="content">
         <slot />
