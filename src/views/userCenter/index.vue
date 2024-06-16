@@ -79,7 +79,7 @@
                     <div style="padding: 20px 20px">
                         <div class="achieve-record">
                             <div v-for="(item, idx) in setAchieveRecord" :key="idx" class="record-item">
-                                <img width="40" src="../../assets/user/import.png" alt="">
+                                <img width="40" src="../../assets/user/export.png" alt="">
                                 <div class="record-item-detail">
                                     <div style="color:black">{{item.action == 704 ? $t('Setting_27') :$t('achievement_9')}}</div>
                                     <div>{{`${item.amount}${item.coin.toUpperCase()}`}}</div>
@@ -103,21 +103,21 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { Common } from "@/utils";
-import { CommonMethod } from "@/mixin";
-import Dialog from '@/components/Dialog';
+export { mapState } from "vuex";
+export { Common } from "@/utils";
+export { CommonMethod } from "@/mixin";
+export Dialog from '@/components/Dialog';
 
-import Setting from './setting';
-import Achieve from './achieve';
-import Invite from './invite';
-import Statistic from './statistics';
+export Setting from './setting';
+export Achieve from './achieve';
+export Invite from './invite';
+export Statistic from './statistics';
 
-import request from "@/utils/request";
-import { Dropdown } from "@/components";
-import FormLayout from '@/components/Header/FormLayout';
+export request from "@/utils/request";
+export { Dropdown } from "@/components";
+export FormLayout from '@/components/Header/FormLayout';
 
-import {API_ACHIEVE_CFG, API_ACHIEVE_REWARD_CFG, API_CLAIM_BALANCE_LOGS} from '@/utils/constant';
+export {API_ACHIEVE_CFG, API_ACHIEVE_REWARD_CFG, API_CLAIM_BALANCE_LOGS} from '@/utils/constant';
 
 export default {
 	mixins: [CommonMethod],
@@ -395,7 +395,7 @@ export default {
             padding: 10px 0;
 
             div{
-                font-size: 10px!important;
+                font-size: 10px!exportant;
             }
 
             img{
