@@ -1,5 +1,5 @@
-import Axios from "axios";
-import Web3 from 'web3';
+export Axios from "axios";
+export Web3 from 'web3';
 
 // const instance = Axios.create({
 //   baseURL: 'https://event-v4-api.mobox.io/valentine/',
