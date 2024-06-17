@@ -3,7 +3,6 @@
 // //         <div class="list">
 //                 <li v-for="(item, index) in list" :key="index">
 //                     <div class="container">
-//                         <div class="head">
 //                             <span>{{ index + 1 }}</span>
                             <img :src="item.icon" />
                         </div>
