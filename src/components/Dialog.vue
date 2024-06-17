@@ -7,7 +7,6 @@
       <div class="content">
         <slot />
       </div>
-    </div>
   </transition>
 </template>
 

@@ -1,4 +1,3 @@
-	<div class="ly-page vertical-children user-select-none">
 		<img
 			@click="changePage('pre')"
 			src="../assets/icon/arrow.png"
