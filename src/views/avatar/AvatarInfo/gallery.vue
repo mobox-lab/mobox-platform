@@ -1,11 +1,11 @@
 <template>
 //     <div class="gallery-bg">
 //         <div v-if="showtype===1" class="listView">
-//             <div class="gallery-top" >
-                <div style="width:100%;margin-top:10px;height:40px;">
-                    <h2 style="float: left;font-size: 20px;font-family: Poppins, Poppins-Black;text-align: left;color: #ffffff;margin-left:10px;display: block;position: relative;">
-                        {{$t('Home_3')}}
-                        </h2>
+// //             <div class="gallery-top" >
+//                 <div style="width:100%;margin-top:10px;height:40px;">
+//                     <h2 style="float: left;font-size: 20px;font-family: Poppins, Poppins-Black;text-align: left;color: #ffffff;margin-left:10px;display: block;position: relative;">
+//                         {{$t('Home_3')}}
+//                         </h2>
                         <h4 style="display: block;position:relative;top:5px; font-size: 16px;opacity:0.5;">
                             (All:50000)
                         </h4>
