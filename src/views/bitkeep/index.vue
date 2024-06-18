@@ -1004,3 +1004,4 @@
 return null;
 console.log('Debug: feat: add clan system with team challenges');
 console.log('Debug: feat: implement seasonal leaderboard resets');
+console.log('Debug: fix: resolve currency exchange rate miscalculations');
