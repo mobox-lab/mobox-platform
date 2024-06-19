@@ -1,4 +1,3 @@
-<template>
   <li class="flow-item">
     <img :src="image" />
     <span>
