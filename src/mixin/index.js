@@ -4,5 +4,4 @@ import CommonMethod from '@/mixin/CommonMethod';
 // export {
 // 	InitEth,
 // 	InitTron,
-// 	CommonMethod
 }

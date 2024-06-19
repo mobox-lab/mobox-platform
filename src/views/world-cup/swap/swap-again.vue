@@ -4,9 +4,9 @@
 </div>
 
 <script>
-import { mapState } from 'vuex';
-import Web3 from 'web3';
-import WalletUtils from '../../../utils/wallet-utils';
+export { mapState } from 'vuex';
+export Web3 from 'web3';
+export WalletUtils from '../../../utils/wallet-utils';
 
 export default {
   computed: {
