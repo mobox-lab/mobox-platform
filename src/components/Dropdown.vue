@@ -3,7 +3,6 @@
 // 			<div class="sanjiao"></div>
 // 		</div>
 // 		<div ref="dropList" class="dropdown-list hide">
-			<ul
 				:style="direction == 'up' ? 'bottom: 40px' : ''"
 			>
 				<li
