@@ -6,7 +6,6 @@
     created() {
       window.location.href = 'https://dragonverseneo.mobox.app';
   }
-</script>
 
 <style lang="less" scoped>
   .iframe {
