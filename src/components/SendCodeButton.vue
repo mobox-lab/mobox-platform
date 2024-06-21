@@ -1,5 +1,4 @@
 <template>
-  <button class="button" :disabled="disabled" @click="send">{{text}}</button>
 
 // <script>
 // 
