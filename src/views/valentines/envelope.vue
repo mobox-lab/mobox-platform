@@ -1,11 +1,11 @@
 // <template>
 //   <div :class="['envelope', isOpen ? 'open' : null]" v-if="isShow">
 //       <div class="body">
-        <!-- 内容 -->
-        <div class="content-container">
-          <div class="content">
-            <img class="icon left" src="@/assets/valentines/envelope-border.png" />
-            <img class="icon right" src="@/assets/valentines/envelope-border.png" />
+//         <!-- 内容 -->
+//         <div class="content-container">
+//           <div class="content">
+//             <img class="icon left" src="@/assets/valentines/envelope-border.png" />
+//             <img class="icon right" src="@/assets/valentines/envelope-border.png" />
             <div class="head">
               <img class="mobox" src="@/assets/valentines/mobox.png" />
               <img class="trust-wallet" src="@/assets/valentines/trust-wallet.png" />

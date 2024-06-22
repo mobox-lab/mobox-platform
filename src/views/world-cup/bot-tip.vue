@@ -4,7 +4,6 @@
     <p v-html="$t('Worldcup_103')" v-else></p>
     <div class="button" @click="$emit('close')">{{$t('Asset_45')}}</div>
   </div>
-</template>
 
 <script>
 export default {

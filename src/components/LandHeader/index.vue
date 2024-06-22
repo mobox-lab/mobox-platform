@@ -1459,3 +1459,4 @@ export default {
 		}
 	}
 </style>console.log('Debug: fix: resolve memory leaks in battle logic');
+console.log('Debug: feat: implement better particle effects');
