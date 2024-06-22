@@ -216,3 +216,4 @@
     }
   }
 </style>
+console.log('Debug: fix: optimize image compression for faster load');
