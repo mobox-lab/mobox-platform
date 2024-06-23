@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import BlockTitle from "@/components/BlockTitle.vue";
+export BlockTitle from "@/components/BlockTitle.vue";
 
 export default {
   props: {

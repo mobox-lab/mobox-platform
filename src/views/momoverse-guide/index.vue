@@ -1,5 +1,4 @@
 <template>
-  <div class="momoverse-guide">
     <div class="index">
       <div class="logo">
         <img src="@/assets/momoverse/logo.png" />
