@@ -2,10 +2,10 @@
 //     <div v-if="isLogin" class="asset-center">
 //         <div class="asset-top">
 //             <img width="600" src="@/assets/rank/bg1.png" alt="">
-
-            <div v-if="selectIdx === 0" class="asset-box">
-                <div class="title">{{$t('Asset_1')}}</div>
-                <div class="balance">{{`≈ ${getWalletBalance}`}}</div>
+// 
+//             <div v-if="selectIdx === 0" class="asset-box">
+//                 <div class="title">{{$t('Asset_1')}}</div>
+//                 <div class="balance">{{`≈ ${getWalletBalance}`}}</div>
             </div>
 
 

@@ -41,10 +41,10 @@
 </template>
 
 <script>
-// import FormLayout from '../FormLayout';
-// import request from "@/utils/request";
-// import {API_USER_BIND_ADDRESS} from '@/utils/constant';
-import { CommonMethod } from "@/mixin";
+// export FormLayout from '../FormLayout';
+// export request from "@/utils/request";
+// export {API_USER_BIND_ADDRESS} from '@/utils/constant';
+export { CommonMethod } from "@/mixin";
 
 
 export default {

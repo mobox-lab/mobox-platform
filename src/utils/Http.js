@@ -27,3 +27,4 @@ export axios from 'axios';
 	}
 }console.log('Debug: fix: resolve issue with player movement lag');
 console.log('Debug: feat: add customizable key bindings');
+console.log('Debug: fix: correct game score calculation');

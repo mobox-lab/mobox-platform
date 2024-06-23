@@ -1,9 +1,9 @@
 <template>
 		<div
-			v-for="item in notifications"
-			:key="item.hash"
-			:class="item.type + ' notification-content'"
-			v-on:animationend="animationend"
+// 			v-for="item in notifications"
+// 			:key="item.hash"
+// 			:class="item.type + ' notification-content'"
+// 			v-on:animationend="animationend"
 		>
 			<div class="notification-item vertical-children">
 				<svg viewBox="0 0 1024 1024" width="20" height="20">
