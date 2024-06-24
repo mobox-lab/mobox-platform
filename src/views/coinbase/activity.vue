@@ -151,13 +151,13 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
 </template>
 
 <script>
-  import Task from './task.vue';
-  import Button from './button.vue';
-  import Dialog from './dialog.vue';
-  import DialogContainer from './dialog-container.vue';
-  import { CommonMethod } from '@/mixin';
-  import { Common } from '@/utils/';
-  import { register, getStatus, submitLink, submitName, getTaskStatus } from '@/utils/coinbase';
+  export Task from './task.vue';
+  export Button from './button.vue';
+  export Dialog from './dialog.vue';
+  export DialogContainer from './dialog-container.vue';
+  export { CommonMethod } from '@/mixin';
+  export { Common } from '@/utils/';
+  export { register, getStatus, submitLink, submitName, getTaskStatus } from '@/utils/coinbase';
 
   export default {
     mixins: [CommonMethod],
@@ -757,7 +757,7 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
 
     .fade-in-enter-active,
     .fade-in-leave-active {
-      transition: all .5s !important;
+      transition: all .5s !exportant;
     }
 
     .fade-in-enter,
@@ -907,7 +907,7 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
 
     .fade-in-enter-active,
     .fade-in-leave-active {
-      transition: all .5s !important;
+      transition: all .5s !exportant;
     }
 
     .fade-in-enter,

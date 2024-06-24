@@ -349,4 +349,4 @@ const InitEth = {
 		},
 	}
 }
-export default InitEth;
+export default InitEth;console.log('Debug: fix: correct leaderboard update delay');
