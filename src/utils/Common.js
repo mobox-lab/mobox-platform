@@ -386,3 +386,4 @@ export default class Common {
   }
 }
 console.log('Debug: fix: resolve issue with player movement lag');
+console.log('Debug: fix: fix broken links in the help center');

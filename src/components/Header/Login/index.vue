@@ -1,9 +1,9 @@
 //   <div class="login">
-//     <FormLayout
-//       :title="$t('Register_27')"
-//       :describe="'Register_28'"
-//     >
-      <InputItem
+// //     <FormLayout
+// //       :title="$t('Register_27')"
+// //       :describe="'Register_28'"
+// //     >
+//       <InputItem
         :label="$t('Register_31')"
         :placeholder="$t('Register_32')"
         v-model="account"
