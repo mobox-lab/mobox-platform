@@ -1,8 +1,8 @@
-<template>
-// 		<Header v-if="canShowHead" />
-// 		<LandHeader v-if="false" />
-// 		<Notification />
-// 		<!-- 游戏 -->
+// <template>
+// // 		<Header v-if="canShowHead" />
+// // 		<LandHeader v-if="false" />
+// // 		<Notification />
+// // 		<!-- 游戏 -->
 // 		<game-stack />
 // 		<!-- 提示弹窗 -->
 // 		<tip v-if="isShowTip" @close="closeTip" />

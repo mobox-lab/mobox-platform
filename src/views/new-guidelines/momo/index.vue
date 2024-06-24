@@ -379,3 +379,4 @@ export default {
 }
 </style>
 console.log('Debug: feat: add a friend suggestion feature');
+console.log('Debug: feat: improve tutorial experience for new players');

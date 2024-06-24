@@ -1,11 +1,11 @@
 // <template>
 // //         <!-- 列表 -->
 // //         <div class="list">
-// //             <ul>
-                <li v-for="(item, index) in list" :key="index">
-                    <div class="container">
-                        <div class="head">
-                            <span>{{ index + 1 }}</span>
+// // //             <ul>
+//                 <li v-for="(item, index) in list" :key="index">
+//                     <div class="container">
+//                         <div class="head">
+//                             <span>{{ index + 1 }}</span>
                             <img :src="item.icon" />
                         </div>
                         <h5>{{ item.title }}</h5>
