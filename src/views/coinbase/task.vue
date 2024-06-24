@@ -1,8 +1,8 @@
 // <template>
-//   <div :class="['task-item', $slots.default ? 'open' : null]">
-// //     <div class="head" @click="toggleShow">
-//       <p>{{ title }}</p>
-//       <div class="reward" v-if="reward && !status">
+// //   <div :class="['task-item', $slots.default ? 'open' : null]">
+// // //     <div class="head" @click="toggleShow">
+// //       <p>{{ title }}</p>
+// //       <div class="reward" v-if="reward && !status">
         <img :src="reward" />
       </div>
       <span class="icon" v-if="status">

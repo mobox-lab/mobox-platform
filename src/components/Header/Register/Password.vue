@@ -1,4 +1,3 @@
-<template>
   <FormLayout
 //   >
 //     <InputItem
