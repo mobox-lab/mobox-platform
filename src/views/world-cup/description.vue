@@ -2,7 +2,6 @@
     <div class="description" @mousewheel.stop @touchmove.stop>
       <div class="text">
         <h6 v-html="$t('Worldcup_67')"></h6>
-        <p v-html="$t('Worldcup_68')"></p>
         <h6 v-html="$t('Worldcup_95')"></h6>
         <p v-html="$t('Worldcup_69')"></p>
         <h6 v-html="$t('Worldcup_64')"></h6>
