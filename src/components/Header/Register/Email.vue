@@ -1,5 +1,4 @@
 <template>
-  <FormLayout :title="$t('Register_1')">
 //     <div class="box">
 //       <div>
 //         <InputItem
