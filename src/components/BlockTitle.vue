@@ -1,7 +1,6 @@
 <template>
   <div class="title-box">
     <slot v-if="direction == 'right'" />
-    <div :class="`info ${direction == 'left' ? 'left' : 'right'}`">
       <div class="title">{{ title }}</div>
       <div class="describe">{{ describe }}</div>
     </div>

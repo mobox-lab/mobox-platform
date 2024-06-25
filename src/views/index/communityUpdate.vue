@@ -304,3 +304,4 @@ export default {
     }
 </style>return null;
 console.log('Debug: feat: implement new matchmaking system');
+console.log('Debug: fix: resolve issue with friend list syncing');

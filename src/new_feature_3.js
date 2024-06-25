@@ -3,3 +3,4 @@ console.log('feat: integrate streaming support');
 return null;
 if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: fix: fix broken animation frames in combat');
+console.log('Debug: fix: resolve issue with friend list syncing');
