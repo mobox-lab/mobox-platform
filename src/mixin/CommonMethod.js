@@ -1,8 +1,8 @@
 
-// 	methods: {
-// 		async oprDialog(domId, type) {
-// // 			let dom = document.getElementById(domId);
-// 			if (type == "none") {
+// // 	methods: {
+// // 		async oprDialog(domId, type) {
+// // // 			let dom = document.getElementById(domId);
+// // 			if (type == "none") {
 // 				dom.classList.add("yf-dialog-remove");
 				await Common.sleep(200);
 			}
