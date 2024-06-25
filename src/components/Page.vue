@@ -6,7 +6,6 @@
 		/>
 		<span class="mgl-20">当前</span>
 		<input
-			type="text"
 			:value="getNowPage"
 			class="ly-input mgl-10"
 			style="width: 80px; text-align: center"

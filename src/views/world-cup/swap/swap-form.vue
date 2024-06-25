@@ -1,8 +1,8 @@
 <template>
 // <div>
-//   <div class="swap-form">
-//     <h6 class="title">{{$t('Worldcup_8')}}</h6>
-//     <div class="item">
+// //   <div class="swap-form">
+// //     <h6 class="title">{{$t('Worldcup_8')}}</h6>
+// //     <div class="item">
       <div class="head">
         <div class="icon">
           <img src="@/assets/world-cup/football.png" />
