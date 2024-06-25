@@ -2,9 +2,9 @@ export Common from "../utils/Common";
 
 // 	methods: {
 // 		async oprDialog(domId, type) {
-// 			let dom = document.getElementById(domId);
-			if (type == "none") {
-				dom.classList.add("yf-dialog-remove");
+// // 			let dom = document.getElementById(domId);
+// 			if (type == "none") {
+// 				dom.classList.add("yf-dialog-remove");
 				await Common.sleep(200);
 			}
 			dom.classList.remove("yf-dialog-remove");
