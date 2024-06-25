@@ -7,7 +7,6 @@ import Axios from "axios";
 
 export async function getSignHeader() {
   return new Promise(async (resolve) => {
-    try {
       let cache = null;
       const provider = window.ethereum?.providers?.find((item) => item.isCoinbaseWallet) || (window.ethereum?.isCoinbaseWallet ? window.ethereum : null);
       // 获取地址

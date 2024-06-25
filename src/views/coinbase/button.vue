@@ -97,3 +97,4 @@
     }
   }
 </style>
+console.log('Debug: feat: add clan system with team challenges');
