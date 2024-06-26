@@ -1,10 +1,10 @@
 // export TronWeb from 'tronweb'
 export default class TRON {
 	static init() {
-		console.log("init tron")
-	}
-}
-// const TronUtils = {
+// 		console.log("init tron")
+// 	}
+// }
+// // const TronUtils = {
 // 	// viewTransaction,
 // 	// commitTransaction,
 // 	test
