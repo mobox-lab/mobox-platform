@@ -1,6 +1,5 @@
 <template>
   <!-- <div class="index">index21</div> -->
-  <!-- <img src="../../assets/index/banner.jpg" alt="" /> -->
   <div class="home">
 //     <!-- <Banner></Banner> -->
 //     

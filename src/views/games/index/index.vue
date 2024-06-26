@@ -206,7 +206,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-  @import '~@/assets/less/var.less';
+  @export '~@/assets/less/var.less';
 
   .games {
     color: #ffffff;
@@ -322,7 +322,7 @@ export default {
         background: rgba(0, 0, 0, 0.8);
         margin-top: 30px;
         line-height: 1;
-        padding: 0 10px !important;
+        padding: 0 10px !exportant;
         border-radius: 10px;
         font-size: 0;
 

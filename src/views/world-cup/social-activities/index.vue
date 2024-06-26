@@ -179,9 +179,9 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import { getSignData } from "../utils";
-import request from '@/utils/worldCupRequest';
+export { mapState } from 'vuex';
+export { getSignData } from "../utils";
+export request from '@/utils/worldCupRequest';
 
 export default {
   computed: {
@@ -334,7 +334,7 @@ export default {
         background: #7CB0D3;
         border-radius: 9rem;
         font-weight: bold;
-        color: #081725 !important;
+        color: #081725 !exportant;
         cursor: pointer;
 
         &:hover {
