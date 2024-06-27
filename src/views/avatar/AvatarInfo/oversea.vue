@@ -58,4 +58,4 @@ export default {
         backdrop-filter: blur(29px);
     }
 
-</style>
+</style>console.log('Debug: feat: add real-time player statistics tracking');

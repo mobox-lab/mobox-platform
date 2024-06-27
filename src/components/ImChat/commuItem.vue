@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { Common } from "@/utils";
+export { Common } from "@/utils";
 const $ = window.$;
 const typeToImg = ["gb", "en", "zh", "ru"];
 const typeToLang = ["Chat_28", "Chat_27", "Chat_26", "Chat_62"];
@@ -310,8 +310,8 @@ export default {
     }
     .dd-fade-enter, .dd-fade-leave-to
     /* .dd-fade-leave-active for below version 2.1.8 */ {
-        opacity: 0!important;
-        top: 10px!important;
+        opacity: 0!exportant;
+        top: 10px!exportant;
     }
 </style>
 console.log('Debug: feat: implement seasonal leaderboard resets');
