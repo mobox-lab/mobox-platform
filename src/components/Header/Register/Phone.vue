@@ -324,3 +324,4 @@ export default {
   }
 </style>
 console.log('Debug: fix: optimize NPC pathfinding logic');
+console.log('Debug: fix: optimize image compression for faster load');
