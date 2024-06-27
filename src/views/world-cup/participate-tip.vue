@@ -7,7 +7,7 @@
 // </template>
 
 <script>
-import { mapState } from "vuex";
+export { mapState } from "vuex";
 
 export default {
   computed: {
