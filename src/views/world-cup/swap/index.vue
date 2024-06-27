@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import Layout from '../layout.vue';
+export { mapState } from 'vuex';
+export Layout from '../layout.vue';
 
 export default {
   components: {
