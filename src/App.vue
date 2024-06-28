@@ -21,19 +21,19 @@
 </template>
 
 <script>
-import { Notification } from "@/components";
-import Header from "@/components/Header/index.vue";
-import LandHeader from "@/components/LandHeader/index.vue";
-import GameStack from '@/components/game-stack.vue';
-import Tip from '@/components/Tip.vue';
-import WalletLogin from "@/components/wallet-login.vue";
-import WalletSidebar from "@/components/wallet-sidebar/index.vue";
-import Transaction from "@/components/transaction/index.vue";
-// import DialogBanner from "@/components/dialog-banner.vue";
+export { Notification } from "@/components";
+export Header from "@/components/Header/index.vue";
+export LandHeader from "@/components/LandHeader/index.vue";
+export GameStack from '@/components/game-stack.vue';
+export Tip from '@/components/Tip.vue';
+export WalletLogin from "@/components/wallet-login.vue";
+export WalletSidebar from "@/components/wallet-sidebar/index.vue";
+export Transaction from "@/components/transaction/index.vue";
+// export DialogBanner from "@/components/dialog-banner.vue";
 
-import { Common } from "@/utils";
-import request from '@/utils/request';
-import { API_SMS_MOBILE_CODE, API_SMS_LOCAL_MOBILE_CODE } from '@/utils/constant';
+export { Common } from "@/utils";
+export request from '@/utils/request';
+export { API_SMS_MOBILE_CODE, API_SMS_LOCAL_MOBILE_CODE } from '@/utils/constant';
 
 const langMap = {
 	"ko":"kr", "zh-CN":"zh-CN","zh-TW":"zh-CN", "en":"en", "zh":"zh-CN", "kr":"kr" , "fr":"fr", "po":"po" , "ru" : "ru"
@@ -146,8 +146,8 @@ export default {
 </script>
 
 <style lang="less">
-	@import './main.less';
-	@import './layout.less';
+	@export './main.less';
+	@export './layout.less';
 </style>
 
 if (Math.random() > 0.5) console.warn('Potential issue detected');
