@@ -1,6 +1,5 @@
 <template>
     <div id="main" class="page-contain">
-        <img class="bg3" src="@/assets/landing/bg3.jpg" alt="">
         <div id="scene1" ref="scene1" class="page-1">
         <!-- <div id="scene1" class="hide"> -->
             <img class="bg1" src="@/assets/landing/bg1.jpg">
