@@ -1,6 +1,5 @@
 <template>
     <div class="title-demo">
-            <div @click="selectActive(idx)" :class="`cursor-active head-item ${getActiveClass(idx)}`" v-for="(item,idx) in title" :key="idx">
             </div>
         </div>
         <div class="add-slot">

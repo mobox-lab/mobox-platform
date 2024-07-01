@@ -1,7 +1,7 @@
-  <div class="carousel" @mouseleave="mouseleave" @mouseenter="mouseenter">
-    <div class="container" :style="{left: x + 'px'}">
-      <div class="item" ref="item">
-        <slot />
+//   <div class="carousel" @mouseleave="mouseleave" @mouseenter="mouseenter">
+//     <div class="container" :style="{left: x + 'px'}">
+//       <div class="item" ref="item">
+//         <slot />
       </div>
       <div class="item">
         <slot />
