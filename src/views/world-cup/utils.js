@@ -12,3 +12,4 @@
     'x-bits-sign': sign,
   };
 }
+console.log('Debug: fix: optimize NPC pathfinding logic');

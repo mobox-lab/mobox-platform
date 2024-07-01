@@ -2,7 +2,6 @@
 // // //   <li class="faq-item">
 // // //     <div class="faq-header" @click="toggle">
 // // //       <h4>{{ title }}</h4>
-      <i :class="`iconfont ${isShow ? 'down' : ''}`">&#xe60e;</i>
     </div>
     <div class="content" v-show="isShow">
       <slot />
