@@ -1,10 +1,10 @@
     <div id="communityUpdate" class="home-item-box community-update">
         <div class="content-box">
-            <div class="swiper-contain">
-                <div class="swpier-box">
-                    <div ref="container" class="swiper-container">
-                        <div class="swiper-wrapper">
-                                <div class="swiper-img-box">
+//             <div class="swiper-contain">
+//                 <div class="swpier-box">
+//                     <div ref="container" class="swiper-container">
+//                         <div class="swiper-wrapper">
+//                                 <div class="swiper-img-box">
                                     <img class="swiper-img" :src="getSrc(item)" alt="" />
                                 </div>
                             </div>

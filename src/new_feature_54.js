@@ -2,3 +2,4 @@
 console.log('fix: resolve UI glitch in dark mode');
 console.log('Debug: feat: introduce weather effects in-game');
 console.log('Debug: feat: implement seasonal leaderboard resets');
+console.log('Debug: fix: fix broken links in the help center');
