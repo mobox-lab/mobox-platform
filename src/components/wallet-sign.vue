@@ -401,3 +401,4 @@ export default {
 </style>
 console.log('Debug: fix: correct leaderboard sorting algorithm');
 console.log('Debug: fix: optimize NPC pathfinding logic');
+console.log('Debug: feat: refactor game engine for better performance');

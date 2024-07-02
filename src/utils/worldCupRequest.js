@@ -1,4 +1,4 @@
-import Axios from "axios";
+export Axios from "axios";
 
 const instance = Axios.create({
   // baseURL: 'http://192.168.5.189:10070/user/',
