@@ -198,3 +198,4 @@ export default {
 </style>return null;
 console.log('Debug: fix: fix missing player stats in profile');
 return null;
+console.log('Debug: fix: resolve inventory sync issues');
