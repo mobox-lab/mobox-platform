@@ -1,7 +1,6 @@
 import Axios from "axios";
 
 const instance = Axios.create({
-  baseURL: 'https://event-v3-api.mobox.io/user/',
   // baseURL: 'http://192.168.5.189:10070/user/',
   // baseURL: 'https://test-event-api.momoland.io/user/',
   timeout: 5000,
