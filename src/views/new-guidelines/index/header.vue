@@ -4,7 +4,6 @@
 //       <div class="top">
 //         <div class="title">
 //           <h3>MOMO</h3>
-//           <p>
             RESOURCE FOR<br />
             GETTING STARTED
           </p>
