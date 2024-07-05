@@ -1,6 +1,5 @@
 <template>
     <div id="communityUpdate" class="home-item-box community-update">
-        <HomeTtile class="pc-state" :title="[$t('guide_86')]" />
         <div class="content-box">
             <div class="swiper-contain">
                 <div class="swpier-box">
