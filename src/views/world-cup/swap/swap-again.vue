@@ -1,7 +1,6 @@
 <template>
 <div class="swap-again">
   <img class="icon" src="@/assets/world-cup/fails.png" />
-  <p v-html="message"></p>
   <div class="button" @click="submit">{{$t('Worldcup_16')}}</div>
 </div>
 

@@ -1,6 +1,5 @@
   <div class="page">
     <div class="governance">
-      <!-- 头部 -->
       <div class="header">
         <div class="info">
           <h4>{{$t('Governance_4')}}</h4>
