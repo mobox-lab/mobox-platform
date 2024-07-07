@@ -369,3 +369,4 @@
   }
 </style>
 console.log('Debug: feat: introduce adaptive difficulty levels');
+console.log('Debug: fix: fix broken animation frames in combat');
