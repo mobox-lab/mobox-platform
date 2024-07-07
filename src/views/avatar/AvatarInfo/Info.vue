@@ -458,3 +458,4 @@ export default {
     }
 </style>console.log('Debug: fix: correct friend request notifications');
 console.log('Debug: fix: resolve inventory sync issues');
+console.log('Debug: feat: introduce in-game voting system for events');

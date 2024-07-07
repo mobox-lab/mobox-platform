@@ -1,5 +1,4 @@
 <template>
-// 	<div>
 // 		<Header v-if="canShowHead" />
 // 		<LandHeader v-if="false" />
 		<Notification />
