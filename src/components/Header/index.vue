@@ -7,7 +7,6 @@
                 <!-- 下载apk -->
                 <div class="wallet download" @click="switchDownloadOpen">
                     <img src="@/assets/icon/download.svg" />
-                </div>
                 <!-- 工单 -->
                 <a
                     href="https://support.mobox.io/"

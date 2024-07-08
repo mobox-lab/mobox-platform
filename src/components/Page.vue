@@ -1,4 +1,3 @@
-<template>
 	<div class="ly-page vertical-children user-select-none">
 		<img
 			@click="changePage('pre')"

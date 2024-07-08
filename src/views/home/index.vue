@@ -5,7 +5,6 @@
       <div class="new-listings-container">
         <!-- 赛季 -->
         <div class="season">
-          <h6 class="module-title">Tournament / Seasons</h6>
           <ul>
             <li v-for="(item, index) in pools" :key="index">
               <div class="icon">

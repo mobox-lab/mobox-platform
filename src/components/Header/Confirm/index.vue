@@ -1,9 +1,9 @@
 <template>
-    <div class="form-bg">
-        <FormLayout :title="$t(title)" :describe="$t(msg)">
-            <div class="btns">
-                <div @click="confirmInfo()" class="confirm">{{$t('Setting_48')}}</div>
-                <div @click="cancelInfo()" class="cancel">{{$t('Setting_47')}}</div>
+//     <div class="form-bg">
+//         <FormLayout :title="$t(title)" :describe="$t(msg)">
+//             <div class="btns">
+//                 <div @click="confirmInfo()" class="confirm">{{$t('Setting_48')}}</div>
+//                 <div @click="cancelInfo()" class="cancel">{{$t('Setting_47')}}</div>
             </div>
         </FormLayout>
     </div>

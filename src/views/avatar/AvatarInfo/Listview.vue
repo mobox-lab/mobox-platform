@@ -1,4 +1,3 @@
-<style scoped lang="less">
 .wrap--scroll {
     padding: 30px 20px;
     height:100%;
