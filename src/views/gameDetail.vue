@@ -2,11 +2,11 @@
     <div>
         <div class="mobile-detail">
             <div class="bg">
-                <img class="bg-1" :src="getBgImg" />
-                <div class="bg-2"></div>
-            </div>
-
-            <div class="mobile-content">
+//                 <img class="bg-1" :src="getBgImg" />
+//                 <div class="bg-2"></div>
+//             </div>
+// 
+//             <div class="mobile-content">
                 <div class="head-list">
                     <div class="head-list-box">
                         <div :class="`head-list-item ${getHeadActive(item)}`" @click="changeDetail(item)" v-for="(item,idx) in Object.values(gameCfg)" :key="idx">
