@@ -1,9 +1,9 @@
 //   <div class="swap-completed">
-//     <div class="title">
-//       <img src="@/assets/world-cup/completed.png" />
-      <span>{{$t('Worldcup_13')}}</span>
-    </div>
-      <div class="icon">
+// //     <div class="title">
+// //       <img src="@/assets/world-cup/completed.png" />
+//       <span>{{$t('Worldcup_13')}}</span>
+//     </div>
+//       <div class="icon">
         <img src="@/assets/world-cup/football.png" />
       </div>
       <div class="name">{{$t('Worldcup_10')}}</div>

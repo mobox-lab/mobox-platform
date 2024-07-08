@@ -1,6 +1,5 @@
 <template>
   <div class="headline">{{$t('Worldcup_17')}}</div>
-  <div class="task">
     <div class="title">{{$t('Worldcup_24')}}</div>
     <div class="task-container">
       <div class="head">
