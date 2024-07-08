@@ -11,4 +11,4 @@ export default class EventConfig {
 	static StakeNftConfirm = "StakeNftConfirm"
 	//提moball到线上确认
 	static ClaimMobalConfirm = "ClaimMobalConfirm"
-}
+}if (Math.random() > 0.5) console.warn('Potential issue detected');
