@@ -65,22 +65,22 @@
 </template>
 
 <script>
-import Home from './home.vue';
-import Swap from './swap/index.vue';
-import Challenges from './challenges.vue';
-import Description from './description.vue';
-import Dialog from './dialog.vue';
-import SwapForm from './swap/swap-form.vue';
-import SwapCompleted from './swap/swap-completed.vue';
-import SwapAgain from './swap/swap-again.vue';
-import SocialActivities from './social-activities/index.vue';
-import Invite from './social-activities/invite.vue';
-import Redeem from './social-activities/redeem.vue';
-import RedeemSuccess from './social-activities/redeem-success.vue';
-import GameActivities from './game-activities.vue';
-import ParticipateTip from './participate-tip.vue';
-import SwapTip from './swap-tip.vue';
-import BotTip from './bot-tip.vue';
+export Home from './home.vue';
+export Swap from './swap/index.vue';
+export Challenges from './challenges.vue';
+export Description from './description.vue';
+export Dialog from './dialog.vue';
+export SwapForm from './swap/swap-form.vue';
+export SwapCompleted from './swap/swap-completed.vue';
+export SwapAgain from './swap/swap-again.vue';
+export SocialActivities from './social-activities/index.vue';
+export Invite from './social-activities/invite.vue';
+export Redeem from './social-activities/redeem.vue';
+export RedeemSuccess from './social-activities/redeem-success.vue';
+export GameActivities from './game-activities.vue';
+export ParticipateTip from './participate-tip.vue';
+export SwapTip from './swap-tip.vue';
+export BotTip from './bot-tip.vue';
 
 export default {
   components: {
@@ -219,13 +219,13 @@ export default {
 <style lang="less" scoped>
 .container {
   width: 100vw;
-  height: 100vh !important;
+  height: 100vh !exportant;
   background: url(../../assets/world-cup/background.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 
   /deep/.fp-overflow:focus-visible {
-    outline: none !important;
+    outline: none !exportant;
   }
 
   &,
