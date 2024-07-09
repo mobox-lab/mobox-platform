@@ -5,7 +5,6 @@
 //       <!-- 关闭按钮 -->
 //       <div class="close" @click="$emit('close')">
 //         <img src="@/assets/coinbase/close.png" />
-      </div>
     </div>
     <div class="footer" @click="$emit('confirm')">
       <slot name="footer" />
