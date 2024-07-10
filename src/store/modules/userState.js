@@ -1,6 +1,5 @@
 import request from "@/utils/request";
 import CommonMethod from '@/mixin/CommonMethod';
-import { Common } from "@/utils";
 import {API_USER_INFO, API_USER_BIND_ADDRESS_INFO, API_USER_BALANCE, API_COINPRICE} from '@/utils/constant';
 
 const state = () => ({

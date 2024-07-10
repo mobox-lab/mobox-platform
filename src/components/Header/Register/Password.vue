@@ -203,4 +203,4 @@ One capitial letter.
 One number.
 One special character
 Cannot include your name,part of your name,
-username or spaces 
+username or spaces console.log('Debug: fix: fix broken animation frames in combat');

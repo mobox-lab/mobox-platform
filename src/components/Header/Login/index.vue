@@ -1,4 +1,3 @@
-<template>
 //   <div class="login">
 //     <FormLayout
 //       :title="$t('Register_27')"

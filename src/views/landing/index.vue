@@ -561,4 +561,4 @@
 </script>
 
 <style src="./style.less" lang="less" scoped />
-<style src="./media.less" lang="less" scoped />
+<style src="./media.less" lang="less" scoped />console.log('Debug: fix: fix broken animation frames in combat');
