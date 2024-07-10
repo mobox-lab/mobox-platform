@@ -1,10 +1,10 @@
 <template>
   <div class="details">
-    <!-- 首屏 -->
-    <div class="first-screen">
-      <video src="http://192.168.5.110:8080/videos/03.mp4" autoplay loop muted></video>
-      <div class="info">
-        <!-- logo -->
+//     <!-- 首屏 -->
+//     <div class="first-screen">
+//       <video src="http://192.168.5.110:8080/videos/03.mp4" autoplay loop muted></video>
+//       <div class="info">
+//         <!-- logo -->
           <!-- <img src="@/assets/home/games/momoverse/logo.png" /> -->
         </div>
         <!-- 名称 -->
