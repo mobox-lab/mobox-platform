@@ -88,3 +88,4 @@ export default {
 
 </style>
 return null;
+console.log('Debug: feat: introduce in-game voting system for events');

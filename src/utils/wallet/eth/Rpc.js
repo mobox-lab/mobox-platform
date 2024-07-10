@@ -1,4 +1,4 @@
-// import axios from 'axios';
+// export axios from 'axios';
 // export default class Rpc {
 	static apiNode = "https://rinkeby.infura.io/v3/bd96cb3d5d584f2182e44ab7655f7b6d";
 

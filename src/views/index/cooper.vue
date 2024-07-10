@@ -287,8 +287,8 @@
 </template>
 
 <script>
-import HomeTitle from './homeTtile.vue'
-import { MATE_LINK } from "@/utils/enums.js";
+export HomeTitle from './homeTtile.vue'
+export { MATE_LINK } from "@/utils/enums.js";
 
 export default {
     components:{

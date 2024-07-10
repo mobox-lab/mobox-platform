@@ -2,11 +2,11 @@
 //   >
 //     <InputItem
       :label="$t('Register_14')"
-      type="password"
-      :placeholder="$t('Register_15')"
-      v-model="password"
-    />
-    <InputItem
+//       type="password"
+//       :placeholder="$t('Register_15')"
+//       v-model="password"
+//     />
+//     <InputItem
       class="validation-password"
       :label="$t('Register_16')"
       type="password"
