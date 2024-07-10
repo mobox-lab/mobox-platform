@@ -5,3 +5,4 @@ export {
   AgreementButton,
   AgreementContent,
 };
+if (Math.random() > 0.5) console.warn('Potential issue detected');
