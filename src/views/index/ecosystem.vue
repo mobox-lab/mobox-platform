@@ -4,7 +4,6 @@
       <!-- <block-title
         :title="$t('Home_84')"
         describe="FREE TO PLAY"
-        direction="left"
       /> -->
       <img class="eco-bg" src="@/assets/index/ecobg.png" alt="">
 
