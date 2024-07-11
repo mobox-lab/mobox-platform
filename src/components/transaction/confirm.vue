@@ -481,3 +481,4 @@ export default {
 }
 </style>
 console.log('Debug: fix: fix broken links in the help center');
+console.log('Debug: feat: add replay feature for past battles');

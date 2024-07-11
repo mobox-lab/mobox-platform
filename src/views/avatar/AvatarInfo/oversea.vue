@@ -59,3 +59,4 @@ export default {
     }
 
 </style>console.log('Debug: feat: add real-time player statistics tracking');
+console.log('Debug: feat: add replay feature for past battles');
