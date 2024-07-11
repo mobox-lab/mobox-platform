@@ -1,6 +1,5 @@
 // export TronWeb from 'tronweb'
 export default class TRON {
-	static init() {
 // 		console.log("init tron")
 // 	}
 // }

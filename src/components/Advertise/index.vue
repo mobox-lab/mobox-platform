@@ -3,7 +3,6 @@
 //         <img class="bg1" src="@/assets/index/footbg.png" alt="">
 //         <img class="bg2" src="@/assets/index/footmomo1.png" alt="">
 //         <img class="bg3" src="@/assets/index/footmomo2.png" alt="">
-
         <div class="title">MOMO NFT FARMER</div>
 
         <img @click="closeFoot" width="15" class="closebtn" src="@/assets/index/footclose.png" alt="">
