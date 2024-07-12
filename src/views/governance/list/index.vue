@@ -3,7 +3,6 @@
     <!-- 列表tab -->
     <div class="tab-layout">
       <div class="tab-header">
-        <!-- tab -->
         <ul class="tab-bar">
           <router-link tag="li" to="/governance/list?tab=proposal">{{
             $t("Governance_13")

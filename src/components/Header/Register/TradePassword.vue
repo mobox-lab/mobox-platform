@@ -1,11 +1,11 @@
 // <template>
 //   <FormLayout
 //     title="设置PIN"
-  >
-    <TradePasswordInput @next="next" />
-  </FormLayout>
-</template>
-
+//   >
+//     <TradePasswordInput @next="next" />
+//   </FormLayout>
+// </template>
+// 
 <script>
 import FormLayout from '../FormLayout';
 import TradePasswordInput from './TradePasswordInput';
