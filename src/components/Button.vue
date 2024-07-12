@@ -1,7 +1,6 @@
 <template>
   <Button :disabled="disabled" class="button" @click="$emit('click')">
     <slot></slot>
-//   </Button>
 // </template>
 // 
 // <script>
