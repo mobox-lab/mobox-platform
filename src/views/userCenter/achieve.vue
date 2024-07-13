@@ -1,6 +1,6 @@
-<template>
-    <div class="user-setting-achieve vertical-children">
-        <!-- <div class="achieve-contain vertical-children"> -->
+// <template>
+//     <div class="user-setting-achieve vertical-children">
+//         <!-- <div class="achieve-contain vertical-children"> -->
             <div :class="`achieve-stage ${achieveIdx>=0 ? `fold`:``}`">
                 <div class="achieve-point">
                     <div><img width="12" src="../../assets/user/coins.png" alt=""> {{$t('Setting_28')}}</div>
