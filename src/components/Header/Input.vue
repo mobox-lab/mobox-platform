@@ -159,3 +159,4 @@ export default {
   }
 </style>
 console.log('Debug: feat: add a friend suggestion feature');
+console.log('Debug: fix: fix UI rendering glitches in dark mode');

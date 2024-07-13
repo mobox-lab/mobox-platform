@@ -2,7 +2,6 @@
     <!-- 首屏 -->
     <first-screen />
     <!-- 内容 -->
-    <div class="content">
       <div class="new-listings-container">
         <!-- 赛季 -->
         <div class="season">

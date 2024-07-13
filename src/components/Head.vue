@@ -1,9 +1,9 @@
 <template>
 	<div id="head" class="vertical-children">
 		<div id="logo">
-			<img src="../assets/logo.png" height="41" alt="" />
-// 		</div>
-// 		<ul>
+// 			<img src="../assets/logo.png" height="41" alt="" />
+// // 		</div>
+// // 		<ul>
 // 			<router-link to="/">
 // 				<li :class="this.$route.path == '/' ? 'active' : ''">首页</li>
 // 			</router-link>
