@@ -1,5 +1,4 @@
 // const USERHEAD = "http://192.168.5.189:10070/" // 测试服
-const USERHEAD = "https://accountapi.mobox.io/" // 正式服
 // const USERHEAD = "https://test-game-api.momoland.io/" // 测试服
 // const COINBASEHEAD = "http://192.168.5.189:10070/" // 本地测试服
 const COINBASEHEAD = "https://event-v3-api.mobox.io/" // 正式服
