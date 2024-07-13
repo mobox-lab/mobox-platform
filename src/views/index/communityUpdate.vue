@@ -37,11 +37,11 @@
 </template>
 
 <script>
-import {API_SYSTEM_BANNER} from '@/utils/constant';
-import request from "@/utils/request";
-import { Common } from "@/utils";
-import { mapState } from "vuex";
-import HomeTtile from "./homeTtile.vue";
+export {API_SYSTEM_BANNER} from '@/utils/constant';
+export request from "@/utils/request";
+export { Common } from "@/utils";
+export { mapState } from "vuex";
+export HomeTtile from "./homeTtile.vue";
 
 export default {
     data(){

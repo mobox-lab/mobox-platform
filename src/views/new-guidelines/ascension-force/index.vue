@@ -1,11 +1,11 @@
 <template>
 //   <div class="ascension-force">
 //       <!-- 流程 -->
-//       <flow :title="$t('guide_36')" :steps="[$t('guide_38'), $t('guide_40')]">
-//         <flow-item
-//           slot="left"
-          :image="require('@/assets/new-guidelines/force-flow-1.png')"
-        >
+// //       <flow :title="$t('guide_36')" :steps="[$t('guide_38'), $t('guide_40')]">
+// //         <flow-item
+// //           slot="left"
+//           :image="require('@/assets/new-guidelines/force-flow-1.png')"
+//         >
         </flow-item>
         <flow-item
           slot="center"

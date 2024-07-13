@@ -4,7 +4,6 @@
     <div class="sidebar" @mouseleave="mouseleave">
 //       <div class="head">
 //         <img src="@/assets/logo.png" />
-//         <span>MOBOX</span>
       </div>
       <!-- 菜单 -->
       <div class="menu">
