@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <!-- <div @click="showAndClean()" :class="`check-box ${ hideMeSelf ? `hide` : ``}`">
-            <div class="text">{{$t('Landing_132')}}</div>
+//     <div>
+//         <!-- <div @click="showAndClean()" :class="`check-box ${ hideMeSelf ? `hide` : ``}`">
+//             <div class="text">{{$t('Landing_132')}}</div>
             <div style="width:100%;height:100%;overflow:hidden;position:relative;">
                 <img class="bg" src="@/assets/components/activity/shinebg.png" alt="">
             </div>
