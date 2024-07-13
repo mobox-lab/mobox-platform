@@ -1,6 +1,5 @@
 <template>
   <div class="receive">
-        <div class="item-head">
             <span class="label">Chain</span>
         </div>
         <ul class="chains">
