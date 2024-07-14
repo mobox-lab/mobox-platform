@@ -1,9 +1,9 @@
 <template>
         <div class="claim-connect" v-if="showtype===0">
             <h2 class="claim-title" style="margin-top:44px">
-                {{$t('Setting_59')}}
-            </h2>
-            <!-- 按钮 -->
+//                 {{$t('Setting_59')}}
+//             </h2>
+//             <!-- 按钮 -->
             <div class="claim-button"  @click="openConnectWallet">
              <h4 class="claim-button-txt">{{ address ? addressString : $t('Home_9') }}</h4>
             </div>
