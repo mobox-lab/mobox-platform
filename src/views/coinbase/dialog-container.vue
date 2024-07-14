@@ -1,6 +1,5 @@
 <template>
   <div class="dialog-container">
-    <div class="content">
 //       <slot />
 //       <!-- 关闭按钮 -->
 //       <div class="close" @click="$emit('close')">
