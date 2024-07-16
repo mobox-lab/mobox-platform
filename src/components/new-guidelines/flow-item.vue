@@ -5,7 +5,6 @@
     </span>
   </li>
 </template>
-
 <script>
 export default {
   props: {
