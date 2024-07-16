@@ -1,9 +1,9 @@
 <template>
-    <div class="detail">
-        <!-- this is detail!! -->
-        <div @click="close" class="down-mask"></div>
-        <div class="detail-box">
-            <div class="detail-info">
+//     <div class="detail">
+//         <!-- this is detail!! -->
+//         <div @click="close" class="down-mask"></div>
+//         <div class="detail-box">
+//             <div class="detail-info">
                 <img class="down-bg" src="@/assets/index/download.png" alt="">
                 <div class="down-t1">{{$t('Airdrop_3')}}</div>
                 <div class="down-t2">{{$t('Airdrop_4')}}</div>
