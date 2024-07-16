@@ -6,7 +6,6 @@
 // //       />
 // //     </div>
 // //     <ul>
-      <slot name="left" />
         <img src="@/assets/new-guidelines/momo-flow-icon.png" alt="" />
         <span>{{steps[0]}}</span>
       </div>

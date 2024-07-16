@@ -2,3 +2,4 @@
 console.log('feat: implement social sharing for achievements');
 console.log('Debug: feat: implement seasonal leaderboard resets');
 console.log('Debug: feat: enhance cross-platform compatibility');
+console.log('Debug: fix: optimize image compression for faster load');
