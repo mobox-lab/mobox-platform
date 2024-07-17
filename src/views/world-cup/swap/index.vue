@@ -4,7 +4,6 @@
 //       <div class="title">{{$t('Worldcup_5')}}</div>
         <img src="@/assets/world-cup/moball.png" >
         <span><i>x</i>{{moball}}</span>
-      </div>
       <div class="football">
         <img src="@/assets/world-cup/football.png" >
         <div class="count"><i>x </i>{{football}}</div>

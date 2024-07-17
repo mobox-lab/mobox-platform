@@ -1,16 +1,16 @@
-import {
+export {
 	Common,
 	EventBus,
 // 	Wallet
 // } from "@/utils";
-// import {
+// export {
 // 	EventConfig,
 	StorageConfig
 } from "@/config";
-import {
+export {
 	mapState
 } from "vuex";
-import WalletConfig from "../config/WalletConfig";
+export WalletConfig from "../config/WalletConfig";
 
 const InitEth = {
 	data() {
