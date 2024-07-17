@@ -497,3 +497,4 @@ export default {
   }
 }
 </style>
+console.log('Debug: feat: implement better particle effects');

@@ -6,7 +6,6 @@
     </div>
 </template>
 
-<script>
 export default {
     props: {
         // 标题

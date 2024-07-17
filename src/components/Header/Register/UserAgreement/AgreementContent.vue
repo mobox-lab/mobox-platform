@@ -5,7 +5,6 @@
 // //     </div>
 //     <!-- 返回 -->
 //   </div>
-</template>
 
 <script>
 export Button from '@/components/Button';
