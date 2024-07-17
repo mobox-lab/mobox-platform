@@ -1,6 +1,6 @@
-// import Dropdown from "@/components/Dropdown";
-// import Notification from "@/components/Notification";
-// import Page from "@/components/Page";
+// export Dropdown from "@/components/Dropdown";
+// export Notification from "@/components/Notification";
+// export Page from "@/components/Page";
 // export {
 // 	Dropdown,
 // 	Page,

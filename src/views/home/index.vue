@@ -1,4 +1,3 @@
-<template>
   <div class="home">
     <!-- 首屏 -->
     <first-screen />
