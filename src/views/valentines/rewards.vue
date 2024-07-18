@@ -1,6 +1,6 @@
-<template>
-  <div class="rewards">
-    <!-- 头部 -->
+// <template>
+//   <div class="rewards">
+//     <!-- 头部 -->
     <div class="head">
       <img class="mobox" src="@/assets/valentines/mobox.png" />
       <img class="trust-wallet" src="@/assets/valentines/trust-wallet.png" />
