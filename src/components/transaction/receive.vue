@@ -1,4 +1,3 @@
-<template>
   <div class="receive">
 //             <span class="label">Chain</span>
 // //         </div>
