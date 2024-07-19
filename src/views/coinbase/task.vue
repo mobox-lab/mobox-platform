@@ -7,7 +7,6 @@
       </div>
       <span class="icon" v-if="status">
         <img src="../../assets/coinbase/complete.png" />
-      </span>
     </div>
     <!-- 内容 -->
     <slot v-if="$slots.default" />
