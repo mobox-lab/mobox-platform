@@ -4,7 +4,6 @@
 // //     <drawer v-model="isShowSidebar" :mask="isShowMask">
 // // //       <sidebar />
 //     <!-- 路由 -->
-//     <div :class="['view', $route.path === '/' ? null : 'spacing']">
       <router-view />
     </div>
   </div>
