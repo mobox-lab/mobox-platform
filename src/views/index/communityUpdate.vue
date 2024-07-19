@@ -4,7 +4,6 @@
                 <div class="swpier-box">
                     <div ref="container" class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div v-for="(item, idx) in banners" @click="toLink(idx)" :key="idx" class="swiper-slide" style="cursor:pointer">
                                 <div class="swiper-img-box">
                                     <img class="swiper-img" :src="getSrc(item)" alt="" />
                                 </div>
