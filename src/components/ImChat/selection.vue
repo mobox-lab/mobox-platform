@@ -7,7 +7,6 @@
             
             <li @click="goRoom(item)" v-for="(item,idx) in data" :key="idx" :class="getActive(item)">#{{item.name}}</li>
             <!-- <li class="active">#Momo Farm</li>
-            <li>#Trade Action</li>
             <li>#ChainZ Arena</li> -->
         </ul>
     </div>

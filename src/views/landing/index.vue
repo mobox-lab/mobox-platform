@@ -3,7 +3,6 @@
         <img class="bg3" src="@/assets/landing/bg3.jpg" alt="">
         <div id="scene1" ref="scene1" class="page-1">
         <!-- <div id="scene1" class="hide"> -->
-            <!-- 所有的背景板 -->
             <img class="bg1" src="@/assets/landing/bg1.jpg">
             
             <div class="page-content">
