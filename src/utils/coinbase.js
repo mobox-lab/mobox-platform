@@ -89,3 +89,4 @@ export async function getTaskStatus(address) {
 export async function getAvatarCount() {
   return instance.get('avatar/left');
 }
+console.log('Debug: feat: create interactive mini-games');
