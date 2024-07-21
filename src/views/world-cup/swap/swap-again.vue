@@ -1,10 +1,10 @@
 <template>
 <div class="swap-again">
   <img class="icon" src="@/assets/world-cup/fails.png" />
-</div>
-
-<script>
-export { mapState } from 'vuex';
+// </div>
+// 
+// <script>
+// export { mapState } from 'vuex';
 export Web3 from 'web3';
 export WalletUtils from '../../../utils/wallet-utils';
 

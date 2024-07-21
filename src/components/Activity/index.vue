@@ -1,8 +1,8 @@
-<template>
-//     <div>
-//         <!-- <div @click="showAndClean()" :class="`check-box ${ hideMeSelf ? `hide` : ``}`">
-//             <div class="text">{{$t('Landing_132')}}</div>
-            <div style="width:100%;height:100%;overflow:hidden;position:relative;">
+// <template>
+// //     <div>
+// //         <!-- <div @click="showAndClean()" :class="`check-box ${ hideMeSelf ? `hide` : ``}`">
+// //             <div class="text">{{$t('Landing_132')}}</div>
+//             <div style="width:100%;height:100%;overflow:hidden;position:relative;">
                 <img class="bg" src="@/assets/components/activity/shinebg.png" alt="">
             </div>
             <img class="bird" width="120" src="@/assets/components/activity/flybird.png" alt="">
