@@ -6,7 +6,6 @@
                         <div class="label-menu">{{$t(item.title)}}<img class="menu-icon" :src="item.tinyImgSrc" alt="">
                         </div>
                     </div>
-                </li>
             </ul>
             
             <img class="botImg" src="../../../assets/avatar/menuIcon.png" alt="">

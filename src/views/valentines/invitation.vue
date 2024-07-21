@@ -12,8 +12,8 @@
 </template>
 
 <script>
-  import { CommonMethod } from "@/mixin";
-  import { Common } from "@/utils";
+  export { CommonMethod } from "@/mixin";
+  export { Common } from "@/utils";
 
   export default {
     mixins: [ CommonMethod ],
