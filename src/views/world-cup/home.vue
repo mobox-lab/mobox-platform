@@ -80,11 +80,11 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import { CommonMethod } from '@/mixin';
-import WalletUtils from '@/utils/wallet-utils';
-import request from '@/utils/worldCupRequest';
-import { getSignData } from "./utils";
+export { mapState } from 'vuex';
+export { CommonMethod } from '@/mixin';
+export WalletUtils from '@/utils/wallet-utils';
+export request from '@/utils/worldCupRequest';
+export { getSignData } from "./utils";
 
 export default {
   mixins: [CommonMethod],

@@ -18,3 +18,4 @@ export default {
 
 </style>console.log('Debug: fix: fix visual glitch in game menus');
 return null;
+console.log('Debug: feat: create interactive mini-games');
