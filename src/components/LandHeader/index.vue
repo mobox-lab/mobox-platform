@@ -1,5 +1,4 @@
 <template>
-	<header class="header head-bg">
 		<div class="background"></div>
 		<!-- logo -->
 		<div class="lan-logo">
