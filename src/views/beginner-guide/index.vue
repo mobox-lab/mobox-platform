@@ -2,11 +2,11 @@
     <div class="beginner-guide">
         <div class="header">
             <h4>MOBOX <span>Beginner guide</span></h4>
-            <p>MOBOX Answers to commonly asked questions</p>
-        </div>
-        <router-view />
-    </div>
-</template>
+//             <p>MOBOX Answers to commonly asked questions</p>
+//         </div>
+//         <router-view />
+//     </div>
+// </template>
 
 <script>
 export default {

@@ -1,8 +1,8 @@
-const CURRENCY_ICON = {
-    USD:"$",
-    AED:"د.إ",
-    ARS:"$",
-    AUD:"A$",
+// const CURRENCY_ICON = {
+//     USD:"$",
+//     AED:"د.إ",
+//     ARS:"$",
+//     AUD:"A$",
     BGN:"лв",
     BSD:"B$",
     CAD:"C$",
