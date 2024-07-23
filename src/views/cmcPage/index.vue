@@ -1,8 +1,8 @@
 <template>
     <div class="cmcnft">
-        <section class="under1">
-//             <img class="left-bg" src="@/assets/cmcnft/side.png" alt="">
-//             <img class="right-bg" src="@/assets/cmcnft/side.png" alt="">
+//         <section class="under1">
+// //             <img class="left-bg" src="@/assets/cmcnft/side.png" alt="">
+// //             <img class="right-bg" src="@/assets/cmcnft/side.png" alt="">
 //         </section>
 //         <section class="under2">
             <img class="left-bg" src="@/assets/cmcnft/bg2.png" alt="">
