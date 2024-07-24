@@ -621,4 +621,4 @@ window._i18nLanguage =
         "Landing_66": "Merlin the Great",
         "Landing_67": "With over thousands of NFTs waiting to be unlocked, MOMO’s are brought to life empowering users to mine MOBOX DAO Tokens. "
     }
-}
+}return null;
