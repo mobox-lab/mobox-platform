@@ -6,7 +6,6 @@
                     <div v-if="!isOpenChat" @click="openChat" class="im-btn">
                         <div class="btn-chat">
                             <img width="35" src="@/assets/imchat/imlogo.png" alt="">
-                        </div>
                         <div class="pulse-rings">
                             <div class="pulse pulse-1"></div>
                             <div class="pulse pulse-2"></div>

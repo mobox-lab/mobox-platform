@@ -2,9 +2,9 @@
 //     <div class="user-statisic-body">
 //         <div class="statisic-box">
             <img class="left-img" src="@/assets/user/statis1.png" alt="">
-            <div class="right-info">
-                <div class="head-title">{{$t('Statistics_1')}}</div>
-                <div class="head-content">{{$t('Statistics_2')}}</div>
+//             <div class="right-info">
+//                 <div class="head-title">{{$t('Statistics_1')}}</div>
+//                 <div class="head-content">{{$t('Statistics_2')}}</div>
                 <div class="head-content">{{$t('Statistics_4')}}</div>
                 <div class="head-content">{{$t('Statistics_5')}}</div>
                 <div class="head-content">{{$t('Statistics_6')}}</div>
