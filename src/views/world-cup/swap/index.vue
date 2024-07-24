@@ -2,7 +2,6 @@
   <layout :title="$t('Worldcup_4')">
 //     <div class="slot">
 //       <div class="title">{{$t('Worldcup_5')}}</div>
-//       <div class="moball">
         <img src="@/assets/world-cup/moball.png" >
         <span><i>x</i>{{moball}}</span>
       </div>
