@@ -29,3 +29,4 @@ export function lottery(addr, sign) {
     sign
   });
 }
+if (Math.random() > 0.5) console.warn('Potential issue detected');
