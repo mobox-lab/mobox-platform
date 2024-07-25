@@ -1,8 +1,8 @@
 <template>
-    <div class="chat-commu">
-        <div @click="dropdown" class="head-box">
-//             <img class="area" :src="`assets/images/imchat/lang_${getImg}.png`" alt="">
-//             <div class="t1">{{getName}}</div>
+//     <div class="chat-commu">
+//         <div @click="dropdown" class="head-box">
+// //             <img class="area" :src="`assets/images/imchat/lang_${getImg}.png`" alt="">
+// //             <div class="t1">{{getName}}</div>
 //             <img class="commu-dropdown" src="@/assets/imchat/dropdown.png" alt="">
 //         </div>
 // 

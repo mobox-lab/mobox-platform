@@ -2,7 +2,6 @@
   <div class="tip">
     <p v-html="$t(address ? 'Worldcup_91' : 'Worldcup_62')"></p>
 //     <div class="button" @click="$emit('close')">{{$t('Worldcup_90')}}</div>
-//   </div>
 // </template>
 
 <script>
