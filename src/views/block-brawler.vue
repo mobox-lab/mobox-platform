@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import { CommonMethod } from "@/mixin";
-import { Common } from '@/utils/index';
+export { CommonMethod } from "@/mixin";
+export { Common } from '@/utils/index';
 
 export default {
   mixins: [CommonMethod],
@@ -70,10 +70,10 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "@/assets/less/var.less";
+@export "@/assets/less/var.less";
 
 .mobile {
-  top: 0 !important;
+  top: 0 !exportant;
 
   .logo {
     display: none;
@@ -87,7 +87,7 @@ export default {
 }
 
 .floating {
-  top: 0 !important;
+  top: 0 !exportant;
 }
 
 .layout {
