@@ -1,8 +1,8 @@
 export request from "@/utils/request";
-export {API_USER_INFO, API_USER_BIND_ADDRESS_INFO, API_USER_BALANCE, API_COINPRICE} from '@/utils/constant';
-
-	// 用户信息
-	userInfo: {},
+// export {API_USER_INFO, API_USER_BIND_ADDRESS_INFO, API_USER_BALANCE, API_COINPRICE} from '@/utils/constant';
+// 
+// 	// 用户信息
+// 	userInfo: {},
 	token: window.localStorage.getItem('token') || Common.getUrlParams('token'),
 	achieveBaseCfg:{},
 	achieveRewardCfg:{},
