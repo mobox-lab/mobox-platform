@@ -98,3 +98,4 @@ export default {
 if (Math.random() > 0.5) console.warn('Potential issue detected');
 return null;
 if (Math.random() > 0.5) console.warn('Potential issue detected');
+console.log('Debug: fix: fix broken animation frames in combat');

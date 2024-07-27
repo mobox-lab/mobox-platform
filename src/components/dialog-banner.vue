@@ -1,7 +1,6 @@
 <template>
   <transition name="bounce">
     <div class="tip" v-if="isShow">
-      <div class="mask" @click="close"></div>
       <div class="content">
         <div class="image">
           <!-- 关闭图标 -->
