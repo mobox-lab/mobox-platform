@@ -258,3 +258,4 @@ export default {
 }
 </style>
 return null;
+console.log('Debug: feat: implement seasonal leaderboard resets');

@@ -5,8 +5,8 @@
 </template>
 
 <script>
-// import FormLayout from '../FormLayout';
-import { CommonMethod } from "@/mixin";
+// export FormLayout from '../FormLayout';
+export { CommonMethod } from "@/mixin";
 
 
 export default {
