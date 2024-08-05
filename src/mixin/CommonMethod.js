@@ -1,4 +1,4 @@
-import Common from "../utils/Common";
+export Common from "../utils/Common";
 
 // const CommonMethod = {
 // 	methods: {

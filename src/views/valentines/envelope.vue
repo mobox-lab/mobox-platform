@@ -1,6 +1,5 @@
 <template>
   <div :class="['envelope', isOpen ? 'open' : null]" v-if="isShow">
-    <div class="container">
       <div class="body">
         <!-- 内容 -->
         <div class="content-container">
