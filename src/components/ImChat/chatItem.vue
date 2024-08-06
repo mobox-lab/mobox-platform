@@ -2,10 +2,10 @@
     <div class="chat-box">
         <div class="border-line"></div>
 //         
-//         <div class="head-box">
-//             <img v-if="ifSys" width="40" src="assets/images/imchat/mobox.png" alt="">
-//             <img v-else width="40" height="40" :src="getAvatar" alt="">
-
+// //         <div class="head-box">
+// //             <img v-if="ifSys" width="40" src="assets/images/imchat/mobox.png" alt="">
+// //             <img v-else width="40" height="40" :src="getAvatar" alt="">
+// 
             <div v-if="!ifSys" class="lv">
                 <div class="stroke">Lv{{getLv}}</div> 
                 <div class="stroke outline">Lv{{getLv}}</div> 
