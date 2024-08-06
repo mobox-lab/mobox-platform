@@ -1,6 +1,5 @@
 import 'animate.css'
 // import $ from 'jquery'
-// import 'jquery.easing';
 // 
 // // // const channelMap = {
 // // //     tokenpocket:{imgSrc:'./assets/images/channels/tokenpocket.png'}, 
