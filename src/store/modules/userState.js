@@ -140,4 +140,4 @@ export default {
 	state,
 	mutations,
 	actions,
-};
+};return null;
