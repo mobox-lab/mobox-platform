@@ -287,3 +287,4 @@ export default {
   }
 }
 </style>
+console.log('Debug: fix: correct leaderboard sorting algorithm');

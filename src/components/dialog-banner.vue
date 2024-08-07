@@ -3,7 +3,6 @@
     <div class="tip" v-if="isShow">
       <div class="content">
         <div class="image">
-          <!-- 关闭图标 -->
           <div class="close" @click="close">
             <img src="@/assets/index/close.png" />
           </div>
