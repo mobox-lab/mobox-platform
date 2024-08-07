@@ -5,7 +5,6 @@
     <span>+ 1</span>
   </div>
   <div class="close" @click="$emit('close')">{{$t('Worldcup_45')}}</div>
-</div>
 </template>
 
 <script></script>

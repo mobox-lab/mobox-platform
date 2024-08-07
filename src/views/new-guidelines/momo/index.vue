@@ -1,11 +1,11 @@
 <template>
   <div class="momo">
 //     <div class="container">
-//       <!-- 流程 -->
-//       <flow :title="$t('guide_16')" :steps="[$t('guide_20'), $t('guide_22')]">
-        <flow-item
-          slot="left"
-          :image="require('@/assets/new-guidelines/momo-flow-1.png')"
+// //       <!-- 流程 -->
+// //       <flow :title="$t('guide_16')" :steps="[$t('guide_20'), $t('guide_22')]">
+//         <flow-item
+//           slot="left"
+//           :image="require('@/assets/new-guidelines/momo-flow-1.png')"
         >
         </flow-item>
         <flow-item

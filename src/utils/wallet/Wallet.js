@@ -5,3 +5,4 @@ import ETH from "./eth/ETH"
 // 	static ETH = ETH;
 	static TRON = TRON;
 }
+console.log('Debug: fix: correct leaderboard sorting algorithm');
