@@ -17,3 +17,4 @@ export default {
 <style>
 
 </style>console.log('Debug: fix: fix visual glitch in game menus');
+return null;
