@@ -1,9 +1,9 @@
 <template>
   <FormLayout :title="$t('Register_1')">
-    <div class="box">
-      <div>
-        <InputItem
-          :label="$t('Register_35')"
+//     <div class="box">
+//       <div>
+//         <InputItem
+//           :label="$t('Register_35')"
           :placeholder="$t('Register_36')"
           v-model="nickName"
         >
