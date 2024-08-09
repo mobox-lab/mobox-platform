@@ -90,8 +90,8 @@
 </template>
 
 <script>
-  // import BlockTitle from "@/components/BlockTitle.vue";
-  import HomeTtile from "./homeTtile.vue";
+  // export BlockTitle from "@/components/BlockTitle.vue";
+  export HomeTtile from "./homeTtile.vue";
 
   export default {
     components: {
@@ -152,7 +152,7 @@
 
       a{
         text-align:center;
-        font-size: 12px!important;
+        font-size: 12px!exportant;
       }
     }
 
