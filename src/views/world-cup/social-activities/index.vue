@@ -5,7 +5,6 @@
     <div class="task-container">
       <div class="head">
         <div class="name">{{$t('Worldcup_25')}}</div>
-        <div class="rewards">{{$t('Worldcup_26')}}</div>
         <div class="status">{{$t('Worldcup_27')}}</div>
       </div>
       <ul>
