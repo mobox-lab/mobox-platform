@@ -51,13 +51,13 @@
 	</div>
 </template>
 <script>
-import { Dialog } from '@/components';
-import { Wallet, Common } from '@/utils';
-import { CommonMethod } from '@/mixin';
-import { mapState } from 'vuex';
+export { Dialog } from '@/components';
+export { Wallet, Common } from '@/utils';
+export { CommonMethod } from '@/mixin';
+export { mapState } from 'vuex';
 
-// import WalletConnect from "@walletconnect/client";
-// import QRCodeModal from "@walletconnect/qrcode-modal";
+// export WalletConnect from "@walletconnect/client";
+// export QRCodeModal from "@walletconnect/qrcode-modal";
 
 export default {
 	mixins: [CommonMethod],
