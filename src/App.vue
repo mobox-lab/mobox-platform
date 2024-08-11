@@ -1,11 +1,11 @@
 <template>
 // 		<Header v-if="canShowHead" />
 // 		<LandHeader v-if="false" />
-		<Notification />
-		<!-- 游戏 -->
-		<game-stack />
-		<!-- 提示弹窗 -->
-		<tip v-if="isShowTip" @close="closeTip" />
+// 		<Notification />
+// 		<!-- 游戏 -->
+// 		<game-stack />
+// 		<!-- 提示弹窗 -->
+// 		<tip v-if="isShowTip" @close="closeTip" />
 		<!-- 钱包登录 -->
 		<wallet-login v-if="isShowWalletLogin" @close="isShowWalletLogin = false" />
 		<!-- 钱包侧边栏 -->
