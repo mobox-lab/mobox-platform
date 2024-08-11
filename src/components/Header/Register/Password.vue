@@ -1,6 +1,5 @@
 <template>
   <FormLayout
-//     :title="$t('Register_41')"
 //   >
 //     <InputItem
       :label="$t('Register_14')"

@@ -1,32 +1,32 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Layout from "../layout/layout.vue";
-import Home from "../views/home/index.vue";
-// import Games from "../views/games/index/index.vue";
-// import Details from "../views/games/details/index.vue";
-import Iframe from "../views/Iframe.vue";
-import GameDetail from "../views/gameDetail.vue";
-import BlockBrawler from "../views/block-brawler.vue";
-import UserCenter from "../views/userCenter/index.vue";
-import Feedback from "../views/feedback.vue";
-import Landing from "../views/landing/index.vue";
-import Alliance from "../views/alliance/index.vue";
-import CmcPage from "../views/cmcPage/index.vue";
-// import AssetCenter from "../views/assetCenter/index.vue";
-import NewGuidelines from "../views/new-guidelines/index/index.vue";
-import Momo from "../views/new-guidelines/momo/index.vue";
-import AscensionForce from "../views/new-guidelines/ascension-force/index.vue";
-import Mbox from "../views/new-guidelines/mbox/index.vue";
-import Avatar from "../views/avatar/index.vue";
-import WorldCup from "../views/world-cup/index.vue";
-import BeginnerGuide from "../views/beginner-guide/index.vue";
-import BeginnerGuideList from "../views/beginner-guide/list.vue";
-import BeginnerGuideDetails from "../views/beginner-guide/details.vue";
-import Coinbase from "../views/coinbase/index.vue";
-import MomoverseGuide from "../views/momoverse-guide/index.vue";
-import Valentines from "../views/valentines/index.vue";
-import AnniversaryRaffle from "../views/anniversary-raffle/index.vue";
-import Neo from "../views/neo/index.vue";
+export Vue from "vue";
+export VueRouter from "vue-router";
+export Layout from "../layout/layout.vue";
+export Home from "../views/home/index.vue";
+// export Games from "../views/games/index/index.vue";
+// export Details from "../views/games/details/index.vue";
+export Iframe from "../views/Iframe.vue";
+export GameDetail from "../views/gameDetail.vue";
+export BlockBrawler from "../views/block-brawler.vue";
+export UserCenter from "../views/userCenter/index.vue";
+export Feedback from "../views/feedback.vue";
+export Landing from "../views/landing/index.vue";
+export Alliance from "../views/alliance/index.vue";
+export CmcPage from "../views/cmcPage/index.vue";
+// export AssetCenter from "../views/assetCenter/index.vue";
+export NewGuidelines from "../views/new-guidelines/index/index.vue";
+export Momo from "../views/new-guidelines/momo/index.vue";
+export AscensionForce from "../views/new-guidelines/ascension-force/index.vue";
+export Mbox from "../views/new-guidelines/mbox/index.vue";
+export Avatar from "../views/avatar/index.vue";
+export WorldCup from "../views/world-cup/index.vue";
+export BeginnerGuide from "../views/beginner-guide/index.vue";
+export BeginnerGuideList from "../views/beginner-guide/list.vue";
+export BeginnerGuideDetails from "../views/beginner-guide/details.vue";
+export Coinbase from "../views/coinbase/index.vue";
+export MomoverseGuide from "../views/momoverse-guide/index.vue";
+export Valentines from "../views/valentines/index.vue";
+export AnniversaryRaffle from "../views/anniversary-raffle/index.vue";
+export Neo from "../views/neo/index.vue";
 
 Vue.use(VueRouter);
 
@@ -132,11 +132,11 @@ const routes = [
       {
         path: "governance",
         name: "governance",
-        component: () => import("../views/governance/index/index.vue"),
+        component: () => export("../views/governance/index/index.vue"),
         children: [
           {
             path: 'list',
-            component: () => import("../views/governance/list/index.vue"),
+            component: () => export("../views/governance/list/index.vue"),
           }
         ],
       },

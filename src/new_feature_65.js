@@ -2,3 +2,4 @@
 console.log('feat: add smart game recommendations');
 console.log('Debug: fix: fix broken animation frames in combat');
 console.log('Debug: feat: enhance security against exploits');
+console.log('Debug: feat: introduce a trade system between players');

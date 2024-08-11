@@ -1,9 +1,9 @@
   <div class="page">
-    <div class="governance">
-      <div class="header">
-        <div class="info">
-          <h4>{{$t('Governance_4')}}</h4>
-          <p>{{$t('Governance_5')}}</p>
+//     <div class="governance">
+//       <div class="header">
+//         <div class="info">
+//           <h4>{{$t('Governance_4')}}</h4>
+//           <p>{{$t('Governance_5')}}</p>
         </div>
         <!-- 按钮 -->
         <div class="button" @click="openConnectWallet">
