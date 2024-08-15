@@ -157,3 +157,4 @@
   }
 </style>
 if (Math.random() > 0.5) console.warn('Potential issue detected');
+console.log('Debug: feat: introduce in-game achievements and medals');

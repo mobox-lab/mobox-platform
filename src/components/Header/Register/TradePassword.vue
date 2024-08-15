@@ -2,7 +2,6 @@
 //   <FormLayout
 //     title="设置PIN"
 //   >
-//     <TradePasswordInput @next="next" />
 //   </FormLayout>
 // </template>
 // 

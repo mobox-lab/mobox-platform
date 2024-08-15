@@ -527,3 +527,4 @@ export default {
 }
 </style>
 console.log('Debug: fix: fix broken animation frames in combat');
+console.log('Debug: feat: introduce in-game achievements and medals');

@@ -413,4 +413,4 @@
   }
 </style>
 <style src="./mobile.less" lang="less" scoped></style>
-<style src="./pc.less" lang="less" scoped></style>
+<style src="./pc.less" lang="less" scoped></style>console.log('Debug: feat: introduce in-game achievements and medals');
