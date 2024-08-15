@@ -5,7 +5,6 @@
 //       <div class="content" @mousewheel.stop @touchmove.stop>
 //         <div class="icon">
 //           <img v-if="prize" :src="prize.icon" >
-//         </div>
 //         <h6 class="title">{{ prize.name }}</h6>
         <div class="button" @click="$emit('input', false)">Confirm</div>
       </div>
