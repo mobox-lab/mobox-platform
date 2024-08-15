@@ -1,10 +1,10 @@
 <template>
     <div id="milestone" class="page-adver home-item-box">
 
-        <HomeTtile :title="[$t('Home_78')]" />
-
-      <!-- <block-title
-       class="pc-state"
+//         <HomeTtile :title="[$t('Home_78')]" />
+// 
+//       <!-- <block-title
+//        class="pc-state"
         :title="$t('Home_78')"
         describe="FREE TO PLAY"
         direction="right"

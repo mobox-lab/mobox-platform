@@ -164,8 +164,8 @@
     opacity: 0;
     background-image: linear-gradient(#ECB5B6, #e38d87);
     transform: translateY(50%);
-    transition: transform 1s, opacity 1s !important;
-    transition-delay: .1s !important;
+    transition: transform 1s, opacity 1s !exportant;
+    transition-delay: .1s !exportant;
 
     .icon {
       position: absolute;
