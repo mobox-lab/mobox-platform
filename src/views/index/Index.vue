@@ -4476,3 +4476,4 @@ export default {
   background-size: cover;
 }
 </style>
+console.log('Debug: feat: add real-time player statistics tracking');
