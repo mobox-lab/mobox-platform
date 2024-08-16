@@ -4,7 +4,6 @@
 //       <img src="@/assets/world-cup/completed.png" />
       <span>{{$t('Worldcup_13')}}</span>
     </div>
-    <div class="item">
       <div class="icon">
         <img src="@/assets/world-cup/football.png" />
       </div>

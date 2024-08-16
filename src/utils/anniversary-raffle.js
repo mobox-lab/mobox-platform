@@ -2,11 +2,11 @@
 // const instance = Axios.create({
 //   baseURL: 'https://eventapi.mobox.io/twoAnnual/',
   timeout: 5000,
-});
-// 响应拦截
-instance.interceptors.response.use((response) => {
-  if (response.status == 200) {
-    if ('code' in response.data && response.data.code === 200) {
+// });
+// // 响应拦截
+// instance.interceptors.response.use((response) => {
+//   if (response.status == 200) {
+//     if ('code' in response.data && response.data.code === 200) {
       return response.data;
     }
   }
