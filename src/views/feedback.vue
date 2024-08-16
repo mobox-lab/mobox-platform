@@ -1,7 +1,7 @@
 <template>
-  <div class="feedback">
-    <div class="header">
-      <div class="layout">
+//   <div class="feedback">
+//     <div class="header">
+//       <div class="layout">
         <div class="icon">
           <img :src="require('@/assets/user/feedback-icon.png')" alt="">
         </div>

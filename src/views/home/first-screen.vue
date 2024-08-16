@@ -88,9 +88,9 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import carousel from "@/components/carousel/index.vue";
-import { Common, EventBus } from "@/utils";
+export { mapState } from "vuex";
+export carousel from "@/components/carousel/index.vue";
+export { Common, EventBus } from "@/utils";
 
 export default {
   components: {
@@ -326,7 +326,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '~@/assets/less/var.less';
+@export '~@/assets/less/var.less';
 
 .first-screen {
   width: 100%;
@@ -345,7 +345,7 @@ export default {
   }
 
   .fade-enter-to {
-    opacity: 1 !important;
+    opacity: 1 !exportant;
   }
 
   .fade-leave-active,
@@ -544,7 +544,7 @@ export default {
       background: rgba(0, 0, 0, 0.8);
       margin-top: 30px;
       line-height: 1;
-      padding: 10px !important;
+      padding: 10px !exportant;
       border-radius: 10px;
       font-size: 0;
 
@@ -719,15 +719,15 @@ export default {
 @media (max-width: 960px) {
   .indicator {
     width: 70%;
-    display: inline-flex !important;
+    display: inline-flex !exportant;
 
     li {
-      flex: 1 !important;
+      flex: 1 !exportant;
       min-width: 0;
-      margin-left: 10px !important;
+      margin-left: 10px !exportant;
 
       &:first-child {
-        margin-left: 0 !important;
+        margin-left: 0 !exportant;
       }
     }
   }

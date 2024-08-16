@@ -2,7 +2,6 @@
     <div class="receive-box">
 //         <div class="title vertical-children">
 // //             <img width="46" src="@/assets/index/mwallet.png" alt="">
-// //             <div class="text">{{$t('Asset_12')}}</div>
 // //         </div>
 // //         <div class="content">
 //             <div class="chain-area vertical-children">

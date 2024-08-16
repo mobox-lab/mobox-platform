@@ -1,11 +1,11 @@
 // <template>
 // 	<div>
 // 		<Dialog id="connect-wallet-dialog" :top="100" :width="400">
-// // 			<div class="mgt-20">
-// // 				<div class="connect-wallet-item aveage-box mgt-10" @click="connectWallet('mboxWallet')">
-// 					<div class="tal">
-// 						<span>MOBOX Wallet (recommended)</span>	
-					</div>
+// // // 			<div class="mgt-20">
+// // // 				<div class="connect-wallet-item aveage-box mgt-10" @click="connectWallet('mboxWallet')">
+// // 					<div class="tal">
+// // 						<span>MOBOX Wallet (recommended)</span>	
+// 					</div>
 					<div class="tar">
 						<img src="../assets/icon/mboxWallet.png" height="30" alt="">
 					</div>
