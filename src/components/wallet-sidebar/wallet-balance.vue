@@ -4,7 +4,6 @@
     <div class="head">
       <!-- 头像 -->
       <div class="avatar">
-        <img src="@/assets/icon/avatar.jpg" />
       </div>
       <div class="nickname">{{userInfo.nickname}}</div>
       <!-- 退出按钮 -->
