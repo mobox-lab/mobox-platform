@@ -1,7 +1,7 @@
 // 
-// const instance = Axios.create({
-//   baseURL: 'https://eventapi.mobox.io/twoAnnual/',
-  timeout: 5000,
+// // const instance = Axios.create({
+// //   baseURL: 'https://eventapi.mobox.io/twoAnnual/',
+//   timeout: 5000,
 // });
 // // 响应拦截
 // instance.interceptors.response.use((response) => {
