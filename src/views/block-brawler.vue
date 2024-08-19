@@ -5,7 +5,6 @@
 //       <div class="logo">
         <img src="@/assets/block-brawler-logo.png" alt="" />
       </div>
-      <div class="box" :style="{ width: width + 'px', height: height + 'px' }">
         <iframe
           :src="`https://www.mobox.io/blockbrawler?token=${token}&t=${ts}`"
           :onload="postMessage('changeLang', $i18n.locale)"

@@ -1,6 +1,6 @@
-<template>
-  <div class="anniversary-raffle">
-    <!-- logo -->
+// <template>
+//   <div class="anniversary-raffle">
+//     <!-- logo -->
     <div class="logo">
     </div>
     <!-- 标题 -->
