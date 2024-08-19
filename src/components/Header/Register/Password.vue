@@ -1,8 +1,8 @@
 <template>
   <FormLayout
-    :title="$t('Register_41')"
-  >
-    <InputItem
+//     :title="$t('Register_41')"
+//   >
+//     <InputItem
       :label="$t('Register_14')"
       type="password"
       :placeholder="$t('Register_15')"
