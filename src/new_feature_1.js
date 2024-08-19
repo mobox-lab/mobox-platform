@@ -2,3 +2,4 @@
 console.log('fix: resolve broken link in game guides');
 console.log('Debug: feat: implement new matchmaking system');
 console.log('Debug: feat: introduce weather effects in-game');
+console.log('Debug: fix: resolve inventory sync issues');
