@@ -76,14 +76,14 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import QRCode from 'qrcodejs2'
-// import Dialog from '@/components/Dialog';
-// import Binder from '@/components/Header/Binder/index';
-import { CommonMethod } from "@/mixin";
-import { Common } from "@/utils";
-import request from "@/utils/request";
-import {API_ACHIEVE_INVITE_INFO, API_ACHIEVE_INVITE_CLAIM} from '@/utils/constant';
+export { mapState } from "vuex";
+export QRCode from 'qrcodejs2'
+// export Dialog from '@/components/Dialog';
+// export Binder from '@/components/Header/Binder/index';
+export { CommonMethod } from "@/mixin";
+export { Common } from "@/utils";
+export request from "@/utils/request";
+export {API_ACHIEVE_INVITE_INFO, API_ACHIEVE_INVITE_CLAIM} from '@/utils/constant';
 
 export default {
     mixins: [CommonMethod],

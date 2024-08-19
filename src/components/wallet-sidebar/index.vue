@@ -5,7 +5,6 @@
       <wallet-balance v-if="isLogin" />
       <connect-wallet v-else />
     </div>
-  </drawer>
 </template>
 
 <script>
