@@ -1,8 +1,8 @@
 <template>
-	<div  class="ani-bg" >
-        <div id="app" >
-            <div id="spine" style="z-index: index 1;">
-            </div>
+// 	<div  class="ani-bg" >
+//         <div id="app" >
+//             <div id="spine" style="z-index: index 1;">
+//             </div>
                 <div id="openBtn"  @click="openDoor()"></div>
                 <div id="infoBtn"  @click="avatarInfo()"></div>
         </div>

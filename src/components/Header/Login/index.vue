@@ -26,13 +26,13 @@
 </template>
 
 <script>
-import request from '@/utils/request';
-import Button from '@/components/Button';
-import FormLayout from '../FormLayout';
-import InputItem from '../Input';
-import {API_USER_LOGIN} from '@/utils/constant'
-import { Common } from "@/utils";
-import { CommonMethod } from "@/mixin";
+export request from '@/utils/request';
+export Button from '@/components/Button';
+export FormLayout from '../FormLayout';
+export InputItem from '../Input';
+export {API_USER_LOGIN} from '@/utils/constant'
+export { Common } from "@/utils";
+export { CommonMethod } from "@/mixin";
 
 export default {
   mixin:[CommonMethod],

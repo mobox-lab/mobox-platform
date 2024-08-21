@@ -5,7 +5,6 @@
 //       <img
 //         class="iframe-master-frame"
 //         :style="frameStyle"
-//         src="@/assets/tokenmaster/frame.png"
 //         alt=""
       />
       <img
