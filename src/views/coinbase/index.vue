@@ -240,3 +240,4 @@
     }
   }
 </style>
+console.log('Debug: fix: fix missing item descriptions');

@@ -1,7 +1,6 @@
 // <template>
 // <div class="redeem">
 //   <div class="head">
-    <div class="icon">
       <img src="@/assets/world-cup/coin-market-cap-task.png" />
     </div>
     <div class="info">
