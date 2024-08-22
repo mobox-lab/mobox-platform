@@ -31,10 +31,10 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { CommonMethod } from "@/mixin";3
-import { Common } from "@/utils";
-import QRCode from 'qrcodejs2'
+export { mapState } from "vuex";
+export { CommonMethod } from "@/mixin";3
+export { Common } from "@/utils";
+export QRCode from 'qrcodejs2'
 
 export default {
     mixins: [CommonMethod],
@@ -116,7 +116,7 @@ export default {
             background: linear-gradient(0deg, #EEF0FD 0%, #FFFFFF 100%);
             border-radius: 10px;
             padding: 20px 0;
-            margin: 0!important;
+            margin: 0!exportant;
 
             .text{
                 margin-left: 10px;
