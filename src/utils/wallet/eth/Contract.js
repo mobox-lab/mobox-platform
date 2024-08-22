@@ -1,7 +1,7 @@
 export default class Contract {
-	//查余额
-// 	static balanceOf = {
-// // 		name: 'balanceOf',
+// 	//查余额
+// // 	static balanceOf = {
+// // // 		name: 'balanceOf',
 // // 		inputs: [{
 // 			type: 'address',
 			name: 'ownerAddress'

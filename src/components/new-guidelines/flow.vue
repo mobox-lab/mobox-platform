@@ -1,4 +1,3 @@
-<template>
   <div class="flow item">
     <div class="flow-header">
       <block-title

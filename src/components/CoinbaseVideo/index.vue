@@ -1,8 +1,8 @@
-<template>
-    <transition name="homeVideo-fade">
-        <div class="home-video">
-            <div class="video-box">
-                    <video controls crossorigin playsinline id="player">
+// <template>
+//     <transition name="homeVideo-fade">
+//         <div class="home-video">
+//             <div class="video-box">
+//                     <video controls crossorigin playsinline id="player">
                         <source src="../../assets/vedio/coinbase.mp4" type="video/mp4">
                     </video>
                 </vue-plyr>
