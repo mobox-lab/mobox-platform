@@ -1,0 +1,174 @@
+
+momo_42003.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+wildboar001
+  rotate: false
+  xy: 2, 765
+  size: 299, 257
+  orig: 299, 257
+  offset: 0, 0
+  index: -1
+wildboar007
+  rotate: true
+  xy: 181, 96
+  size: 95, 49
+  orig: 95, 49
+  offset: 0, 0
+  index: -1
+wildboar008
+  rotate: true
+  xy: 170, 2
+  size: 92, 50
+  orig: 92, 50
+  offset: 0, 0
+  index: -1
+wildboar009
+  rotate: false
+  xy: 191, 571
+  size: 67, 86
+  orig: 67, 86
+  offset: 0, 0
+  index: -1
+wildboar010
+  rotate: false
+  xy: 922, 936
+  size: 67, 86
+  orig: 67, 86
+  offset: 0, 0
+  index: -1
+wildboar010a
+  rotate: false
+  xy: 191, 483
+  size: 67, 86
+  orig: 67, 86
+  offset: 0, 0
+  index: -1
+wildboar011
+  rotate: true
+  xy: 548, 777
+  size: 68, 83
+  orig: 68, 83
+  offset: 0, 0
+  index: -1
+wildboar012
+  rotate: true
+  xy: 303, 734
+  size: 68, 83
+  orig: 68, 83
+  offset: 0, 0
+  index: -1
+wildboar012a
+  rotate: true
+  xy: 388, 734
+  size: 68, 83
+  orig: 68, 83
+  offset: 0, 0
+  index: -1
+wildboar013
+  rotate: false
+  xy: 842, 936
+  size: 78, 86
+  orig: 78, 86
+  offset: 0, 0
+  index: -1
+wildboar014
+  rotate: true
+  xy: 2, 425
+  size: 338, 187
+  orig: 338, 187
+  offset: 0, 0
+  index: -1
+wildboar015
+  rotate: false
+  xy: 303, 804
+  size: 243, 106
+  orig: 243, 106
+  offset: 0, 0
+  index: -1
+wildboar016
+  rotate: false
+  xy: 303, 912
+  size: 404, 110
+  orig: 404, 110
+  offset: 0, 0
+  index: -1
+wildboar017
+  rotate: false
+  xy: 2, 96
+  size: 95, 95
+  orig: 95, 95
+  offset: 0, 0
+  index: -1
+wildboar021b
+  rotate: false
+  xy: 548, 847
+  size: 108, 63
+  orig: 108, 63
+  offset: 0, 0
+  index: -1
+wildboar022
+  rotate: false
+  xy: 709, 918
+  size: 131, 104
+  orig: 131, 104
+  offset: 0, 0
+  index: -1
+wildboar023
+  rotate: true
+  xy: 99, 96
+  size: 95, 80
+  orig: 95, 80
+  offset: 0, 0
+  index: -1
+wildboar024
+  rotate: false
+  xy: 191, 659
+  size: 80, 104
+  orig: 80, 104
+  offset: 0, 0
+  index: -1
+wildboar026
+  rotate: true
+  xy: 2, 2
+  size: 92, 82
+  orig: 92, 82
+  offset: 0, 0
+  index: -1
+wildboar027
+  rotate: true
+  xy: 86, 2
+  size: 92, 82
+  orig: 92, 82
+  offset: 0, 0
+  index: -1
+wildboar029
+  rotate: false
+  xy: 273, 658
+  size: 75, 74
+  orig: 75, 74
+  offset: 0, 0
+  index: -1
+wildboar030
+  rotate: false
+  xy: 350, 658
+  size: 75, 74
+  orig: 75, 74
+  offset: 0, 0
+  index: -1
+wildboar031
+  rotate: false
+  xy: 260, 582
+  size: 75, 74
+  orig: 75, 74
+  offset: 0, 0
+  index: -1
+zigolw11
+  rotate: false
+  xy: 2, 193
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1

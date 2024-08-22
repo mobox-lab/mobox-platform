@@ -1,0 +1,96 @@
+
+qrmomo.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Hshenti
+  rotate: false
+  xy: 509, 533
+  size: 505, 489
+  orig: 505, 489
+  offset: 0, 0
+  index: -1
+Hshou1
+  rotate: true
+  xy: 413, 141
+  size: 92, 153
+  orig: 92, 153
+  offset: 0, 0
+  index: -1
+Hshou2
+  rotate: true
+  xy: 125, 23
+  size: 92, 153
+  orig: 92, 153
+  offset: 0, 0
+  index: -1
+Lqiqiu
+  rotate: true
+  xy: 2, 235
+  size: 240, 601
+  orig: 240, 601
+  offset: 0, 0
+  index: -1
+Lshenti
+  rotate: false
+  xy: 2, 477
+  size: 505, 545
+  orig: 505, 545
+  offset: 0, 0
+  index: -1
+Lshou1
+  rotate: true
+  xy: 280, 23
+  size: 92, 153
+  orig: 92, 153
+  offset: 0, 0
+  index: -1
+Lshou2
+  rotate: true
+  xy: 435, 47
+  size: 92, 153
+  orig: 92, 153
+  offset: 0, 0
+  index: -1
+Lyan1
+  rotate: false
+  xy: 605, 422
+  size: 82, 109
+  orig: 82, 109
+  offset: 0, 0
+  index: -1
+Lyan2
+  rotate: false
+  xy: 605, 311
+  size: 82, 109
+  orig: 82, 109
+  offset: 0, 0
+  index: -1
+Lzui
+  rotate: false
+  xy: 2, 117
+  size: 409, 116
+  orig: 409, 116
+  offset: 0, 0
+  index: -1
+xin
+  rotate: false
+  xy: 2, 2
+  size: 121, 113
+  orig: 121, 113
+  offset: 0, 0
+  index: -1
+
+qrmomo2.png
+size: 256,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Hqiqiu
+  rotate: false
+  xy: 2, 2
+  size: 240, 601
+  orig: 240, 601
+  offset: 0, 0
+  index: -1

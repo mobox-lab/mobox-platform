@@ -1,0 +1,160 @@
+
+momo_41008.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chick002
+  rotate: false
+  xy: 266, 431
+  size: 50, 58
+  orig: 50, 58
+  offset: 0, 0
+  index: -1
+chick003
+  rotate: false
+  xy: 126, 559
+  size: 175, 194
+  orig: 175, 194
+  offset: 0, 0
+  index: -1
+chick004
+  rotate: false
+  xy: 2, 755
+  size: 301, 260
+  orig: 301, 260
+  offset: 0, 0
+  index: -1
+chick005
+  rotate: false
+  xy: 749, 849
+  size: 41, 58
+  orig: 41, 58
+  offset: 0, 0
+  index: -1
+chick006
+  rotate: true
+  xy: 2, 231
+  size: 148, 96
+  orig: 148, 96
+  offset: 0, 0
+  index: -1
+chick007
+  rotate: false
+  xy: 2, 7
+  size: 92, 109
+  orig: 92, 109
+  offset: 0, 0
+  index: -1
+chick007a
+  rotate: true
+  xy: 908, 923
+  size: 92, 109
+  orig: 92, 109
+  offset: 0, 0
+  index: -1
+chick008
+  rotate: true
+  xy: 534, 799
+  size: 92, 109
+  orig: 92, 109
+  offset: 0, 0
+  index: -1
+chick008a
+  rotate: true
+  xy: 126, 325
+  size: 92, 109
+  orig: 92, 109
+  offset: 0, 0
+  index: -1
+chick009
+  rotate: false
+  xy: 2, 118
+  size: 91, 111
+  orig: 91, 111
+  offset: 0, 0
+  index: -1
+chick010
+  rotate: true
+  xy: 421, 800
+  size: 91, 111
+  orig: 91, 111
+  offset: 0, 0
+  index: -1
+chick010a
+  rotate: true
+  xy: 795, 924
+  size: 91, 111
+  orig: 91, 111
+  offset: 0, 0
+  index: -1
+chick011
+  rotate: false
+  xy: 126, 419
+  size: 138, 138
+  orig: 138, 138
+  offset: 0, 0
+  index: -1
+chick012
+  rotate: true
+  xy: 2, 381
+  size: 372, 122
+  orig: 372, 122
+  offset: 0, 0
+  index: -1
+chick0122
+  rotate: false
+  xy: 305, 893
+  size: 372, 122
+  orig: 372, 122
+  offset: 0, 0
+  index: -1
+chick012a
+  rotate: false
+  xy: 184, 239
+  size: 69, 84
+  orig: 69, 84
+  offset: 0, 0
+  index: -1
+chick012b
+  rotate: true
+  xy: 266, 491
+  size: 66, 51
+  orig: 66, 51
+  offset: 0, 0
+  index: -1
+chick012c
+  rotate: false
+  xy: 100, 237
+  size: 82, 86
+  orig: 82, 86
+  offset: 0, 0
+  index: -1
+chick013
+  rotate: true
+  xy: 645, 832
+  size: 59, 45
+  orig: 59, 45
+  offset: 0, 0
+  index: -1
+chick014
+  rotate: false
+  xy: 692, 856
+  size: 55, 51
+  orig: 55, 51
+  offset: 0, 0
+  index: -1
+chick015
+  rotate: false
+  xy: 305, 785
+  size: 114, 106
+  orig: 114, 106
+  offset: 0, 0
+  index: -1
+chick016
+  rotate: false
+  xy: 679, 909
+  size: 114, 106
+  orig: 114, 106
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,118 @@
+
+momo_41010.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+wildboar001
+  rotate: false
+  xy: 2, 662
+  size: 301, 261
+  orig: 301, 261
+  offset: 0, 0
+  index: -1
+wildboar004
+  rotate: false
+  xy: 457, 820
+  size: 94, 103
+  orig: 94, 103
+  offset: 0, 0
+  index: -1
+wildboar005
+  rotate: true
+  xy: 177, 479
+  size: 75, 89
+  orig: 75, 89
+  offset: 0, 0
+  index: -1
+wildboar006
+  rotate: false
+  xy: 2, 256
+  size: 94, 103
+  orig: 94, 103
+  offset: 0, 0
+  index: -1
+wildboar007
+  rotate: false
+  xy: 305, 666
+  size: 95, 49
+  orig: 95, 49
+  offset: 0, 0
+  index: -1
+wildboar008
+  rotate: true
+  xy: 2, 2
+  size: 92, 50
+  orig: 92, 50
+  offset: 0, 0
+  index: -1
+wildboar014
+  rotate: false
+  xy: 2, 475
+  size: 173, 185
+  orig: 173, 185
+  offset: 0, 0
+  index: -1
+wildboar022
+  rotate: false
+  xy: 177, 556
+  size: 109, 104
+  orig: 109, 104
+  offset: 0, 0
+  index: -1
+wildboar023
+  rotate: false
+  xy: 2, 361
+  size: 140, 112
+  orig: 140, 112
+  offset: 0, 0
+  index: -1
+wildboar024
+  rotate: false
+  xy: 305, 717
+  size: 150, 206
+  orig: 150, 206
+  offset: 0, 0
+  index: -1
+wildboar025
+  rotate: false
+  xy: 457, 731
+  size: 92, 87
+  orig: 92, 87
+  offset: 0, 0
+  index: -1
+wildboar026
+  rotate: false
+  xy: 553, 841
+  size: 92, 82
+  orig: 92, 82
+  offset: 0, 0
+  index: -1
+wildboar027
+  rotate: false
+  xy: 2, 172
+  size: 92, 82
+  orig: 92, 82
+  offset: 0, 0
+  index: -1
+wildboar029
+  rotate: false
+  xy: 647, 849
+  size: 75, 74
+  orig: 75, 74
+  offset: 0, 0
+  index: -1
+wildboar030
+  rotate: false
+  xy: 2, 96
+  size: 75, 74
+  orig: 75, 74
+  offset: 0, 0
+  index: -1
+wildboar031
+  rotate: false
+  xy: 724, 849
+  size: 75, 74
+  orig: 75, 74
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,251 @@
+
+momo_44014.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 400, 2
+  size: 72, 127
+  orig: 72, 127
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 786, 380
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+230
+  rotate: false
+  xy: 2, 2
+  size: 289, 178
+  orig: 289, 178
+  offset: 0, 0
+  index: -1
+231
+  rotate: true
+  xy: 706, 90
+  size: 106, 90
+  orig: 106, 90
+  offset: 0, 0
+  index: -1
+232
+  rotate: false
+  xy: 529, 4
+  size: 125, 70
+  orig: 125, 70
+  offset: 0, 0
+  index: -1
+233
+  rotate: true
+  xy: 882, 147
+  size: 82, 61
+  orig: 82, 61
+  offset: 0, 0
+  index: -1
+234
+  rotate: true
+  xy: 945, 224
+  size: 66, 77
+  orig: 66, 77
+  offset: 0, 0
+  index: -1
+235
+  rotate: false
+  xy: 377, 356
+  size: 205, 154
+  orig: 205, 154
+  offset: 0, 0
+  index: -1
+236
+  rotate: false
+  xy: 584, 382
+  size: 200, 128
+  orig: 200, 128
+  offset: 0, 0
+  index: -1
+237
+  rotate: true
+  xy: 798, 100
+  size: 41, 70
+  orig: 41, 70
+  offset: 0, 0
+  index: -1
+238
+  rotate: false
+  xy: 971, 40
+  size: 26, 66
+  orig: 26, 66
+  offset: 0, 0
+  index: -1
+239
+  rotate: false
+  xy: 771, 231
+  size: 110, 54
+  orig: 110, 54
+  offset: 0, 0
+  index: -1
+240
+  rotate: false
+  xy: 740, 2
+  size: 95, 86
+  orig: 95, 86
+  offset: 0, 0
+  index: -1
+241
+  rotate: false
+  xy: 884, 292
+  size: 68, 86
+  orig: 68, 86
+  offset: 0, 0
+  index: -1
+242
+  rotate: false
+  xy: 653, 190
+  size: 49, 82
+  orig: 49, 82
+  offset: 0, 0
+  index: -1
+243
+  rotate: true
+  xy: 377, 189
+  size: 165, 186
+  orig: 165, 186
+  offset: 0, 0
+  index: -1
+244
+  rotate: false
+  xy: 954, 300
+  size: 68, 79
+  orig: 68, 79
+  offset: 0, 0
+  index: -1
+2443
+  rotate: true
+  xy: 656, 2
+  size: 73, 82
+  orig: 73, 82
+  offset: 0, 0
+  index: -1
+249
+  rotate: false
+  xy: 400, 76
+  size: 118, 111
+  orig: 118, 111
+  offset: 0, 0
+  index: -1
+252
+  rotate: true
+  xy: 704, 198
+  size: 59, 65
+  orig: 59, 65
+  offset: 0, 0
+  index: -1
+253
+  rotate: true
+  xy: 520, 76
+  size: 111, 91
+  orig: 111, 91
+  offset: 0, 0
+  index: -1
+2532
+  rotate: true
+  xy: 613, 77
+  size: 111, 91
+  orig: 111, 91
+  offset: 0, 0
+  index: -1
+254
+  rotate: true
+  xy: 565, 190
+  size: 82, 86
+  orig: 82, 86
+  offset: 0, 0
+  index: -1
+2541
+  rotate: false
+  xy: 798, 143
+  size: 82, 86
+  orig: 82, 86
+  offset: 0, 0
+  index: -1
+2542
+  rotate: false
+  xy: 837, 12
+  size: 82, 86
+  orig: 82, 86
+  offset: 0, 0
+  index: -1
+255
+  rotate: false
+  xy: 921, 45
+  size: 48, 61
+  orig: 48, 61
+  offset: 0, 0
+  index: -1
+256
+  rotate: false
+  xy: 771, 287
+  size: 111, 91
+  orig: 111, 91
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 708, 259
+  size: 121, 61
+  orig: 121, 61
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 293, 55
+  size: 105, 125
+  orig: 105, 125
+  offset: 0, 0
+  index: -1
+5
+  rotate: true
+  xy: 918, 381
+  size: 129, 87
+  orig: 129, 87
+  offset: 0, 0
+  index: -1
+53
+  rotate: false
+  xy: 2, 182
+  size: 373, 328
+  orig: 373, 328
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 921, 108
+  size: 33, 74
+  orig: 33, 74
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 945, 143
+  size: 65, 79
+  orig: 65, 79
+  offset: 0, 0
+  index: -1
+8
+  rotate: true
+  xy: 293, 11
+  size: 42, 98
+  orig: 42, 98
+  offset: 0, 0
+  index: -1
+99
+  rotate: false
+  xy: 584, 274
+  size: 122, 106
+  orig: 122, 106
+  offset: 0, 0
+  index: -1

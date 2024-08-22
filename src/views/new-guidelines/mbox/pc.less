@@ -1,0 +1,81 @@
+@media (min-width: 768px) {
+  .mbox {
+    .list-header {
+      margin-bottom: 40px;
+    }
+
+    .list {
+      li {
+        height: 225px;
+      }
+
+      // 标签
+      .tag {
+        padding: 6px 10px;
+        font-size: 14px;
+      }
+
+      .competition .image {
+        height: 87px;
+        margin-bottom: 15px;
+      }
+
+      .airdrop .image {
+        height: 111px;
+        margin-top: 15px;
+      }
+
+      .expedition .image {
+        height: 101px;
+        margin-bottom: 15px;
+      }
+    }
+
+    // 介绍
+    .introduce {
+      .info-layout {
+        flex: 1;
+      }
+
+      & > li {
+        display: flex;
+        display: flex;
+        align-items: center;
+
+        .button-box {
+          li {
+            margin-left: 0;
+          }
+        }
+
+        .image {
+          width: 500px;
+          padding: 20px;
+        }
+
+        .slogan {
+          .slogan {
+            margin-top: 60px;
+            margin-bottom: 40px;
+          }
+        }
+
+        &:nth-child(odd) {
+          .info-layout {
+            .info {
+              padding-left: 20%;
+            }
+          }
+        }
+  
+        &:nth-child(even) {
+          .info-layout {
+            .info {
+              padding-right: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

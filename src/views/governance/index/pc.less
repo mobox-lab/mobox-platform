@@ -1,0 +1,49 @@
+@import "@/assets/less/var.less";
+
+@media (min-width: 1100px) {
+  .governance {
+    width: 60%;
+    margin: 0 auto;
+
+    .data {
+      .data-item {
+        flex: 1;
+
+        .layout {
+          padding: 0 10px;
+          text-align: center;
+        }
+      }
+
+      .vembox {
+        width: 300px;
+        margin-left: 30px;
+        position: relative;
+
+        .logo {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      ul {
+        &:first-child {
+          flex: 1;
+
+          li {
+            margin-right: 10px;
+          }
+        }
+
+        &:last-child {
+          flex: 2;
+
+          li:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

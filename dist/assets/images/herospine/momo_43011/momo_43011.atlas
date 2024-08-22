@@ -1,0 +1,139 @@
+
+momo_43011.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shark001
+  rotate: false
+  xy: 512, 227
+  size: 59, 70
+  orig: 59, 70
+  offset: 0, 0
+  index: -1
+shark003
+  rotate: false
+  xy: 512, 466
+  size: 164, 109
+  orig: 164, 109
+  offset: 0, 0
+  index: -1
+shark004
+  rotate: false
+  xy: 2, 727
+  size: 320, 286
+  orig: 320, 286
+  offset: 0, 0
+  index: -1
+shark005
+  rotate: false
+  xy: 678, 493
+  size: 69, 82
+  orig: 69, 82
+  offset: 0, 0
+  index: -1
+shark006
+  rotate: true
+  xy: 512, 299
+  size: 165, 93
+  orig: 165, 93
+  offset: 0, 0
+  index: -1
+shark007
+  rotate: true
+  xy: 2, 2
+  size: 66, 89
+  orig: 66, 89
+  offset: 0, 0
+  index: -1
+shark008
+  rotate: false
+  xy: 324, 680
+  size: 275, 114
+  orig: 275, 114
+  offset: 0, 0
+  index: -1
+shark009
+  rotate: false
+  xy: 512, 601
+  size: 66, 77
+  orig: 66, 77
+  offset: 0, 0
+  index: -1
+shark010
+  rotate: true
+  xy: 834, 818
+  size: 195, 156
+  orig: 195, 156
+  offset: 0, 0
+  index: -1
+shark011
+  rotate: true
+  xy: 856, 611
+  size: 205, 113
+  orig: 205, 113
+  offset: 0, 0
+  index: -1
+wei001
+  rotate: false
+  xy: 2, 508
+  size: 253, 217
+  orig: 253, 217
+  offset: 0, 0
+  index: -1
+wei002
+  rotate: false
+  xy: 324, 796
+  size: 253, 217
+  orig: 253, 217
+  offset: 0, 0
+  index: -1
+wei003
+  rotate: false
+  xy: 2, 289
+  size: 253, 217
+  orig: 253, 217
+  offset: 0, 0
+  index: -1
+wei004
+  rotate: false
+  xy: 579, 796
+  size: 253, 217
+  orig: 253, 217
+  offset: 0, 0
+  index: -1
+wei005
+  rotate: false
+  xy: 2, 70
+  size: 253, 217
+  orig: 253, 217
+  offset: 0, 0
+  index: -1
+wei006
+  rotate: false
+  xy: 257, 461
+  size: 253, 217
+  orig: 253, 217
+  offset: 0, 0
+  index: -1
+wei007
+  rotate: false
+  xy: 257, 242
+  size: 253, 217
+  orig: 253, 217
+  offset: 0, 0
+  index: -1
+wei008
+  rotate: false
+  xy: 257, 23
+  size: 253, 217
+  orig: 253, 217
+  offset: 0, 0
+  index: -1
+wei009
+  rotate: false
+  xy: 601, 577
+  size: 253, 217
+  orig: 253, 217
+  offset: 0, 0
+  index: -1

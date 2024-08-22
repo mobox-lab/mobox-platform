@@ -1,0 +1,146 @@
+
+momo_41014.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chick002
+  rotate: false
+  xy: 963, 863
+  size: 50, 58
+  orig: 50, 58
+  offset: 0, 0
+  index: -1
+chick003
+  rotate: false
+  xy: 2, 402
+  size: 175, 194
+  orig: 175, 194
+  offset: 0, 0
+  index: -1
+chick004
+  rotate: false
+  xy: 2, 598
+  size: 301, 260
+  orig: 301, 260
+  offset: 0, 0
+  index: -1
+chick005
+  rotate: true
+  xy: 2, 2
+  size: 41, 58
+  orig: 41, 58
+  offset: 0, 0
+  index: -1
+chick006
+  rotate: true
+  xy: 2, 223
+  size: 177, 159
+  orig: 177, 159
+  offset: 0, 0
+  index: -1
+chick007
+  rotate: false
+  xy: 681, 788
+  size: 92, 109
+  orig: 92, 109
+  offset: 0, 0
+  index: -1
+chick008
+  rotate: false
+  xy: 775, 788
+  size: 92, 109
+  orig: 92, 109
+  offset: 0, 0
+  index: -1
+chick008a
+  rotate: false
+  xy: 869, 804
+  size: 92, 109
+  orig: 92, 109
+  offset: 0, 0
+  index: -1
+chick009
+  rotate: false
+  xy: 305, 631
+  size: 91, 111
+  orig: 91, 111
+  offset: 0, 0
+  index: -1
+chick010
+  rotate: false
+  xy: 495, 786
+  size: 91, 111
+  orig: 91, 111
+  offset: 0, 0
+  index: -1
+chick010a
+  rotate: false
+  xy: 588, 786
+  size: 91, 111
+  orig: 91, 111
+  offset: 0, 0
+  index: -1
+chick011
+  rotate: true
+  xy: 2, 45
+  size: 176, 152
+  orig: 176, 152
+  offset: 0, 0
+  index: -1
+chick012
+  rotate: false
+  xy: 2, 860
+  size: 409, 161
+  orig: 409, 161
+  offset: 0, 0
+  index: -1
+chick0122
+  rotate: false
+  xy: 413, 899
+  size: 409, 122
+  orig: 409, 122
+  offset: 0, 0
+  index: -1
+chick012a
+  rotate: false
+  xy: 179, 436
+  size: 156, 160
+  orig: 156, 160
+  offset: 0, 0
+  index: -1
+chick013
+  rotate: false
+  xy: 940, 923
+  size: 64, 45
+  orig: 64, 45
+  offset: 0, 0
+  index: -1
+chick014
+  rotate: false
+  xy: 940, 970
+  size: 68, 51
+  orig: 68, 51
+  offset: 0, 0
+  index: -1
+chick015
+  rotate: false
+  xy: 824, 915
+  size: 114, 106
+  orig: 114, 106
+  offset: 0, 0
+  index: -1
+chick016
+  rotate: true
+  xy: 305, 744
+  size: 114, 106
+  orig: 114, 106
+  offset: 0, 0
+  index: -1
+treasurechest5
+  rotate: false
+  xy: 413, 757
+  size: 80, 140
+  orig: 80, 140
+  offset: 0, 0
+  index: -1

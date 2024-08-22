@@ -1,0 +1,195 @@
+
+momo_44001.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+emo001
+  rotate: true
+  xy: 2, 51
+  size: 91, 176
+  orig: 91, 176
+  offset: 0, 0
+  index: -1
+emo002
+  rotate: false
+  xy: 470, 688
+  size: 66, 102
+  orig: 66, 102
+  offset: 0, 0
+  index: -1
+emo003
+  rotate: false
+  xy: 2, 759
+  size: 306, 263
+  orig: 306, 263
+  offset: 0, 0
+  index: -1
+emo005
+  rotate: true
+  xy: 320, 295
+  size: 66, 60
+  orig: 66, 60
+  offset: 0, 0
+  index: -1
+emo006
+  rotate: true
+  xy: 234, 237
+  size: 160, 84
+  orig: 160, 84
+  offset: 0, 0
+  index: -1
+emo007
+  rotate: false
+  xy: 320, 363
+  size: 63, 64
+  orig: 63, 64
+  offset: 0, 0
+  index: -1
+emo007a
+  rotate: false
+  xy: 234, 142
+  size: 95, 93
+  orig: 95, 93
+  offset: 0, 0
+  index: -1
+emo008
+  rotate: true
+  xy: 232, 2
+  size: 58, 57
+  orig: 58, 57
+  offset: 0, 0
+  index: -1
+emo008a
+  rotate: false
+  xy: 232, 62
+  size: 82, 78
+  orig: 82, 78
+  offset: 0, 0
+  index: -1
+emo011
+  rotate: false
+  xy: 310, 686
+  size: 158, 104
+  orig: 158, 104
+  offset: 0, 0
+  index: -1
+emo012
+  rotate: true
+  xy: 234, 399
+  size: 167, 77
+  orig: 167, 77
+  offset: 0, 0
+  index: -1
+emo013
+  rotate: false
+  xy: 2, 6
+  size: 39, 43
+  orig: 39, 43
+  offset: 0, 0
+  index: -1
+emo014
+  rotate: true
+  xy: 234, 568
+  size: 189, 62
+  orig: 189, 62
+  offset: 0, 0
+  index: -1
+emo015
+  rotate: true
+  xy: 180, 55
+  size: 87, 50
+  orig: 87, 50
+  offset: 0, 0
+  index: -1
+emo016
+  rotate: true
+  xy: 409, 503
+  size: 77, 53
+  orig: 77, 53
+  offset: 0, 0
+  index: -1
+emo017
+  rotate: true
+  xy: 313, 429
+  size: 151, 94
+  orig: 151, 94
+  offset: 0, 0
+  index: -1
+emo018
+  rotate: true
+  xy: 298, 582
+  size: 102, 158
+  orig: 102, 158
+  offset: 0, 0
+  index: -1
+emo019
+  rotate: false
+  xy: 409, 428
+  size: 72, 73
+  orig: 72, 73
+  offset: 0, 0
+  index: -1
+emo020
+  rotate: false
+  xy: 320, 247
+  size: 34, 46
+  orig: 34, 46
+  offset: 0, 0
+  index: -1
+eth003
+  rotate: false
+  xy: 2, 527
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+yanwu001
+  rotate: false
+  xy: 542, 873
+  size: 230, 149
+  orig: 230, 149
+  offset: 0, 0
+  index: -1
+yanwu002
+  rotate: false
+  xy: 2, 144
+  size: 230, 149
+  orig: 230, 149
+  offset: 0, 0
+  index: -1
+yanwu003
+  rotate: false
+  xy: 774, 873
+  size: 230, 149
+  orig: 230, 149
+  offset: 0, 0
+  index: -1
+yanwu004
+  rotate: false
+  xy: 542, 722
+  size: 230, 149
+  orig: 230, 149
+  offset: 0, 0
+  index: -1
+yanwu005
+  rotate: false
+  xy: 774, 722
+  size: 230, 149
+  orig: 230, 149
+  offset: 0, 0
+  index: -1
+zigolw10
+  rotate: false
+  xy: 310, 792
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1
+zigolw11
+  rotate: false
+  xy: 2, 295
+  size: 230, 230
+  orig: 230, 230
+  offset: 0, 0
+  index: -1

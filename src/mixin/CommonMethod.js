@@ -1,0 +1,35 @@
+import Common from "../utils/Common";
+
+const CommonMethod = {
+	methods: {
+		async oprDialog(domId, type) {
+			let dom = document.getElementById(domId);
+			if (type == "none") {
+				dom.classList.add("yf-dialog-remove");
+				await Common.sleep(200);
+			}
+			dom.classList.remove("yf-dialog-remove");
+			dom.style.display = type;
+		},
+		showNotify(msg, type) {
+			this.$store.commit("globalState/addNotify", {
+				msg,
+				type,
+			});
+		},
+		postMessage(action, value) {
+			let iframes = document.getElementsByTagName("iframe");
+			for (let index = 0; index < iframes.length; index++) {
+				iframes[index].contentWindow.postMessage({
+						from: "mbox",
+						action,
+						value,
+					},
+					"*"
+				);
+			}
+		},
+	}
+}
+
+export default CommonMethod;

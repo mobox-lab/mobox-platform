@@ -1,0 +1,125 @@
+
+momo_43005.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+haishi001
+  rotate: false
+  xy: 2, 102
+  size: 112, 132
+  orig: 112, 132
+  offset: 0, 0
+  index: -1
+haishi002
+  rotate: false
+  xy: 2, 713
+  size: 459, 294
+  orig: 459, 294
+  offset: 0, 0
+  index: -1
+haishi002a
+  rotate: false
+  xy: 2, 417
+  size: 459, 294
+  orig: 459, 294
+  offset: 0, 0
+  index: -1
+haishi003
+  rotate: false
+  xy: 463, 597
+  size: 108, 77
+  orig: 108, 77
+  offset: 0, 0
+  index: -1
+haishi004
+  rotate: false
+  xy: 463, 676
+  size: 195, 108
+  orig: 195, 108
+  offset: 0, 0
+  index: -1
+haishi005
+  rotate: true
+  xy: 962, 933
+  size: 74, 47
+  orig: 74, 47
+  offset: 0, 0
+  index: -1
+haishi006
+  rotate: false
+  xy: 242, 306
+  size: 69, 39
+  orig: 69, 39
+  offset: 0, 0
+  index: -1
+haishi010
+  rotate: false
+  xy: 660, 707
+  size: 68, 77
+  orig: 68, 77
+  offset: 0, 0
+  index: -1
+haishi011
+  rotate: false
+  xy: 383, 360
+  size: 50, 55
+  orig: 50, 55
+  offset: 0, 0
+  index: -1
+haishi012
+  rotate: false
+  xy: 808, 797
+  size: 68, 77
+  orig: 68, 77
+  offset: 0, 0
+  index: -1
+haishi015
+  rotate: false
+  xy: 2, 23
+  size: 68, 77
+  orig: 68, 77
+  offset: 0, 0
+  index: -1
+haishi016
+  rotate: false
+  xy: 463, 540
+  size: 45, 55
+  orig: 45, 55
+  offset: 0, 0
+  index: -1
+haishi017
+  rotate: false
+  xy: 116, 157
+  size: 68, 77
+  orig: 68, 77
+  offset: 0, 0
+  index: -1
+haishi020
+  rotate: false
+  xy: 463, 786
+  size: 343, 221
+  orig: 343, 221
+  offset: 0, 0
+  index: -1
+haishi022
+  rotate: false
+  xy: 808, 876
+  size: 152, 131
+  orig: 152, 131
+  offset: 0, 0
+  index: -1
+haishi022d
+  rotate: false
+  xy: 2, 236
+  size: 238, 179
+  orig: 238, 179
+  offset: 0, 0
+  index: -1
+haishi023
+  rotate: false
+  xy: 242, 347
+  size: 139, 68
+  orig: 139, 68
+  offset: 0, 0
+  index: -1
