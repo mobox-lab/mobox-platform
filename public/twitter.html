@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twitter Redirected</title>
+</head>
+<body>
+<script>
+        (function () {
+            function getParams(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    return decodeURIComponent(r[2]);
+                } else {
+                    return null;
+                }
+            }
+
+            setTimeout(() => {
+                let code = getParams('code')
+                window.location.href=window.origin+"/home/#/coinbase?tCode="+code
+            }, 1000);
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+
+momo_41017.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chick002
+  rotate: false
+  xy: 812, 960
+  size: 50, 58
+  orig: 50, 58
+  offset: 0, 0
+  index: -1
+chick003
+  rotate: false
+  xy: 2, 273
+  size: 122, 153
+  orig: 122, 153
+  offset: 0, 0
+  index: -1
+chick004
+  rotate: false
+  xy: 2, 755
+  size: 301, 263
+  orig: 301, 263
+  offset: 0, 0
+  index: -1
+chick005
+  rotate: true
+  xy: 2, 2
+  size: 37, 42
+  orig: 37, 42
+  offset: 0, 0
+  index: -1
+chick006
+  rotate: false
+  xy: 305, 863
+  size: 132, 155
+  orig: 132, 155
+  offset: 0, 0
+  index: -1
+chick007
+  rotate: true
+  xy: 305, 769
+  size: 92, 113
+  orig: 92, 113
+  offset: 0, 0
+  index: -1
+chick008
+  rotate: false
+  xy: 2, 158
+  size: 92, 113
+  orig: 92, 113
+  offset: 0, 0
+  index: -1
+chick008a
+  rotate: true
+  xy: 627, 926
+  size: 92, 113
+  orig: 92, 113
+  offset: 0, 0
+  index: -1
+chick009
+  rotate: true
+  xy: 439, 871
+  size: 90, 115
+  orig: 90, 115
+  offset: 0, 0
+  index: -1
+chick010
+  rotate: false
+  xy: 2, 41
+  size: 90, 115
+  orig: 90, 115
+  offset: 0, 0
+  index: -1
+chick010a
+  rotate: false
+  xy: 126, 311
+  size: 90, 115
+  orig: 90, 115
+  offset: 0, 0
+  index: -1
+chick011
+  rotate: true
+  xy: 2, 428
+  size: 325, 212
+  orig: 325, 212
+  offset: 0, 0
+  index: -1
+chick012
+  rotate: false
+  xy: 742, 945
+  size: 68, 73
+  orig: 68, 73
+  offset: 0, 0
+  index: -1
+chick013
+  rotate: true
+  xy: 216, 484
+  size: 68, 45
+  orig: 68, 45
+  offset: 0, 0
+  index: -1
+chick014
+  rotate: false
+  xy: 556, 910
+  size: 60, 51
+  orig: 60, 51
+  offset: 0, 0
+  index: -1
+chick016
+  rotate: true
+  xy: 439, 963
+  size: 55, 186
+  orig: 55, 186
+  offset: 0, 0
+  index: -1
+chick017
+  rotate: false
+  xy: 216, 554
+  size: 54, 199
+  orig: 54, 199
+  offset: 0, 0
+  index: -1

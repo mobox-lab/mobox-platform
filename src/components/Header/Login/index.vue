@@ -1,0 +1,164 @@
+<template>
+  <div class="login">
+    <FormLayout
+      :title="$t('Register_27')"
+      :describe="'Register_28'"
+    >
+      <InputItem
+        :label="$t('Register_31')"
+        :placeholder="$t('Register_32')"
+        v-model="account"
+      />
+      <InputItem
+        :label="$t('Register_14')"
+        :placeholder="$t('Register_15')"
+        type="password"
+        v-model="password"
+        :confirmInput="login"
+      />
+      <div class="button">
+        <Button :disabled="disabled || loading" @click="login">{{$t('Home_7')}}</Button>
+        <div @click="goRegister" style="left:34px" class="forgot-pwd">{{$t('Register_29')}}</div>
+        <div @click="goPwdForgot" style="right:34px" class="forgot-pwd">{{$t('Register_30')}}</div>
+
+      </div>
+    </FormLayout>
+  </div>
+</template>
+
+<script>
+import request from '@/utils/request';
+import Button from '@/components/Button';
+import FormLayout from '../FormLayout';
+import InputItem from '../Input';
+import {API_USER_LOGIN} from '@/utils/constant'
+import { Common } from "@/utils";
+import { CommonMethod } from "@/mixin";
+
+export default {
+  mixin:[CommonMethod],
+  components: {
+    FormLayout,
+    InputItem,
+    Button,
+  },
+  data() {
+    return {
+      // loading
+      loading: false,
+      // 账号
+      account: '',
+      // 密码
+      password: '',
+    };
+  },
+  methods: {
+    goRegister(){
+      this.$parent.$parent.toggleLoginModal();
+      this.$parent.$parent.showShowRegister();
+    },
+
+    goPwdForgot(){
+      console.log("//////")
+
+      this.$parent.$parent.toggleLoginModal();
+      this.$parent.$parent.showPwdForgot();
+    },
+
+    async login() {
+      if(this.loading) {return}
+      this.loading = true;
+
+      const data = {
+        passwd: this.password,
+        plat:1
+      };
+      // 判断是否是邮箱
+      const isEmail = /\w[-\w.+]*@([A-Za-z0-9]+\.)+[A-Za-z]{1,30}/.test(this.account);
+
+      // 判断是否是邮箱
+      if (isEmail) {
+        data.mail = this.account;
+      } else {
+        data.mobile = this.account;
+      }
+
+      try {
+        const res = await request(API_USER_LOGIN, {
+          method: 'POST',
+          data,
+        }, false);
+
+        // 保存token
+        this.$store.commit('userState/setToken', res.data.token);
+
+        // 重定向地址
+        const redirect = Common.getUrlParams('redirect');
+
+        if (redirect) {
+          console.log(decodeURIComponent(redirect));
+          window.location.href = decodeURIComponent(redirect);
+          return;
+        }
+
+        // 隐藏
+        this.$parent.$parent.toggleLoginModal();
+        this.$root.eventHub.$emit("platform-setToken", res.data.token);
+
+        // 获取用户信息
+        this.$store.dispatch('userState/getUserInfo');
+
+        // 获取充值地址
+        this.$store.dispatch('globalState/getChargeAddr');
+        // 获取货币汇率
+        this.$store.dispatch('globalState/getCurrency');
+        // 获取提现配置
+        this.$store.dispatch('globalState/getPaymentCfg');
+
+        this.$root.eventHub.$emit('set-login-token', res.data.token);
+      } catch(error) {
+        if (error.code) {
+          this.$store.commit("globalState/addNotify", {
+            msg: `${error.code} - ${this.$t(`Error_${error.code}`)}`,
+            type: "error",
+          })
+        } else {
+          this.$store.commit("globalState/addNotify", {
+            msg:  `${error}` +  this.$t('Error_9'),
+            type: "error",
+          })
+        }
+      }
+
+      this.loading = false;
+    },
+  },
+  computed: {
+    // 禁用状态
+    disabled() {
+      return !this.account || !this.password;
+    },
+  },
+}
+</script>
+
+<style lang="less" scoped>
+  .login {
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+
+  .button {
+    margin-top: 15px;
+  }
+
+  .forgot-pwd{
+    font-weight: bold;
+    color: #FC9B65;
+    text-decoration:underline;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+  }
+</style>

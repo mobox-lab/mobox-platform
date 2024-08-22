@@ -1,0 +1,53 @@
+
+xin.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 2
+  size: 893, 315
+  orig: 893, 315
+  offset: 0, 0
+  index: -1
+xinfengdi
+  rotate: false
+  xy: 2, 319
+  size: 893, 595
+  orig: 893, 595
+  offset: 0, 0
+  index: -1
+
+xin2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2
+  rotate: false
+  xy: 2, 576
+  size: 885, 293
+  orig: 885, 293
+  offset: 0, 0
+  index: -1
+xinfeng
+  rotate: false
+  xy: 2, 2
+  size: 893, 572
+  orig: 893, 572
+  offset: 0, 0
+  index: -1
+
+xin3.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xinzhi
+  rotate: false
+  xy: 2, 2
+  size: 889, 773
+  orig: 889, 773
+  offset: 0, 0
+  index: -1

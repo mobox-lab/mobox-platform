@@ -1,0 +1,48 @@
+
+skeleton.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/treasurechest01
+  rotate: false
+  xy: 2, 20
+  size: 461, 189
+  orig: 461, 189
+  offset: 0, 0
+  index: -1
+images/treasurechest02
+  rotate: false
+  xy: 2, 443
+  size: 461, 230
+  orig: 461, 230
+  offset: 0, 0
+  index: -1
+images/treasurechest03
+  rotate: false
+  xy: 546, 775
+  size: 461, 230
+  orig: 461, 230
+  offset: 0, 0
+  index: -1
+images/treasurechest05
+  rotate: false
+  xy: 2, 211
+  size: 461, 230
+  orig: 461, 230
+  offset: 0, 0
+  index: -1
+images/treasurechest06
+  rotate: false
+  xy: 546, 685
+  size: 118, 88
+  orig: 118, 88
+  offset: 0, 0
+  index: -1
+images/treasurechest07
+  rotate: false
+  xy: 2, 675
+  size: 542, 330
+  orig: 542, 330
+  offset: 0, 0
+  index: -1

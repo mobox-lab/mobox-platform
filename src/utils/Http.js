@@ -1,0 +1,28 @@
+import axios from 'axios';
+	static apiNode = "https://accountapi.mobox.io";
+// 
+// 	static async login({
+// 		mobile,
+// 		mail,
+// 		passwd
+	}) {
+		let params = {
+			passwd
+		};
+		if (mobile) params["mobile"] = mobile;
+		if (mail) params["mail"] = mail;
+		let res = await axios.post(this.apiNode + "/user/login", params);
+		return res.data;
+	}
+
+	static async getUserInfo({
+		token
+	}) {
+		let res = await axios.post(this.apiNode + "/user/all", {}, {
+			headers: {
+				"x-bits-token": token
+			}
+		});
+		return res.data;
+	}
+}
