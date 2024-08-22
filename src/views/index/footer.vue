@@ -61,7 +61,7 @@
 </template>
 
 <script>
-// import {OLDPAGE} from '@/utils/constant'
+// export {OLDPAGE} from '@/utils/constant'
 
 export default {
     methods:{

@@ -1,8 +1,8 @@
 <template>
   <div class="input">
-    <div class="label">{{label}}</div>
-    <!-- 输入框 -->
-    <div class="input-box">
+//     <div class="label">{{label}}</div>
+//     <!-- 输入框 -->
+//     <div class="input-box">
       <slot name="prefix" />
       <input
         :maxlength="maxlength"
