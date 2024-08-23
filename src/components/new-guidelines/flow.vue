@@ -1,11 +1,11 @@
   <div class="flow item">
     <div class="flow-header">
       <block-title
-//         :title="title"
-//         describe="FREE TO PLAY"
-//       />
-//     </div>
-//     <ul>
+// //         :title="title"
+// //         describe="FREE TO PLAY"
+// //       />
+// //     </div>
+// //     <ul>
       <slot name="left" />
         <img src="@/assets/new-guidelines/momo-flow-icon.png" alt="" />
         <span>{{steps[0]}}</span>

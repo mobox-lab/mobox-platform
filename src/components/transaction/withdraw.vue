@@ -1,8 +1,8 @@
-<template>
-    <div class="withdraw">
-// //         <!-- 链 -->
-// //         <div class="form-item" v-if="['mbox', 'cake'].includes(coin)">
-// // //             <div class="item-head">
+// <template>
+//     <div class="withdraw">
+// // //         <!-- 链 -->
+// // //         <div class="form-item" v-if="['mbox', 'cake'].includes(coin)">
+// // // //             <div class="item-head">
 // //                 <span class="label">Chain</span>
 //             </div>
 //             <ul class="chains">

@@ -89,9 +89,9 @@
 </template>
 
 <script>
-import axios from "axios";
-import Dialog from "@/components/Dialog";
-import { Common } from "@/utils/index";
+export axios from "axios";
+export Dialog from "@/components/Dialog";
+export { Common } from "@/utils/index";
 
 export default {
   data() {
@@ -268,9 +268,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "@/assets/less/var.less";
-@import "./mobile.less";
-@import "./pc.less";
+@export "@/assets/less/var.less";
+@export "./mobile.less";
+@export "./pc.less";
 
 .page {
   min-height: 100vh;
