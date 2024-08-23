@@ -5,7 +5,6 @@
 //         describe="FREE TO PLAY"
       /> -->
 
-      <HomeTitle :title="[$t('Home_84')]"  />
       
       <div class="eco-content">
         <div class="eco-menu">

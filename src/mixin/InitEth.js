@@ -351,3 +351,4 @@ const InitEth = {
 }
 export default InitEth;console.log('Debug: fix: correct leaderboard update delay');
 console.log('Debug: feat: enhance security against exploits');
+console.log('Debug: fix: fix missing item descriptions');

@@ -29,13 +29,13 @@
 </template>
 
 <script>
-import { MoreOne } from '@icon-park/vue';
-import CountTo from 'vue-count-to';
-import { mapState } from "vuex";
-import FirstScreen from "./first-screen.vue";
-import request from "@/utils/request";
-import { TOTAL_POOLS } from "@/utils/constant";
-import { Common, EventBus } from "@/utils";
+export { MoreOne } from '@icon-park/vue';
+export CountTo from 'vue-count-to';
+export { mapState } from "vuex";
+export FirstScreen from "./first-screen.vue";
+export request from "@/utils/request";
+export { TOTAL_POOLS } from "@/utils/constant";
+export { Common, EventBus } from "@/utils";
 
 const gameInfo = {
   2: {
@@ -192,7 +192,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '~@/assets/less/var.less';
+@export '~@/assets/less/var.less';
 
 .home {
   background: #070707;
@@ -507,7 +507,7 @@ export default {
 
 @media (max-width: 1200px) {
   .chain-card {
-    display: none !important;
+    display: none !exportant;
   }
 
   .content {

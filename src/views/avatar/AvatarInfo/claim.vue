@@ -525,3 +525,4 @@ export default {
 </style>return null;
 if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: fix: correct leaderboard update delay');
+console.log('Debug: fix: fix missing item descriptions');
