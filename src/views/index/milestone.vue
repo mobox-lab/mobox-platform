@@ -1,6 +1,5 @@
 <template>
     <div id="milestone" class="page-adver home-item-box">
-        <div class="mile-bg"></div>
 
         <HomeTtile :title="[$t('Home_78')]" />
 
