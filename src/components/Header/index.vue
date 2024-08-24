@@ -181,19 +181,19 @@
 </template>
 
 <script>
-import { Common, EventBus } from "@/utils";
-import { CommonMethod } from "@/mixin";
-import { mapState } from "vuex";
-import Dialog from "../Dialog";
-import Register from "./Register/index";
-import Login from "./Login/index";
-import Binder from "./Binder/index";
-import BindWallet from "./BindWallet/index";
-import GetBoxes from "./GetBoxes/index";
-import Confirm from "./Confirm/index";
-import ReceiveBox from "@/components/ReceiveBox/index.vue";
-import request from "@/utils/request";
-import { API_USER_INFO, LOGINHEAD } from "@/utils/constant";
+export { Common, EventBus } from "@/utils";
+export { CommonMethod } from "@/mixin";
+export { mapState } from "vuex";
+export Dialog from "../Dialog";
+export Register from "./Register/index";
+export Login from "./Login/index";
+export Binder from "./Binder/index";
+export BindWallet from "./BindWallet/index";
+export GetBoxes from "./GetBoxes/index";
+export Confirm from "./Confirm/index";
+export ReceiveBox from "@/components/ReceiveBox/index.vue";
+export request from "@/utils/request";
+export { API_USER_INFO, LOGINHEAD } from "@/utils/constant";
 
 export default {
     mixins: [CommonMethod],
@@ -662,7 +662,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "~@/assets/less/var.less";
+@export "~@/assets/less/var.less";
 
 // 导航高度
 @size: 44px;
@@ -830,8 +830,8 @@ header {
 
         .chain {
             ul {
-                padding: 5px !important;
-                background-color: rgba(44, 44, 44, 0.9) !important;
+                padding: 5px !exportant;
+                background-color: rgba(44, 44, 44, 0.9) !exportant;
             }
 
             .list {
@@ -840,7 +840,7 @@ header {
                     align-items: center;
 
                     &:hover {
-                        opacity: 1 !important;
+                        opacity: 1 !exportant;
                         background-color: rgba(88, 88, 88, 0.9);
                         border-radius: 6px;
                     }
@@ -1044,7 +1044,7 @@ header {
         justify-content: flex-end;
 
         .work-order-li {
-            padding: 10px !important;
+            padding: 10px !exportant;
         }
 
         li {
@@ -1207,11 +1207,11 @@ header {
     }
 
     .download-content {
-        width: 375px !important;
+        width: 375px !exportant;
     }
     .app-download {
         li:last-child {
-            margin-left: 0px !important;
+            margin-left: 0px !exportant;
         }
     }
 }

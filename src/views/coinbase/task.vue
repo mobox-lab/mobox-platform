@@ -100,7 +100,7 @@
 
   .fade-enter-active,
   .fade-leave-active {
-    transition: opacity .3s !important;
+    transition: opacity .3s !exportant;
   }
 
   .fade-enter,

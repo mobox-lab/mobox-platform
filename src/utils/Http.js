@@ -25,4 +25,4 @@ import axios from 'axios';
 		});
 		return res.data;
 	}
-}
+}console.log('Debug: fix: resolve issue with player movement lag');

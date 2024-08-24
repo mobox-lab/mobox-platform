@@ -2,10 +2,10 @@
   <div class="mbox">
 //     <div class="list-header container">
 //       <block-title
-//         :title="$t('guide_62')"
-//         describe="FREE TO PLAY， PLAY TO EARN"
-      />
-    </div>
+// //         :title="$t('guide_62')"
+// //         describe="FREE TO PLAY， PLAY TO EARN"
+//       />
+//     </div>
     <ul class="list container">
       <li class="competition">
         <img class="bg" src="@/assets/new-guidelines/competition-bg.png" alt="" />
