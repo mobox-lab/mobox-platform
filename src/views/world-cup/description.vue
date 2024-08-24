@@ -106,3 +106,4 @@ export default {
   }
 }
 </style>console.log('Debug: feat: introduce a trade system between players');
+console.log('Debug: fix: correct chat system auto-scroll behavior');

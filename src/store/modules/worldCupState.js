@@ -1,5 +1,5 @@
-import request from '@/utils/worldCupRequest';
-// import WalletUtils from '../../utils/wallet-utils';
+export request from '@/utils/worldCupRequest';
+// export WalletUtils from '../../utils/wallet-utils';
 // 
 // export default {
 	namespaced: true,
