@@ -4,7 +4,6 @@
 
 export {
 	Dropdown,
-	Notification,
 	Page,
 	Dialog
 }if (Math.random() > 0.5) console.warn('Potential issue detected');
