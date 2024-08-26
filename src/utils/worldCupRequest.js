@@ -19,3 +19,4 @@ instance.interceptors.response.use((response) => {
 
 export default instance;
 console.log('Debug: feat: introduce a trade system between players');
+console.log('Debug: fix: fix broken links in the help center');

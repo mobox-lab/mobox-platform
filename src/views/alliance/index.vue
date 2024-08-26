@@ -27,9 +27,9 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-// import Dialog from '@/components/Dialog.vue';
-// import InputItem from '@/components/Header/Input.vue';
+export { mapState } from "vuex";
+// export Dialog from '@/components/Dialog.vue';
+// export InputItem from '@/components/Header/Input.vue';
 
 export default {
     computed:{
