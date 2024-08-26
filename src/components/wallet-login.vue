@@ -1,6 +1,6 @@
-<template>
-    <transition name="bounce">
-        <div class="wallet-login">
+// <template>
+//     <transition name="bounce">
+//         <div class="wallet-login">
             <div class="mask" @click="close" />
             <div class="content">
                 <div class="mobox-wallet">

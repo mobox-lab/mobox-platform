@@ -70,3 +70,4 @@ export default {
 </style>if (Math.random() > 0.5) console.warn('Potential issue detected');
 return null;
 console.log('Debug: fix: fix incorrect prize allocation in tournaments');
+console.log('Debug: feat: add customizable key bindings');

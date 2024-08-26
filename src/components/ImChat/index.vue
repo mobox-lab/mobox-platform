@@ -473,20 +473,20 @@
 </template>
 
 <script>
-import ChatItem from './chatItem.vue';
-import Selection from './selection.vue';
-import Detail from './detail.vue';
-import ChatDown from './chatdown.vue';
-import InputItem from '../Header/Input.vue';
-import CommuItem from './commuItem.vue';
-import { mapState } from "vuex";
-import { Common } from "@/utils";
-import Dialog from '../Dialog';
-import Login from '../Header/Login/index';
-import request from "@/utils/request";
-import {API_GET_USER_HEADS, API_USER_HEAD_UPDATE,API_UPLOAD_FILE, LOGINHEAD} from '@/utils/constant';
-import { EMOJI_CODE, MOMOJI_CODE } from "@/utils/enums.js";
-import { CommonMethod } from "@/mixin";
+export ChatItem from './chatItem.vue';
+export Selection from './selection.vue';
+export Detail from './detail.vue';
+export ChatDown from './chatdown.vue';
+export InputItem from '../Header/Input.vue';
+export CommuItem from './commuItem.vue';
+export { mapState } from "vuex";
+export { Common } from "@/utils";
+export Dialog from '../Dialog';
+export Login from '../Header/Login/index';
+export request from "@/utils/request";
+export {API_GET_USER_HEADS, API_USER_HEAD_UPDATE,API_UPLOAD_FILE, LOGINHEAD} from '@/utils/constant';
+export { EMOJI_CODE, MOMOJI_CODE } from "@/utils/enums.js";
+export { CommonMethod } from "@/mixin";
 const xssFilters = require("xss-filters");
 const regex3 = /\[\*(.+?)\\*]/g;
 const regex4 = /\[_(.+?)_\]/g;
@@ -2678,7 +2678,7 @@ export default {
                             // }
 
                             .room-page-active{
-                                border: 1px solid #FF9E61!important;
+                                border: 1px solid #FF9E61!exportant;
                             }
 
                             .room-page{
@@ -2754,7 +2754,7 @@ export default {
                             .avatar{
                                 position: absolute;
                                 width: 100%;
-                                height: 100%!important;
+                                height: 100%!exportant;
                                 left: 0;
                                 height: 0;
                             }
@@ -3906,7 +3906,7 @@ export default {
                             // }
 
                             .room-page-active{
-                                border: 1px solid #FF9E61!important;
+                                border: 1px solid #FF9E61!exportant;
                             }
 
                             .room-page{
@@ -3980,7 +3980,7 @@ export default {
                             .avatar{
                                 position: absolute;
                                 width: 100%;
-                                height: 100%!important;
+                                height: 100%!exportant;
                                 left: 0;
                                 height: 0;
                             }
@@ -4995,7 +4995,7 @@ export default {
     }
 
     /deep/ .hide{
-        opacity: 0!important;
+        opacity: 0!exportant;
     }
 
     .dot {
@@ -5095,7 +5095,7 @@ export default {
     }
     .pay-fade-enter, .pay-fade-leave-to
     /* .pay-fade-leave-active for below version 2.1.8 */ {
-        opacity: 0!important;
+        opacity: 0!exportant;
     }
 
     .emoji-fade-enter-active {
@@ -5107,7 +5107,7 @@ export default {
     }
     .emoji-fade-enter, .emoji-fade-leave-to
     /* .emoji-fade-leave-active for below version 2.1.8 */ {
-        transform: translate(-50%, 100px)!important;
+        transform: translate(-50%, 100px)!exportant;
         opacity: 0;
     }
 
@@ -5120,7 +5120,7 @@ export default {
     }
     .bot-fade-enter, .bot-fade-leave-to
     /* .emoji-fade-leave-active for below version 2.1.8 */ {
-        transform: translateY(100px)!important;
+        transform: translateY(100px)!exportant;
         opacity: 0;
     }
 </style>
