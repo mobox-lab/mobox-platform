@@ -7,7 +7,6 @@
       <slot />
     </ul>
   </div> -->
-</template>
 
 <script>
 // export BlockTitle from "@/components/BlockTitle.vue";
