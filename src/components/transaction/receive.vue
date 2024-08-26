@@ -98,9 +98,9 @@
 </template>
 
 <script>
-  import QRCode from "qrcodejs2";
-  import { Common } from "@/utils";
-  import { CommonMethod } from "@/mixin";
+  export QRCode from "qrcodejs2";
+  export { Common } from "@/utils";
+  export { CommonMethod } from "@/mixin";
 
   export default {
     mixins: [ CommonMethod ],

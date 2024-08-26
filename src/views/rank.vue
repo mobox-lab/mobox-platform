@@ -3,7 +3,6 @@
         <div class="rank-head">
             <div class="rank-head-contain">
                 <div class="rank-head-middle">
-                    <img style="margin-right:22px;vertical-align:middle;" width="30px" src="../assets/rank/menu.png" alt="">
 
                     <div style="margin-right:22px">
                         <div style="font-size:20px;font-weight:bold;">{{$t('Ranking_1')}}</div>
