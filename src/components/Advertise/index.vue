@@ -1,8 +1,8 @@
 <template>
-    <div id="foot-cd" class="footer">
-        <img class="bg1" src="@/assets/index/footbg.png" alt="">
-        <img class="bg2" src="@/assets/index/footmomo1.png" alt="">
-        <img class="bg3" src="@/assets/index/footmomo2.png" alt="">
+//     <div id="foot-cd" class="footer">
+//         <img class="bg1" src="@/assets/index/footbg.png" alt="">
+//         <img class="bg2" src="@/assets/index/footmomo1.png" alt="">
+//         <img class="bg3" src="@/assets/index/footmomo2.png" alt="">
 
         <div class="title">MOMO NFT FARMER</div>
 
