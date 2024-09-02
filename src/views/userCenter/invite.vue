@@ -1,7 +1,7 @@
 //     <div class="user-invite-body">
-//         <div class="top-box vertical-children">
-//             <div class="invite-box-info">
-                <div><span class="label-head"></span> {{$t('Setting_86')}}</div>
+// //         <div class="top-box vertical-children">
+// //             <div class="invite-box-info">
+//                 <div><span class="label-head"></span> {{$t('Setting_86')}}</div>
                 <div class="copy-box url-box">
                     <div>{{getInviteCode}}</div>
                     <div @click="copyText(getInviteCode)" style="flex:1;text-align:right;"> <div class="btn-1 btn-base">{{$t('Setting_87')}}</div> </div>

@@ -6,7 +6,6 @@
                 <div class="t1">MAKE ME YOURS</div>
                 <div class="t2">COMING SOON</div>
             </div>
-        </div>
     </div>
 </template>
 
