@@ -1,8 +1,8 @@
-<template>
-  <div class="layout">
-    <!-- 侧边栏 -->
-    <drawer v-model="isShowSidebar" :mask="isShowMask">
-//       <sidebar />
+// <template>
+//   <div class="layout">
+//     <!-- 侧边栏 -->
+//     <drawer v-model="isShowSidebar" :mask="isShowMask">
+// //       <sidebar />
 //     </drawer>
 //     <!-- 路由 -->
 //     <div :class="['view', $route.path === '/' ? null : 'spacing']">
