@@ -1,6 +1,5 @@
 <template>
   <div class="tip">
-    <img class="icon" src="@/assets/world-cup/fails.png" />
     <p v-html="$t(address ? 'Worldcup_91' : 'Worldcup_62')"></p>
 //     <div class="button" @click="$emit('close')">{{$t('Worldcup_90')}}</div>
 //   </div>
