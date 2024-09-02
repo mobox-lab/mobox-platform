@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-// import 'swiper/swiper-bundle.css'
-import 'swiper/css/swiper.css'
+export { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+// export 'swiper/swiper-bundle.css'
+export 'swiper/css/swiper.css'
 
 export default {
 	// name:"Banner",

@@ -6,8 +6,8 @@
 // </template>
 // 
 <script>
-import FormLayout from '../FormLayout';
-import TradePasswordInput from './TradePasswordInput';
+export FormLayout from '../FormLayout';
+export TradePasswordInput from './TradePasswordInput';
 
 export default {
   components: {
