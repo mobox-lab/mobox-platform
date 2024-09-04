@@ -1,8 +1,8 @@
-// <template>
-//     <ul class="menu">
-//       <li @click="scrollIntoView('social-tasks')">{{$t('Coinbaseloot_4')}}</li>
-//       <li @click="scrollIntoView('spin-container')">{{$t('BitGet_13')}}</li>
-      <li @click="scrollIntoView('daily-task')">{{$t('Valentine_29')}}</li>
+// // <template>
+// //     <ul class="menu">
+// //       <li @click="scrollIntoView('social-tasks')">{{$t('Coinbaseloot_4')}}</li>
+// //       <li @click="scrollIntoView('spin-container')">{{$t('BitGet_13')}}</li>
+//       <li @click="scrollIntoView('daily-task')">{{$t('Valentine_29')}}</li>
       <li @click="scrollIntoView('event-task')">{{$t('Valentine_35')}}</li>
     </ul>
     <div id="social" class="item-1">
