@@ -79,17 +79,17 @@
 </template>
 
 <script>
-  import Envelope from './envelope.vue';
-  import Rewards from './rewards.vue';
-  import Tasks from './tasks.vue';
-  import Spin from './spin.vue';
-  import EventIntroduction from './event-introduction.vue';
-  import Invitation from './invitation.vue';
-  import Records from './records.vue';
-  import Dialog from './dialog.vue';
-  import { CommonMethod } from '@/mixin';
-  import { Common } from "@/utils";
-  import { clearCache, register, getStatus, getMohearts, submitName, submitLink, getDailyTasks, getEventTasks } from '@/utils/trust-wallet';
+  export Envelope from './envelope.vue';
+  export Rewards from './rewards.vue';
+  export Tasks from './tasks.vue';
+  export Spin from './spin.vue';
+  export EventIntroduction from './event-introduction.vue';
+  export Invitation from './invitation.vue';
+  export Records from './records.vue';
+  export Dialog from './dialog.vue';
+  export { CommonMethod } from '@/mixin';
+  export { Common } from "@/utils";
+  export { clearCache, register, getStatus, getMohearts, submitName, submitLink, getDailyTasks, getEventTasks } from '@/utils/trust-wallet';
 
   export default {
     mixins: [CommonMethod],
@@ -567,7 +567,7 @@
       justify-content: center;
 
       a {
-        color: #214E8F !important;
+        color: #214E8F !exportant;
       }
     }
   }

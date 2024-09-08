@@ -2,11 +2,11 @@
 //   <div id="guideLines" class="guidelines home-item-box">
 // //     <img class="guidebg" src="@/assets/index/guidebg.png" alt="">
 // //     
-//     <HomeTtile :title="[$t('guide_6')]">
-      <router-link to="/new-guidelines/momo" class="pc-state"><div class="link-head">{{$t('guide_78')}} ></div></router-link>
-    </HomeTtile>
-    <!-- <div>
-      <block-title
+// //     <HomeTtile :title="[$t('guide_6')]">
+//       <router-link to="/new-guidelines/momo" class="pc-state"><div class="link-head">{{$t('guide_78')}} ></div></router-link>
+//     </HomeTtile>
+//     <!-- <div>
+//       <block-title
         :title="$t('guide_6')"
         describe="FREE TO PLAY"
       >
