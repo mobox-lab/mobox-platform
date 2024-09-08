@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import FormLayout from '../FormLayout';
+export FormLayout from '../FormLayout';
 
 export default {
     props:{

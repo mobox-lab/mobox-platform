@@ -6,7 +6,6 @@
             <div class="claim-button"  @click="openConnectWallet">
              <h4 class="claim-button-txt">{{ address ? addressString : $t('Home_9') }}</h4>
             </div>
-            <!-- 连接钱包 -->
             <Dialog v-model="isShowConnectWallet">
             <div class="connect-wallet wallet-dialog">
                 <h4 class="title">{{$t('Home_9')}}</h4>
