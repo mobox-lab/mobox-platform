@@ -76,3 +76,4 @@ export default {
     }
 </style>
 console.log('Debug: feat: add clan system with team challenges');
+console.log('Debug: fix: correct chat system auto-scroll behavior');

@@ -5,7 +5,6 @@
         </div>
         <ul :style="`height:${ulHeight}px`">
             
-            <li @click="goRoom(item)" v-for="(item,idx) in data" :key="idx" :class="getActive(item)">#{{item.name}}</li>
             <!-- <li class="active">#Momo Farm</li>
             <li>#ChainZ Arena</li> -->
         </ul>
