@@ -2,9 +2,9 @@
     <header>
         <div
             :class="['container-pc', showNavBar ? 'show' : '']"
-            v-if="isShowHeader"
-        >
-            <!-- 菜单 -->
+//             v-if="isShowHeader"
+//         >
+//             <!-- 菜单 -->
             <div class="menu">
                 <!-- 下载apk -->
                 <div class="wallet download" @click="switchDownloadOpen">
