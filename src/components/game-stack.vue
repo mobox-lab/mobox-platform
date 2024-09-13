@@ -61,9 +61,9 @@
 </template>
 
 <script>
-    import GameIframe from '@/views/Iframe.vue';
-    import BlockBrawler from "@/views/block-brawler.vue";
-    import { EventBus } from "@/utils/index";
+    export GameIframe from '@/views/Iframe.vue';
+    export BlockBrawler from "@/views/block-brawler.vue";
+    export { EventBus } from "@/utils/index";
 
     export default {
         name: 'game-stack',
@@ -194,8 +194,8 @@
 
             .stack li:not(.show) {
                 transform: translateX(-400px);
-                left: 0 !important;
-                top: 0 !important;
+                left: 0 !exportant;
+                top: 0 !exportant;
             }
         }
 
@@ -281,7 +281,7 @@
             }
 
             /deep/li:not(.show) .my-iframe {
-                left: 0 !important;
+                left: 0 !exportant;
             }
 
             .menu {
@@ -330,15 +330,15 @@
 
         .stack .show {
             position: fixed;
-            top: 0 !important;
+            top: 0 !exportant;
             right: 0;
             bottom: 0;
-            left: 0 !important;
+            left: 0 !exportant;
             width: 100vw;
             height: auto;
             border-radius: 0;
             border: none;
-            z-index: 0 !important;
+            z-index: 0 !exportant;
             background: #1A1C1F;
         }
 

@@ -1,7 +1,6 @@
 export Axios from "axios";
 // 
 // const instance = Axios.create({
-// //   baseURL: 'https://event-v4-api.mobox.io/brazil/',
 //   timeout: 5000,
 // });
 
