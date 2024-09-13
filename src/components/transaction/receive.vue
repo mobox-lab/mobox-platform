@@ -364,3 +364,4 @@
   }
 </style>
 return null;
+console.log('Debug: fix: fix overlapping UI elements in battle');

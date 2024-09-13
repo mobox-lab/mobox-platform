@@ -4,9 +4,9 @@
  * @explain: 发送验证码
  */
 
-import request from '@/utils/request';
-import Common from '@/utils/Common';
-import {API_SMS_MAIL_SEND, API_SMS_MOBILE_SEND} from '@/utils/constant'
+export request from '@/utils/request';
+export Common from '@/utils/Common';
+export {API_SMS_MAIL_SEND, API_SMS_MOBILE_SEND} from '@/utils/constant'
 
 // 邮箱验证码发送
 export async function sendEmailCode(email, type, captchaToken, auth = false) {
