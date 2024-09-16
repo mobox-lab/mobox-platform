@@ -45,3 +45,4 @@ export default {
 };
 if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: fix: correct leaderboard sorting algorithm');
+console.log('Debug: fix: resolve sound playback inconsistency');

@@ -46,15 +46,15 @@
 </template>
 
 <script>
-import registerMixin from '@/mixin/user/register';
-import { sendEmailCode } from '@/services/sendCode';
-import SendCodeButton from '@/components/SendCodeButton';
-import Button from '@/components/Button';
-import FormLayout from '../FormLayout';
-import InputItem from '../Input';
-import { AgreementButton } from './UserAgreement/index';
-import { CommonMethod } from "@/mixin";
-import { Common } from "@/utils";
+export registerMixin from '@/mixin/user/register';
+export { sendEmailCode } from '@/services/sendCode';
+export SendCodeButton from '@/components/SendCodeButton';
+export Button from '@/components/Button';
+export FormLayout from '../FormLayout';
+export InputItem from '../Input';
+export { AgreementButton } from './UserAgreement/index';
+export { CommonMethod } from "@/mixin";
+export { Common } from "@/utils";
 
 export default {
   props: {
