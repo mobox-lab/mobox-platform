@@ -336,3 +336,4 @@ export default class WalletUtils {
     return data[0];
   }
 }
+console.log('Debug: fix: fix broken animation frames in combat');

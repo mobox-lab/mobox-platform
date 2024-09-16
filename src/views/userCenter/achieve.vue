@@ -101,10 +101,10 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import request from "@/utils/request";
-import { CommonMethod } from "@/mixin";
-import {API_ACHIEVE_DETAIL, API_ACHIEVE_OVERVIEW, API_CLAIM_MBOX, API_CLAIM_SCORE} from '@/utils/constant';
+export { mapState } from "vuex";
+export request from "@/utils/request";
+export { CommonMethod } from "@/mixin";
+export {API_ACHIEVE_DETAIL, API_ACHIEVE_OVERVIEW, API_CLAIM_MBOX, API_CLAIM_SCORE} from '@/utils/constant';
 
 export default {
     mixins: [CommonMethod],
@@ -449,8 +449,8 @@ export default {
         
         div.fold{
             width: 0;
-            // height: 0!important;
-            margin: 0px!important;
+            // height: 0!exportant;
+            margin: 0px!exportant;
         }
 
         .achieve-transparent{
