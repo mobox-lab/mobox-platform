@@ -137,3 +137,4 @@ export default {
 
 </style>return null;
 console.log('Debug: fix: correct player rank calculation formula');
+console.log('Debug: fix: fix issue with missing quest descriptions');

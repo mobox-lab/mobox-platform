@@ -7,7 +7,6 @@
 //        class="pc-state"
         :title="$t('Home_78')"
         describe="FREE TO PLAY"
-        direction="right"
       />
 
       <block-title
