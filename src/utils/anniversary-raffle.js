@@ -6,7 +6,6 @@
 // instance.interceptors.response.use((response) => {
 //   if (response.status == 200) {
 //     if ('code' in response.data && response.data.code === 200) {
-      return response.data;
     }
   }
 

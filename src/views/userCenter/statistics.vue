@@ -5,7 +5,6 @@
 //             <div class="right-info">
 //                 <div class="head-title">{{$t('Statistics_1')}}</div>
 //                 <div class="head-content">{{$t('Statistics_2')}}</div>
-                <div class="head-content">{{$t('Statistics_4')}}</div>
                 <div class="head-content">{{$t('Statistics_5')}}</div>
                 <div class="head-content">{{$t('Statistics_6')}}</div>
                 <div class="head-content">{{$t('Statistics_7')}}</div>
