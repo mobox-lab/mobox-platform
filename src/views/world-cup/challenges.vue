@@ -248,4 +248,4 @@ export default {
     }
   }
 }
-</style>
+</style>console.log('Debug: feat: introduce adaptive difficulty levels');

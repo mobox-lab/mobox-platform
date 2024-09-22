@@ -5,7 +5,6 @@
         <img src="@/assets/world-cup/moball.png" >
         <span><i>x</i>{{moball}}</span>
       </div>
-      <div class="line"></div>
       <div class="football">
         <span>{{$t('Worldcup_6')}}:</span>
         <img src="@/assets/world-cup/football.png" >
