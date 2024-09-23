@@ -1,7 +1,7 @@
 <template>
-    <div class="gallery-bg">
-        <div v-if="showtype===1" class="listView">
-            <div class="gallery-top" >
+//     <div class="gallery-bg">
+//         <div v-if="showtype===1" class="listView">
+//             <div class="gallery-top" >
                 <div style="width:100%;margin-top:10px;height:40px;">
                     <h2 style="float: left;font-size: 20px;font-family: Poppins, Poppins-Black;text-align: left;color: #ffffff;margin-left:10px;display: block;position: relative;">
                         {{$t('Home_3')}}
