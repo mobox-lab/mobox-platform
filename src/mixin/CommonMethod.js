@@ -1,9 +1,9 @@
 import Common from "../utils/Common";
 
-const CommonMethod = {
-	methods: {
-		async oprDialog(domId, type) {
-			let dom = document.getElementById(domId);
+// const CommonMethod = {
+// 	methods: {
+// 		async oprDialog(domId, type) {
+// 			let dom = document.getElementById(domId);
 			if (type == "none") {
 				dom.classList.add("yf-dialog-remove");
 				await Common.sleep(200);
