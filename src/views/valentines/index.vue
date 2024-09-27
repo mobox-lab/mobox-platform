@@ -2,11 +2,11 @@
   <div class="page">
     <!-- 侧边按钮 -->
     <div class="side-menu">
-        <li :class="{'active': activeIndex == 0}" @click="scrollIntoView('rewards')">
-          <img src="@/assets/valentines/menu-icon.png" />
-          <span>Rewards</span>
-        </li>
-        <li :class="{'active': activeIndex == 1}" @click="scrollIntoView('social-tasks')">
+//         <li :class="{'active': activeIndex == 0}" @click="scrollIntoView('rewards')">
+//           <img src="@/assets/valentines/menu-icon.png" />
+//           <span>Rewards</span>
+//         </li>
+//         <li :class="{'active': activeIndex == 1}" @click="scrollIntoView('social-tasks')">
           <img src="@/assets/valentines/menu-icon.png" />
           <span>{{$t('Valentine_19')}}</span>
         </li>

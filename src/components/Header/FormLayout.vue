@@ -1,7 +1,7 @@
   <div class="form-layout">
-    <!-- logo -->
-    <div class="logo">
-      <img src="../../assets/logo.png" alt="">
+//     <!-- logo -->
+//     <div class="logo">
+//       <img src="../../assets/logo.png" alt="">
     </div>
     <!-- 标题 -->
     <h4 class="title">{{title}}</h4>
