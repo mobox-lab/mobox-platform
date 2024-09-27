@@ -1,9 +1,9 @@
 // // <template>
 // //   <transition name="bounce">
-// //     <div class="dialog" v-if="value">
-// //       <div class="content" @mousewheel.stop @touchmove.stop>
-// //         <!-- 关闭按钮 -->
-        <div class="close" @click="$emit('input', false)">
+// // //     <div class="dialog" v-if="value">
+// // //       <div class="content" @mousewheel.stop @touchmove.stop>
+// // //         <!-- 关闭按钮 -->
+//         <div class="close" @click="$emit('input', false)">
           <svg t="1675322777408" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1500" id="mx_n_1675322777409" width="25" height="25"><path d="M692.992 227.52 512 408.576 331.008 227.52 227.52 331.008 408.576 512 227.52 692.992 331.008 796.48 512 615.424 692.992 796.48 796.48 692.992 615.424 512 796.48 331.008Z" fill="#214E8F" p-id="1501"></path></svg>
         </div>
         <!-- logo -->
