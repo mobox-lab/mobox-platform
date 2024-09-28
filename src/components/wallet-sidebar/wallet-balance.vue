@@ -6,7 +6,6 @@
       <div class="avatar">
         <img src="@/assets/icon/avatar.jpg" />
       </div>
-      <!-- 昵称 -->
       <div class="nickname">{{userInfo.nickname}}</div>
       <!-- 退出按钮 -->
       <div class="logout" @click="logout">
