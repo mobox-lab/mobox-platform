@@ -36,11 +36,11 @@
 </template>
 
 <script>
-  import { mapState } from "vuex";
-  import { Common } from "@/utils";
-  import Drawer from "@/components/drawer.vue";
-  import Receive from "./receive.vue";
-  import Withdraw from "./withdraw.vue";
+  export { mapState } from "vuex";
+  export { Common } from "@/utils";
+  export Drawer from "@/components/drawer.vue";
+  export Receive from "./receive.vue";
+  export Withdraw from "./withdraw.vue";
 
   export default {
     components: {

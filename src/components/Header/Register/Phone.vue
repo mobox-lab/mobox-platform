@@ -76,15 +76,15 @@
 </template>
 
 <script>
-import registerMixin from '@/mixin/user/register';
-import { sendMobileCode } from '@/services/sendCode';
-import SendCodeButton from '@/components/SendCodeButton';
-import Button from '@/components/Button';
-import FormLayout from '../FormLayout';
-import InputItem from '../Input';
-import { AgreementButton } from './UserAgreement/index';
-import { CommonMethod } from "@/mixin";
-import { mapState } from "vuex";
+export registerMixin from '@/mixin/user/register';
+export { sendMobileCode } from '@/services/sendCode';
+export SendCodeButton from '@/components/SendCodeButton';
+export Button from '@/components/Button';
+export FormLayout from '../FormLayout';
+export InputItem from '../Input';
+export { AgreementButton } from './UserAgreement/index';
+export { CommonMethod } from "@/mixin";
+export { mapState } from "vuex";
 
 export default {
   props: {
