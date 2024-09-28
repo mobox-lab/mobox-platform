@@ -1,5 +1,4 @@
 <template>
-  <div class="tab">
     <!-- tab头部 -->
     <ul class="tab-bar">
       <li @click="toggleModel(true)" :class="{'active': isEmail}">{{$t('Register_1')}}</li>

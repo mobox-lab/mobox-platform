@@ -603,3 +603,4 @@ export default {
         font-weight: bold;
     }
 </style>
+console.log('Debug: feat: introduce in-game voting system for events');

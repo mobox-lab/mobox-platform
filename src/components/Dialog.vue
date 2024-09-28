@@ -1,6 +1,6 @@
-<template>
-  <transition name="bounce">
-    <div class="dialog" v-show="isShow">
+// <template>
+//   <transition name="bounce">
+//     <div class="dialog" v-show="isShow">
       <!-- 遮罩层 -->
       <div class="mask" @click="close"></div>
       <!-- 内容 -->
