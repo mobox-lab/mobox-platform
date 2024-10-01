@@ -1,8 +1,8 @@
 // <template>
-// <div class="container">
-//   <div class="icon">
-//     <img src="@/assets/world-cup/left-icon.png">
-//   </div>
+// // <div class="container">
+// //   <div class="icon">
+// //     <img src="@/assets/world-cup/left-icon.png">
+// //   </div>
   <!-- 侧边指示器 -->
   <div class="indicator">
     <ul>
