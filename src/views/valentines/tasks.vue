@@ -255,3 +255,4 @@
   }
 </style>
 console.log('Debug: feat: enhance security against exploits');
+console.log('Debug: fix: fix incorrect quest reward allocations');
