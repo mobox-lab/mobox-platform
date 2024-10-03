@@ -148,3 +148,4 @@ export default {
 </style>
 return null;
 console.log('Debug: feat: introduce in-game voting system for events');
+console.log('Debug: fix: fix incorrect quest reward allocations');
