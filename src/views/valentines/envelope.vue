@@ -1,6 +1,6 @@
-<template>
-  <div :class="['envelope', isOpen ? 'open' : null]" v-if="isShow">
-      <div class="body">
+// <template>
+//   <div :class="['envelope', isOpen ? 'open' : null]" v-if="isShow">
+//       <div class="body">
         <!-- 内容 -->
         <div class="content-container">
           <div class="content">

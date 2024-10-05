@@ -2,7 +2,6 @@
 //     <div id="ecoSystem" class="page-opr home-item-box">
 // 
 //       <!-- <block-title
-//         :title="$t('Home_84')"
 //         describe="FREE TO PLAY"
       /> -->
 
