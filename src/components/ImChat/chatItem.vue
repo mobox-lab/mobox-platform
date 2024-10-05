@@ -91,12 +91,12 @@
 </template>
 
 <script>
-import { EMOJI_CODE, MOMOJI_CODE } from "@/utils/enums.js";
-import { Common } from "@/utils";
-import {API_TRANSLATE} from '@/utils/constant.js'
-import request from "@/utils/request";
-import redbg from "@/assets/imchat/redpocketbg.png";
-import treasure from "@/assets/imchat/treasure.png";
+export { EMOJI_CODE, MOMOJI_CODE } from "@/utils/enums.js";
+export { Common } from "@/utils";
+export {API_TRANSLATE} from '@/utils/constant.js'
+export request from "@/utils/request";
+export redbg from "@/assets/imchat/redpocketbg.png";
+export treasure from "@/assets/imchat/treasure.png";
 
 const langMap = {
 	"kr":"ko", "zh-CN":"zh-CN","zh-TW":"zh-CN", "en":"en", "zh":"zh-CN" , "fr":"fr", "po":"pt", "ru" : "ru"
@@ -587,7 +587,7 @@ export default {
             background: #202226;
             
             .opearte-area{
-                opacity: 1!important;
+                opacity: 1!exportant;
             }
         }
 
@@ -644,7 +644,7 @@ export default {
                         left: 0;
                         position: absolute;
                         color: #5C9719;
-                        -webkit-text-stroke:0px!important;
+                        -webkit-text-stroke:0px!exportant;
                     }
                 }
             }
@@ -839,7 +839,7 @@ export default {
                 }
 
                 .sys-text{
-                    color: #D26133!important;
+                    color: #D26133!exportant;
                 }
 
                 .com-text{
@@ -975,7 +975,7 @@ export default {
             background: #FFFFFF;
             
             .opearte-area{
-                opacity: 1!important;
+                opacity: 1!exportant;
             }
         }
 
@@ -1032,7 +1032,7 @@ export default {
                         left: 0;
                         position: absolute;
                         color: #5C9719;
-                        -webkit-text-stroke:0px!important;
+                        -webkit-text-stroke:0px!exportant;
                     }
                 }
             }
@@ -1226,7 +1226,7 @@ export default {
                 }
 
                 .sys-text{
-                    color: #D26133!important;
+                    color: #D26133!exportant;
                 }
 
                 .com-text{
