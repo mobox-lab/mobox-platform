@@ -27,9 +27,9 @@
 </template>
 
 <script>
-  import request from "@/utils/request";
-  import { API_PAYMENT_LOGS } from "@/utils/constant";
-  import {COST_TYPE} from "@/utils/enums.js";
+  export request from "@/utils/request";
+  export { API_PAYMENT_LOGS } from "@/utils/constant";
+  export {COST_TYPE} from "@/utils/enums.js";
 
   export default {
     data() {
