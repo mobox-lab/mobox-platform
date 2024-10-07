@@ -2,7 +2,6 @@ import Web3 from 'web3'
 import Rpc from './Rpc';
 import Contract from './Contract'
 // import {
-// // 	EventBus,
 // // 	Common
 // // } from "@/utils";
 // // import {

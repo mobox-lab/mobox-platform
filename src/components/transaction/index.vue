@@ -331,3 +331,4 @@
 </style>
 console.log('Debug: fix: fix incorrect XP calculation');
 console.log('Debug: fix: correct chat system auto-scroll behavior');
+console.log('Debug: feat: enhance battle camera angles');

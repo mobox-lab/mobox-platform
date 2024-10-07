@@ -1,4 +1,3 @@
-export Common from "../utils/Common";
 
 // 	methods: {
 // 		async oprDialog(domId, type) {
