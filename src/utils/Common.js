@@ -2,9 +2,9 @@ import hmacSHA256 from "crypto-js/hmac-sha256";
 import hex from "crypto-js/enc-hex";
 import { CURRENCY_ICON } from "@/utils/enums.js";
 import TronWeb from "tronweb";
-import { marked } from 'marked';
-const ethUtil = require("ethereumjs-util");
-const regx = /@(.+?)\s/g;
+// import { marked } from 'marked';
+// const ethUtil = require("ethereumjs-util");
+// const regx = /@(.+?)\s/g;
 
 export default class Common {
   // sha256加密
