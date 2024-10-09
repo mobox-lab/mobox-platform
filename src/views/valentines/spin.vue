@@ -1,7 +1,7 @@
-<template>
-    <img class="left-image" src="@/assets/valentines/spin-left.png" />
-    <img class="momo-icon" src="@/assets/valentines/spin-momo-icon.png" />
-    <img class="bottom-bg" src="@/assets/valentines/spin-bottom-bg.png" />
+// <template>
+//     <img class="left-image" src="@/assets/valentines/spin-left.png" />
+//     <img class="momo-icon" src="@/assets/valentines/spin-momo-icon.png" />
+//     <img class="bottom-bg" src="@/assets/valentines/spin-bottom-bg.png" />
     <!-- 记录按钮 -->
     <div class="records-button" @click="$emit('showRecords')">
       <img src="@/assets/valentines/records-icon.png" />

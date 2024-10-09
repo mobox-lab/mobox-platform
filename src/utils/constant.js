@@ -1,9 +1,9 @@
 // const USERHEAD = "http://192.168.5.189:10070/" // 测试服
-// const USERHEAD = "https://test-game-api.momoland.io/" // 测试服
-// const COINBASEHEAD = "http://192.168.5.189:10070/" // 本地测试服
-const COINBASEHEAD = "https://event-v3-api.mobox.io/" // 正式服
-const RANKHEAD = "https://nftapi.mobox.io/" // 正式服
-const PRICEHEAD = "https://priceapi.mobox.io/" // 正式服
+// // const USERHEAD = "https://test-game-api.momoland.io/" // 测试服
+// // const COINBASEHEAD = "http://192.168.5.189:10070/" // 本地测试服
+// const COINBASEHEAD = "https://event-v3-api.mobox.io/" // 正式服
+// const RANKHEAD = "https://nftapi.mobox.io/" // 正式服
+// const PRICEHEAD = "https://priceapi.mobox.io/" // 正式服
 
 export const LOGINHEAD = "https://www.mobox.io/login/";// 正式登陆链接
 // export const LOGINHEAD = "http://localhost:8081/login/"; // 登陆链接
