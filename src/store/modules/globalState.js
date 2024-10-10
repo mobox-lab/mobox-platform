@@ -1,7 +1,7 @@
-import request from "@/utils/request";
-import i18n from "@/i18n";
-// import {API_CURRENCYPRICE, API_GET_DEPOSIT_ADDR, API_PAYMENT_WITHDRAW_CFG, API_STATIC_MOBOX_INFOS, MARKE_VALUE} from '@/utils/constant';
-// import { Common } from "@/utils";
+// import request from "@/utils/request";
+// import i18n from "@/i18n";
+// // import {API_CURRENCYPRICE, API_GET_DEPOSIT_ADDR, API_PAYMENT_WITHDRAW_CFG, API_STATIC_MOBOX_INFOS, MARKE_VALUE} from '@/utils/constant';
+// // import { Common } from "@/utils";
 // 
 // 金额格式化
 function formatMoney(money, digit) {
