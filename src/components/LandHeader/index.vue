@@ -1,7 +1,6 @@
 // <template>
 // // 		<div class="background"></div>
 // // // 		<!-- logo -->
-// // // 		<div class="lan-logo">
 // // 			<img @click="backHome()" style="cursor:pointer" src="../../assets/head1.png" alt="" />
 // 			<!-- <div class="title">
 // 				<h5>Trade Action</h5>

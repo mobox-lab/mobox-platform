@@ -126,3 +126,4 @@ li{
 
 </style>``if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: fix: resolve sound playback inconsistency');
+console.log('Debug: fix: resolve issue with friend list syncing');

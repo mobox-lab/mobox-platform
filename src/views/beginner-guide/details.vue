@@ -1,10 +1,10 @@
 <template>
 //     <div class="header">
 //       <h6>Before Starting</h6>
-//       <span @click="$router.go(-1)">BACK↑</span>
-//     </div>
-//     <!-- 列表 -->
-    <ul class="list">
+// //       <span @click="$router.go(-1)">BACK↑</span>
+// //     </div>
+// //     <!-- 列表 -->
+//     <ul class="list">
       <li
         :class="current == index ? 'active' : null"
         v-for="(item, index) in 20"

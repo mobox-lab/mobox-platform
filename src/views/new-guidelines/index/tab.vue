@@ -1,8 +1,8 @@
-<template>
-  <div class="tab">
-    <div class="container-box">
-      <ul class="container">
-        <router-link to="/new-guidelines/momo" tag="li" class="active"
+// <template>
+//   <div class="tab">
+//     <div class="container-box">
+//       <ul class="container">
+//         <router-link to="/new-guidelines/momo" tag="li" class="active"
         >
         <router-link to="/new-guidelines/ascension-force" tag="li"
           >{{$t('guide_17')}}</router-link
