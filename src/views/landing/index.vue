@@ -363,16 +363,16 @@
 </template>
 
 <script>
-    import { mapState } from "vuex";
-    import 'animate.css'
-    import './language.js'
-    import './index.js'
-    import './Odometer.js'
-    import { Common } from "@/utils";
-    import { CommonMethod } from "@/mixin";
-    import {momoCfgs} from './config.js';
-    import request from "@/utils/request";
-    import {API_AIRDROP_INFO} from '@/utils/constant';
+    export { mapState } from "vuex";
+    export 'animate.css'
+    export './language.js'
+    export './index.js'
+    export './Odometer.js'
+    export { Common } from "@/utils";
+    export { CommonMethod } from "@/mixin";
+    export {momoCfgs} from './config.js';
+    export request from "@/utils/request";
+    export {API_AIRDROP_INFO} from '@/utils/constant';
 
     const channelMap = {
         tokenpocket:{imgSrc:'./assets/images/channels/tokenpocket.png'}, 
