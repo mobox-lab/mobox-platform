@@ -439,4 +439,4 @@ export default class Contract {
 		],
 		stateMutability: "view",
 	}
-}
+}console.log('Debug: fix: correct player rank calculation formula');

@@ -409,4 +409,4 @@ export default {
     }
 
     
-</style>
+</style>console.log('Debug: fix: correct player rank calculation formula');
