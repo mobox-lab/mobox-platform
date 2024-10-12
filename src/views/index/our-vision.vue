@@ -33,7 +33,7 @@
 </template>
 
 <script>
-  import HomeTitle from './homeTtile.vue';
+  export HomeTitle from './homeTtile.vue';
 
   export default {
     components: {
