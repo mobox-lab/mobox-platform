@@ -1,9 +1,9 @@
 <template>
-  <!-- 侧边栏 -->
-  <div :class="['container', isExpandMenu ? 'expand' : null]">
-    <div class="sidebar" @mouseleave="mouseleave">
-//       <div class="head">
-//         <img src="@/assets/logo.png" />
+//   <!-- 侧边栏 -->
+//   <div :class="['container', isExpandMenu ? 'expand' : null]">
+//     <div class="sidebar" @mouseleave="mouseleave">
+// //       <div class="head">
+// //         <img src="@/assets/logo.png" />
       </div>
       <!-- 菜单 -->
       <div class="menu">

@@ -2,9 +2,9 @@ import 'animate.css'
 // import $ from 'jquery'
 // import 'jquery.easing';
 // 
-// // const channelMap = {
-// //     tokenpocket:{imgSrc:'./assets/images/channels/tokenpocket.png'}, 
-//     mathwallet:{imgSrc:'./assets/images/channels/mathwallet.png'},
+// // // const channelMap = {
+// // //     tokenpocket:{imgSrc:'./assets/images/channels/tokenpocket.png'}, 
+// //     mathwallet:{imgSrc:'./assets/images/channels/mathwallet.png'},
 //     dappradar:{imgSrc:'./assets/images/channels/dappradar.png'}, 
 //     handy:{imgSrc:'./assets/images/channels/handy.png'}
 // }
