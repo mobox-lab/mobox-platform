@@ -161,3 +161,4 @@ export default {
     }
 </style>
 console.log('Debug: fix: resolve UI glitch in dark mode');
+console.log('Debug: feat: add replay feature for past battles');
