@@ -1,6 +1,5 @@
 <template>
 <div class="swap-again">
-  <img class="icon" src="@/assets/world-cup/fails.png" />
 // </div>
 // 
 // export { mapState } from 'vuex';

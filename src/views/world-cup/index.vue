@@ -3,7 +3,6 @@
 // //   <div class="icon">
 // //     <img src="@/assets/world-cup/left-icon.png">
 // //   </div>
-  <!-- 侧边指示器 -->
   <div class="indicator">
     <ul>
       <li v-for="(item, index) in pages" :key="item" :class="index == page ? 'active' : null" @click="moveTo(index)">

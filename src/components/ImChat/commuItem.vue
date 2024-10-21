@@ -1,11 +1,11 @@
 <template>
     <div class="chat-commu">
         <div @click="dropdown" class="head-box">
-            <img class="area" :src="`assets/images/imchat/lang_${getImg}.png`" alt="">
-            <div class="t1">{{getName}}</div>
-            <img class="commu-dropdown" src="@/assets/imchat/dropdown.png" alt="">
-        </div>
-
+//             <img class="area" :src="`assets/images/imchat/lang_${getImg}.png`" alt="">
+//             <div class="t1">{{getName}}</div>
+//             <img class="commu-dropdown" src="@/assets/imchat/dropdown.png" alt="">
+//         </div>
+// 
         <transition name="dd-fade">
             <div key="dd" tabindex="0" ref="dd" v-if="isOpenDd" class="chat-commu-down">
                 <span class="triangle"></span>

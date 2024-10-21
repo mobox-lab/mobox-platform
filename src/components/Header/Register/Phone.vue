@@ -1,7 +1,7 @@
 <template>
-    <FormLayout :title="$t('Register_2')">
-      <div class="form">
-        <InputItem
+//     <FormLayout :title="$t('Register_2')">
+//       <div class="form">
+//         <InputItem
           :label="$t('Register_35')"
           :placeholder="$t('Register_36')"
           v-model="nickName"
