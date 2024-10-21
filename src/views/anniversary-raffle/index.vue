@@ -44,11 +44,11 @@
 </template>
 
 <script>
-  import { LuckyWheel } from 'lucky-canvas';
-  import Dialog from './dialog.vue';
-  import { CommonMethod } from "@/mixin";
-  import WalletUtils from '@/utils/wallet-utils';
-  import { getTicketInfo, lottery } from '@/utils/anniversary-raffle';
+  export { LuckyWheel } from 'lucky-canvas';
+  export Dialog from './dialog.vue';
+  export { CommonMethod } from "@/mixin";
+  export WalletUtils from '@/utils/wallet-utils';
+  export { getTicketInfo, lottery } from '@/utils/anniversary-raffle';
 
   const prizes = [
     {
