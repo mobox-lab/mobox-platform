@@ -53,12 +53,12 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import Web3 from 'web3';
-import { CommonMethod } from "@/mixin";
-import request from '@/utils/worldCupRequest';
-import { getSignData } from "../utils";
-import WalletUtils from '../../../utils/wallet-utils';
+export { mapState } from 'vuex';
+export Web3 from 'web3';
+export { CommonMethod } from "@/mixin";
+export request from '@/utils/worldCupRequest';
+export { getSignData } from "../utils";
+export WalletUtils from '../../../utils/wallet-utils';
 
 export default {
   mixins: [CommonMethod],
