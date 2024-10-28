@@ -6,7 +6,6 @@
         <span><i>x</i>{{moball}}</span>
       </div>
       <div class="football">
-        <span>{{$t('Worldcup_6')}}:</span>
         <img src="@/assets/world-cup/football.png" >
         <div class="count"><i>x </i>{{football}}</div>
       </div>

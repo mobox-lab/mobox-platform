@@ -718,3 +718,4 @@ export default {
 }
 </style>
 console.log('Debug: feat: enhance security against exploits');
+console.log('Debug: feat: improve in-game economy balancing');
