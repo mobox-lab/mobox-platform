@@ -6,7 +6,6 @@
 
 <script>
 // import FormLayout from '../FormLayout';
-// import request from "@/utils/request";
 import { CommonMethod } from "@/mixin";
 
 
