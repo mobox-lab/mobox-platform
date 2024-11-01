@@ -1,9 +1,9 @@
 <template>
     <div class="beginner-guide">
-        <div class="header">
-            <h4>MOBOX <span>Beginner guide</span></h4>
-//         <router-view />
-//     </div>
+//         <div class="header">
+//             <h4>MOBOX <span>Beginner guide</span></h4>
+// //         <router-view />
+// //     </div>
 // </template>
 <script>
 export default {
