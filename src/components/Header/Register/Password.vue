@@ -31,12 +31,12 @@
 </template>
 
 <script>
-import request from '@/utils/request';
-import Button from '@/components/Button';
-import {API_USER_REGISTER} from '@/utils/constant';
-import { CommonMethod } from "@/mixin";
-import FormLayout from '../FormLayout';
-import InputItem from '../Input';
+export request from '@/utils/request';
+export Button from '@/components/Button';
+export {API_USER_REGISTER} from '@/utils/constant';
+export { CommonMethod } from "@/mixin";
+export FormLayout from '../FormLayout';
+export InputItem from '../Input';
 
 export default {
 	mixins: [CommonMethod],
@@ -191,7 +191,7 @@ export default {
 
 <style lang="less">
   .validation-password {
-    margin-bottom: 3px !important;
+    margin-bottom: 3px !exportant;
   }
 </style>
 

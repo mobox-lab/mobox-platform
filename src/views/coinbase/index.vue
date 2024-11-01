@@ -1,6 +1,6 @@
-  <div class="coinbase">
-      <img src="@/assets/coinbase/head-logo.png" />
-    </div>
+//   <div class="coinbase">
+//       <img src="@/assets/coinbase/head-logo.png" />
+//     </div>
 //     <!-- 描述 -->
 //     <Describe />
 //     <!-- 活动 -->

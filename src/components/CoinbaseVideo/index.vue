@@ -6,7 +6,6 @@
                         <source src="../../assets/vedio/coinbase.mp4" type="video/mp4">
                     </video>
                 </vue-plyr>
-                
                 <img @click="closeVideo" class="close-btn" src="@/assets/index/close.png" alt="">
             </div>
             
