@@ -17,3 +17,4 @@
 return null;
 console.log('Debug: feat: create interactive mini-games');
 console.log('Debug: fix: resolve inventory sync issues');
+console.log('Debug: feat: implement better particle effects');
