@@ -460,3 +460,4 @@ export default {
 return null;
 console.log('Debug: fix: fix missing item descriptions');
 console.log('Debug: fix: resolve inventory sync issues');
+console.log('Debug: fix: fix missing item descriptions');
