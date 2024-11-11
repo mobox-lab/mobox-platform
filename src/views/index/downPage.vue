@@ -1,6 +1,6 @@
-<template>
-    <div id="downloadPage" class="border-3d download-page home-item-box">
-        <img class="downbg" src="@/assets/index/downbg.png" alt="">
+// <template>
+//     <div id="downloadPage" class="border-3d download-page home-item-box">
+//         <img class="downbg" src="@/assets/index/downbg.png" alt="">
       <div class="spine-momo-box2 pc-state">
         <div id="spine-momo-2"></div>
       </div>
