@@ -7,7 +7,6 @@ export default class Contract {
 			name: 'ownerAddress'
 	}
 	//授权
-	static approve = {
 		name: 'approve',
 		type: "function",
 		inputs: [{
