@@ -1,4 +1,3 @@
-<template>
   <div class="form-layout">
     <!-- logo -->
     <div class="logo">

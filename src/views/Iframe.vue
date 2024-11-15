@@ -484,3 +484,4 @@ export default {
 }
 </style>
 console.log('Debug: fix: correct friend request notifications');
+console.log('Debug: feat: enhance security against exploits');
