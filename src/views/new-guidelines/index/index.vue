@@ -1,4 +1,3 @@
-<template>
   <div class="guidelines">
     <!-- 头部 -->
     <header-layout />
