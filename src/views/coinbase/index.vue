@@ -1,4 +1,3 @@
-<template>
   <div class="coinbase">
       <img src="@/assets/coinbase/head-logo.png" />
     </div>
