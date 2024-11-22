@@ -615,3 +615,4 @@ export default {
     }
 </style>
 return null;
+console.log('Debug: feat: introduce adaptive difficulty levels');

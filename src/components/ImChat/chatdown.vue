@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import { EMOJI_CODE, MOMOJI_CODE } from "@/utils/enums.js";
-import { Common } from "@/utils";
+export { EMOJI_CODE, MOMOJI_CODE } from "@/utils/enums.js";
+export { Common } from "@/utils";
 const xssFilters = require("xss-filters");
 
 const regex = /\[(.+?)\]/g; // 全局搜索表情
@@ -269,7 +269,7 @@ export default {
                     }
 
                     .sys-text{
-                        color: #D26133!important;
+                        color: #D26133!exportant;
                     }
                 }
                 
@@ -449,7 +449,7 @@ export default {
             //         }
 
             //         .sys-text{
-            //             color: #FF9E61!important;
+            //             color: #FF9E61!exportant;
             //         }
             //     }
 
@@ -590,7 +590,7 @@ export default {
                     }
 
                     .sys-text{
-                        color: #D26133!important;
+                        color: #D26133!exportant;
                     }
                 }
                 

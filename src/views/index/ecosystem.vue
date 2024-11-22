@@ -5,7 +5,6 @@
         :title="$t('Home_84')"
         describe="FREE TO PLAY"
       /> -->
-      <img class="eco-bg" src="@/assets/index/ecobg.png" alt="">
 
       <HomeTitle :title="[$t('Home_84')]"  />
       

@@ -79,13 +79,13 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import WalletSign from '@/components/wallet-sign.vue';
-import SendCodeButton from '@/components/SendCodeButton.vue';
-import { CommonMethod } from '@/mixin';
-import request from '@/utils/request';
-import { sendMobileCode, sendEmailCode } from '@/services/sendCode';
-import { API_USER_WALLET_WITHDRAW, API_USER_WITHDRAW } from '@/utils/constant';
+export { mapState } from 'vuex';
+export WalletSign from '@/components/wallet-sign.vue';
+export SendCodeButton from '@/components/SendCodeButton.vue';
+export { CommonMethod } from '@/mixin';
+export request from '@/utils/request';
+export { sendMobileCode, sendEmailCode } from '@/services/sendCode';
+export { API_USER_WALLET_WITHDRAW, API_USER_WITHDRAW } from '@/utils/constant';
 
 export default {
   mixins: [CommonMethod],
