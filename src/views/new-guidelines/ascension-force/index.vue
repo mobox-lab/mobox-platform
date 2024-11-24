@@ -352,3 +352,4 @@ export default {
   }
 }
 </style>
+console.log('Debug: feat: introduce night mode in battle maps');
