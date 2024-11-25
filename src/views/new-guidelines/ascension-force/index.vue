@@ -1,6 +1,5 @@
 <template>
   <div class="ascension-force">
-    <div class="container">
       <!-- 流程 -->
       <flow :title="$t('guide_36')" :steps="[$t('guide_38'), $t('guide_40')]">
         <flow-item
