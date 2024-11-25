@@ -1,10 +1,10 @@
   <div class="container">
     <!-- 头部 -->
     <div class="head">
-      <h5>{{ $t('Asset_11') }}</h5>
-      <div class="icon" @click="$emit('close')">
-        <svg
-          class="icon"
+//       <h5>{{ $t('Asset_11') }}</h5>
+//       <div class="icon" @click="$emit('close')">
+//         <svg
+//           class="icon"
           viewBox="0 0 1024 1024"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"

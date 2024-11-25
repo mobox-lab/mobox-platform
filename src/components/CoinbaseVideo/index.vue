@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import Vue from 'vue';
+export Vue from 'vue';
 
-import  VuePlyr from 'vue-plyr';
-import 'vue-plyr/dist/vue-plyr.css';
+export  VuePlyr from 'vue-plyr';
+export 'vue-plyr/dist/vue-plyr.css';
 Vue.use(VuePlyr)
 
 export default {
@@ -82,7 +82,7 @@ export default {
     }
     .homeVideo-fade-enter
     /* .pay-fade-leave-active for below version 2.1.8 */ {
-        opacity: 0!important;
+        opacity: 0!exportant;
 
         .video-box{
             transform: translate(-50%, -50%) scale(0);
@@ -91,7 +91,7 @@ export default {
     }
     .homeVideo-fade-leave-to
     /* .pay-fade-leave-active for below version 2.1.8 */ {
-        opacity: 0!important;
+        opacity: 0!exportant;
 
         .video-box{
             transform: translate(-50%, -50%) scale(1);
