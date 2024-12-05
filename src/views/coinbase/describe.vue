@@ -1,7 +1,7 @@
-<template>
-  <div class="describe view-container">
-    <h5 class="title">{{$t('CoinbaselootBrasil_1')}}</h5>
-    <p class="time">22 de março de 2023 23:00 BRT <span>-</span> 26 de março de 2023 23:00 BRT</p>
+// <template>
+//   <div class="describe view-container">
+//     <h5 class="title">{{$t('CoinbaselootBrasil_1')}}</h5>
+//     <p class="time">22 de março de 2023 23:00 BRT <span>-</span> 26 de março de 2023 23:00 BRT</p>
     <div class="video-container">
       <h6>{{$t('CoinbaselootBrasil_3')}}</h6>
       <video src="@/assets/coinbase/coinbase-nft.mp4" muted autoplay loop webkit-playsinline="false" playsinline="true"></video>
