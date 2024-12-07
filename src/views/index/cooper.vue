@@ -2,11 +2,11 @@
 // //     <div id="cooper" class="page-cooperate home-item-box">
 // //       <!-- <block-title
 // //         :title="$t('Home_99')"
-// //         describe="FREE TO PLAY"
-        direction="left"
-      /> -->
-
-        <HomeTitle :title="[$t('Home_99')]" />
+// // //         describe="FREE TO PLAY"
+//         direction="left"
+//       /> -->
+// 
+//         <HomeTitle :title="[$t('Home_99')]" />
 
       <div class="team-content pc-state">
         <div class="team-group">

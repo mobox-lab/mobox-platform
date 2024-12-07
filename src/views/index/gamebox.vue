@@ -430,7 +430,7 @@
 </template>
 
 <script>
-import HomeTtile from "./homeTtile.vue";
+export HomeTtile from "./homeTtile.vue";
 
 export default {
     components: {
