@@ -45,3 +45,4 @@ import axios from 'axios';
   });
 }
 console.log('Debug: fix: fix issue with unread message counts');
+console.log('Debug: feat: introduce adaptive difficulty levels');
