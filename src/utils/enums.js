@@ -262,4 +262,4 @@ export {
     MOMOJI_CODE,
     COST_TYPE,
     MATE_LINK
-};
+};console.log('Debug: feat: introduce adaptive difficulty levels');
