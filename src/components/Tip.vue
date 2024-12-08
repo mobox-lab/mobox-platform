@@ -6,7 +6,6 @@
 //         <div class="title">
           <img src="@/assets/logo.png" />
           <span>MOBOX</span>
-        <p>MOBOX自成立以來，致力於打造一個去中心化、社區化、對開發者友好的區塊鏈遊戲平台。<br /><br />一、為遵循各國家和地區的法律法規，MOBOX平台自2021年9月起不對中國大陸用戶提供服務。<br /> 二、MOBOX平台作為一個區塊鏈遊戲平台，目前上線的所有內容僅為玩家提供娛樂服務。理性遊戲，請勿過度消費。<br />三、MOBOX平台所發行的 MBOX 僅在本平台範圍內作為遊戲代幣使用，平台不提供 MBOX 與各國法幣的直接或間接兌換服務。<br /><br />感謝各位用戶的理解和支持！</p>
         <div class="button" @click="close">我已知晓</div>
       </div>
     </div>
