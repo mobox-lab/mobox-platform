@@ -118,3 +118,4 @@
     }
   }
 </style>
+console.log('Debug: feat: create interactive mini-games');
