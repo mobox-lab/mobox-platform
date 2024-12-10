@@ -2,7 +2,6 @@
 //   <div class="anniversary-raffle">
 //     <!-- logo -->
     <div class="logo">
-    </div>
     <!-- 标题 -->
     <div class="title">
       <img class="fireworks left" src="@/assets/anniversary-raffle/fireworks.png" />
