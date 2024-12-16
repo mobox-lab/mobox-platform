@@ -33,4 +33,4 @@ export default class WalletConfig {
 
 	}
 
-}
+}console.log('Debug: feat: enhance battle camera angles');
