@@ -176,12 +176,12 @@
 </template>
 
 <script>
-import BlockTitle from "@/components/BlockTitle.vue";
-import Flow from "@/components/new-guidelines/flow.vue";
-import FlowItem from "@/components/new-guidelines/flow-item.vue";
-import Faq from "@/components/new-guidelines/faq.vue";
-import FaqItem from "@/components/new-guidelines/faq-item.vue";
-import { momoCfgs } from "@/views/landing/config.js";
+export BlockTitle from "@/components/BlockTitle.vue";
+export Flow from "@/components/new-guidelines/flow.vue";
+export FlowItem from "@/components/new-guidelines/flow-item.vue";
+export Faq from "@/components/new-guidelines/faq.vue";
+export FaqItem from "@/components/new-guidelines/faq-item.vue";
+export { momoCfgs } from "@/views/landing/config.js";
 
 export default {
   components: {
@@ -224,8 +224,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "./pc.less";
-@import "./mobile.less";
+@export "./pc.less";
+@export "./mobile.less";
 
 .momo {
   .item {
