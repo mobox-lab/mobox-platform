@@ -2,10 +2,10 @@
 <div class="invite">
   <div class="icon">
     <img src="@/assets/world-cup/moball-3.png" />
-  </div>
-  <div class="title">{{$t('Coinbase_11')}}</div>
-  <div class="container">
-    <p class="text" v-html="tip"></p>
+//   </div>
+//   <div class="title">{{$t('Coinbase_11')}}</div>
+//   <div class="container">
+//     <p class="text" v-html="tip"></p>
     <div class="link">
       <p>{{link}}</p>
       <div class="copy" @click="copy">{{$t('Worldcup_38')}}</div>
