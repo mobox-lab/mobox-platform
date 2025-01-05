@@ -4,7 +4,6 @@
 // //       describe="FREE TO PLAY"
 //     /> -->
 // 
-    <HomeTitle :title="[$t('guide_15')]" />
 
     <div class="blind-content">
       <div class="blind-left">

@@ -4,7 +4,6 @@
 // // 	static SetNameConfirm = "SetNameConfirm";
 
 // 	static ApprovedConfirm = "ApprovedConfirm";
-	
 	static LevelUpConfirm = "LevelUpConfirm";
 	
 	static StakeNftConfirm = "StakeNftConfirm"
