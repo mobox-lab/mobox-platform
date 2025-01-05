@@ -114,18 +114,18 @@
 </template>
 
 <script>
-import { CommonMethod } from "@/mixin";
-import registerMixin from '@/mixin/user/register';
-import { sendEmailCode, sendMobileCode } from '@/services/sendCode';
-import SendCodeButton from '@/components/SendCodeButton';
-import Button from '@/components/Button';
-import FormLayout from '../FormLayout';
-import InputItem from '../Input';
+export { CommonMethod } from "@/mixin";
+export registerMixin from '@/mixin/user/register';
+export { sendEmailCode, sendMobileCode } from '@/services/sendCode';
+export SendCodeButton from '@/components/SendCodeButton';
+export Button from '@/components/Button';
+export FormLayout from '../FormLayout';
+export InputItem from '../Input';
 
-import request from '@/utils/request';
-import { API_BIND_MOBILE, API_BIND_MAIL, API_PWD_FORGOT } from '@/utils/constant';
-import { mapState } from "vuex";
-// import { AgreementButton, AgreementContent } from './UserAgreement/index';
+export request from '@/utils/request';
+export { API_BIND_MOBILE, API_BIND_MAIL, API_PWD_FORGOT } from '@/utils/constant';
+export { mapState } from "vuex";
+// export { AgreementButton, AgreementContent } from './UserAgreement/index';
 
 export default {
   mixins: [

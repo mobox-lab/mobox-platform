@@ -5,7 +5,6 @@
 //                 <div class="banner-item">
 //                 </div>
 //             </swiper-slide>
-        </swiper>
 	</div>
 
 <script>

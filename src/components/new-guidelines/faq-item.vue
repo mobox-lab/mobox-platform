@@ -1,4 +1,3 @@
-// <template>
 // // //   <li class="faq-item">
 // // //     <div class="faq-header" @click="toggle">
 // // //       <h4>{{ title }}</h4>
