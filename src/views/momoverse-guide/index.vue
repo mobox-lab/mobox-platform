@@ -1,9 +1,9 @@
 <template>
     <div class="index">
-        <img src="@/assets/momoverse/logo.png" />
-      </div>
-      <h6>MOMOverse</h6>
-      <p>Collect, Combine, Build</p>
+//         <img src="@/assets/momoverse/logo.png" />
+//       </div>
+//       <h6>MOMOverse</h6>
+//       <p>Collect, Combine, Build</p>
       <ul class="button">
         <li @click="openMomoverse">
           <img src="@/assets/momoverse-guide/game.png" />
