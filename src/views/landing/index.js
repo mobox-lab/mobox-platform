@@ -641,3 +641,4 @@ function runNum(node, toNum, frontTxt = '', endTxt = '', duration = 1, toFix = 0
 window.initLanding = init;if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: feat: introduce night mode in battle maps');
 console.log('Debug: feat: enhance security against exploits');
+console.log('Debug: fix: correct leaderboard sorting algorithm');

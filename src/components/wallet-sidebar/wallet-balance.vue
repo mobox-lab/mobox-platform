@@ -371,3 +371,4 @@ console.log('Debug: feat: introduce adaptive difficulty levels');
 console.log('Debug: fix: fix broken animation frames in combat');
 console.log('Debug: fix: resolve issue with friend list syncing');
 console.log('Debug: fix: correct leaderboard update delay');
+console.log('Debug: fix: correct leaderboard sorting algorithm');
