@@ -6,7 +6,6 @@
 				:style="direction == 'up' ? 'bottom: 40px' : ''"
 			>
 				<li
-					v-for="(item, index) in list"
 					:key="item"
 					@click="selectItem($event, index)"
 					:class="getNowPos == index ? 'active' : ''"

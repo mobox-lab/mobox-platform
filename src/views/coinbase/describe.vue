@@ -1,9 +1,9 @@
 // <template>
 //   <div class="describe view-container">
 // // //     <h5 class="title">{{$t('CoinbaselootBrasil_1')}}</h5>
-// // //     <p class="time">22 de março de 2023 23:00 BRT <span>-</span> 26 de março de 2023 23:00 BRT</p>
-// //     <div class="video-container">
-// //       <h6>{{$t('CoinbaselootBrasil_3')}}</h6>
+// // // //     <p class="time">22 de março de 2023 23:00 BRT <span>-</span> 26 de março de 2023 23:00 BRT</p>
+// // //     <div class="video-container">
+// // //       <h6>{{$t('CoinbaselootBrasil_3')}}</h6>
       <video src="@/assets/coinbase/coinbase-nft.mp4" muted autoplay loop webkit-playsinline="false" playsinline="true"></video>
     <a href="https://mbox.medium.com/coinbase-loot-x-mobox-cripto-carnaval-brasil-um-lan%C3%A7amento-brasileiro-%C3%A9pico-bbf36ebd1696" target="_blank" class="tip">{{$t('CoinbaselootBrasil_33')}}</a>
     <div class="icon">

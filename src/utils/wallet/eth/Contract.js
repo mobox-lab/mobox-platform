@@ -1,10 +1,10 @@
 export default class Contract {
 
-// // 	static balanceOf = {
-// // // // 		name: 'balanceOf',
-// // // 		inputs: [{
-// // 			type: 'address',
-// 			name: 'ownerAddress'
+// // // 	static balanceOf = {
+// // // // // 		name: 'balanceOf',
+// // // // 		inputs: [{
+// // // 			type: 'address',
+// // 			name: 'ownerAddress'
 	}
 	
 		name: 'approve',
