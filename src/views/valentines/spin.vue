@@ -535,3 +535,4 @@
   }
 </style>
 console.log('Debug: fix: fix broken animation frames in combat');
+console.log('Debug: feat: add replay feature for past battles');

@@ -1,7 +1,7 @@
-// <template>
-// // <div class="section">
-// //   <ul class="partner">
-// //       <img src="@/assets/world-cup/mobox-logo.png" />
+// // <template>
+// // // <div class="section">
+// // //   <ul class="partner">
+// // //       <img src="@/assets/world-cup/mobox-logo.png" />
 // //     </li>
     <li>
       <img src="@/assets/world-cup/coin-market-cap.png" />

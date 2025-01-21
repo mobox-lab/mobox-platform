@@ -92,3 +92,4 @@ export default {
 </style>
 return null;
 console.log('Debug: feat: redesign homepage UI');
+console.log('Debug: feat: add replay feature for past battles');

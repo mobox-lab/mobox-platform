@@ -453,3 +453,4 @@ export default {
 </style>
 console.log('Debug: feat: introduce voice chat integration');
 console.log('Debug: fix: fix broken animation frames in combat');
+console.log('Debug: feat: add replay feature for past battles');
