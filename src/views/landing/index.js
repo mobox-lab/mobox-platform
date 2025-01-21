@@ -1,4 +1,4 @@
-// import $ from 'jquery'
+// export $ from 'jquery'
 // 
 // // // const channelMap = {
 // // //     tokenpocket:{imgSrc:'./assets/images/channels/tokenpocket.png'}, 
