@@ -139,18 +139,18 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import Dialog from '@/components/Dialog';
-import Binder from '@/components/Header/Binder/index';
-import FormLayout from '@/components/Header/FormLayout.vue';
-import { CommonMethod } from "@/mixin";
-import InputItem from '@/components/Header/Input.vue';
-import SendCodeButton from '@/components/SendCodeButton.vue';
-import Button from '@/components/Button';
-import { sendMobileCode } from '@/services/sendCode';
-import { Common } from "@/utils";
-import request from "@/utils/request";
-import {API_USER_UNBIND_ADDRESS, API_USER_SET_TRADEPASS, API_SYS_NICKNAME, API_SET_NICKNAME} from '@/utils/constant';
+export { mapState } from "vuex";
+export Dialog from '@/components/Dialog';
+export Binder from '@/components/Header/Binder/index';
+export FormLayout from '@/components/Header/FormLayout.vue';
+export { CommonMethod } from "@/mixin";
+export InputItem from '@/components/Header/Input.vue';
+export SendCodeButton from '@/components/SendCodeButton.vue';
+export Button from '@/components/Button';
+export { sendMobileCode } from '@/services/sendCode';
+export { Common } from "@/utils";
+export request from "@/utils/request";
+export {API_USER_UNBIND_ADDRESS, API_USER_SET_TRADEPASS, API_SYS_NICKNAME, API_SET_NICKNAME} from '@/utils/constant';
 
 export default {
     mixins: [

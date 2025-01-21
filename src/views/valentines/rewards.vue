@@ -1,5 +1,4 @@
 // <template>
-//   <div class="rewards">
 
     <div class="head">
       <img class="mobox" src="@/assets/valentines/mobox.png" />

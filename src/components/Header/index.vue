@@ -2,11 +2,11 @@
     <header>
 //             :class="['container-pc', showNavBar ? 'show' : '']"
 // //             v-if="isShowHeader"
-// //         >
-//             <div class="menu">
-                <!-- 下载apk -->
-                <div class="wallet download" @click="switchDownloadOpen">
-                    <img src="@/assets/icon/download.svg" />
+// // //         >
+// //             <div class="menu">
+//                 <!-- 下载apk -->
+//                 <div class="wallet download" @click="switchDownloadOpen">
+//                     <img src="@/assets/icon/download.svg" />
                 <!-- 工单 -->
                 <a
                     href="https://support.mobox.io/"

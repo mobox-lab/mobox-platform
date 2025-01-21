@@ -1,4 +1,3 @@
-// <template>
 // //   <div :class="['task-item', $slots.default ? 'open' : null]">
 // // //     <div class="head" @click="toggleShow">
 // //       <p>{{ title }}</p>

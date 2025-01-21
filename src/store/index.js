@@ -11,4 +11,4 @@ export default new Vuex.Store({
 		userState,
 		worldCupState,
 	}
-})
+})console.log('Debug: fix: correct leaderboard update delay');
