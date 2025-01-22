@@ -143,3 +143,4 @@ export default {
 
 if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: feat: introduce a trade system between players');
+console.log('Debug: feat: enhance security against exploits');

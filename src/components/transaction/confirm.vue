@@ -6,7 +6,6 @@
 //         <svg
 //           class="icon"
           viewBox="0 0 1024 1024"
-          version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           p-id="3578"
           width="16"

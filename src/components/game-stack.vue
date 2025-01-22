@@ -1,8 +1,8 @@
-    <div :class="['game-stack', isPackUp ? 'pack-up' : null, current ? null : 'not-game']" v-if="games.length">
-        <!-- 头部工具 -->
-        <div class="tools" v-if="games.length > 1 ? true : !current" :style="{marginBottom: (games.length * 15) + 'px'}">
-                <img src="@/assets/game-stack/count.png" />
-                <span>x{{games.length}}</span>
+//     <div :class="['game-stack', isPackUp ? 'pack-up' : null, current ? null : 'not-game']" v-if="games.length">
+//         <!-- 头部工具 -->
+//         <div class="tools" v-if="games.length > 1 ? true : !current" :style="{marginBottom: (games.length * 15) + 'px'}">
+//                 <img src="@/assets/game-stack/count.png" />
+//                 <span>x{{games.length}}</span>
             </div>
             <div class="button" @click="togglePackUp">
                 <img src="@/assets/game-stack/left.png" />
