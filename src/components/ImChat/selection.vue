@@ -4,7 +4,6 @@
         </div>
         <ul :style="`height:${ulHeight}px`">
             
-            <!-- <li class="active">#Momo Farm</li>
             <li>#ChainZ Arena</li> -->
         </ul>
     </div>
