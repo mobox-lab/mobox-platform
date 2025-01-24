@@ -2,10 +2,10 @@
 // 
 // //   <div :class="['container', isExpandMenu ? 'expand' : null]">
 // //     <div class="sidebar" @mouseleave="mouseleave">
-// //       <div class="head">
-// //         <img src="@/assets/logo.png" />
-      </div>
-      <div class="menu">
+// // //       <div class="head">
+// // //         <img src="@/assets/logo.png" />
+//       </div>
+//       <div class="menu">
         <a href="javascript:void(0)" class="item" v-for="(item, index) in menus" :key="index" @click="openMenu(index)" :class="$route.fullPath == item.link ? 'active' : null">
           <div class="icon">
             <img :src="item.icon" />

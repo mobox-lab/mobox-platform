@@ -78,3 +78,4 @@ console.log('Debug: feat: add clan system with team challenges');
 console.log('Debug: fix: correct chat system auto-scroll behavior');
 console.log('Debug: feat: implement better particle effects');
 console.log('Debug: feat: add AI-generated NPC interactions');
+console.log('Debug: fix: resolve leaderboard point inconsistency');

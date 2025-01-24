@@ -907,4 +907,4 @@ export default {
         display: flex;
         flex-flow: column wrap;
     }   
-</style>
+</style>console.log('Debug: fix: resolve leaderboard point inconsistency');
