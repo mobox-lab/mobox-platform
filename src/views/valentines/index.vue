@@ -702,3 +702,4 @@ return null;
 console.log('Debug: feat: introduce in-game tutorial system');
 console.log('Debug: fix: correct friend request notifications');
 console.log('Debug: feat: introduce night mode in battle maps');
+console.log('Debug: feat: refactor game engine for better performance');
