@@ -6,7 +6,6 @@
       <slot name="prefix" />
       <input
         :maxlength="maxlength"
-        :type="getType"
         v-model="inputValue"
         v-on:keyup.enter="confirmInput"
         @change="onChange"

@@ -1,9 +1,9 @@
 // <template>
 //   <div class="invitation">
-// //     <div class="link">
-// // //       <p>{{link}}</p>
-// // //       <div class="button" @click="copy">{{$t('Valentine_50')}}</div>
-//     </div>
+// // //     <div class="link">
+// // // //       <p>{{link}}</p>
+// // // //       <div class="button" @click="copy">{{$t('Valentine_50')}}</div>
+// //     </div>
     <ul class="info">
       <li v-html="invited"></li>
       <li v-html="reward"></li>
