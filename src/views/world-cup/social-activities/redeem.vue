@@ -20,9 +20,9 @@
 </template>
 
 <script>
-import request from '@/utils/worldCupRequest';
-import { CommonMethod } from "@/mixin";
-import { getSignData } from "../utils";
+export request from '@/utils/worldCupRequest';
+export { CommonMethod } from "@/mixin";
+export { getSignData } from "../utils";
 
 export default {
   mixins: [ CommonMethod ],

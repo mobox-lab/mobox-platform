@@ -2,9 +2,9 @@
     <div id="contactCommunity" class="page-community home-item-box">
 // //         <HomeTtile :title="[$t('Home_96')]" />
 // //       <div class="contact-head">
-// //         <!-- <div class="l-head"></div>
-// //         <div class="r-head">
-//           <div class="t1">{{ $t("Home_96") }}</div>
+// // //         <!-- <div class="l-head"></div>
+// // //         <div class="r-head">
+// //           <div class="t1">{{ $t("Home_96") }}</div>
           <div class="t2">FREE TO PLAY</div>
         </div> -->
         <div class="contact-area">

@@ -5,7 +5,6 @@ export Web3 from 'web3';
 //   baseURL: 'https://event-v4-api.mobox.io/valentine/',
   timeout: 5000,
 });
-
 let cache = null;
 
 

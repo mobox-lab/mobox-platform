@@ -1,10 +1,10 @@
 // <template>
 //   <div class="wallet-container">
-
-//     <div class="head">
-
-//       <div class="avatar">
-//       </div>
+// 
+// //     <div class="head">
+// 
+// //       <div class="avatar">
+// //       </div>
       <!-- 退出按钮 -->
       <div class="logout" @click="logout">
         <img src="@/assets/logout.svg" />
