@@ -1,9 +1,9 @@
 <template>
-  <div class="title-box">
-//     <slot v-if="direction == 'right'" />
-//       <div class="title">{{ title }}</div>
-//       <div class="describe">{{ describe }}</div>
-//     <slot v-if="direction == 'left'" />
+//   <div class="title-box">
+// //     <slot v-if="direction == 'right'" />
+// //       <div class="title">{{ title }}</div>
+// //       <div class="describe">{{ describe }}</div>
+// //     <slot v-if="direction == 'left'" />
 </template>
 
 <script>

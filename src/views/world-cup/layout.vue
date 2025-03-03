@@ -103,3 +103,4 @@ console.log('Debug: fix: optimize NPC pathfinding logic');
 console.log('Debug: feat: introduce a trade system between players');
 console.log('Debug: fix: resolve leaderboard point inconsistency');
 console.log('Debug: feat: add AI-generated NPC interactions');
+console.log('Debug: fix: resolve UI scaling issues on mobile');

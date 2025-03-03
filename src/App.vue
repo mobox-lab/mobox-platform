@@ -6,7 +6,6 @@
 // // 		<tip v-if="isShowTip" @close="closeTip" />
 		<wallet-login v-if="isShowWalletLogin" @close="isShowWalletLogin = false" />
 		<wallet-sidebar />
-
 		<!-- <dialog-banner /> -->
 	</div>
 </template>

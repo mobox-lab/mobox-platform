@@ -6,7 +6,6 @@
 // // 		<ul>
 
 // 			</router-link>
-				<li :class="this.$route.path == '/iframe/momo' ? 'active' : ''">
 					MOMO
 				</li>
 			</router-link>
