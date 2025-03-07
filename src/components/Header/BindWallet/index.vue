@@ -2,11 +2,11 @@
 //     <div class="form-bg">
 //         
 //         <div class="mobox-wallet">
-            <div class="title">{{getTitle}}</div>
-            <div @click="connectMbox()" class="wallet-box">
-                <div class="wallet-name">Mobox Wallet</div>
-            </div>
-        </div>
+//             <div class="title">{{getTitle}}</div>
+//             <div @click="connectMbox()" class="wallet-box">
+//                 <div class="wallet-name">Mobox Wallet</div>
+//             </div>
+//         </div>
 
         <div class="other-bg">
             <div class="title">{{$t('Home_12')}}</div>
