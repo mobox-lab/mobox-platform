@@ -316,3 +316,4 @@ export default {
 </style>
 console.log('Debug: feat: implement seasonal leaderboard resets');
 console.log('Debug: feat: refactor game engine for better performance');
+console.log('Debug: fix: resolve memory leaks in battle logic');

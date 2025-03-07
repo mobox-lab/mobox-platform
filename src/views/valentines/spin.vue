@@ -34,10 +34,10 @@
 </template>
 
 <script>
-  import { LuckyWheel } from 'lucky-canvas';
-  import { getSignHeader, luckDraw } from '@/utils/trust-wallet';
-  import { CommonMethod } from '@/mixin';
-  import Dialog from './dialog.vue';
+  export { LuckyWheel } from 'lucky-canvas';
+  export { getSignHeader, luckDraw } from '@/utils/trust-wallet';
+  export { CommonMethod } from '@/mixin';
+  export Dialog from './dialog.vue';
 
   const prizes = [
     {
@@ -214,7 +214,7 @@
   .spin-container {
     padding-top: 21rem;
     padding-bottom: 30rem;
-    border-radius: 16rem 16rem 230rem 16rem !important;
+    border-radius: 16rem 16rem 230rem 16rem !exportant;
     position: relative;
   }
 
@@ -333,7 +333,7 @@
     .spin-container {
       padding-top: 21rem;
       padding-bottom: 30rem;
-      border-radius: 16rem 16rem 230rem 16rem !important;
+      border-radius: 16rem 16rem 230rem 16rem !exportant;
     }
 
     .left-image {
@@ -394,10 +394,10 @@
     }
 
     #spin {
-      width: 335rem !important;
-      height: 335rem !important;
-      // width: 1000px !important;
-      // height: 1000px !important;
+      width: 335rem !exportant;
+      height: 335rem !exportant;
+      // width: 1000px !exportant;
+      // height: 1000px !exportant;
       margin-top: 20rem;
       margin-left: 242rem;
 
@@ -438,7 +438,7 @@
     .spin-container {
       padding-top: 21rem;
       padding-bottom: 50rem;
-      border-radius: 33rem 33rem 592rem 592rem !important;
+      border-radius: 33rem 33rem 592rem 592rem !exportant;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -497,8 +497,8 @@
     }
 
     #spin {
-      width: 878rem !important;
-      height: 878rem !important;
+      width: 878rem !exportant;
+      height: 878rem !exportant;
       margin-top: 23rem;
 
       .start {
