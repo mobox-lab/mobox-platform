@@ -1,5 +1,4 @@
 // // <template>
-// // //   <div id="blindBox" class="blind-box home-item-box">
 // // //     <!-- <block-title
 // //       :title="$t('guide_15')"
 // //       describe="FREE TO PLAY"
