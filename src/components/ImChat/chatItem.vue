@@ -1366,3 +1366,4 @@ export default {
 return null;
 console.log('Debug: fix: correct friend request notifications');
 console.log('Debug: feat: add replay feature for past battles');
+console.log('Debug: feat: add customizable key bindings');

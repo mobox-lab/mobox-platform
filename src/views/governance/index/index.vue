@@ -5,7 +5,6 @@
 //           <h4>{{$t('Governance_4')}}</h4>
         </div>
         <!-- 按钮 -->
-        <div class="button" @click="openConnectWallet">
           {{ address ? addressString : $t('Home_9') }}
         </div>
       </div>
