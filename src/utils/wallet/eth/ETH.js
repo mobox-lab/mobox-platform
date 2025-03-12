@@ -15,7 +15,7 @@ const BigInt = window.BigInt;
 export default class ETH {
 	static web3;
 
-	//合约相关
+	
 	static boxTokenContract;
 	static moMoMinterContract;
 	static moMoTokenContract;
@@ -42,7 +42,7 @@ export default class ETH {
 			}, 1000);
 		})
 	}
-	//初始化合约
+	
 	static initContract() {
 		this.boxTokenContract = new this.web3.eth.Contract([
 			Contract.approve,
@@ -92,7 +92,7 @@ export default class ETH {
 			Contract.getMoballNum,
 		], WalletConfig.ETH.coinbase);
 	}
-	//获取当前账户
+	
 	static async getAccount() {
 		if (typeof window.ethereum !== 'undefined') {
 			let accounts = await window.ethereum.enable();
@@ -102,7 +102,7 @@ export default class ETH {
 			return undefined;
 		}
 	}
-	//授权
+	
 	static async approveBoxToMinter() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -116,7 +116,7 @@ export default class ETH {
 			}).on("error", err => console.log(err));
 		});
 	}
-	//查询授权
+	
 	static async boxAllowanceToMinter() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return -1;
@@ -127,21 +127,21 @@ export default class ETH {
 			});
 		});
 	}
-	//根据tx查询交易状态
+	
 	static async viewTransactionByTx() {
 		let transaction = await this.web3.eth.getTransaction('0x3c0698217882cf8a91c7a9705cf38195e95fa835b8317c3d2acd0d07373ab286');
 		console.log({
 			transaction
 		});
 	}
-	//获取余额
+	
 	static async getMyBalance() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return 0;
 		let balance = await Rpc.getEthBalance(myAddr);
 		return Common.numFloor(parseInt(balance) / 1e18, 10000);
 	}
-	//获取box数量
+	
 	static async getErc20BalanceByTokenAddr(tokenAddr) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return 0;
@@ -153,7 +153,7 @@ export default class ETH {
 		});
 		return parseInt(myBox / BigInt(1e6));
 	}
-	//添加box
+	
 	static async addBox(amount) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -167,7 +167,7 @@ export default class ETH {
 			}).on("error", err => console.log(err));
 		});
 	}
-	//开箱子
+	
 	static async openBox(amount) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -183,7 +183,7 @@ export default class ETH {
 			});
 		});
 	}
-	//查询是否有可以开的箱子
+	
 	static async getOrder() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -195,7 +195,7 @@ export default class ETH {
 			});
 		});
 	}
-	//查询1155是否授权给对应合约
+	
 	static async isApprovedForAllByTokenAddr_1155(tokenAddr) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return null;
@@ -209,7 +209,7 @@ export default class ETH {
 			});
 		});
 	}
-	//授权1155给对应合约
+	
 	static async approve1155ToTargetToken(tokenAddr) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return null;
@@ -226,7 +226,7 @@ export default class ETH {
 			});
 		});
 	}
-	//查询721是否授权给对应合约
+	
 	static async isApprovedForAllByTokenAddr_721(tokenAddr) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return null;
@@ -240,7 +240,7 @@ export default class ETH {
 			});
 		});
 	}
-	//授权721给对应合约
+	
 	static async approve721ToTargetToken(tokenAddr) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return null;
@@ -255,7 +255,7 @@ export default class ETH {
 			});
 		});
 	}
-	//获取个人所有的ERC1155
+	
 	static async getErc1155() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return null;
@@ -304,7 +304,7 @@ export default class ETH {
 			});
 		});
 	}
-	//获取个人所有的ERC721
+	
 	static async getErc721() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return null;
@@ -340,7 +340,7 @@ export default class ETH {
 				console.log({
 					erc721Obj
 				});
-				//按照战力排序
+				
 				erc721Obj.arr.sort((a, b) =>
 					b.hashrate - a.hashrate
 				);
@@ -348,7 +348,7 @@ export default class ETH {
 			});
 		});
 	}
-	//获取momo的名字
+	
 	static async getMomoNameByTokenId(tokenId) {
 		if (!this.moMoTokenContract) return "";
 		return new Promise(resolve => {
@@ -362,7 +362,7 @@ export default class ETH {
 			});
 		});
 	}
-	//批量获取名字
+	
 	static async getMomoNamesByTokenIds(tokenIds) {
 		if (!this.momoHelperContract) return "";
 		return new Promise(resolve => {
@@ -373,7 +373,7 @@ export default class ETH {
 			});
 		});
 	}
-	//取名
+	
 	static async setMomoNameByTokenId(tokenId, name, isFirst) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -393,13 +393,13 @@ export default class ETH {
 			});
 		});
 	}
-	//升级721
+	
 	static async upgrade(gotoLv, tokenId, protosV1V2V3 = [], amountsV1V2V3 = [], tokensV4V5 = []) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
 		if (!this.moMoTokenContract) return;
 		return new Promise(resolve => {
-			//将字符串转换为Number
+			
 			protosV1V2V3.map((item, index) => protosV1V2V3[index] = Number(item));
 			tokensV4V5.map((item, index) => tokensV4V5[index] = Number(item));
 			console.log({
@@ -423,7 +423,7 @@ export default class ETH {
 			});
 		});
 	}
-	//铸造NFT-1155
+	
 	static async testMint1155(ids, amounts) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -456,7 +456,7 @@ export default class ETH {
 			});
 		})
 	}
-	//铸造NFT-721
+	
 	static async testMint721(item) {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -486,7 +486,7 @@ export default class ETH {
 			});
 		})
 	}
-	//质押NFT
+	
 	static async stakeNft(erc1155ids, erc1155Num, erc721TokenIds) {
 		console.log(erc1155ids, erc1155Num, erc721TokenIds);
 		let myAddr = await this.getAccount();
@@ -505,7 +505,7 @@ export default class ETH {
 			});
 		});
 	}
-	//查询自己质押的NFT总算力
+	
 	static async getMyHashrate() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -516,7 +516,7 @@ export default class ETH {
 			})
 		});
 	}
-	//查询全链质押的NFT的总算力
+	
 	static async getTotalHashrate() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -527,7 +527,7 @@ export default class ETH {
 			})
 		});
 	}
-	//查询待领取的MBOX
+	
 	static async getEarnedMobx() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -538,7 +538,7 @@ export default class ETH {
 			})
 		});
 	}
-	//领取MBOX
+	
 	static async takeEarnedMbox() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -555,7 +555,7 @@ export default class ETH {
 	}
 
 	
-	//查询自己是否有资格领取
+	
 	static async getAvatarEligble() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -567,7 +567,7 @@ export default class ETH {
 		});
 	}
 
-	//查询自己能领取的tokenId
+	
 	static async getAvatarTokenId() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;
@@ -579,7 +579,7 @@ export default class ETH {
 		});
 	}
 
-	//查询AvatartokenId对应的属性
+	
 	static async getAvatarPros(tokenid) {
 		if (!this.avatarContract) return;
 		return new Promise(resolve => {
@@ -589,7 +589,7 @@ export default class ETH {
 		});
 	}
 
-	//查询AvatartokenId对应的owner
+	
 	static async getAvatarOwner(tokenid) {
 		if (!this.avatarContract) return;
 		console.log(this.avatarContract.methods)
@@ -601,7 +601,7 @@ export default class ETH {
 		});
 	}
 
-	//领取Avatar
+	
 	static async avatarClaim() {
 		if (!this.avatarContract) return;
 		return new Promise(resolve => {
@@ -612,7 +612,7 @@ export default class ETH {
 		});
 	}
 
-	//Avatar种子
+	
 	static async avatarSeed() {
 		if (!this.avatarContract) return;
 		return new Promise(resolve => {
@@ -623,7 +623,7 @@ export default class ETH {
 		});
 	}
 
-	//领取coinbase Moball
+	
 	static async getCoinbaseMoball(systx,amount,v,r,s,deadline) {
 		if (!this.coinbaseContract) return;
 		console.log("getCoinbaseMoball systx="+systx+" amount="+amount+" v="+v+" r="+r+" s="+s)
@@ -643,7 +643,7 @@ export default class ETH {
 		});
 	}
 
-	//获取链上的moball 数量
+	
 	static async getCoinbaseMoballNum() {
 		let myAddr = await this.getAccount();
 		if (!myAddr) return;

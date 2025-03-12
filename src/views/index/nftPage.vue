@@ -414,11 +414,11 @@ export default {
       );
 
       // if (side == 0) {
-      //   // 往左
+      
       //   console.log("????");
       //   this.$refs.epicScroll.scrollBy(-80, 0);
       // } else if (side == 1) {
-      //   // 往右
+      
       //   this.$refs.epicScroll.scrollBy(80, 0);
       // }
     },
@@ -627,19 +627,19 @@ export default {
       }
 
       .heroscroll::-webkit-scrollbar {
-        /*滚动条整体样式*/
-        width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+        
+        width: 4px; 
         height: 4px;
         scrollbar-arrow-color: red;
       }
       .heroscroll::-webkit-scrollbar-thumb {
-        /*滚动条里面小方块*/
+        
         border-radius: 5px;
         background: rgba(0, 0, 0, 0.2);
         scrollbar-arrow-color: red;
       }
       .heroscroll::-webkit-scrollbar-track {
-        /*滚动条里面轨道*/
+        
         border-radius: 0;
         background: rgba(0, 0, 0, 0.1);
       }
@@ -750,7 +750,7 @@ export default {
       }
     }
 
-    // 获取第一只momo
+    
     .get-momo {
       margin-top: 20px;
       border: 1px solid #34363b;
@@ -763,7 +763,7 @@ export default {
         display: none;
       }
 
-      // 标题信息
+      
       .title-info {
         display: flex;
         align-items: center;
@@ -974,7 +974,7 @@ export default {
               white-space: break-spaces;
             }
 
-            // 价格
+            
             .price {
               margin-top: 10px;
 
@@ -996,19 +996,19 @@ export default {
       }
 
       .scroll-area::-webkit-scrollbar {
-        /*滚动条整体样式*/
-        width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+        
+        width: 4px; 
         height: 4px;
         scrollbar-arrow-color: red;
       }
       .scroll-area::-webkit-scrollbar-thumb {
-        /*滚动条里面小方块*/
+        
         border-radius: 5px;
         background: rgba(0, 0, 0, 0.2);
         scrollbar-arrow-color: red;
       }
       .scroll-area::-webkit-scrollbar-track {
-        /*滚动条里面轨道*/
+        
         border-radius: 0;
         background: rgba(0, 0, 0, 0.1);
       }

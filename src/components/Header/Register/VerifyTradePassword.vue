@@ -26,7 +26,7 @@ export default {
     };
   },
   methods: {
-    // 下一步
+    
     next(password) {
       if (this.$parent.formData.trade_passwd != password) {
         this.showNotify('PIN输入不一致');
@@ -35,7 +35,7 @@ export default {
 
       this.register();
     },
-    // 注册
+    
     async register() {
       if (this.loading) {
         return;
@@ -49,9 +49,9 @@ export default {
           data: this.$parent.formData,
         }, false);
 
-        // 保存token
+        
         this.$store.commit('userState/setToken', res.data.token);
-        // 获取用户信息
+        
         this.$store.dispatch('userState/getUserInfo');
         this.$parent.next();
       } catch(error) {

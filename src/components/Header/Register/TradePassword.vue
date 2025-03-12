@@ -1,6 +1,6 @@
 // <template>
 // //   <FormLayout
-// //     title="设置PIN"
+
 // //   >
 // //   </FormLayout>
 // // </template>
@@ -15,7 +15,7 @@ export default {
     TradePasswordInput,
   },
   methods: {
-    // 下一步
+    
     next(password) {
       this.$parent.formData.trade_passwd = password;
       this.$parent.next();

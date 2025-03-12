@@ -8,7 +8,7 @@ export Web3 from 'web3';
 
 let cache = null;
 
-// 响应拦截
+
 instance.interceptors.response.use((response) => {
   if (response.status == 200) {
     if ('code' in response.data && response.data.code === 200) {
@@ -31,7 +31,7 @@ export async function getSignHeader() {
         method: "eth_requestAccounts",
       });
       const address = res[0];
-      // 签名
+      
       const sign = await web3.eth.personal.sign(message, address);
 
       cache = {
@@ -49,13 +49,13 @@ export function clearCache() {
   cache = null;
 }
 
-// 注册
+
 export async function register(source) {
   const headers = await getSignHeader();
   return instance.post('bind/addr', { source }, { headers });
 }
 
-// 获取状态
+
 export async function getStatus(address) {
   return instance.get('status', {
     params: {
@@ -64,19 +64,19 @@ export async function getStatus(address) {
   });
 }
 
-// 提交名称
+
 export async function submitName(name) {
   const headers = await getSignHeader();
   return instance.post('bind/twtName', { name }, { headers });
 }
 
-// 提交连接
+
 export async function submitLink(link) {
   const headers = await getSignHeader();
   return instance.post('bind/twtLink', { link }, { headers });
 }
 
-// 获取mohearts数量
+
 export async function getMohearts(address) {
   const { data } = await instance.get('balance', {
     params: {
@@ -87,13 +87,13 @@ export async function getMohearts(address) {
   return data.balance;
 }
 
-// 抽奖
+
 export async function luckDraw(headers) {
   const { data } = await instance.post('molovebox/open', { num: 100 }, { headers });
   return +data[0].gid;
 }
 
-// 事件任务
+
 export async function getEventTasks(address) {
   return instance.get('blanket/tasks', {
     params: {
@@ -102,7 +102,7 @@ export async function getEventTasks(address) {
   })
 }
 
-// 每日任务
+
 export async function getDailyTasks(address) {
   return instance.get('daily/tasks', {
     params: {
@@ -111,7 +111,7 @@ export async function getDailyTasks(address) {
   })
 }
 
-// 获取日志
+
 export async function getRecords(address) {
   return instance.get('molovebox/logs', {
     params: {

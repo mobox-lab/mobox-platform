@@ -221,7 +221,7 @@ export default {
         },
         creatQrCode(url) {
             new QRCode(this.$refs.qrCodeUrl, {
-                text: url, // 需要转换为二维码的内容
+                text: url, 
                 width: 100,
                 height: 100,
                 colorDark: '#254498',
@@ -230,7 +230,7 @@ export default {
             })
 
             new QRCode(this.$refs.postercode, {
-                text: url, // 需要转换为二维码的内容
+                text: url, 
                 width: this.codeW,
                 height: this.codeW,
                 colorDark: '#254498',
@@ -239,7 +239,7 @@ export default {
             })
         },
         setAchieveStage(currentStep){
-            // 排序一下currentStep
+            
             const {achieveRewardCfg} = this;
             const stage = {from:0,to:0}
 

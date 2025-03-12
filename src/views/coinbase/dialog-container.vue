@@ -1,7 +1,7 @@
 <template>
   <div class="dialog-container">
 // //       <slot />
-// //       <!-- 关闭按钮 -->
+
 // //       <div class="close" @click="$emit('close')">
 //         <img src="@/assets/coinbase/close.png" />
     </div>

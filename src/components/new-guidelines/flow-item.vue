@@ -8,7 +8,7 @@
 <script>
 export default {
   props: {
-    // 图片
+    
     image: String,
   },
 };
@@ -55,7 +55,7 @@ export default {
 
 // pc
 @media (min-width: 768px) {
-  // 流程
+  
   .flow-item {
     width: 279px;
     height: 347px;

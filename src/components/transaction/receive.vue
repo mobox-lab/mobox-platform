@@ -104,19 +104,19 @@
   export default {
     mixins: [ CommonMethod ],
     props: {
-      // 币种
+      
       coin: String,
-      // 地址
+      
       address: String,
     },
     data() {
       return {
-        // 链
+        
         chain: 'bnb',
       };
     },
     methods: {
-      // 切换链
+      
       toggleChain(value) {
           this.chain = value
       },
@@ -141,7 +141,7 @@
       },
     },
     mounted() {
-      // 创建二维码
+      
       new QRCode(this.$refs.qrcode, {
         width: 140,
         height: 140,

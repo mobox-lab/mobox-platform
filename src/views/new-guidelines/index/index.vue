@@ -33,7 +33,7 @@ export default {
     margin: 0 auto;
   }
 
-  // 按钮 - 通用
+  
   /deep/ .button-box {
     list-style: none;
     margin-top: 24px;
@@ -72,7 +72,7 @@ export default {
 // mobile
 @media (max-width: 768px) {
   .guidelines {
-    // 按钮
+    
     /deep/ .button-box {
       li {
         margin: 0 10px;
@@ -85,7 +85,7 @@ export default {
 // pc
 @media (min-width: 768px) {
   .guidelines {
-    // 按钮
+    
     /deep/ .button-box {
       li {
         padding: 0 10px;

@@ -180,11 +180,11 @@ export default {
 
             t1 : null,
 
-            // 验证码
+            
             code:'',
-            // 密码
+            
             password: '',
-            // 确认密码
+            
             confirmPassword: '',
             sign : '',
             signTs : ''
@@ -200,7 +200,7 @@ export default {
     },
 
     computed: {
-        // 规则
+        
         rules() {
             return [
                 {
@@ -217,7 +217,7 @@ export default {
                 },
             ];
         },
-        // 长度验证
+        
         verifyLength() {
             return this.password.length === 6;
         },
@@ -376,7 +376,7 @@ export default {
             this.isShowChange = true;
         },
         bindWallet(){
-            // 绑定钱包地址
+            
         },
         changePwd(){
             this.modalType = "password";
@@ -494,7 +494,7 @@ export default {
                 white-space: normal;
             }
 
-            // 成功状态
+            
             &.success {
                 &::before {
                 background-image: url('../../assets/icon/userSystem/success.png');

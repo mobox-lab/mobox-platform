@@ -6,7 +6,7 @@ const instance = Axios.create({
   timeout: 5000,
 });
 
-// 响应拦截
+
 instance.interceptors.response.use((response) => {
   if (response.status == 200) {
     if ('code' in response.data && response.data.code === 200) {

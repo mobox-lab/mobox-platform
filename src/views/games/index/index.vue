@@ -1,6 +1,6 @@
 // <template>
 //   <div class="games">
-// //     <!-- 轮播 -->
+
 //       <div class="banner">
 //         <div class="content">
           <h6>MOMOverse</h6>
@@ -192,11 +192,11 @@ export default {
     };
   },
   methods: {
-    // 打开游戏详情
+    
     toGameDetails() {
       this.$router.push('/games/momoverse');
     },
-    // 切换轮播
+    
     switchBanner(value) {
       this.currentIndex = value;
     },
@@ -225,7 +225,7 @@ export default {
     margin-top: 75px;
   }
 
-  // 轮播
+  
   .banner {
     width: 100%;
     position: relative;
@@ -315,7 +315,7 @@ export default {
     }
 
     .footer {
-      // 指示器
+      
       .indicator {
         height: 28px;
         background: rgba(0, 0, 0, 0.8);
@@ -342,7 +342,7 @@ export default {
     }
   }
 
-  // 推荐游戏
+  
   .trending-games {
     ul {
       width: 100%;
@@ -463,7 +463,7 @@ export default {
     }
   }
 
-  // 所有游戏列表
+  
   .all-games {
     overflow: hidden;
 
@@ -666,7 +666,7 @@ export default {
     }
   }
 
-  // 轮播
+  
   @media (min-width: 1600px) {
     .banner {
       height: 680px;
@@ -819,7 +819,7 @@ export default {
     }
   }
 
-  // 热门游戏
+  
   @media (min-width: 1920px) {
     .trending-games {
       ul {
@@ -853,7 +853,7 @@ export default {
     }
   }
 
-  // 所有游戏
+  
   @media (min-width: 1920px) {
     .all-games {
       ul {
@@ -922,7 +922,7 @@ export default {
     }
   }
 
-  // 底部信息
+  
   @media (min-width: 1500px) {
     footer {
       display: flex;

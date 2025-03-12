@@ -44,24 +44,24 @@ export default {
   data() {
     return {
       isEmail: true,
-      // 当前邮箱步骤
+      
       step: 0,
-      // 表单数据
+      
       formData: {},
     };
   },
   methods: {
-    // 切换模式
+    
     toggleModel(status) {
       this.isEmail = status;
       this.step = 0;
       this.formData = {};
     },
-    // 下一步
+    
     next() {
       this.step++;
     },
-    // 返回
+    
     back() {
       this.step--;
     },
@@ -121,7 +121,7 @@ export default {
           transition: transform 0.3s;
         }
 
-        // 激活状态
+        
         &.active {
           color: #ffffff;
 

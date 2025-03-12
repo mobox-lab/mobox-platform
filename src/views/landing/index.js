@@ -7,7 +7,7 @@
 //     handy:{imgSrc:'./assets/images/channels/handy.png'}
 // }
 
-// 拓展多语言
+
 let lang = null;
 
 $.extend({
@@ -43,7 +43,7 @@ $.extend({
 });
 
 $.fn.screen = function () {
-    let $this = this;//第一个div
+    let $this = this;
     let wheelName = navigator.userAgent.indexOf("Firefox") > 0 ? "DOMMouseScroll" : "mousewheel";
 
     // $(this).on('touchstart', function(e){
@@ -54,7 +54,7 @@ $.fn.screen = function () {
     let startY = 0;
 
     $('.next-page').on('click', ()=>{
-        // 下滚f翻页
+        
         slide(1)
     })
 
@@ -73,7 +73,7 @@ $.fn.screen = function () {
 
             const lastPageNode = $(`#scene${lastPage}`);
  
-            // 去掉可能的所有的进入情况
+            
             lastPageNode.removeClass(`page-${lastPage}`);
             lastPageNode.removeClass(`page-${lastPage}-in`);
 
@@ -114,7 +114,7 @@ $.fn.screen = function () {
     //     slide(1);
     // })
     $(this).on("touchstart", function(e) {
-        //e.preventDefault();//会使所有的触屏都失效，不能用
+        
         startX = e.originalEvent.changedTouches[0].pageX,
         startY = e.originalEvent.changedTouches[0].pageY;
     });
@@ -139,7 +139,7 @@ $.fn.screen = function () {
         let event = window.event || arguments.callee.caller.arguments[0];
         //console.log(event);
         let contentV = 0;
-        //统一线下滚动为负数
+        
         if (event.wheelDelta) {
             contentV = Math.floor(event.wheelDelta / 120) * 60;
 
@@ -148,7 +148,7 @@ $.fn.screen = function () {
         }
         //console.log(contentV);
         if (contentV < 0) {
-            //向下滚动为1，向上滚动为-1
+            
             console.log("下滚动作");
             slide(1);
         } else {
@@ -157,25 +157,25 @@ $.fn.screen = function () {
         }
     });
 
-    const totalPage = 7; // 总共五页 最后到4
-    let currentPage = 1;//当前的页数
-    // let currentPage = 3;//当前的页数
+    const totalPage = 7; 
+    let currentPage = 1;
+    
     let flag = false;
     // let flag = true;
 
     // function backHomePage(){
     //     const nowNode = $(`#scene${currentPage}`);
         
-    //     // 去掉可能的所有的进入情况 清场
+    
     //     nowNode.removeClass(`page-${currentPage}`);
     //     nowNode.removeClass(`page-${currentPage}-in`);
     //     nowNode.addClass(`page-${currentPage}-out`);
 
-    //     // 设置跳回的界面
+    
     //     currentPage = 1;
     // }
 
-    //n是1就向下切屏，n是-1就向上切屏。
+    
     function slide(n) {
         if (!flag) {
 
@@ -189,7 +189,7 @@ $.fn.screen = function () {
 
             const lastPageNode = $(`#scene${lastPage}`);
  
-            // 去掉可能的所有的进入情况
+            
             lastPageNode.removeClass(`page-${lastPage}`);
             lastPageNode.removeClass(`page-${lastPage}-in`);
 
@@ -273,7 +273,7 @@ $.fn.screen = function () {
                 node.removeClass('page-3-out');
                 node.hide();
 
-                // 清空apy
+                
                 apyNode.text('0%')
 
                 if(currentPage===2){
@@ -384,7 +384,7 @@ $.fn.screen = function () {
     setPageListener();
 }
 
-//引用方法
+
 // $(function () {
 //     $('#main').screen();
 // });
@@ -393,7 +393,7 @@ let boxSpine = null;
 let beanMan = null;
 let t1 = null;
 let nowEatIdx = 0;
-// 是否可以播放吃豆人动画
+
 let canEatBean = true;
 
 function initSpine(){
@@ -410,7 +410,7 @@ function cleanBean(){
     clearTimeout(t1)
     canEatBean = false;
 
-    // 初始化并停止
+    
     nowEatIdx = 0;
     beanMan.attr('src', './assets/images/bean/beanman.png');
     beanMan.stop();
@@ -460,7 +460,7 @@ function initListener(){
         const name = e.originalEvent.animationName;
 
         if(name === 'bounceIn'){
-            // 重新初始化吃豆人开吃
+            
             canEatBean = true;
             nowEatIdx = 0;
             beanMan.css('left','0px');
@@ -552,7 +552,7 @@ function init(){
 
     initNodes();
 
-    // 初始化吃豆人
+    
     cleanBean();
 
     // runRemainBox();
@@ -599,7 +599,7 @@ function runNum(node, toNum, frontTxt = '', endTxt = '', duration = 1, toFix = 0
     }, dt);
 }
 
-// 渲染剩余箱子的动画
+
 // function runRemainBox(){
 //     var num = 1846;
 //     var odo1 = new window.Odometer('.Odometer2',{
@@ -609,7 +609,7 @@ function runNum(node, toNum, frontTxt = '', endTxt = '', duration = 1, toFix = 0
 //     console.log(odo1)
 // }
 
-// 获取url参数
+
 // function getUrlParams(paras) {
 //     const reg = new RegExp('(^|&)' + paras + '=([^&]*)(&|$)');
 //     const r = window.location.search.substr(1).match(reg);

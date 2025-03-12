@@ -90,19 +90,19 @@
     data() {
       return {
         spin: null,
-        // 钱包
+        
         wallet: window.localStorage.getItem('anniversary-raffle-wallet'),
-        // 地址
+        
         address: '',
-        // 票数
+        
         ticket: 0,
-        // 抽奖loading
+        
         loading: false,
-        // 弹窗显示状态
+        
         isShowDialog: false,
-        // 中奖物品
+        
         prize: null,
-        // 帮助
+        
         faq: [
           {
             title: 'Anniversary_4',
@@ -158,11 +158,11 @@
           },
         });
       },
-      // 切换显示faq
+      
       toggleShowFAQ(index) {
         this.showFAQIndex = index === this.showFAQIndex ? -1 : index;
       },
-      // 抽奖
+      
       async luckDraw() {
         if (this.loading) {
           return;
@@ -179,7 +179,7 @@
           const time = Math.floor(Date.now() / 3600000);
           const message = `momo_event_${time}`;
           const sign = await WalletUtils.sign(this.address, this.wallet, message);
-          // 调用抽奖
+          
           const { data } = await lottery(this.address, sign);
           this.spin.play();
           await this.delayed(4000);
@@ -200,13 +200,13 @@
           this.loading = false;
         }
       },
-      // 延迟
+      
       delayed(timer) {
         return new Promise((resolve) => {
           setTimeout(resolve, timer);
         });
       },
-      // 连接钱包
+      
       async connectWallet() {
         const name = window.localStorage.getItem('anniversary-raffle-wallet');
         const { address, wallet } = await WalletUtils.connect(name);
@@ -214,14 +214,14 @@
         this.wallet = wallet;
         this.address = address;
       },
-      // 获取票据信息
+      
       async getTicketInfo() {
         const { data } = await getTicketInfo(this.address);
         this.ticket = data.ticket;
       },
-      // 初始化
+      
       async init() {
-        // 连接钱包
+        
         await this.connectWallet();
 
         if (!this.address) {
@@ -229,20 +229,20 @@
         }
 
         window.localStorage.setItem('anniversary-raffle-wallet', this.wallet);
-        // 初始化抽奖
+        
         this.$nextTick(this.initLuckyWheel);
-        // 获取票数
+        
         await this.getTicketInfo();
       },
     },
     created() {
-      // 监听窗口大小变化
+      
       window.addEventListener('resize', this.setSize);
-      // 设置字体大小
+      
       this.setSize();
 
       if (this.wallet) {
-        // 初始化
+        
         this.init();
       }
     },

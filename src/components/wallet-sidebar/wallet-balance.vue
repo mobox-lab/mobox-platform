@@ -1,8 +1,8 @@
 // <template>
 //   <div class="wallet-container">
-//     <!-- 个人信息 -->
+
 //     <div class="head">
-//       <!-- 头像 -->
+
 //       <div class="avatar">
 //       </div>
       <!-- 退出按钮 -->
@@ -57,7 +57,7 @@
   export Drawer from "../drawer.vue";
   export Record from "./record.vue";
 
-  // 中心化钱包显示的币种
+  
   const boxCoins = ['mbox', 'mec', 'bnb', 'cake'];
 
   export default {
@@ -110,7 +110,7 @@
         balanceMap: (state) => state.userState.balanceMap,
         coinRate: (state) => state.userState.coinRate,
       }),
-      // 绑定的地址
+      
       address() {
         if (this.userInfo?.addresses?.length) {
           return this.userInfo.addresses[0].address;
@@ -118,7 +118,7 @@
 
         return null;
       },
-      // 中心化钱包币种
+      
       boxCoins() {
         return boxCoins.map((item) => {
           return {
@@ -128,7 +128,7 @@
           };
         });
       },
-      // mbox价格
+      
       mboxPrice() {
         if (this.coinRate.mbox) {
           return `${Common.numFloor(this.coinRate.mbox.price, 1000)}`;
@@ -136,7 +136,7 @@
           return `0`;
         }
       },
-      // mec价格
+      
       mecPrice() {
         if (this.coinRate.mec) {
           return `${Common.numFloor(this.coinRate.mec.price, 1000)}`;
@@ -146,7 +146,7 @@
       },
     },
     methods: {
-      // 退出登录
+      
       logout() {
         this.$root.eventHub.$emit("platform-logout");
         this.$root.eventHub.$emit("set-login-token", false);
@@ -160,11 +160,11 @@
           this.$router.push("/");
         }
       },
-      // 打开BOX钱包币种交易
+      
       openBoxWalletTransaction(coin) {
         this.$root.eventHub.$emit("show-transaction", coin);
       },
-      // 获取钱包余额
+      
       async getBalances() {
         const result = await Promise.all([
           // mbox
@@ -183,7 +183,7 @@
 
         this.coins.forEach((item, index) => item.balance = result[index]);
       },
-      // 切换记录显示
+      
       toggleShowRecord() {
         this.isShowRecord = !this.isShowRecord;
       }

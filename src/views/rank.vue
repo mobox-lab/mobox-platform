@@ -252,7 +252,7 @@ export default {
 
 
 <style lang="less" scoped>
-    // 导航菜单
+    
     .nav {
         padding: 0;
         margin: 0;

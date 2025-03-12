@@ -115,10 +115,10 @@ export default {
             //         // Returns signature.
             //         let bindRes = await this.bindAddress(connector._accounts[0], result)
             //         if(bindRes){
-            //             // 关闭此界面
+            
             //             this.$parent.$parent.isShowBindWallet = false;
-            //             // 进入领key界面
-            //             console.log('绑定成功')
+            
+            
             //         }
             //     })
             //     .catch(error => {
@@ -159,10 +159,10 @@ export default {
             //         // Returns signature.
             //         let bindRes = await this.bindAddress(accounts[0], result)
             //         if(bindRes){
-            //             // 关闭此界面
+            
             //             this.$parent.$parent.isShowBindWallet = false;
-            //             // 进入领key界面
-            //             console.log('绑定成功')
+            
+            
             //         }
             //     })
             //     .catch(error => {
@@ -189,9 +189,9 @@ export default {
                     if(!err){
                         let bindRes = await this.bindAddress(wallets[0], res)
                         if(bindRes){
-                            // 关闭此界面
+                            
                             this.$parent.$parent.isShowBindWallet = false;
-                            // 进入领key界面
+                            
                             console.log('绑定成功')
                         }
                     }
@@ -212,9 +212,9 @@ export default {
                     if(!err){
                         let bindRes = await this.bindAddress(wallets[0], res)
                         if(bindRes){
-                            // 关闭此界面
+                            
                             this.$parent.$parent.isShowBindWallet = false;
-                            // 进入领key界面
+                            
                             console.log('绑定成功')
                         }
                     }
@@ -239,10 +239,10 @@ export default {
                     console.log(res)
                     let bindRes = await this.bindAddress(wallets[0], res.signature)
                     if(bindRes){
-                        // 关闭此界面
+                        
                         this.$parent.$parent.isShowBindWallet = false;
-                        // 进入领key界面
-                        // console.log('领key界面')
+                        
+                        
                     }
                 }).catch((err)=>{
                 })
@@ -251,7 +251,7 @@ export default {
             }
         },
         async connectMeta(){
-            // 链接metamask钱包
+            
             const {ethereum} = window;
             if(!ethereum){
                 this.showNotify(this.$t('Error_22'), 'error');
@@ -267,9 +267,9 @@ export default {
                     
                     let bindRes = await this.bindAddress(wallets[0], res)
                     if(bindRes){
-                        // 关闭此界面
+                        
                         this.$parent.$parent.isShowBindWallet = false;
-                        // 进入领key界面
+                        
                         console.log('领key界面')
                     }
                 }).catch((err)=>{

@@ -98,11 +98,11 @@ export default {
   },
   data() {
     return {
-      // 当前抡博下标
+      
       currentIndex: 0,
-      // 视频播放状态
+      
       isPaused: false,
-      // 合作伙伴
+      
       cooperative: [
         {
           image: require('@/assets/cmcnft/group1.png'),
@@ -211,11 +211,11 @@ export default {
     ...mapState({
       localArea: (state) => state.globalState.data.localArea.value,
     }),
-    // 当前轮播是否是视频
+    
     isVideo() {
       return this.videos[this.currentIndex].lastIndexOf('.mp4') !== -1;
     },
-    // 轮播
+    
     banners() {
       const list = [
         {
@@ -274,17 +274,17 @@ export default {
 
       return list;
     },
-    // 当前轮播
+    
     currentBanner() {
       return this.banners[this.currentIndex];
     }
   },
   methods: {
-    // 切换轮播
+    
     switchBanner(value) {
       this.currentIndex = value;
     },
-    // 切换视频播放状态
+    
     toggleVideoPlay() {
       const video = this.$refs.video;
 
@@ -296,12 +296,12 @@ export default {
 
       this.isPaused = video.paused;
     },
-    // 自动播放下一张
+    
     autoPlay() {
       const nextIndex = this.currentIndex + 1;
       this.switchBanner(nextIndex >= this.banners.length ? 0 : nextIndex);
     },
-    // 打开轮播
+    
     openBanner() {
       const symbol = this.currentBanner.symbol;
 
@@ -334,7 +334,7 @@ export default {
   position: relative;
   -webkit-app-region: drag;
 
-  // 视频轮播切换动画
+  
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity 0.5s;
@@ -477,7 +477,7 @@ export default {
   }
 }
 
-// 底部信息
+
 .banner-info {
   position: relative;
 
@@ -506,9 +506,9 @@ export default {
     }
   }
 
-  // 播放和指示器
+  
   .right {
-    // 播放按钮
+    
     .play {
       display: inline-block;
       padding: 10px 15px;
@@ -539,7 +539,7 @@ export default {
       }
     }
 
-    // 指示器
+    
     .indicator {
       background: rgba(0, 0, 0, 0.8);
       margin-top: 30px;
@@ -567,7 +567,7 @@ export default {
   }
 }
 
-// 合作伙伴
+
 .partner {
   @height: 38px;
 

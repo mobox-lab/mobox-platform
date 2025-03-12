@@ -209,7 +209,7 @@ export default {
         },
 
         getDefaultCurPos(){
-            // 获取默认选中的货币类型
+            
             const {currencyMap, selectedCurrency} = this.currencyInfo;
             const currencyArr = Object.keys(currencyMap);
             let res = 0;
@@ -280,7 +280,7 @@ export default {
             this.selectMenuIdx = idx;
         },
         async getBaseCfg(){
-            // 获取成就系统的基本配置
+            
             const {code, data} = await request(API_ACHIEVE_CFG, {
 				method: 'POST',
 			});

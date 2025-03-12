@@ -59,7 +59,7 @@ export default {
     justify-content: center;
     align-items: flex-start;
 
-    // 遮罩层
+    
     .mask {
       position: fixed;
       background: #202736;
@@ -82,7 +82,7 @@ export default {
     //   opacity: 0.7;
     // }
 
-    // 内容
+    
     .content {
       max-width: 100%;
       position: relative;
@@ -91,7 +91,7 @@ export default {
     }
   }
 
-  // 过度动画
+  
   .bounce-enter-active,
   .bounce-leave-active {
     transition: opacity 0.3s;

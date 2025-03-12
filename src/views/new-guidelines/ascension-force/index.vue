@@ -1,6 +1,6 @@
 <template>
 //   <div class="ascension-force">
-//       <!-- 流程 -->
+
 // //       <flow :title="$t('guide_36')" :steps="[$t('guide_38'), $t('guide_40')]">
 // //         <flow-item
 // //           slot="left"
@@ -224,7 +224,7 @@ export default {
       list-style: none;
     }
 
-    // nft列表
+    
     .nft-list {
       display: flex;
       padding: 10px;
@@ -249,7 +249,7 @@ export default {
           background: linear-gradient(180deg, #ffa400 0%, #805200 100%);
         }
 
-        // 背景
+        
         .bg {
           position: absolute;
           height: 100%;
@@ -258,7 +258,7 @@ export default {
           z-index: 0;
         }
 
-        // 标签
+        
         .tag {
           line-height: 1;
           background: #202226;
@@ -269,7 +269,7 @@ export default {
       }
     }
 
-    // 信息容器
+    
     .info {
       display: flex;
       padding: 30px;
@@ -297,7 +297,7 @@ export default {
 
   // MOMO
   .momo {
-    // 信息
+    
     .info {
       flex: 1;
 
@@ -316,7 +316,7 @@ export default {
     }
   }
 
-  // 算力加成
+  
   .ascension-bonus-1 {
     .info-layout {
       position: relative;
@@ -328,7 +328,7 @@ export default {
       box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.76);
       border-radius: 10px;
 
-      // 标题
+      
       .title {
         display: flex;
         align-items: center;

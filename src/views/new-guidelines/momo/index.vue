@@ -1,7 +1,7 @@
 // <template>
 //   <div class="momo">
 // //     <div class="container">
-// // //       <!-- 流程 -->
+
 // //       <flow :title="$t('guide_16')" :steps="[$t('guide_20'), $t('guide_22')]">
 //         <flow-item
 //           slot="left"
@@ -236,7 +236,7 @@ export default {
     max-width: 100%;
   }
 
-  // 采集和挖矿
+  
   .mining {
     .layout {
       margin-top: 60px;
@@ -251,14 +251,14 @@ export default {
         color: #e5e7f2;
       }
 
-      // 文本
+      
       p {
         display: block;
       }
     }
   }
 
-  // 宝箱申购
+  
   .purchase {
     background: url(../../../assets/new-guidelines/box-purchase-bg.png);
     background-repeat: no-repeat;
@@ -285,7 +285,7 @@ export default {
           z-index: 0;
         }
 
-        // 标题
+        
         .title {
           width: 100%;
           top: 30px;
@@ -297,7 +297,7 @@ export default {
           }
         }
 
-        // 背景
+        
         .bg {
           overflow: hidden;
           img {
@@ -305,13 +305,13 @@ export default {
           }
         }
 
-        // 底部托盘
+        
         .footer {
           left: 0;
           bottom: 0;
         }
 
-        // 箱子
+        
         .box {
           top: 0;
           left: 0;
@@ -349,7 +349,7 @@ export default {
     }
   }
 
-  // momo列表
+  
   .momo-list {
     list-style: none;
     margin-top: 33px;
@@ -368,7 +368,7 @@ export default {
     }
   }
 
-  // 介绍
+  
   .introduce {
     .info {
       .button-box {

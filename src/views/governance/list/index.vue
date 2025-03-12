@@ -87,11 +87,11 @@ export default {
   margin-top: 30px;
   padding-bottom: 20px;
 
-  // 禁用样式
+  
   .disbled {
     cursor: no-drop !exportant;
 
-    // 移除hover样式
+    
     &:hover {
       opacity: 1 !exportant;
     }
@@ -155,7 +155,7 @@ export default {
       }
     }
 
-    // 筛选
+    
     .select-layout {
       display: flex;
       justify-content: flex-end;
@@ -182,7 +182,7 @@ export default {
     }
   }
 
-  // 菜单
+  
   .menu {
     padding: 20px;
 
@@ -246,7 +246,7 @@ export default {
       }
     }
 
-    // 禁用
+    
   }
 }
 </style>

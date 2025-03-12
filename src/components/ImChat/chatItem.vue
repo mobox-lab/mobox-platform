@@ -103,8 +103,8 @@ const langMap = {
 }
 const xssFilters = require("xss-filters");
 
-const regex = /\[(.+?)\]/g; // 全局搜索表情
-const regex2 = /\[(.+?)\]/; // 局部搜索表情
+const regex = /\[(.+?)\]/g; 
+const regex2 = /\[(.+?)\]/; 
 
 const regex3 = /\[\*(.+?)\\*]/g;
 const regex4 = /\[_(.+?)_\]/g;
@@ -162,7 +162,7 @@ export default {
     data(){
         return {
             isOpenMenu:false,
-            posIdx : 0 ,// 0是正常 1是顶部 2是底部
+            posIdx : 0 ,
 
             selectContent:{},
             translateMap:{},
@@ -273,7 +273,7 @@ export default {
             // console.log(e)
             // console.log("heyhey")
             if(!this.isRole || this.isRole == 0) {
-                // 不是管理员
+                
                 return
             }
 
@@ -343,7 +343,7 @@ export default {
                 </div>`
             }
 
-            // 渲染表情
+            
             const emojiSingle = str.match(regex2);
             if(!!emojiSingle && emojiSingle[0] === emojiSingle.input){
                 let key = emojiSingle[1];
@@ -370,7 +370,7 @@ export default {
                 })
             }
 
-            // 渲染@人
+            
             // console.log(data.a)
             if(data.a){
                 if(data.a.length && typeof data.a == "object"){
@@ -442,7 +442,7 @@ export default {
             let {isCom, data} = this.data;
 
             if(data){
-                if(isCom) {data = data[0]} // 如果是合并情况 取第一个数组
+                if(isCom) {data = data[0]} 
 
                 return data.t && data.t!=0;
             } else {
@@ -453,7 +453,7 @@ export default {
             let {isCom, data} = this.data;
 
             if(data){
-                if(isCom) {data = data[0]} // 如果是合并情况 取第一个数组
+                if(isCom) {data = data[0]} 
 
                 return data.r == 2;
             } else {
@@ -464,7 +464,7 @@ export default {
             let {isCom, data} = this.data;
 
             if(data){
-                if(isCom) {data = data[0]} // 如果是合并情况 取第一个数组
+                if(isCom) {data = data[0]} 
 
                 return data.r == 1;
             } else {
@@ -475,7 +475,7 @@ export default {
             let {isCom, data} = this.data;
 
             if(data){
-                if(isCom) {data = data[0]} // 如果是合并情况 取第一个数组
+                if(isCom) {data = data[0]} 
 
                 return data.t ? `https://www.mobox.io/img/badges/1380${data.t}.png` : ``;
             } else {
@@ -486,7 +486,7 @@ export default {
             let {isCom, data} = this.data;
 
             if(data){
-                if(isCom) {data = data[0]} // 如果是合并情况 取第一个数组
+                if(isCom) {data = data[0]} 
 
                 return Number(this.myid) !== Number(data.u);
             } else {
@@ -497,7 +497,7 @@ export default {
             let {isCom, data} = this.data;
 
             if(data){
-                if(isCom) {data = data[0]} // 如果是合并情况 取第一个数组
+                if(isCom) {data = data[0]} 
 
                 return data.l || 0;
             } else {
@@ -508,7 +508,7 @@ export default {
             let {isCom, data} = this.data;
 
             if(data){
-                if(isCom) {data = data[0]} // 如果是合并情况 取第一个数组
+                if(isCom) {data = data[0]} 
                 
                 if(this.ifSys){
                     return ''
@@ -522,7 +522,7 @@ export default {
         getTs(){
             let {isCom, data} = this.data;
             if(data){
-                if(isCom) {data = data[0]} // 如果是合并情况 取第一个数组
+                if(isCom) {data = data[0]} 
 
                 const date = new Date(data.s*1000);
                 const chatYear = date.getFullYear();
@@ -547,7 +547,7 @@ export default {
         getName(){
             let {isCom, data} = this.data;
             if(data){
-                if(isCom) {data = data[0]} // 如果是合并情况 取第一个数组
+                if(isCom) {data = data[0]} 
                 const {n, u} = data;
 
                 if(n){

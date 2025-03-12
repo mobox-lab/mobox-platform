@@ -28,18 +28,18 @@ export default {
     };
   },
   methods: {
-    // 获取光标
+    
     focus({ target }) {
       target.select();
     },
-    // input输入
+    
     inputChange(index, { data, target }) {
       data = data || '';
       data = data.trim();
 
-      // 判断新增还是删除
+      
       if (data) {
-        // 下个节点
+        
         const node = target.nextSibling;
         this.$set(this.password, index, data);
         target.value = data;
@@ -51,7 +51,7 @@ export default {
         this.$delete(this.password, index);
       }
     },
-    // 删除
+    
     remove(index, { target }) {
       if (target.value) {
         return;
@@ -64,7 +64,7 @@ export default {
         target.previousSibling.focus();
       }
     },
-    // 下一步
+    
     next() {
       this.$emit('next', Object.values(this.password).join(''));
     },

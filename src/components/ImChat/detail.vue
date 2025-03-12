@@ -21,8 +21,8 @@ export { EMOJI_CODE, MOMOJI_CODE } from "@/utils/enums.js";
 export { Common } from "@/utils";
 const xssFilters = require("xss-filters");
 
-const regex = /\[(.+?)\]/g; // 全局搜索表情
-const regex2 = /\[(.+?)\]/; // 局部搜索表情
+const regex = /\[(.+?)\]/g; 
+const regex2 = /\[(.+?)\]/; 
 
 const regex3 = /\[\*(.+?)\\*]/g;
 const regex4 = /\[_(.+?)_\]/g;
@@ -75,7 +75,7 @@ export default {
             str = xssFilters.inHTMLData(str);
             // console.log(str)
 
-            // 渲染表情
+            
             const emojiSingle = str.match(regex2);
             if(!!emojiSingle && emojiSingle[0] === emojiSingle.input){
                 let key = emojiSingle[1];
@@ -102,7 +102,7 @@ export default {
                 })
             }
 
-            // 渲染@人
+            
             (data.a || []).map((item)=>{
                 if(this.roomIdMap){
                     if(this.roomIdMap[item]){

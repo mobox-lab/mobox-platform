@@ -96,7 +96,7 @@
                 this.games.splice(index, 1);
             },
             show(symbol, mode) {
-                // 首页滚动到顶部 - 禁止滚动
+                
                 if (this.$route.name == 'Index') {
                     this.disableScroll();
                 }
@@ -175,7 +175,7 @@
         position: fixed;
         bottom: 20px;
         left: 100px;
-        // 避免首页左侧悬浮栏挡住
+        
         z-index: 99998;
 
         * {
@@ -198,7 +198,7 @@
             }
         }
 
-        // 工具
+        
         .tools {
             display: flex;
             z-index: 10;

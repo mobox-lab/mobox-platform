@@ -26,9 +26,9 @@
 <script>
   export default {
     props: {
-      // 标题
+      
       title: String,
-      // 币种
+      
       coins: Array,
     },
     methods: {

@@ -58,7 +58,7 @@ export default {
     },
     data(){
         return {
-            // 钱包列表
+            
             wallets: [
                 {
                 name: "MOBOX Wallet (recommended)",

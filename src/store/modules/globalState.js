@@ -3,7 +3,7 @@
 // // import {API_CURRENCYPRICE, API_GET_DEPOSIT_ADDR, API_PAYMENT_WITHDRAW_CFG, API_STATIC_MOBOX_INFOS, MARKE_VALUE} from '@/utils/constant';
 // // import { Common } from "@/utils";
 // 
-// 金额格式化
+
 function formatMoney(money, digit) {
 	var tpMoney = "0.00";
 	if (undefined != money) {
@@ -48,11 +48,11 @@ const state = () => ({
 		lang: 'en'
 	},
 	marketCap: '$0',
-	// 钱包侧边栏显示状态
+	
 	isShowWallet: false,
-	// 侧边菜单显示状态
+	
 	isShowSidebar: true,
-	// 游戏列表
+	
 	games: [
 		// {
 		// 	icon: require('@/assets/home/games/dragonverse.png'),
@@ -120,11 +120,11 @@ const chainPos = {
 }
 
 const mutations = {
-	// 修改多语言
+	
 	setLang(state, lang) {
 		state.data.lang = lang;
 	},
-	//修改全局选中的链
+	
 	setPaymentCfg(state, paymentCfg) {
 		state.data.paymentCfg = paymentCfg;
 	},
@@ -174,15 +174,15 @@ const mutations = {
 	setPoolInfo(state, poolInfo){
 		state.data.poolInfo = poolInfo
 	},
-	// 设置市值
+	
 	setMarketCap(state, value) {
 		state.marketCap = '$' + formatMoney(value, 0);
 	},
-	// 切换显示钱包
+	
 	toggleShowWallet(state) {
 		state.isShowWallet = !state.isShowWallet;
 	},
-	// 切换侧边菜单显示状态
+	
 	toggleShowSidebar(state, value) {
 		state.isShowSidebar = value;
 	}
@@ -241,7 +241,7 @@ const actions = {
 		} catch(_) {
 			console.log('用户获取汇率信息失败')
 			// context.commit("globalState/addNotify", {
-			// 	msg: '用户获取汇率信息失败',
+			
 			// 	type: 'error',
 			// }, { root: true });
 		}
@@ -258,12 +258,12 @@ const actions = {
 		} catch(_) {
 			console.log('用户获取提现配置失败')
 			// context.commit("globalState/addNotify", {
-			// 	msg: '用户获取提现配置失败',
+			
 			// 	type: 'error',
 			// }, { root: true });
 		}
 	},
-	// 获取市值
+	
 	async getMarketCap(context) {
 		const { data } = await request(MARKE_VALUE, {
 			params: {

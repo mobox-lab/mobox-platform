@@ -93,32 +93,32 @@ export default {
     SendCodeButton,
   },
   props: {
-    // 链
+    
     chain: {
       type: String,
       required: true,
     },
-    // 币种
+    
     coin: {
       type: String,
       required: true,
     },
-    // 金额
+    
     amount: {
       type: String,
       required: true,
     },
-    // 接收地址
+    
     address: {
       type: String,
       required: true,
     },
-    // 手续费
+    
     fee: {
       type: Number,
       required: true,
     },
-    // 实际收到
+    
     receivedAmount: {
       type: Number,
       required: true,
@@ -126,19 +126,19 @@ export default {
   },
   data() {
     return {
-      // 验证码类型
+      
       codeType: 'phone',
-      // 请求loading
+      
       loading: false,
-      // 签名消息
+      
       message: '',
-      // 签名时间
+      
       time: null,
-      // 签名弹窗显示状态
+      
       isShowWalletSign: false,
-      // 验证码
+      
       code: '',
-      // 交易密码
+      
       password: '',
     };
   },
@@ -161,7 +161,7 @@ export default {
     toggleCodeType() {
       this.codeType = this.codeType === 'phone' ? 'email' : 'phone';
     },
-    // 签名回调
+    
     async onSign(_, sign) {
       this.loading = true;
 
@@ -191,7 +191,7 @@ export default {
 
       this.loading = false;
     },
-    // 发送验证码
+    
     onSendCode() {
     if ( this.codeType === 'phone') {
         sendMobileCode(this.userInfo.mobile,  "MOBILE_WITHDRAW", true);
@@ -199,9 +199,9 @@ export default {
         sendEmailCode(this.userInfo.mail,  "MAIL_WITHDRAW", true);
     }
     },
-    // 提交
+    
     async onSubmit() {
-      // 钱包签名登录
+      
       if (this.isWalletLogin) {
         this.time = Date.now();
         const signTime = Math.floor(Date.now() / 60000);

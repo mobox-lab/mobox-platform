@@ -206,17 +206,17 @@ export default {
     },
     data() {
         return {
-            // 存在打开的游戏
+            
             isShowGame: false,
-            // 上一次滚动值
+            
             oldScrollTop: null,
-            // 是否显示导航
+            
             showNavBar: true,
-            // 搜索输入
+            
             searchValue: "",
-            // 当前链
+            
             chainIndex: 0,
-            // 链
+            
             chains: [
                 {
                     icon: "https://www.mobox.io/icons/bnb.png",
@@ -229,7 +229,7 @@ export default {
                     name: "Arbitrum",
                 },
             ],
-            // 语言
+            
             langArr: [
                 "English",
                 "Português",
@@ -241,24 +241,24 @@ export default {
             ],
             langNameToPos: ["en", "po", "zh-CN", "ru", "fr", "kr", "vn"],
             defaultSelectLangPos: 0,
-            // 注册弹窗显示状态
+            
             isShowRegister: Common.getUrlParams("showRegister") == "true",
-            // 登录弹窗显示状态
+            
             isShowLogin: !!Common.getUrlParams("login"),
-            // 密码找回弹窗显示状态
+            
             isShowPwsForgot: false,
             binderType: "password",
-            // 是否显示绑定去中心化钱包
+            
             isShowBindWallet: false,
-            // 是否需要发送绑定请求
+            
             isSendBindRequest: 0,
             bindAddressCb: () => {},
 
-            // 是否显示领取box界面
+            
             isShowBoxes: false,
             shouldOpenBox: false,
 
-            // 弹出通用确认框
+            
             isShowConfirm: false,
             isShowDeposite: false,
 
@@ -284,14 +284,14 @@ export default {
     },
     computed: {
         ...mapState({
-            // 是否登录
+            
             isLogin: (state) => !!state.userState.token,
-            // 市值
+            
             marketCap: (state) => state.globalState.marketCap,
             userInfo: (state) => state.userState.userInfo,
             coinRate: (state) => state.userState.coinRate,
             poolInfo: (state) => state.globalState.data.poolInfo,
-            // 游戏列表
+            
             games(state) {
                 return state.globalState.games.map((item) => {
                     return {
@@ -302,7 +302,7 @@ export default {
                 });
             },
         }),
-        // 搜索结果
+        
         searchResult() {
             return this.games.filter(
                 (item) =>
@@ -318,31 +318,31 @@ export default {
                 return `0`;
             }
         },
-        // 是否显示搜索
+        
         isShowHeader() {
             return this.$route.path === "/" ? !this.isShowGame : false;
         },
     },
     methods: {
-        // 切换链
+        
         switchChain(chain) {
             window.localStorage.setItem("chain", chain);
             EventBus.$emit("switch-chain", chain);
         },
-        // 链变化
+        
         changeChain(chain) {
             this.chainIndex = this.chains.findIndex(
                 (item) => item.symbol === chain
             );
         },
-        // 切换侧边菜单显示状态
+        
         toggleShowSidebar() {
             this.$store.commit(
                 "globalState/toggleShowSidebar",
                 !this.$store.state.globalState.isShowSidebar
             );
         },
-        // 跳转用户中心
+        
         toUserCenter() {
             if (this.userInfo.avatar) {
                 const gameStack = this.$parent.$children.find(
@@ -363,7 +363,7 @@ export default {
                 window.location.href
             )}`;
         },
-        // 跳转钱包
+        
         toBoxWallet() {
             const link = `https://www.mobox.io/#/assetCenter`;
             window.open(link);
@@ -397,7 +397,7 @@ export default {
             this.binderType = "password";
             this.isShowPwsForgot = true;
         },
-        // 显示注册
+        
         showShowRegister() {
             window.location.href = `${LOGINHEAD}register/phone?redirect=${encodeURIComponent(
                 window.location.href
@@ -409,7 +409,7 @@ export default {
         close() {
             this.isShowRegister = false;
         },
-        // 退出登录
+        
         logout() {
             this.$root.eventHub.$emit("platform-logout");
             this.$store.commit("userState/logout");
@@ -422,7 +422,7 @@ export default {
                 this.$router.push("/");
             }
         },
-        // 消息监听
+        
         messageListen(message) {
             const data = message.data;
 
@@ -462,7 +462,7 @@ export default {
                 this.switchChainIdx(0);
             }
         },
-        // 设置语言
+        
         setLang() {
             let lang = Common.getStorageItem("lang") || "en";
             this.$store.commit("globalState/setLang", lang);
@@ -470,7 +470,7 @@ export default {
             this.defaultSelectLangPos = this.langNameToPos.indexOf(lang);
             if (this.defaultSelectLangPos == -1) this.defaultSelectLangPos = 0;
         },
-        // 语言切换
+        
         onLangChange(index) {
             let lang = this.langNameToPos[index];
             Common.setStorageItem("lang", lang);
@@ -502,7 +502,7 @@ export default {
                 this.$refs.register.initSource(source);
             }
         },
-        // 窗口通信
+        
         listenMessage({ data }) {
             if (data.action === "refresh-token") {
                 this.$store.commit("userState/setToken", data.value);
@@ -514,22 +514,22 @@ export default {
             this.$store.dispatch("userState/getBindAddressInfo");
             this.$store.dispatch("userState/getBalance");
             this.$store.dispatch("userState/getPriceList");
-            // 获取充值地址
+            
             this.$store.dispatch("globalState/getChargeAddr");
         },
-        // 切换钱包显示状态
+        
         toggleShowWallet() {
             this.$store.commit("globalState/toggleShowWallet");
         },
         windowScroll() {
-            // 滚动条距文档顶部的距离
+            
             const scrollTop =
                 window.pageYOffset ||
                 document.documentElement.scrollTop ||
                 document.body.scrollTop;
-            // 滚动条滚动的距离
+            
             const scrollStep = scrollTop - this.oldScrollTop;
-            // 更新——滚动前，滚动条距文档顶部的距离
+            
             this.oldScrollTop = scrollTop;
 
             this.showNavBar = scrollStep < 0;
@@ -545,7 +545,7 @@ export default {
                 EventBus.$emit("open-game", symbol);
             }
         },
-        // 游戏状态改变
+        
         gameChange(value) {
             this.isShowGame = value;
         },
@@ -636,23 +636,23 @@ export default {
             this.isShowConfirm = true;
         });
 
-        // 获取nft基本信息
+        
         this.$store.dispatch("globalState/getPoolInfo");
         setInterval(() => {
-            // 每五分钟请求一次基本信息
+            
             this.$store.dispatch("userState/getPriceList");
             this.$store.dispatch("globalState/getPoolInfo");
         }, 60 * 5 * 1000);
     },
     mounted() {
         this.init();
-        // 订阅链修改
+        
         EventBus.$on("switch-chain", this.changeChain);
-        // 获取货币汇率
+        
         this.$store.dispatch("globalState/getCurrency");
-        // 获取提现配置
+        
         this.$store.dispatch("globalState/getPaymentCfg");
-        // 监听窗口通信
+        
         window.addEventListener("message", this.listenMessage, false);
     },
 };
@@ -661,7 +661,7 @@ export default {
 <style lang="less" scoped>
 @export "~@/assets/less/var.less";
 
-// 导航高度
+
 @size: 44px;
 
 header {
@@ -696,7 +696,7 @@ header {
         height: auto;
     }
 
-    // 搜索
+    
     .search-container {
         flex: 1;
         height: 100%;
@@ -733,7 +733,7 @@ header {
         }
     }
 
-    // 搜索结果
+    
     .search-result {
         position: absolute;
         top: 100%;
@@ -806,7 +806,7 @@ header {
             }
         }
 
-        // 无数据
+        
         .no-data {
             font-size: 16px;
             font-weight: 400;
@@ -1213,7 +1213,7 @@ header {
     }
 }
 
-// 搜索结果过度动画
+
 .search-animate-enter-active,
 .search-animate-leave-active {
     transition: opacity 0.4s, transform 0.4s;

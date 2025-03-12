@@ -44,9 +44,9 @@ export default {
     return {
       // loading
       loading: false,
-      // 账号
+      
       account: '',
-      // 密码
+      
       password: '',
     };
   },
@@ -71,10 +71,10 @@ export default {
         passwd: this.password,
         plat:1
       };
-      // 判断是否是邮箱
+      
       const isEmail = /\w[-\w.+]*@([A-Za-z0-9]+\.)+[A-Za-z]{1,30}/.test(this.account);
 
-      // 判断是否是邮箱
+      
       if (isEmail) {
         data.mail = this.account;
       } else {
@@ -87,10 +87,10 @@ export default {
           data,
         }, false);
 
-        // 保存token
+        
         this.$store.commit('userState/setToken', res.data.token);
 
-        // 重定向地址
+        
         const redirect = Common.getUrlParams('redirect');
 
         if (redirect) {
@@ -99,18 +99,18 @@ export default {
           return;
         }
 
-        // 隐藏
+        
         this.$parent.$parent.toggleLoginModal();
         this.$root.eventHub.$emit("platform-setToken", res.data.token);
 
-        // 获取用户信息
+        
         this.$store.dispatch('userState/getUserInfo');
 
-        // 获取充值地址
+        
         this.$store.dispatch('globalState/getChargeAddr');
-        // 获取货币汇率
+        
         this.$store.dispatch('globalState/getCurrency');
-        // 获取提现配置
+        
         this.$store.dispatch('globalState/getPaymentCfg');
 
         this.$root.eventHub.$emit('set-login-token', res.data.token);
@@ -132,7 +132,7 @@ export default {
     },
   },
   computed: {
-    // 禁用状态
+    
     disabled() {
       return !this.account || !this.password;
     },

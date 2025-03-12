@@ -11,7 +11,7 @@
 <script>
 export default {
   props: {
-    // 勾选状态
+    
     value: {
       type: Boolean,
       required: true,

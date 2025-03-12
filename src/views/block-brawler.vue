@@ -39,12 +39,12 @@ export default {
     },
   },
   methods: {
-    // 计算窗口
+    
     computeWindow() {
-      // 窗口宽度
+      
       const windowWidth = window.innerWidth * 0.6;
       const windowHeight = window.innerHeight * 0.6;
-      // 宽度相对高度的比例
+      
       const scale = 2.1653;
 
       if (windowWidth > windowHeight) {
@@ -59,7 +59,7 @@ export default {
   mounted() {
     if (!this.isMobile) {
       this.computeWindow();
-      // 监听窗口变化
+      
       window.addEventListener('resize', this.computeWindow);
     }
   },

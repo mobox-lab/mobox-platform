@@ -72,9 +72,9 @@ export default {
   },
   data() {
     return {
-      // 流动赤
+      
       pools: [],
-      // 是否显示切换链
+      
       isShowSwitchChain: false,
     };
   },
@@ -149,7 +149,7 @@ export default {
     }
   },
   methods: {
-    // 关闭切换链
+    
     closeSwitchChain() {
       this.isShowSwitchChain = false;
     },
@@ -165,7 +165,7 @@ export default {
         balance: +item.balance,
       }));
     },
-    // 打开轮播
+    
     launch(item) {
       const symbol = item.symbol;
 
@@ -208,7 +208,7 @@ export default {
   }
 }
 
-// 模块标题
+
 /deep/ .module-title {
   font-size: 27px;
   font-weight: 900;
@@ -216,7 +216,7 @@ export default {
   margin-bottom: 15px;
 }
 
-// 最新发布
+
 .new-listings {
   li {
     cursor: pointer;
@@ -288,7 +288,7 @@ export default {
   }
 }
 
-// 赛季
+
 .season {
   padding-top: 20px;
 
@@ -366,7 +366,7 @@ export default {
   }
 }
 
-// 切链
+
 .chain-card {
   width: 500px;
   height: 303px;

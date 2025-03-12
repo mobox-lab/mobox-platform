@@ -1,5 +1,5 @@
 <template>
-//   <!-- 侧边栏 -->
+
 //   <div :class="['container', isExpandMenu ? 'expand' : null]">
 //     <div class="sidebar" @mouseleave="mouseleave">
 // //       <div class="head">
@@ -166,7 +166,7 @@ export default {
 	mixins: [CommonMethod],
   data() {
     return {
-      // 链
+      
       chain: window.localStorage.getItem('chain'),
       socials: [
         {
@@ -190,9 +190,9 @@ export default {
           link: 'https://mbox.medium.com/'
         },
       ],
-      // 侧边栏菜单展开状态
+      
       isExpandMenu: false,
-      // 延时定时器
+      
       timer: null,
     };
   },
@@ -268,16 +268,16 @@ export default {
     },
   },
   methods: {
-    // 切换链
+    
     changeChain(chain) {
       this.chain = chain
     },
-    // 移入
+    
     mouseenter() {
       console.log('===移入===');
       this.isExpandMenu = true;
     },
-    // 移出
+    
     mouseleave() {
       console.log('===移出===');
       const gameStack = this.gameStack;
@@ -288,20 +288,20 @@ export default {
 
       this.isExpandMenu = false;
     },
-    // 打开游戏
+    
     openGame(symbol) {
       if (Common.isMobile()) {
         this.$router.push(`${symbol === 'block-brawler' ? '' : '/iframe'}/${symbol}`);
         return;
       }
 
-      // PC端使用悬浮窗口打开
+      
       EventBus.$emit('open-game', symbol);
     },
     toast() {
       this.showNotify("Coming Soon", "error");
     },
-    // 首页点击
+    
     toHome() {
       if (this.gameStack?.current) {
         this.gameStack.minimize();
@@ -328,7 +328,7 @@ export default {
 <style lang="less" scoped>
 @import '~@/assets/less/var.less';
 
-// 菜单高度
+
 @item-height: 40px;
 
 .container {
@@ -346,7 +346,7 @@ export default {
   bottom: 0;
 }
 
-// 侧边栏
+
 .sidebar {
   height: 100%;
   box-sizing: border-box;
@@ -474,7 +474,7 @@ export default {
     }
   }
 
-  // 菜单
+  
   .menu {
     width: 100%;
 
@@ -592,7 +592,7 @@ export default {
   }
 }
 
-// 社区
+
 .socials {
   li {
     float: left;
@@ -625,7 +625,7 @@ export default {
   }
 }
 
-// 发现
+
 .discovery {
   a {
     display: flex;
@@ -671,7 +671,7 @@ export default {
   }
 }
 
-// 模块标题
+
 .module-title {
   font-size: 16px;
   color: #2446ed;
@@ -688,7 +688,7 @@ export default {
   }
 
 
-  // 展开状态
+  
   .expand {
     .sidebar {
       transform: translateX(0);

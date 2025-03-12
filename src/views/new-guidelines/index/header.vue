@@ -1,5 +1,5 @@
 <template>
-//     <!-- 内容 -->
+
 // //     <div class="container">
 // //       <div class="top">
 // //         <div class="title">
@@ -57,13 +57,13 @@ import { Common } from '@/utils/index';
 export default {
   data() {
     return {
-      // 价格
+      
       price: '',
-      // 市值
+      
       marketCap: '',
-      // 流通量
+      
       circulation: '',
-      // 持币地址数
+      
       hodlers: '',
     };
   },
@@ -119,7 +119,7 @@ export default {
       position: absolute;
     }
 
-    // 箱子
+    
     .box {
       right: 50%;
       bottom: 50%;
@@ -136,7 +136,7 @@ export default {
     }
   }
 
-  // 底部数据
+  
   .footer-data {
     list-style: none;
 
@@ -243,17 +243,17 @@ export default {
     }
 
     .right {
-      // 背景
+      
       .bg {
         width: 550px;
       }
 
-      // 箱子
+      
       .box {
         width: 189px;
       }
 
-      // 币种背景
+      
       .coin {
         padding: 0 20px;
       }

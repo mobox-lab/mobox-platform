@@ -108,7 +108,7 @@ export default {
                 address:'',
                 chainId:0
             },
-            // 钱包列表
+            
             wallets: [
                 {
                 name: "MOBOX Wallet (recommended)",
@@ -126,13 +126,13 @@ export default {
                 type: "metamask",
                 },
             ],
-            // 当前钱包类型
+            
             wallet: "",
-            // 当前钱包地址
+            
             address: "",
-            // 连接钱包弹窗显示状态
+            
             isShowConnectWallet: false,
-            // 取消连接
+            
             isShowDisconnect: false,
             // checkID
             checkAvatarID: '',
@@ -144,7 +144,7 @@ export default {
         this.initWallet();
     },
   computed: {
-    // 地址
+    
     addressString() {
       return `${this.address.substring(0, 6)}....${this.address.substring(
         this.address.length - 4,
@@ -168,12 +168,12 @@ export default {
         setImg(idx){
             console.log("idx="+idx)
         },
-        // 获取流通量
+        
         async getCirculation() {
             const res = await axios.get('https://nftapi.mobox.io/buybackpool/amount');
             this.circulating = Number(res.data.circulating) / 1e18;
         },
-        // 初始化钱包
+        
         initWallet() {
             const wallet = window.localStorage.getItem("wallet");
             if (wallet) {
@@ -182,11 +182,11 @@ export default {
                 this.showtype = 0
             }
         },
-        // 关闭连接钱包弹窗
+        
         closeConnectWallet() {
             this.isShowConnectWallet = false;
         },
-        // 打开连接钱包弹窗
+        
         openConnectWallet() {
             if (this.address) {
                 this.isShowDisconnect = true;
@@ -194,17 +194,17 @@ export default {
                 this.isShowConnectWallet = true;
             }
         },
-        // 关闭断开连接弹窗
+        
         closeDisconnect() {
             this.isShowDisconnect = false;
         },
-        // 断开连接
+        
         onDisconnect() {
             window.localStorage.removeItem("wallet");
             this.address = '';
             this.closeDisconnect();
         },
-        // 连接钱包
+        
         async connectWallet(type) {
                 this.wallet = type;
                 switch (type) {
@@ -222,14 +222,14 @@ export default {
             this.closeConnectWallet();
             this.checkIsEligble()
         },
-        // 连接mobox
+        
         async connectMobox() {
             if (window.mbox) {
                 const wallets = await window.mbox?.BinanceChain.enable();
                 this.address = wallets[0];
             }
         },
-        // 连接metamask
+        
         async connectMetamask() {
         if (typeof window.ethereum !== "undefined" && window.ethereum.request) {
             try {
@@ -242,7 +242,7 @@ export default {
             }
         }
         },
-        // 连接币安钱包
+        
         async connectBinance() {
             if (typeof window.BinanceChain !== "undefined") {
                 try {
@@ -321,7 +321,7 @@ export default {
         margin: auto;
     }
     
-    // 钱包弹窗样式
+    
     .wallet-dialog {
         width: 400px;
         border-radius: 10px;
@@ -330,7 +330,7 @@ export default {
         padding: 0 20px;
         position: relative;
 
-        // 关闭按钮
+        
         .close {
         @size: 32px;
         width: @size;
@@ -361,7 +361,7 @@ export default {
         }
     }
 
-    // 连接钱包
+    
     .connect-wallet {
         ul {
         list-style: none;
@@ -391,7 +391,7 @@ export default {
         }
     }
 
-    // 断开连接
+    
     .disconnect-wallet {
 
         .button {
@@ -401,7 +401,7 @@ export default {
         }
     }
 
-    // 按钮通用
+    
   .button {
     padding: 8px 20px;
     background: linear-gradient(74deg, #12dae7 0%, #1b4ef5 100%);

@@ -81,7 +81,7 @@ export default {
         };
     },
     methods: {
-        // mbox钱包
+        
         async mboxLogin() {
             if (!window.mbox) {
                 this.showNotify(this.$t('Tips_1'), "error");
@@ -90,9 +90,9 @@ export default {
 
             try {
                 const res = await window.mbox?.BinanceChain?.enable();
-                // 地址
+                
                 const address = res[0];
-                // 签名
+                
                 window.mbox?.bscWeb3.personal.sign(
                     this.getSignKey(),
                     address,
@@ -105,7 +105,7 @@ export default {
             } catch (_) {
             }
         },
-        // ethereum标准
+        
         async ethereumLogin() {
             if (!window.ethereum) {
                 this.showNotify(this.$t('Tips_1'), "error");
@@ -116,9 +116,9 @@ export default {
                 const res = await window.ethereum?.request({
                     method: "eth_requestAccounts",
                 });
-                // 地址
+                
                 const address = res[0];
-                // 签名
+                
                 const sign = await window.ethereum?.request({
                     method: "personal_sign",
                     params: [address, this.getSignKey()],
@@ -128,13 +128,13 @@ export default {
             } catch (_) {
             }
         },
-        // 币安钱包
+        
         async binanceLogin() {
             try {
                 const res = await window.BinanceChain.enable();
-                // 地址
+                
                 const address = res[0];
-                // 签名
+                
                 const { signature } = await window.BinanceChain.bnbSign(
                     address,
                     this.getSignKey()
@@ -171,7 +171,7 @@ export default {
                 const res = await provider.request({
                     method: "eth_requestAccounts",
                 });
-                // 地址
+                
                 const address = res[0];
                 let params = [];
 
@@ -181,7 +181,7 @@ export default {
                     params = [address, this.getSignKey()];
                 }
 
-                // 签名
+                
                 const sign = await provider.request({
                     method: "personal_sign",
                     params: params,
@@ -191,7 +191,7 @@ export default {
             } catch (_) {
             }
         },
-        // Wallet Connect登录
+        
         walletConnectLogin() {
             // const self = this;
             // const connector = new WalletConnect({
@@ -217,7 +217,7 @@ export default {
             //     connector.createSession();
             // }
         },
-        // 获取token
+        
         async login(address, sign) {
             try {
                 const data = {
@@ -238,10 +238,10 @@ export default {
                     data,
                 });
 
-                // 保存token
+                
                 this.$store.commit('userState/setToken', res.data.token);
                 this.$root.eventHub.$emit("platform-setToken", res.data.token);
-                // 获取用户信息
+                
                 this.$store.dispatch('userState/getUserInfo');
                 this.$root.$children[0].isShowWalletLogin = false;
                 this.$root.eventHub.$emit('showDownPage');
@@ -253,7 +253,7 @@ export default {
                 }
             }
         },
-        // 关闭
+        
         close() {
             this.$emit("close");
         },
@@ -267,14 +267,14 @@ export default {
 
 <style lang="less" scoped>
 
-// 移动端
+
 @media (max-width: 420px) {
     .content {
         width: 90%;
     }
 }
 
-// pc端
+
 @media (min-width: 420px) {
     .content {
         width: 397px;
@@ -397,7 +397,7 @@ export default {
     }
 }
 
-// 过度动画
+
 .bounce-enter-active,
 .bounce-leave-active {
     transition: opacity 0.3s;

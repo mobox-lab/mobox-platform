@@ -74,18 +74,18 @@ export { CommonMethod } from "@/mixin";
 export default {
     mixins: [CommonMethod],
     props: {
-        // 钱包地址
+        
         address: String,
-        // 显示状态
+        
         value: Boolean,
-        // 签名消息
+        
         message: {
             type: String,
             required: true,
         },
     },
     methods: {
-        // mbox钱包
+        
         async mboxLogin() {
             if (!window.mbox) {
                 this.showNotify(this.$t("Tips_1"), "error");
@@ -94,9 +94,9 @@ export default {
 
             try {
                 const res = await window.mbox?.BinanceChain?.enable();
-                // 地址
+                
                 const address = res[0];
-                // 签名
+                
                 window.mbox?.bscWeb3.personal.sign(
                     this.message,
                     address,
@@ -108,7 +108,7 @@ export default {
                 );
             } catch (_) {}
         },
-        // ethereum标准
+        
         async ethereumLogin() {
             if (!window.ethereum) {
                 this.showNotify(this.$t("Tips_1"), "error");
@@ -119,9 +119,9 @@ export default {
                 const res = await window.ethereum?.request({
                     method: "eth_requestAccounts",
                 });
-                // 地址
+                
                 const address = res[0];
-                // 签名
+                
                 const sign = await window.ethereum?.request({
                     method: "personal_sign",
                     params: [address, this.message],
@@ -131,13 +131,13 @@ export default {
             } catch (_) {
             }
         },
-        // 币安钱包
+        
         async binanceLogin() {
             try {
                 const res = await window.BinanceChain.enable();
-                // 地址
+                
                 const address = res[0];
-                // 签名
+                
                 const { signature } = await window.BinanceChain.bnbSign(
                     address,
                     this.message
@@ -179,18 +179,18 @@ export default {
                 const res = await provider.request({
                     method: "eth_requestAccounts",
                 });
-                // 地址
+                
                 const address = res[0];
                 let params = [];
 
-                // coinbase参数顺序相反
+                
                 if (provider.isCoinbaseWallet) {
                     params = [this.message, address];
                 } else {
                     params = [address, this.message];
                 }
 
-                // 签名
+                
                 const sign = await provider.request({
                     method: "personal_sign",
                     params: params,
@@ -200,7 +200,7 @@ export default {
             } catch (_) {
             }
         },
-        // Wallet Connect登录
+        
         walletConnectLogin() {
             // const self = this;
             // const connector = new WalletConnect({
@@ -229,12 +229,12 @@ export default {
             //     connector.createSession();
             // }
         },
-        // 签名完成回调
+        
         onSign(address, sign) {
             this.$emit("sign", address, sign);
             this.close();
         },
-        // 关闭
+        
         close() {
             this.$emit("input", false);
         },
@@ -243,14 +243,14 @@ export default {
 </script>
 
 <style lang="less" scoped>
-// 移动端
+
 @media (max-width: 420px) {
     .content {
         width: 90%;
     }
 }
 
-// pc端
+
 @media (min-width: 420px) {
     .content {
         width: 397px;
@@ -373,7 +373,7 @@ export default {
     }
 }
 
-// 过度动画
+
 .bounce-enter-active,
 .bounce-leave-active {
     transition: opacity 0.3s;

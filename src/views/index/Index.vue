@@ -1371,7 +1371,7 @@ export default {
   },
   data() {
     return {
-      // 轮播图初始化高度 - 防止轮播首次加载抖动
+      
       bannerInitHeight: window.innerWidth * 0.271733 + "px",
       isShowModal: false,
       isShowPool: false,
@@ -1387,7 +1387,7 @@ export default {
       selectMenuIdx:0,
       scrollTop:0,
       t1:null,
-      // 轮播图数据
+      
       bannerSource: [],
       menuArr : [
         {title:'guide_86', id:'communityUpdate'},
@@ -1491,7 +1491,7 @@ export default {
           url: "https://www.nasdaq.com/articles/this-crypto-is-up-414-in-the-past-month.-should-you-buy-2021-09-01",
         },
       ],
-      // 传说momo介绍详情
+      
       epicArr: [
         {
           title: "CoinMarketCap<br />Robot",
@@ -1625,7 +1625,7 @@ export default {
     this.selectMomoId = this.momoArr[0].id;
     this.setHeroSpine();
 
-    // 判断是否需要去下载页
+    
     const toDownLoad = Common.getUrlParams("toDownLoad");
     if (toDownLoad) {
       let t = $("#downloadPage")[0].offsetTop;
@@ -1665,7 +1665,7 @@ export default {
   },
   computed: {
     ...mapState({
-      // 市值
+      
       marketCap: (state) => state.globalState.marketCap,
       poolInfo: (state) => {
         return state.globalState.data.poolInfo;
@@ -1816,7 +1816,7 @@ export default {
       });
       return news;
     },
-    // 轮播
+    
     bannerList() {
       const locale = this.$i18n.locale == "zh-CN" ? "zh_CN" : "en";
       return this.bannerSource.map((item) => item[locale]);
@@ -2017,21 +2017,21 @@ export default {
     },
     epicScrollTo(side) {
       if (side == 0) {
-        // 往左
+        
         console.log("????");
         this.$refs.epicScroll.scrollBy(-80, 0);
       } else if (side == 1) {
-        // 往右
+        
         this.$refs.epicScroll.scrollBy(80, 0);
       }
     },
     heroScrollTo(side) {
       if (side == 0) {
-        // 往左
+        
         console.log("????");
         this.$refs.heroscroll.scrollBy(-80, 0);
       } else if (side == 1) {
-        // 往右
+        
         this.$refs.heroscroll.scrollBy(80, 0);
       }
     },
@@ -2065,7 +2065,7 @@ export default {
       const andUrl = "https://www.mobox.io/download/app-release.apk";
 
       new QRCode(this.$refs.iosqrcode, {
-        text: iosUrl, // 需要转换为二维码的内容
+        text: iosUrl, 
         width: 100,
         height: 100,
         colorDark: "#000000",
@@ -2073,7 +2073,7 @@ export default {
         correctLevel: QRCode.CorrectLevel.H,
       });
       new QRCode(this.$refs.andqrcode, {
-        text: andUrl, // 需要转换为二维码的内容
+        text: andUrl, 
         width: 100,
         height: 100,
         colorDark: "#000000",
@@ -2099,8 +2099,8 @@ export default {
       return Common.convert(Common.numFloor(Number(num), 10000));
     },
     scrollInit() {
-      this.scroll1 = this.$refs.scroll1; // 获取DOM元素节点
-      // 添加监听事件（不同浏览器，事件方法不一样，所以可以作判断，也可以如下偷懒）
+      this.scroll1 = this.$refs.scroll1; 
+      
       this.scroll1.addEventListener(
         "DOMMouseScroll",
         this.handlerMouserScroll1,
@@ -2112,32 +2112,32 @@ export default {
         false
       );
 
-      // this.scroll2 = this.$refs.scroll2; // 获取DOM元素节点
-      // // 添加监听事件（不同浏览器，事件方法不一样，所以可以作判断，也可以如下偷懒）
+      
+      
       // this.scroll2.addEventListener('DOMMouseScroll', this.handlerMouserScroll2, false);
       // this.scroll2.addEventListener('mousewheel', this.handlerMouserScroll2, false);
 
-      // // 获取要绑定事件的元素
+      
       // const scrollDiv = this.$refs.scroll1;
       // // document.addEventListener('DOMMouseScroll', handler, false)
-      // // 添加滚轮滚动监听事件，一般是用下面的方法，上面的是火狐的写法
+      
       // scrollDiv.addEventListener('mousewheel', handler, false)
-      // // 滚动事件的出来函数
+      
       // function handler(event) {
-      // 	// 获取滚动方向
+      
       // 	const detail = event.wheelDelta || event.detail;
-      // 	// 定义滚动方向，其实也可以在赋值的时候写
+      
       // 	const moveForwardStep = 1;
       // 	const moveBackStep = -1;
-      // 	// 定义滚动距离
+      
       // 	let step = 0;
-      // 	// 判断滚动方向,这里的100可以改，代表滚动幅度，也就是说滚动幅度是自定义的
+      
       // 	if (detail < 0) {
       // 		step = moveForwardStep * 100;
       // 	} else {
       // 		step = moveBackStep * 100;
       // 	}
-      // 	// 对需要滚动的元素进行滚动操作
+      
       // 	scrollDiv.scrollLeft += step;
       // }
     },
@@ -2309,7 +2309,7 @@ export default {
     showPool(isShow) {
       this.isShowPool = isShow;
     },
-    // 获取轮播
+    
     // async getBanner() {
     //   const { data } = await request(HOME_BANNER, {
     //     method: "POST",
@@ -2318,12 +2318,12 @@ export default {
     //     },
     //   });
     //   this.bannerSource = data.map((item) => item.content);
-    //   // 初始化轮播
+    
     //   this.$nextTick(() => {
     //     this.setSwiper();
     //   });
     // },
-    // 轮播点击
+    
     bannerClick(item) {
       if (item.link.indexOf("http") === 0) {
         window.open(item.link);
@@ -2340,7 +2340,7 @@ export default {
 @export "./mobile.less";
 @export "./pc.less";
 
-// 公用
+
 /deep/ .block-tag {
   padding: 0 22px;
   display: inline-block;
@@ -2814,19 +2814,19 @@ export default {
       }
 
       .heroscroll::-webkit-scrollbar {
-        /*滚动条整体样式*/
-        width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+        
+        width: 4px; 
         height: 4px;
         scrollbar-arrow-color: red;
       }
       .heroscroll::-webkit-scrollbar-thumb {
-        /*滚动条里面小方块*/
+        
         border-radius: 5px;
         background: rgba(0, 0, 0, 0.2);
         scrollbar-arrow-color: red;
       }
       .heroscroll::-webkit-scrollbar-track {
-        /*滚动条里面轨道*/
+        
         border-radius: 0;
         background: rgba(0, 0, 0, 0.1);
       }
@@ -2880,7 +2880,7 @@ export default {
       }
     }
 
-    // 获取第一只momo
+    
     .get-momo {
       margin-top: 20px;
       border: 1px solid #34363b;
@@ -2893,7 +2893,7 @@ export default {
         display: none;
       }
 
-      // 标题信息
+      
       .title-info {
         display: flex;
         align-items: center;
@@ -3104,7 +3104,7 @@ export default {
               white-space: break-spaces;
             }
 
-            // 价格
+            
             .price {
               margin-top: 10px;
 
@@ -3126,19 +3126,19 @@ export default {
       }
 
       .scroll-area::-webkit-scrollbar {
-        /*滚动条整体样式*/
-        width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+        
+        width: 4px; 
         height: 4px;
         scrollbar-arrow-color: red;
       }
       .scroll-area::-webkit-scrollbar-thumb {
-        /*滚动条里面小方块*/
+        
         border-radius: 5px;
         background: rgba(0, 0, 0, 0.2);
         scrollbar-arrow-color: red;
       }
       .scroll-area::-webkit-scrollbar-track {
-        /*滚动条里面轨道*/
+        
         border-radius: 0;
         background: rgba(0, 0, 0, 0.1);
       }

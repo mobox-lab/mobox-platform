@@ -20,11 +20,11 @@ export default {
   },
   data() {
     return {
-      // 偏移值
+      
       x: 0,
-      // 暂停
+      
       isStop: false,
-      // 动画
+      
       animation: null,
     };
   },
@@ -39,7 +39,7 @@ export default {
         this.stopAnimation();
       }
     },
-    // 开始动画
+    
     startAnimation() {
       if (this.x < -this.$refs.item.clientWidth) {
         this.x = 0;
@@ -49,7 +49,7 @@ export default {
 
       this.animation = requestAnimationFrame(this.startAnimation);
     },
-    // 停止动画
+    
     stopAnimation() {
       cancelAnimationFrame(this.animation);
     },

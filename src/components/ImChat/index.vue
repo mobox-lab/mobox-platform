@@ -492,9 +492,9 @@ const regex3 = /\[\*(.+?)\\*]/g;
 const regex4 = /\[_(.+?)_\]/g;
 const commuMap = {zh:"zh", en:"en", global:"global"}
 const langMap = {"zh":"zh","zh-CN":"zh", "zh-TW":"zh" }
-// 测试服
+
 // const wsuri = "ws://192.168.5.78:9089";
-// 正式服
+
 const wsuri = "wss://imgate.mobox.io";
 
 const $ = window.$;
@@ -620,7 +620,7 @@ export default {
             isShowLogin : false,
             unreadNum : 0,
 
-            isRole: 0, // 是否为管理员
+            isRole: 0, 
 
             mentionArr:[
             ],
@@ -636,21 +636,21 @@ export default {
             roomInfo:{},
 
             moboxRoom:[
-                // {title:"MOMO大厅1", toggle:true, rooms:[]},
-                // {title:"MOMO大厅2", toggle:true, rooms:[]},
-                // {title:"MOMO大厅3", toggle:true, rooms:[]}
+                
+                
+                
             ],
 
             recomandRoom:[
-                // {title:"MOMO推荐1", toggle:true, rooms:[]},
-                // {title:"MOMO推荐2", toggle:true, rooms:[]},
-                // {title:"MOMO推荐3", toggle:true, rooms:[]},
-                // {title:"MOMO推荐4", toggle:true, rooms:[]}
+                
+                
+                
+                
             ],
 
             personalRoom:[
-                // {title:"已加入的房间",toggle:true, rooms:[]},
-                // {title:"已创建的房间",toggle:true, rooms:[]},
+                
+                
             ],
 
             createIdx:0,
@@ -664,7 +664,7 @@ export default {
 
             isOpenEmoji: false,
             
-            emojiIdx:0, // emoji相关数据,
+            emojiIdx:0, 
             emojiArr : [],
             momojiArr : [],
 
@@ -675,11 +675,11 @@ export default {
             isOpenForbid : false,
             // isOpenAvatar : true,
 
-            // 网页通信端websocket
+            
             websock: null,
             socket_userInfo:{},
 
-            chatArr:[{}], // 目前聊天室内容
+            chatArr:[{}], 
             t1 : null,
             t2 : null,
             t3 : null,
@@ -696,7 +696,7 @@ export default {
             roomIdMap:{},
             atUserMap : {},
 
-            msgMaxId : 0, // 已读的msg
+            msgMaxId : 0, 
 
             forceTopMsg:{},
             showForceTop:false,
@@ -728,7 +728,7 @@ export default {
         }
     },
     methods:{
-        // 切换钱包显示状态
+        
         toggleShowWallet() {
             this.$store.commit('globalState/toggleShowWallet');
         },
@@ -952,8 +952,8 @@ export default {
                         params:{
                             roomId:this.currentRoom,
                             userId:this.socket_userInfo.user_id,
-                            banTs:3600,  //禁用的时长. -1
-                            banUid:data.u  // 要禁用的用户
+                            banTs:3600,  
+                            banUid:data.u  
                         }
                     }
 
@@ -965,8 +965,8 @@ export default {
                         params:{
                             roomId:this.currentRoom,
                             userId:this.socket_userInfo.user_id,
-                            banTs:86400,  //禁用的时长. -1
-                            banUid:data.u  // 要禁用的用户
+                            banTs:86400,  
+                            banUid:data.u  
                         }
                     }
 
@@ -978,8 +978,8 @@ export default {
                         params:{
                             roomId:this.currentRoom,
                             userId:this.socket_userInfo.user_id,
-                            banTs:2592000,  //禁用的时长. -1
-                            banUid:data.u  // 要禁用的用户
+                            banTs:2592000,  
+                            banUid:data.u  
                         }
                     }
 
@@ -991,8 +991,8 @@ export default {
                         params:{
                             roomId:this.currentRoom,
                             userId:this.socket_userInfo.user_id,
-                            banTs:99999999999999,  //禁用的时长. -1
-                            banUid:data.u  // 要禁用的用户
+                            banTs:99999999999999,  
+                            banUid:data.u  
                         }
                     }
 
@@ -1162,7 +1162,7 @@ export default {
         getAvatarSrc(avatar){
             return Common.getAvatarSrc(avatar)
         },
-        // 切换登录显示状态
+        
 		toggleLoginModal() {
 			this.isShowLogin = !this.isShowLogin;
 		},
@@ -1182,10 +1182,10 @@ export default {
         },
         pushKeyword(e){
             if(e.keyCode == 13 && e.ctrlKey){
-                this.content += "\n"; //换行
+                this.content += "\n"; 
             }else if(e.keyCode == 13){
-                this.sendChatMsg(this.content); //提交的执行函数
-                e.preventDefault();//禁止回车的默认换行
+                this.sendChatMsg(this.content); 
+                e.preventDefault();
             }
         },
         // confirmInput(){
@@ -1307,7 +1307,7 @@ export default {
             this.websock.onclose = this.websocketclose;
         },
         websocketonmessage(e){
-            // 数据接收
+            
             let receiveData = JSON.parse(e.data);
             if(typeof receiveData == "string") {
                 receiveData = JSON.parse(receiveData);
@@ -1327,25 +1327,25 @@ export default {
                 case "BAN_USER":
                     this.setBanUser(receiveData);
                     break;
-                case "WAIT_TO_PAY": // 撤回消息
+                case "WAIT_TO_PAY": 
                     this.openPay();
                     break;
-                case "SERVER_MAINTAIN": // 撤回消息
+                case "SERVER_MAINTAIN": 
                     // this.showForceTop = true;
                     // this.pinMsg(receiveData.data)
                     this.isFixing = true;
                     break;
-                case "SERVER_ONLINE": // 撤回消息
+                case "SERVER_ONLINE": 
                     // this.showForceTop = true;
                     // this.pinMsg(receiveData.data)
                     this.isFixing = false;
                     this.onSelectRoom({id:this.currentRoom}, true);
                     break;
-                case "PIN_MSG": // 撤回消息
+                case "PIN_MSG": 
                     this.showForceTop = true;
                     this.pinMsg(receiveData.data);
                     break;
-                case "REVOKE_MSG": // 撤回消息
+                case "REVOKE_MSG": 
                     this.recallMsg(receiveData.data);
                     break;
                 case "ENTER_ROOM":
@@ -1392,7 +1392,7 @@ export default {
                 case "LEAVE_ROOM" :
                     // console.log(data.rooms || []);
                     if(receiveData.data.userId === this.socket_userInfo.user_id){
-                        this.chatArr = [];// 清空聊天信息
+                        this.chatArr = [];
                         this.mentionArr = [];
                         this.isRole = 0;
                         this.showForceTop = false;
@@ -1401,9 +1401,9 @@ export default {
                     break;
                 case "MSG_HIST":
                     // console.log(data.rooms || []);
-                    // 暂时注释
+                    
                     // if(Number(this.currentRoom) === Number(receiveData.roomId)){
-                        this.chatArr = receiveData.data || [];// 清空聊天信息
+                        this.chatArr = receiveData.data || [];
                         this.setChatArr();
                         this.getRoomMembers();
 
@@ -1437,7 +1437,7 @@ export default {
             console.log(this.userInfo.user_id)
         },
         setChat(receiveData){
-            // 目前先注释掉 让所有房间都显示消息
+            
             // if(receiveData.roomId != this.currentRoom) {return}
 
             this.setAddChatArr(receiveData.data);
@@ -1459,7 +1459,7 @@ export default {
             const {allMsg , msgId, rUid, roomId} = data;
             if(roomId == this.currentRoom){
                 if(allMsg == 0){
-                    // 禁言单条信息
+                    
                     this.chatArr.map((item,i)=>{
                         let {isCom, data} = item;
                         if(isCom){
@@ -1475,7 +1475,7 @@ export default {
                         }
                     })
                 } else if(allMsg == 1){
-                    // 禁言全部信息
+                    
                     // console.log(rUid)
                     // this.$set(this.forbidMap, rUid, data);
                     // this.forbidUsers = Object.values(this.forbidMap);
@@ -1501,7 +1501,7 @@ export default {
 
             }
 
-            // 渲染我是否被@到
+            
             this.renderAtPlayer()
         },
         renderAtPlayer(){
@@ -1680,7 +1680,7 @@ export default {
                 const {index, catalog, id, name} = item;
                 
                 if(this.currentRoom <= 0 && i === 0){
-                    // 如果此时没有房间 设置默认房间
+                    
                     this.onSelectRoom({id});
                 }
 
@@ -1762,9 +1762,9 @@ export default {
 
 
             // moboxRoom:[
-            //     {title:"MOMO大厅1", toggle:true, rooms:[1001, 1002, 1003]},
-            //     {title:"MOMO大厅2", toggle:true, rooms:[2001, 2002, 2003]},
-            //     {title:"MOMO大厅3", toggle:true, rooms:[3001, 3002, 3003]}
+            
+            
+            
             // ],
         },
         setRoomType(roomMap){
@@ -1836,11 +1836,11 @@ export default {
                 this.areaLang = langMap[this.areaLang] || 'en';
             }
 
-            // 初次连上发送信息
+            
             this.selectChatIdx(0);
         },
         websocketonerror(){
-            // console.log("websocket 报错了！！！！！！！！！！！")
+            
         },
         websocketclose(){
             // let times = 0;
@@ -1884,11 +1884,11 @@ export default {
             }, 3000);
             // }, 3000);
         },
-        websocketsend(Data){//数据发送
+        websocketsend(Data){
 
             if(Data.method === "SEND_MSG"){
                 if(!Data.params.message.trim()){
-                    // 如果既是message又无params 则return
+                    
                     return
                 }
             }
@@ -2208,7 +2208,7 @@ export default {
 
             this.websocketsend(data);
 
-            // 将聊天滚到底部
+            
             this.$nextTick(()=>{
                 const container = this.$refs.chatscroll;
                 if(container){
@@ -2221,7 +2221,7 @@ export default {
         onSelectRoom(roomObj, forceRequest = false){
             const {id} = roomObj;
             if(this.currentRoom == id && !forceRequest){
-                // 如果已经在房间内 不必重复进入
+                
                 return
             }
 
@@ -2330,7 +2330,7 @@ export default {
     //     this.lockAvatarArr = data;
     // },
     created(){
-    // 监听窗口通信
+    
 		window.addEventListener("message", ({ data }) => {
             if (data.action === "refresh-token") {
                 this.loginChat(data.value);
@@ -2338,7 +2338,7 @@ export default {
         }, false);
     },
     destroyed() {
-      this.websock.close() //离开路由之后断开websocket连接
+      this.websock.close() 
     },
     // mounted(){
     //     this.setEmojiArr();
@@ -2356,7 +2356,7 @@ export default {
     //     //     const sendData = "PING";
     //     //     this.websocketsend(sendData);
     //     //     this.t3 = setTimeout(() => {
-    //     //         console.log("我要重连！！！！！！！")
+    
     //     //     }, 10000);
     //     // }
 

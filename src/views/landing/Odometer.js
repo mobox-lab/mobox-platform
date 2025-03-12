@@ -2,10 +2,10 @@ const Odometer = (function(win,doc) {
     class OdometerFn {
         constructor(x, y) {
 //             this.setting = {
-//                 len : null, //默认最小位数
-                num : "", //初始化值
-                symbol : '',//默认的分割符号，千，万，千万
-                dot : 0 ,//保留几位小数点 
+
+                num : "", 
+                symbol : '',
+                dot : 0 ,
                 delay:0
             }
             this.$parent = doc.querySelector(x);
@@ -43,7 +43,7 @@ const Odometer = (function(win,doc) {
                 this.animate(x);
             }
         }
-        animate ($parent, speed = false){//执行动画
+        animate ($parent, speed = false){
             let $dom = $parent.querySelectorAll( '.number-animate-dom' );
             for(let o of $dom ){
                 let num = o.getAttribute('data-num');
@@ -53,7 +53,7 @@ const Odometer = (function(win,doc) {
                 o.style['transition'] = o.style['-webkit-transition'] = (num=="." ?  0 : (speed || this.setting.speed)/1000)+'s'
             }
         }
-        setNumDom (arrStr){//分割符号
+        setNumDom (arrStr){
             let shtml = '<div class="number-animate">';
             arrStr.forEach((o,i)=>{
                 if(i != 0 && (arrStr.length-i)%3 == 0 && this.setting.symbol != "" && o!="."){

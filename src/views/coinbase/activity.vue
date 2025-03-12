@@ -1,6 +1,6 @@
 // <template>
 //     <h5 class="title">{{$t('CoinbaselootBrasil_40')}}</h5>
-//     <!-- 时间 -->
+
 //     <div class="time">
       <li>
         <span>{{times.days}}</span>
@@ -168,33 +168,33 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
     },
     data() {
       return {
-        // 下一步提示
+        
         nextTip: 'Sim! Você está qualificado para reivindicar seu MOBOX Avatar!<br/><br/>Acesse o MOMOverse, abra o Avatar BOX e conclua as tarefas do jogo para receber outras recompensas.',
-        // 钱包地址
+        
         address: null,
-        // 下一步
+        
         isShowNext: false,
-        // 绑定昵称
+        
         isShowSubmitName: false,
-        // 绑定连接
+        
         isShowSubmitLink: false,
-        // 机器人验证提示
+        
         isShowoBotTip: false,
-        // 验证机器人提示
+        
         isShowoVerifyBotTip: false,
-        // 昵称
+        
         twitterName: '',
-        // 连接
+        
         link: '',
-        // 计时器
+        
         timer: null,
-        // 活动任务未完成弹窗
+        
         isShowUnfinished: false,
-        // 轮训计时器
+        
         timeout: null,
-        // 活动结束时间
+        
         endTime: 1679882400000,
-        // 时间
+        
         times: {
           days: '00',
           hours: '00',
@@ -206,16 +206,16 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
           'CoinbaselootBrasil_41',
           'CoinbaselootBrasil_15',
         ],
-        // 当前tab
+        
         tabIndex: 0,
-        // 状态
+        
         state: 0,
-        // 任务状态
+        
         tasksState: 0,
       };
     },
     methods: {
-      // 连接钱包
+      
       async connectWallet() {
         const provider = window.ethereum?.providers?.find((item) => item.isCoinbaseWallet) || (window.ethereum?.isCoinbaseWallet ? window.ethereum : null);
 
@@ -224,52 +224,52 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
           return;
         }
 
-        // 监听地址变化
+        
         provider.on('accountsChanged', this.accountsChanged);
 
         await provider.enable();
-        // 切换链
+        
         await provider.send('wallet_switchEthereumChain', [{ chainId: '0x38' }]);
-        // 获取地址
+        
         const accounts = await window.ethereum?.request({
           method: "eth_requestAccounts",
         });
 
         this.address = accounts[0];
-        // 轮训用户数据
+        
         this.loop();
       },
-      // 地址变化
+      
       accountsChanged(accounts) {
         this.address = accounts[0];
-        // 初始化数据
+        
         this.loop();
       },
-      // 切换验证提示弹窗
+      
       toggleShowoVerifyBotTip() {
         this.isShowoVerifyBotTip = !this.isShowoVerifyBotTip;
       },
-      // tab切换
+      
       tabChange(index) {
         this.tabIndex = index;
       },
-       // 切换提交名称显示弹窗
+       
       toggleShowSubmitName() {
         this.isShowSubmitName = !this.isShowSubmitName;
       },
-      // 切换提交连接显示
+      
       toggleShowSubmitLink() {
         this.isShowSubmitLink = !this.isShowSubmitLink;
       },
-      // 切换机器人验证提示
+      
       toggleShowBotTip() {
         this.isShowoBotTip = !this.isShowoBotTip;
       },
-      // 切换显示活动任务提示
+      
       toggleShowUnfinished() {
         this.isShowUnfinished = !this.isShowUnfinished;
       },
-      // 结束倒计时
+      
       countDown() {
         const time = this.endTime - Date.now();
 
@@ -299,7 +299,7 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
       addZero(value) {
         return value < 10 ? "0" + value : value;
       },
-      // 轮训
+      
       async loop() {
         if (this.address) {
           clearTimeout(this.timeout);
@@ -315,19 +315,19 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
           this.timeout = setTimeout(this.loop, 10000);
         }
       },
-      // 获取状态
+      
       async getStatus() {
         try {
           const { data } = await getStatus(this.address);
           this.state = data.state;
         } catch(_) {}
       },
-      // 获取任务状态
+      
       async getTaskStatus() {
         const { data } = await getTaskStatus(this.address);
         this.tasksState = data.state;
       },
-      // 提交名称
+      
       async submitName() {
         if (this.twitterName.trim()) {
           try {
@@ -340,7 +340,7 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
           }
         }
       },
-      // 注册
+      
       async register() {
         try {
           await this.checkRegister();
@@ -348,7 +348,7 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
           this.showNotify(this.$t(`CoinbaselootBrasil_${error?.code}`), "error");
         }
       },
-      // 提交连接
+      
       async submitLink() {
         if (this.link.trim()) {
           try {
@@ -361,16 +361,16 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
           }
         }
       },
-      // 下一步
+      
       toNextTab() {
         this.tabIndex = 1;
         this.toggleShowNext();
       },
-      // 切换下一步弹窗显示
+      
       toggleShowNext() {
         this.isShowNext = !this.isShowNext;
       },
-      // 检测注册状态
+      
       async checkRegister() {
         if (!this.address) {
           await this.connectWallet();
@@ -381,7 +381,7 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
           await this.loop();
         }
       },
-      // 打开momoverse
+      
       async openMomoverse() {
         try {
           // await this.checkRegister();
@@ -391,11 +391,11 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
           this.showNotify(this.$t(`CoinbaselootBrasil_${error?.code}`), "error");
         }
       },
-      // 打开链接
+      
       toLink(link) {
         window.open(link);
       },
-      // 跳转机器人验证
+      
       async toBot() {
         try {
           await this.checkRegister();
@@ -404,7 +404,7 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
           this.showNotify(this.$t(`CoinbaselootBrasil_${error?.code}`), "error");
         }
       },
-      // 验证
+      
       async verificationBot() {
         try {
           await this.checkRegister();
@@ -413,7 +413,7 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
           this.showNotify(this.$t(`CoinbaselootBrasil_${error?.code}`), "error");
         }
       },
-      // 跳转游戏任务
+      
       toGameTask() {
         if (this.isCompleteActivityTask) {
           this.openMomoverse();
@@ -424,7 +424,7 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
       }
     },
     computed: {
-      // 是否完成活动任务
+      
       isCompleteActivityTask() {
         const state = this.state;
         return (state & 1) === 1 && (state & 2) === 2 && (state & 4) === 4 && (state & 8) === 8 && (state & 16) === 16;
@@ -534,7 +534,7 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
     position: relative;
   }
 
-  // 简介
+  
   .introduction {
     font-family: none;
     color: #FFFFFF;

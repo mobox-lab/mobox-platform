@@ -387,11 +387,11 @@ export default {
             address:'',
             amount:'',
 
-            // 是否显示提现界面
+            
             isShowWithdraw : false,
             isShowLogDetail : false,
 
-            // 交易验证码 密码
+            
             vertifyCode:'',
             password:'',
 
@@ -705,7 +705,7 @@ export default {
         // createQrCode(url) {
         //     this.$refs.qrCodeUrl.innerHTML = '';
         //     new QRCode(this.$refs.qrCodeUrl, {
-        //         text: url, // 需要转换为二维码的内容
+        
         //         width: 150,
         //         height: 150,
         //         colorDark: '#254498',

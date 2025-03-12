@@ -70,9 +70,9 @@ export default {
 
             // if(user_id) {
             //     this.showBindBox();
-            //     console.log("弹出");
+            
             // } else{
-            //     console.log("先登录");
+            
                 this.$root.eventHub.$emit('binance-claim');
             // }
         },

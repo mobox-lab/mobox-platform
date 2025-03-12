@@ -96,7 +96,7 @@ export { Common } from "@/utils/index";
 export default {
   data() {
     return {
-      // 钱包列表
+      
       wallets: [
         {
           name: "MOBOX Wallet (recommended)",
@@ -114,21 +114,21 @@ export default {
           type: "metamask",
         },
       ],
-      // 当前钱包类型
+      
       wallet: "",
-      // 当前钱包地址
+      
       address: "",
-      // 连接钱包弹窗显示状态
+      
       isShowConnectWallet: false,
-      // 取消连接
+      
       isShowDisconnect: false,
-      // 平台总vembox
+      
       vembox: 0,
-      // 总冻结mbox
+      
       mbox: 0,
-      // 平均时间
+      
       avglockdays: 0,
-      // 流通量
+      
       circulating: 0,
     };
   },
@@ -136,7 +136,7 @@ export default {
     Dialog,
   },
   methods: {
-    // 获取平台总veMBOX
+    
     async getVembox() {
       const res = await axios.get(
         "https://nftapi.mobox.io/vemobox/avglockdays"
@@ -146,12 +146,12 @@ export default {
       this.mbox = res.data.totalMobox;
       this.avglockdays = parseInt(res.data.avglockdays);
     },
-    // 获取流通量
+    
     async getCirculation() {
       const res = await axios.get('https://nftapi.mobox.io/buybackpool/amount');
       this.circulating = Number(res.data.circulating) / 1e18;
     },
-    // 初始化钱包
+    
     initWallet() {
       const wallet = window.localStorage.getItem("wallet");
 
@@ -159,11 +159,11 @@ export default {
         this.connectWallet(wallet);
       }
     },
-    // 关闭连接钱包弹窗
+    
     closeConnectWallet() {
       this.isShowConnectWallet = false;
     },
-    // 打开连接钱包弹窗
+    
     openConnectWallet() {
       if (this.address) {
         this.isShowDisconnect = true;
@@ -171,17 +171,17 @@ export default {
         this.isShowConnectWallet = true;
       }
     },
-    // 关闭断开连接弹窗
+    
     closeDisconnect() {
       this.isShowDisconnect = false;
     },
-    // 断开连接
+    
     onDisconnect() {
       window.localStorage.removeItem("wallet");
       this.address = '';
       this.closeDisconnect();
     },
-    // 连接钱包
+    
     async connectWallet(type) {
       this.wallet = type;
 
@@ -199,14 +199,14 @@ export default {
 
       this.closeConnectWallet();
     },
-    // 连接mobox
+    
     async connectMobox() {
       if (window.mbox) {
         const wallets = await window.mbox?.BinanceChain.enable();
         this.address = wallets[0];
       }
     },
-    // 连接metamask
+    
     async connectMetamask() {
       if (typeof window.ethereum !== "undefined" && window.ethereum.request) {
         try {
@@ -219,7 +219,7 @@ export default {
         }
       }
     },
-    // 连接币安钱包
+    
     async connectBinance() {
       if (typeof window.BinanceChain !== "undefined") {
         try {
@@ -234,11 +234,11 @@ export default {
     },
   },
   computed: {
-    // 格式化的mbox
+    
     mboxFormat() {
       return Common.formatMoney(this.mbox);
     },
-    // 流通量占比
+    
     circulatingRatio() {
       if (this.mbox && this.circulating) {
         return ((this.mbox / this.circulating) * 100).toFixed(2);
@@ -246,7 +246,7 @@ export default {
 
       return 0;
     },
-    // 地址
+    
     addressString() {
       return `${this.address.substring(0, 6)}....${this.address.substring(
         this.address.length - 4,
@@ -290,7 +290,7 @@ export default {
     transition: none;
   }
 
-  // 按钮通用
+  
   .button {
     padding: 8px 20px;
     background: linear-gradient(74deg, #12dae7 0%, #1b4ef5 100%);
@@ -298,7 +298,7 @@ export default {
     cursor: pointer;
   }
 
-  // 钱包弹窗样式
+  
   .wallet-dialog {
     width: 400px;
     border-radius: 10px;
@@ -307,7 +307,7 @@ export default {
     padding: 0 20px;
     position: relative;
 
-    // 关闭按钮
+    
     .close {
       @size: 32px;
       width: @size;
@@ -338,7 +338,7 @@ export default {
     }
   }
 
-  // 连接钱包
+  
   .connect-wallet {
     ul {
       list-style: none;
@@ -368,7 +368,7 @@ export default {
     }
   }
 
-  // 断开连接
+  
   .disconnect-wallet {
 
     .button {
@@ -382,7 +382,7 @@ export default {
 .governance {
   padding-top: @header-pc-height + 50px;
 
-  // 头部
+  
   .header {
     display: flex;
     align-items: center;
@@ -402,7 +402,7 @@ export default {
     }
   }
 
-  // 数据
+  
   .data {
     display: flex;
     margin-top: 50px;

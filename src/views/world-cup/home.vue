@@ -104,7 +104,7 @@ export default {
     }
   },
   methods: {
-    // 连接钱包
+    
     async connectWallet() {
       const data = await WalletUtils.connect();
       const provider = WalletUtils.getProvider(data.wallet);
@@ -113,7 +113,7 @@ export default {
       this.$store.commit('worldCupState/setWallet', data);
       this.init();
     },
-    // 提交地址
+    
     async submitTwitterLink() {
       try {
         const headers = await getSignData();
@@ -133,7 +133,7 @@ export default {
         this.showNotify(this.$t(`Worldcup_${error.code}`), "error");
       }
     },
-    // 获取状态
+    
     async getStatus() {
       const { data } = await request.get('status', {
         params: {
@@ -144,7 +144,7 @@ export default {
       this.status = data.state;
       this.$store.commit('worldCupState/setStatus', data.state);
     },
-    // 初始化数据
+    
     init() {
       this.getStatus();
       this.requestData();

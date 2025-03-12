@@ -90,7 +90,7 @@ export default {
 			}
 		}
 
-		//监听事件---metamask
+		
 		if(window.ethereum && window.ethereum.on){
 			window.ethereum.on('chainChanged', () => {
 				if(this.connectedWallet == "metamask"){
@@ -188,16 +188,16 @@ export default {
 				case "metamask":
 						if (typeof window.ethereum !== 'undefined' && window.ethereum.request) {
 							try {
-								//获取账户
+								
 								let accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
 								account =  accounts[0];
 							} catch (error) {
 								this.showNotify(this.$t("Air-drop_101"), "error");
 							}
-							//获取当前Network
+							
 							let network = await window.ethereum.request({method: 'net_version'});
 							chainNetwork = network;
-							//获取当前provider
+							
 							provider = window.web3.currentProvider;
 						}
 					break;
@@ -205,17 +205,17 @@ export default {
 						// this.showNotify("not support now", "error");
 						if (typeof window.BinanceChain !== 'undefined') {
 							try {
-								//获取账户
+								
 								let accounts = await window.BinanceChain.request({ method: 'eth_requestAccounts' });
 								account =  accounts[0];
 							} catch (error) {
 								console.log(error);
 								this.showNotify(this.$t("Air-drop_101"), "error");
 							}
-							//获取当前Network
+							
 							let network = await window.BinanceChain.request({method: 'net_version'});
 							chainNetwork = network;
-							//获取当前provider
+							
 							provider = window.BinanceChain;
 						}
 					break;

@@ -106,9 +106,9 @@
       return {
         activeIndex: 0,
         timeout: null,
-        // 地址
+        
         address: null,
-        // 状态
+        
         state: 0,
         momoType: '',
         mohearts: 0,
@@ -224,7 +224,7 @@
         const fontSize = screenWidth / 1280;
         document.documentElement.style.fontSize = `${fontSize}px`;
       },
-      // 初始化
+      
       async init() {
         if (this.address) {
           try {
@@ -232,21 +232,21 @@
           } catch(_) {}
         }
       },
-      // 链接钱包
+      
       async connectWallet() {
         return new Promise(async (resolve) => {
           const provider = window.bitkeep.ethereum;
 
           if (provider) {
-            // 请求地址
+            
             const res = await provider.request({
               method: "eth_requestAccounts",
             });
 
             this.address = res[0];
-            // 监听地址变化
+            
             provider.on('accountsChanged', this.accountsChanged);
-            // 获取用户数据
+            
             await this.init();
             resolve();
           } else {
@@ -254,30 +254,30 @@
           }
         });
       },
-      // 钱包账号变化
+      
       accountsChanged(accounts) {
         this.address = accounts[0];
-        // 清除缓存
+        
         clearCache();
-        // 初始化数据
+        
         this.init();
       },
-      // 获取状态
+      
       async getStatus() {
         try {
           const { data } = await getStatus(this.address);
           this.state = data.state;
         } catch(_) {}
       },
-      // 切换提交名称显示弹窗
+      
       toggleShowSubmitName() {
         this.isShowSubmitName = !this.isShowSubmitName;
       },
-      // 切换提交连接显示
+      
       toggleShowSubmitLink() {
         this.isShowSubmitLink = !this.isShowSubmitLink;
       },
-      // 提交名称
+      
       async submitName() {
         if (this.twitterName) {
           try {
@@ -290,7 +290,7 @@
           }
         }
       },
-      // 提交连接
+      
       async submitLink() {
         if (this.link) {
           try {
@@ -303,13 +303,13 @@
           }
         }
       },
-      // 获取数量
+      
       async getMohearts() {
         try {
           this.mohearts = await getMohearts(this.address);
         } catch(_) {}
       },
-      // 每日任务
+      
       async getDailyTasks() {
         const res = await getDailyTasks(this.address);
 
@@ -326,7 +326,7 @@
           }
         });
       },
-      // 事件任务
+      
       async getEventTasks() {
         const res = await getEventTasks(this.address);
 
@@ -344,7 +344,7 @@
           }
         });
       },
-      // 轮训
+      
       async loop() {
         if (this.address) {
           clearTimeout(this.timeout);
@@ -362,7 +362,7 @@
           this.timeout = setTimeout(this.loop, 10000);
         }
       },
-      // 跳转下载钱包页面
+      
       toDownloadWallet() {
         const link = 'https://rebrand.ly/tw-mobox';
 
@@ -373,7 +373,7 @@
 
         window.open();
       },
-      // 检测注册状态
+      
       async checkRegister() {
         if (!this.address) {
           await this.connectWallet();
@@ -382,7 +382,7 @@
         if ((this.state & 1) !== 1) {
           const { source } = this.$route.query;
           await register(source);
-          // 刷新用户数据
+          
           this.init();
         }
       },
@@ -419,7 +419,7 @@
       toggleShowRecords() {
         this.isShowRecords = !this.isShowRecords;
       },
-      // 导航滚动
+      
       scrollIntoView(id) {
         const element = document.querySelector(`#${id}`);
 
@@ -428,7 +428,7 @@
           behavior: 'smooth'
         });
       },
-      // 窗口滚动
+      
       onScroll() {
         const ids = ['rewards', 'social-tasks', 'spin-box', 'daily-tasks', 'event-tasks', 'event-introduction'];
         const scrollTop = document.documentElement.scrollTop;
