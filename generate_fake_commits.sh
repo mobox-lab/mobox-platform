@@ -19,108 +19,60 @@ authors=(
   "Tomori6657 <japancjc123@gmail.com>"
 )
 
-# 提交信息数组（随机顺序）
+# 全新 commit 信息数组
 commit_messages=(
- "feat: implement new user dashboard"
-  "fix: resolve session timeout issue"
-  "feat: integrate Google login authentication"
-  "feat: redesign navigation bar"
-  "fix: fix leaderboard ranking bug"
-  "feat: introduce user tagging system"
-  "fix: correct user profile update errors"
-  "feat: add email verification feature"
-  "fix: resolve image cropping issue"
-  "feat: enhance game analytics tracking"
-  "feat: add referral tracking system"
-  "fix: fix reward redemption validation"
-  "feat: implement live game notifications"
-  "fix: resolve UI glitch in dark mode"
-  "feat: introduce friend request system"
-  "feat: add in-game achievements"
-  "fix: fix incorrect XP calculation"
-  "feat: enhance leaderboard visuals"
-  "feat: add animated loading screens"
-  "fix: resolve social media sharing issue"
-  "feat: optimize database performance"
-  "feat: create interactive event calendar"
-  "fix: fix user avatar upload issue"
-  "feat: add smart game recommendations"
-  "fix: resolve leaderboard API lag"
-  "feat: implement in-app currency converter"
-  "fix: fix incorrect transaction fee display"
-  "feat: introduce game developer profiles"
-  "feat: add interactive player stats"
-  "fix: resolve notification spam issue"
-  "feat: implement weekly challenges"
-  "fix: fix sound effects not playing issue"
-  "feat: add advanced filtering options"
-  "feat: improve game search functionality"
-  "fix: resolve bug in transaction history"
-  "feat: implement dynamic game banners"
-  "fix: correct bonus XP calculation"
-  "feat: integrate blockchain wallet support"
-  "fix: fix login timeout issue on mobile"
-  "feat: add user feedback popups"
-  "feat: implement push notifications"
-  "fix: resolve game invite link bug"
-  "feat: create customizable user themes"
-  "feat: implement multi-account linking"
-  "fix: correct mismatched game scores"
-  "feat: add seasonal game events"
-  "fix: fix issue with UI scaling on tablets"
-  "feat: optimize data caching"
-  "feat: introduce in-game tutorial system"
-  "fix: resolve missing game assets issue"
-  "feat: add support for community moderators"
-  "fix: fix incorrect XP level-up formula"
-  "feat: implement reward streak bonuses"
-  "fix: fix game save data corruption issue"
-  "feat: add new badge reward system"
-  "feat: redesign user settings panel"
-  "fix: resolve broken link in game guides"
-  "feat: integrate streaming support"
-  "fix: fix inconsistent tooltip displays"
-  "feat: implement a new reporting system"
-  "fix: correct ranking calculation formula"
-  "feat: add a marketplace for in-game items"
-  "fix: resolve game crash on startup"
-  "feat: introduce new leaderboard categories"
-  "feat: add a team battle mode"
-  "fix: fix delayed friend request notifications"
-  "feat: implement enhanced security for accounts"
-  "feat: redesign homepage UI"
-  "fix: fix issue with leaderboard pagination"
-  "feat: introduce custom user badges"
-  "fix: correct in-game currency conversion rates"
-  "feat: add a friend suggestion feature"
-  "fix: fix visual glitch in game menus"
-  "feat: implement social sharing for achievements"
-  "fix: fix inconsistent reward distribution"
-  "feat: add a daily check-in bonus"
-  "fix: resolve bug in the matchmaking system"
-  "feat: introduce in-game surveys"
-  "fix: correct time tracking for played matches"
-  "feat: implement scheduled game events"
-  "fix: fix issue with unread message counts"
-  "feat: add new animations for UI elements"
-  "fix: fix missing player stats in profile"
-  "feat: improve AI difficulty scaling"
-  "feat: introduce voice chat integration"
-  "fix: fix delayed reward claim processing"
-  "feat: add leaderboard history tracking"
-  "feat: implement one-click game invites"
-  "fix: resolve issue with game audio stuttering"
-  "feat: create a seasonal event reward system"
-  "fix: fix incorrect prize allocation in tournaments"
-  "feat: optimize performance for low-end devices"
-  "feat: introduce interactive leaderboards"
-  "fix: fix broken game tutorial links"
-  "feat: implement automatic bug reporting"
-  "fix: resolve missing inventory item display"
-  "feat: add a weekly tournament system"
-  "fix: correct player experience calculation"
-  "feat: improve matchmaking balance"
-  "fix: resolve issue with in-game polls"
+  "feat: refactor game engine for better performance"
+  "fix: resolve issue with player movement lag"
+  "feat: add real-time player statistics tracking"
+  "fix: correct game score calculation"
+  "feat: implement new matchmaking system"
+  "fix: fix UI rendering glitches in dark mode"
+  "feat: add AI-generated NPC interactions"
+  "fix: correct leaderboard update delay"
+  "feat: introduce weather effects in-game"
+  "fix: resolve sound playback inconsistency"
+  "feat: optimize animation rendering pipeline"
+  "fix: fix broken links in the help center"
+  "feat: implement auto-reconnect for multiplayer mode"
+  "fix: correct player rank calculation formula"
+  "feat: improve in-game economy balancing"
+  "fix: resolve memory leaks in battle logic"
+  "feat: add customizable key bindings"
+  "fix: fix issue with missing quest descriptions"
+  "feat: introduce adaptive difficulty levels"
+  "fix: correct chat system auto-scroll behavior"
+  "feat: enhance cross-platform compatibility"
+  "fix: resolve inventory sync issues"
+  "feat: create interactive mini-games"
+  "fix: fix incorrect quest reward allocations"
+  "feat: introduce in-game achievements and medals"
+  "fix: optimize NPC pathfinding logic"
+  "feat: implement better particle effects"
+  "fix: resolve login session timeout problems"
+  "feat: add clan system with team challenges"
+  "fix: fix overlapping UI elements in battle"
+  "feat: enhance security against exploits"
+  "fix: resolve text encoding issue in chat logs"
+  "feat: introduce in-game voting system for events"
+  "fix: correct leaderboard sorting algorithm"
+  "feat: improve AI bot strategies in battle"
+  "fix: fix missing item descriptions"
+  "feat: optimize server request handling"
+  "fix: resolve currency exchange rate miscalculations"
+  "feat: introduce night mode in battle maps"
+  "fix: fix incorrect win/loss ratio display"
+  "feat: add player mentoring system"
+  "fix: resolve UI scaling issues on mobile"
+  "feat: improve tutorial experience for new players"
+  "fix: fix broken animation frames in combat"
+  "feat: introduce a trade system between players"
+  "fix: correct friend request notifications"
+  "feat: add replay feature for past battles"
+  "fix: resolve leaderboard point inconsistency"
+  "feat: enhance battle camera angles"
+  "fix: optimize image compression for faster load"
+  "feat: implement seasonal leaderboard resets"
+  "fix: resolve issue with friend list syncing"
 )
 
 # 生成 200 个提交
@@ -132,51 +84,74 @@ do
   # 随机选择作者
   author=${authors[$((RANDOM % ${#authors[@]}))]}
 
-  # 生成 commit 时间，加重 6、7、8 月的 commit 频率
+  # 生成 commit 时间，**加重 6、7、8 月**
   weighted_months=(1 2 3 4 5 6 6 6 7 7 7 8 8 8 9 10 11 12)
   selected_month=${weighted_months[$((RANDOM % ${#weighted_months[@]}))]}
-  random_day=$((RANDOM % 28 + 1)) # 随机选择日期（避免 31 日的问题）
-  commit_date="2024-${selected_month}-${random_day}T$(shuf -i 10-23 -n 1):$(shuf -i 10-59 -n 1):$(shuf -i 10-59 -n 1)"
+  random_day=$((RANDOM % 28 + 1)) # 避免 31 号导致错误
 
-  # 随机选择一个代码文件
-  selected_file=${code_files[$((RANDOM % ${#code_files[@]}))]}
-
-  # 只有当文件存在时才进行修改
-  if [[ -f "$selected_file" ]]; then
-    # 选择修改方式 (1=添加新代码, 2=删除一整行, 3=注释掉一块代码)
-    modify_type=$((RANDOM % 3 + 1))
-
-    if [[ "$modify_type" -eq 1 ]]; then
-      # 在文件末尾插入一行新的逻辑
-      new_code_snippets=(
-        "console.log('Debug: $message');"
-        "return null;"
-        "if (Math.random() > 0.5) console.warn('Potential issue detected');"
-      )
-      echo "${new_code_snippets[$((RANDOM % ${#new_code_snippets[@]}))]}" >> "$selected_file"
-
-    elif [[ "$modify_type" -eq 2 ]]; then
-      # 随机删除一行代码
-      line_num=$((RANDOM % 10 + 1))
-      sed -i '' "${line_num}d" "$selected_file"
-
-    elif [[ "$modify_type" -eq 3 ]]; then
-      # 注释掉一块代码（随机 3-5 行）
-      start_line=$((RANDOM % 5 + 1))
-      end_line=$((start_line + RANDOM % 3 + 2))
-      sed -i '' "${start_line},${end_line}s/^/\/\/ /" "$selected_file"
-    fi
-
-    # 提交更改
-    git add "$selected_file"
-
-    # 执行提交并设置作者
-    GIT_AUTHOR_NAME="$(echo $author | cut -d '<' -f1)" \
-    GIT_AUTHOR_EMAIL="$(echo $author | cut -d '<' -f2 | tr -d '>')" \
-    GIT_AUTHOR_DATE="$commit_date" \
-    GIT_COMMITTER_NAME="$(echo $author | cut -d '<' -f1)" \
-    GIT_COMMITTER_EMAIL="$(echo $author | cut -d '<' -f2 | tr -d '>')" \
-    GIT_COMMITTER_DATE="$commit_date" \
-    git commit -m "$message" --author="$author"
+  # macOS 使用 jot，Linux 使用 RANDOM
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    commit_hour=$(jot -r 1 10 23)
+    commit_minute=$(jot -r 1 10 59)
+    commit_second=$(jot -r 1 10 59)
+  else
+    commit_hour=$((RANDOM % 14 + 10))
+    commit_minute=$((RANDOM % 50 + 10))
+    commit_second=$((RANDOM % 50 + 10))
   fi
+
+  commit_date="2024-${selected_month}-${random_day}T${commit_hour}:${commit_minute}:${commit_second}"
+
+  # 随机选择 5-10 个文件进行修改
+  num_files=$((RANDOM % 6 + 5))
+  selected_files=()
+  used_indices=()
+
+  for ((j=0; j<num_files; j++)); do
+    while true; do
+      index=$((RANDOM % ${#code_files[@]}))
+      if [[ ! " ${used_indices[@]} " =~ " ${index} " ]]; then
+        used_indices+=("$index")
+        selected_files+=("${code_files[$index]}")
+        break
+      fi
+    done
+  done
+  for selected_file in "${selected_files[@]}"
+  do
+    if [[ -f "$selected_file" ]]; then
+      modify_type=$((RANDOM % 4 + 1))
+
+      if [[ "$modify_type" -eq 1 ]]; then
+        # 在文件末尾插入新逻辑
+        echo "console.log('Debug: $message');" >> "$selected_file"
+
+      elif [[ "$modify_type" -eq 2 ]]; then
+        # 删除文件中的一整行代码
+        line_num=$((RANDOM % 10 + 1))
+        sed -i '' "${line_num}d" "$selected_file"
+
+      elif [[ "$modify_type" -eq 3 ]]; then
+        # 注释掉 3-5 行代码
+        start_line=$((RANDOM % 5 + 1))
+        end_line=$((start_line + RANDOM % 3 + 2))
+        sed -i '' "${start_line},${end_line}s/^/\/\/ /" "$selected_file"
+
+      elif [[ "$modify_type" -eq 4 ]]; then
+        # 修改 `import` 或 `export` 语句
+        sed -i '' "s/import/export/g" "$selected_file"
+      fi
+
+      git add "$selected_file"
+    fi
+  done
+
+  # 执行提交并设置作者
+  GIT_AUTHOR_NAME="$(echo $author | cut -d '<' -f1)" \
+  GIT_AUTHOR_EMAIL="$(echo $author | cut -d '<' -f2 | tr -d '>')" \
+  GIT_AUTHOR_DATE="$commit_date" \
+  GIT_COMMITTER_NAME="$(echo $author | cut -d '<' -f1)" \
+  GIT_COMMITTER_EMAIL="$(echo $author | cut -d '<' -f2 | tr -d '>')" \
+  GIT_COMMITTER_DATE="$commit_date" \
+  git commit -m "$message" --author="$author"
 done
