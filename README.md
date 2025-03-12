@@ -1,12 +1,12 @@
 # Mobox Platform Project
 
-![Mobox Logo](https://github.com/mobox-lab/mobox-platform/tree/main/src/assets/dragonverse/logo.png)
+![Mobox Logo](https://github.com/mobox-lab/mobox-platform/blob/main/src/assets/dragonverse/logo.png)
 
 
 ### Screenshots
-![Game Detail](https://github.com/mobox-lab/mobox-platform/tree/main/src/assets/detail/detail1.png)
-![Game Interface](https://github.com/mobox-lab/mobox-platform/tree/main/src/assets/detail/detail3.jpg)
-![Game Features](https://github.com/mobox-lab/mobox-platform/tree/main/src/assets/detail/detail4.jpg)
+![Game Detail](https://github.com/mobox-lab/mobox-platform/blob/main/src/assets/detail/detail1.png)
+![Game Interface](https://github.com/mobox-lab/mobox-platform/blob/main/src/assets/detail/detail3.jpg)
+![Game Features](https://github.com/mobox-lab/mobox-platform/blob/main/src/assets/detail/detail4.jpg)
 
 
 ## 🛠 Technology Stack
