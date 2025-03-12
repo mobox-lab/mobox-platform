@@ -1,4 +1,4 @@
-# Mobox Platform Project
+# MOBOX Platform
 
 ![Mobox Logo](https://github.com/mobox-lab/mobox-platform/blob/main/src/assets/dragonverse/logo.png)
 
