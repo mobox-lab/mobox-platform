@@ -102,7 +102,7 @@ export default {
                 }, '*');
 			}
         },
-        // 计算窗口
+        
         computeWindow() {
             this.app.view.style.width = window.innerWidth + "px";
             this.app.view.style.height = window.innerHeight + "px";

@@ -235,7 +235,7 @@ export default {
             NecklaceArr: ["AllNecklace","Bitcoin Locket","BOXer Pride","Dawg Chain","ETH2 wear","SAFU chain"],
             NoseArr: ["AllNose","Hawk","Hook","Hoover","nobby","Nubian","Pointy","Porky","Round"],
 
-            //一下为列表数据
+            
             lastScrollTop: null,
             distance: 0,
             lineTopHeight: 0,
@@ -619,9 +619,9 @@ export default {
             console.log("refreshListData")
             this.prodListData = this.curAvatarSInfo;
             // this.previewList = this.prodListData;
-            //切换页面重置视窗
+            
             this.resetView();
-            //重置数据
+            
             this.initData();
             console.log(this.prodListData)
             let _from = 0;
@@ -633,30 +633,30 @@ export default {
             this.resetPreviewList(this.from, this.to);
             // this.handleScroll();
         },
-        resetView() {//切换页面重置视窗
+        resetView() {
             this.lineTopHeight = 0;
             this.lineBottomHeight = 0;
             this.$el.scrollTop = 0;
         },
-        /* 无限加载方法 */
+        
         initData() {
             let _scrollTop = this.$refs.avatarscroll;
-            this._rowsInWindow = Math.ceil(_scrollTop.offsetHeight / this.itemHeight);//可视区域内多少行
-            this._above = this._rowsInWindow ;//可视区域上方多少行
-            this._below = this._rowsInWindow;//可视区域下方多少行
-            this._max = this._rowsInWindow * this.itemHeight; // 可视区域最大距离
-            this._column = ~~(_scrollTop.offsetWidth / this.itemWidth); // 计算一列几个元素
+            this._rowsInWindow = Math.ceil(_scrollTop.offsetHeight / this.itemHeight);
+            this._above = this._rowsInWindow ;
+            this._below = this._rowsInWindow;
+            this._max = this._rowsInWindow * this.itemHeight; 
+            this._column = ~~(_scrollTop.offsetWidth / this.itemWidth); 
         },
         handleScroll() {
             console.log("handleScroll")
             let avatarscroll = this.$refs.avatarscroll;
-            let _scrollTop = avatarscroll.scrollTop,//滚动距离
-                _height = avatarscroll.offsetHeight,//产品列表的高度
-                _contentHeight = avatarscroll.offsetHeight;//屏幕容器的距离
-            let _rowsInScrollTop = _scrollTop / this.itemHeight, // 获得滚动了多少行
-                _dataLen = this.prodListData.length//数据长度
+            let _scrollTop = avatarscroll.scrollTop,
+                _height = avatarscroll.offsetHeight,
+                _contentHeight = avatarscroll.offsetHeight;
+            let _rowsInScrollTop = _scrollTop / this.itemHeight, 
+                _dataLen = this.prodListData.length
             
-            // 计算当前屏幕上的行数
+            
             if (_rowsInScrollTop - Math.floor(_rowsInScrollTop) > 0.5) {
                 this.displayCount = Math.ceil(_rowsInScrollTop);
             } else {
@@ -674,7 +674,7 @@ export default {
                 }
                 return;
             }
-            // 计算数据取出的开始值和结束值
+            
             let _from = (parseInt(_rowsInScrollTop) - this._above) * this._column;
             if (_from < 0) {
                 _from = 0;
@@ -689,7 +689,7 @@ export default {
             }
             this.from = _from;
             this.to = _to;
-            // 设置头部高度和底部高度
+            
             this.lineTopHeight = _from / this._column * this.itemHeight;
             this.lineBottomHeight = (_dataLen - _to) * this.itemHeight;
             this.resetPreviewList(this.from, this.to);
@@ -697,8 +697,8 @@ export default {
         loadmore(from, to) {
             if (!this.canLoadmore) return;
             this.canLoadmore = false;
-            // 获取数据
-            let data = this.prodListData;//数据
+            
+            let data = this.prodListData;
             let _from = from, _to = to + this._below * this._column;
             if(_to>=this.prodListData.length){
                 return
@@ -710,7 +710,7 @@ export default {
         resetPreviewList(from, to) {
             console.log("resetPreviewList from="+from+" to="+to)
             //reset previewList
-            let data = this.prodListData;//数据
+            let data = this.prodListData;
             this.previewList = [];
             let arr = []
             for (; from < to; from++) {

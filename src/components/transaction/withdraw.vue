@@ -1,6 +1,6 @@
 // <template>
 //     <div class="withdraw">
-// // //         <!-- 链 -->
+
 // // //         <div class="form-item" v-if="['mbox', 'cake'].includes(coin)">
 // // // //             <div class="item-head">
 // //                 <span class="label">Chain</span>
@@ -136,23 +136,23 @@ export default {
     },
     data() {
         return {
-            // 链
+            
             chain: 'bnb',
-            // 地址
+            
             address: "",
-            // 数量
+            
             amount: "",
-            // 提现确认弹窗
+            
             isShowConfirm: false,
-            // 显示的记录详情下标
+            
             showDetailIndex: null,
-            // 提现记录
+            
             records: [],
-            // 记录分页
+            
             page: -1,
-            // 是否存在下一页
+            
             isThereMore: false,
-            // 状态多语言
+            
             statusText: {
                 'examine': 'Walletnew_9',
                 'unhandled': 'Walletnew_7',
@@ -240,19 +240,19 @@ export default {
         },
     },
     methods: {
-        // 切换链
+        
         toggleChain(value) {
             this.chain = value
         },
-        // 切换显示详情
+        
         showDetail(index) {
             this.showDetailIndex = this.showDetailIndex == index ? null : index;
         },
-        // 金额转换
+        
         amountFormat(value) {
             return Common.numFloor(value, 100);
         },
-        // 获取提现记录
+        
         async getRecords() {
             const res = await request(API_PAYMENT_LOGS, {
                 method: "POST",
@@ -294,21 +294,21 @@ export default {
             this.records = [...this.records, ...logs];
             this.isThereMore = this.records.length < data.total;
         },
-        // 切换确认弹窗显示状态
+        
         toggleShowConfirm() {
             this.isShowConfirm = !this.isShowConfirm;
         },
-        // 提现成功回调
+        
         onSuccess() {
             this.toggleShowConfirm();
         },
     },
     created() {
-        // 钱包签名登录不允许修改提现地址
+        
         this.address = this.isWalletLogin
             ? this.userInfo.addresses[0].address
             : "";
-        // 获取记录
+        
         this.getRecords();
     },
 };

@@ -1,5 +1,5 @@
 // <template>
-// //         <!-- 列表 -->
+
 // //         <div class="list">
 //                 <li v-for="(item, index) in list" :key="index">
 //                     <div class="container">
@@ -83,7 +83,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-// 列表
+
 .list {
     max-width: 1040px;
     width: 50%;

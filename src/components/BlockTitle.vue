@@ -9,17 +9,17 @@
 <script>
 export default {
   props: {
-    // 标题
+    
     title: {
       type: String,
       required: true,
     },
-    // 描述
+    
     describe: {
       type: String,
       required: true,
     },
-    // 方向
+    
     direction: {
       type: String,
       default: "left",
@@ -74,7 +74,7 @@ export default {
   }
 }
 
-// 方向
+
 // left
 .left {
   padding-left: 28px;

@@ -87,7 +87,7 @@ export { mapState } from "vuex";
 
 export default {
   props: {
-    // 邀请码
+    
     source: {
       type: Number,
       default: 0,
@@ -106,17 +106,17 @@ export default {
   },
   data() {
     return {
-      // 当前选择的区号
+      
       // area: areas[0],
-      // 区号列表
+      
       // areas: areas,
-      // 用户协议勾选状态
+      
       agreeAgreement: true,
-      // 是否显示区号列表
+      
       isShowArea: false,
-      // 手机
+      
       mobile: '',
-      // 验证码
+      
       code: '',
       sourceCode:'',
       captchaToken: '',
@@ -126,34 +126,34 @@ export default {
     initSource(source){
       this.sourceCode = source.toString();
     },
-    // 切换协议
+    
     toggleAgreement() {
       this.isShowAgreement = !this.isShowAgreement;
     },
-    // 切换显示区域列表
+    
     toggleShowAreaList() {
       console.log(this.areas)
 
       this.isShowArea = !this.isShowArea;
     },
-    // 选择区号
+    
     selectArea(data) {
       this.$store.commit('globalState/setLocalArea', data);
       this.isShowArea = false;
     },
-    // 下一步
+    
     next() {
       this.$parent.formData.mobile = this.area.value + this.mobile;
       this.$parent.formData.verify_code = this.code;
       this.$parent.formData.nick_name = this.nickName;
       this.$parent.next();
       // this.$parent.formData.source = this.sourceCode;
-      // 如果有sourcecode 那么就加入对象 否则不加入
+      
       if(this.sourceCode) {
         this.$parent.formData.source = this.sourceCode;
       }
     },
-    // 发送验证码
+    
     async sendCode() {
       if (!this.captchaToken) {
         const message = this.$t('Register_44');
@@ -182,11 +182,11 @@ export default {
     area(){
       return this.localArea;
     },
-    // 提交禁用状态
+    
     submitDisabled() {
       return this.sendCodeDisabled || this.code.length != 6 || !this.agreeAgreement || !this.nickName || this.isRepeat;
     },
-    // 发送验证码禁用状态
+    
     sendCodeDisabled() {
       return !/^\d+$/.test(this.mobile);
     },
@@ -207,7 +207,7 @@ export default {
   .layout {
     color: #343434;
 
-    // 选择区域按钮
+    
     .area-button {
       height: 28px;
       font-size: 14px;
@@ -228,12 +228,12 @@ export default {
       }
     }
 
-    // 验证码输入框
+    
     .code-input {
       margin-bottom: 0;
     }
 
-    // 区域列表
+    
     .area-list {
       margin: 0 30px;
       margin-top: 15px;
@@ -287,7 +287,7 @@ export default {
             transition: transform 0.3s;
           }
 
-          // 激活状态
+          
           &.active {
             color: #FFFFFF;
 
@@ -311,12 +311,12 @@ export default {
       }
     }
 
-    // 隐藏
+    
     .area-list-hide {
       height: 0;
     }
 
-    // 协议
+    
     .agreement {
       margin-top: 30px;
     }

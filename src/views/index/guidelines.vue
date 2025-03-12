@@ -160,7 +160,7 @@
       display: flex;
       margin-top: 20px;
 
-      // 左边flex
+      
       .flex {
         display: flex;
         flex: 1.5;
@@ -177,7 +177,7 @@
         transition: transform 0.2s;
       }
 
-      // 中间模块
+      
       .center {
         min-width: 0;
         cursor: pointer;
@@ -215,7 +215,7 @@
         }
       }
 
-      // 背景图
+      
       .bg {
         position: absolute;
         top: 0;
@@ -224,7 +224,7 @@
         height: 100%;
       }
 
-      // 标题信息
+      
       .info {
         // position: absolute;
         flex: 1;
@@ -323,7 +323,7 @@
         width: 210px;
       }
 
-      // 标题信息
+      
       .info {
         left: 20px;
         right: 20px;

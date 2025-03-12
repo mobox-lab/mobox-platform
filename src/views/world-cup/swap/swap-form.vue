@@ -75,14 +75,14 @@ export default {
     },
   },
   methods: {
-    // 提交
+    
     async submit() {
       try {
         let chainData = this.chainData;
 
         if (!this.chainData) {
           const headers = await getSignData();
-          // 参数
+          
           const data = {
             amt: this.swapAmount * 100,
           };
@@ -132,7 +132,7 @@ export default {
           "type":"function"
         }], '0x9314CdD422cB6fbFAb2954B58B3D911e515A94A1');
 
-        // 提交上链
+        
         contract.methods
           .claim(chainData.systx, chainData.amt, chainData.deadline, chainData.v, chainData.r, chainData.s)
           .send({from: this.address})

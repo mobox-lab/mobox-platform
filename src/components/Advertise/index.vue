@@ -58,7 +58,7 @@ export default {
     },
     data(){
         return{
-            deadline:1617681600000, // 截止时间 4-6 中午12点
+            deadline:1617681600000, 
             // deadline:161768160,
 
             t1 : null,

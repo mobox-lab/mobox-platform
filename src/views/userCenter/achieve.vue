@@ -205,7 +205,7 @@ export default {
                 data:{types : this.achieveIdx+1}
 			});
 
-            // 编排所需的成就显示数据
+            
             if(code == 200){
                 console.log(data)
                 const pidObjs = {};
@@ -217,7 +217,7 @@ export default {
                         const lastStatus = pidObjs[pid].status;
                         pidObjs[pid].stages.push(item);
 
-                        // 如果上一个状态未完成 则不要开始记录下一状态
+                        
                         if(lastStatus == 0){return}
 
                         pidObjs[pid].current = current;
@@ -284,7 +284,7 @@ export default {
             })
             const {code} = res;
             if(code == 200){
-                // 改写数据
+                
                 this.showNotify(this.$t('achievement_49'), "success");
                 this.achieveDetails.map((item,i)=>{
                     const {currentStage, currentId, stages} = item;

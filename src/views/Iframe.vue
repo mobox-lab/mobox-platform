@@ -113,9 +113,9 @@ const slpScreenRate = 1136 / 640;
 export default {
   mixins: [CommonMethod],
   props: {
-    // 游戏标识
+    
     symbol: String,
-    // 窗口模式
+    
     mode: String,
   },
   data() {

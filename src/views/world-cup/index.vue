@@ -255,7 +255,7 @@ export default {
   overflow: hidden;
 }
 
-// 指示器
+
 .indicator {
   position: fixed;
   top: 50%;

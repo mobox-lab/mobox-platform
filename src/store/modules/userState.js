@@ -1,7 +1,7 @@
 export request from "@/utils/request";
 // export {API_USER_INFO, API_USER_BIND_ADDRESS_INFO, API_USER_BALANCE, API_COINPRICE} from '@/utils/constant';
 // 
-// 	// 用户信息
+
 // 	userInfo: {},
 	token: window.localStorage.getItem('token') || Common.getUrlParams('token'),
 	achieveBaseCfg:{},
@@ -15,14 +15,14 @@ const mutations = {
 	setCoinRate(state, coinRate){
 		state.coinRate = coinRate
 	},
-	// 设置配置信息
+	
 	setAchieveCfg(state, achieveBaseCfg){
 		state.achieveBaseCfg = achieveBaseCfg;
 	},
 	setAchieveRewardCfg(state, achieveRewardCfg){
 		state.achieveRewardCfg = achieveRewardCfg;
 	},
-	// 设置用户信息
+	
 	setUserInfo(state, userInfo) {
 		const newUserInfo = {
 			...state.userInfo,
@@ -31,7 +31,7 @@ const mutations = {
 		state.userInfo = newUserInfo;
 		CommonMethod.methods.postMessage('setUserInfo', newUserInfo);
 	},
-	// 设置用户信息
+	
 	setBalanceInfo(state, balanceInfo) {
 		state.balanceInfo = balanceInfo;
 
@@ -41,7 +41,7 @@ const mutations = {
 		})
 		state.balanceMap = map;
 	},
-	// 设置token
+	
 	setToken(state, token) {
 		try {
 				window.localStorage.setItem("token", token);
@@ -52,7 +52,7 @@ const mutations = {
 		CommonMethod.methods.postMessage('setToken', token);
 		state.token = token;
 	},
-	// 退出登录
+	
 	logout(state) {
 		window.localStorage.removeItem('token');
 		CommonMethod.methods.postMessage('logout', '');

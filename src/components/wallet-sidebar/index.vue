@@ -25,10 +25,10 @@
     },
     computed: {
       ...mapState({
-        // 是否登录
+        
         isLogin: (state) => !!state.userState.token,
       }),
-      // 钱包显示状态
+      
       isShowWallet: {
         get() {
           return this.$store.state.globalState.isShowWallet;

@@ -69,20 +69,20 @@ export default {
 		};
 	},
 	methods: {
-		// 显示
+		
 		show() {
 			this.isShow = true;
 		},
-		// 关闭
+		
 		close() {
 			this.isShow = false;
-			// 动画结束后销毁
+			
 			setTimeout(() => {
 				this.$destroy();
 				document.body.removeChild(this.$el);
 			}, 300);
 		},
-		// 选择钱包
+		
 		onSelect(wallet) {
 			this.$emit('selected', wallet);
 			this.close();
@@ -93,14 +93,14 @@ export default {
 
 <style lang="less" scoped>
 
-// 移动端
+
 @media (max-width: 420px) {
 	.content {
 		width: 90%;
 	}
 }
 
-// pc端
+
 @media (min-width: 420px) {
 	.content {
 		width: 397px;
@@ -224,7 +224,7 @@ export default {
 	}
 }
 
-// 过度动画
+
 .bounce-enter-active,
 .bounce-leave-active {
 	transition: opacity 0.3s;

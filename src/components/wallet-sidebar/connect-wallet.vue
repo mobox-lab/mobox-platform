@@ -130,7 +130,7 @@ export { CommonMethod } from "@/mixin";
 export default {
   mixins: [CommonMethod],
   methods: {
-      // mbox钱包
+      
       async mboxLogin() {
           if (!window.mbox) {
               this.showNotify(this.$t("Tips_1"), "error");
@@ -139,9 +139,9 @@ export default {
 
           try {
               const res = await window.mbox?.BinanceChain?.enable();
-              // 地址
+              
               const address = res[0];
-              // 签名
+              
               window.mbox?.bscWeb3.personal.sign(
                   this.getSignMessage(),
                   address,
@@ -153,7 +153,7 @@ export default {
               );
           } catch (_) {}
       },
-      // ethereum标准
+      
       async ethereumLogin() {
           if (!window.ethereum) {
               this.showNotify(this.$t("Tips_1"), "error");
@@ -164,9 +164,9 @@ export default {
               const res = await window.ethereum?.request({
                   method: "eth_requestAccounts",
               });
-              // 地址
+              
               const address = res[0];
-              // 签名
+              
               const sign = await window.ethereum?.request({
                   method: "personal_sign",
                   params: [address, this.getSignMessage()],
@@ -177,13 +177,13 @@ export default {
               console.log(_);
           }
       },
-      // 币安钱包
+      
       async binance() {
           try {
               const res = await window.BinanceChain.enable();
-              // 地址
+              
               const address = res[0];
-              // 签名
+              
               const { signature } = await window.BinanceChain.bnbSign(
                   address,
                   this.getSignMessage()
@@ -234,14 +234,14 @@ export default {
         await provider.enable();
         const web3 = new Web3(provider);
         const accounts = await (provider.enable || provider.connect).call(provider);
-        // 地址
+        
         const address = accounts[0];
-        // 签名
+        
         const sign = await web3.eth.personal.sign(this.getSignMessage(), address, '')
 
         this.onSign(address, sign);
       },
-      // Wallet Connect登录
+      
       async walletConnectLogin() {
         window.localStorage.removeItem('wc@2:client:0.3//session')
         const provider = await EthereumProvider.init({
@@ -264,7 +264,7 @@ export default {
         const accounts = await provider.enable()
         const address = accounts[0]
 
-        // 签名
+        
         const sign = await provider.request({
           method: "personal_sign",
           params: [address, this.getSignMessage()],
@@ -272,12 +272,12 @@ export default {
 
         this.onSign(address, sign);
       },
-      // 获取签名信息
+      
       getSignMessage() {
           this.time = Date.now();
           return `wallet_login_${Math.floor(this.time / 60000)}`;
       },
-      // 签名完成回调
+      
       async onSign(address, sign) {
         const res = await request(API_WALLET_LOGIN, {
           method: 'POST',
@@ -289,13 +289,13 @@ export default {
           }
         });
 
-        // 保存token
+        
         this.$store.commit('userState/setToken', res.data.token);
-        // 获取用户信息
+        
         this.$store.dispatch('userState/getUserInfo');
-        // 获取地址
+        
         this.$store.dispatch("globalState/getChargeAddr");
-        // 获取钱包配置
+        
         this.$store.dispatch("globalState/getPaymentCfg");
       },
   },
@@ -421,7 +421,7 @@ export default {
         margin-bottom: 24px;
     }
 
-    // 下载按钮
+    
     ul {
         li {
             cursor: pointer;

@@ -4,21 +4,21 @@ export request from '@/utils/worldCupRequest';
 // export default {
 	namespaced: true,
   state: {
-    // 状态
+    
     status: 0,
-    // 钱包
+    
     wallet: window.localStorage.getItem('world-cup-wallet'),
-    // 地址
+    
     address: null,
-    // 上链数据
+    
     chainData: null,
-    // moball数量
+    
     moball: 0,
-    // football数量
+    
     football: 0,
-    // 社交任务
+    
     socialChallenges: {},
-    // 游戏任务
+    
     gameChallenges: {},
   },
   mutations: {
@@ -48,7 +48,7 @@ export request from '@/utils/worldCupRequest';
     },
   },
   actions: {
-    // 获取球⚽️的数量
+    
     async getBags(context) {
       const { data } = await request.get('bags', {
         params: {
@@ -58,7 +58,7 @@ export request from '@/utils/worldCupRequest';
 
       context.commit('setBags', data);
     },
-    // 获取社交任务
+    
     async getSocialChallenges(context) {
       const { data } = await request.get('social/tasks', {
         params: {
@@ -73,7 +73,7 @@ export request from '@/utils/worldCupRequest';
 
       context.commit('setSocialChallenges', task);
     },
-    // 获取游戏任务
+    
     async getGameChallenges(context) {
       const { data } = await request.get('daily/tasks', {
         params: {
@@ -88,7 +88,7 @@ export request from '@/utils/worldCupRequest';
 
       context.commit('setGameChallenges', task);
     },
-    // 获取MOBalls
+    
     async getMOBalls(context) {
       const res = await WalletUtils.getMOBalls(context.state.address);
       context.commit('setMOBall', res);

@@ -60,7 +60,7 @@ export default {
 
             this.$refs.qrCodeUrl.innerHTML = '';
             new QRCode(this.$refs.qrCodeUrl, {
-                text: url, // 需要转换为二维码的内容
+                text: url, 
                 width: 150,
                 height: 150,
                 colorDark: '#254498',

@@ -107,7 +107,7 @@ export default {
   }
 
 
-  // 过度动画
+  
   .bounce-enter-active,
   .bounce-leave-active {
       transition: opacity 0.3s;

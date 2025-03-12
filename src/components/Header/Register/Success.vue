@@ -1,7 +1,7 @@
 <template>
   <FormLayout
   >
-//     <!-- 图标 -->
+
 //     <div class="icon">
 //       <img src="../../../assets/icon/userSystem/register-success.png" alt="">
     </div>

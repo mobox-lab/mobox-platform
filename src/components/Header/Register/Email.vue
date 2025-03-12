@@ -57,7 +57,7 @@ export { Common } from "@/utils";
 
 export default {
   props: {
-    // 邀请码
+    
     source: {
       type: Number,
       default: 0,
@@ -76,11 +76,11 @@ export default {
   },
   data() {
     return {
-      // 用户协议勾选状态
+      
       agreeAgreement: true,
-      // 邮箱
+      
       email: '',
-      // 验证码
+      
       code: '',
       sourceCode:'',
       captchaToken: '',
@@ -90,14 +90,14 @@ export default {
     initSource(source){
       this.sourceCode = source.toString();
     },
-    // 切换协议
+    
     toggleAgreement() {
       const lang = Common.getStorageItem("lang") || "en";
 			const keyend = lang === "zh-CN" ? "zh" : "en"
 
 			window.open(`./docs/termofuse${keyend}.pdf`)
     },
-    // 下一步
+    
     next() {
       console.log({
         nick_name: this.nickName,
@@ -109,13 +109,13 @@ export default {
         verify_code: this.code,
         mail: this.email,
       };
-      // 如果有sourcecode 那么就加入对象 否则不加入
+      
       if(this.sourceCode) {
         this.$parent.formData.source = this.sourceCode;
       }
       this.$parent.next();
     },
-    // 发送验证码
+    
     async sendCode() {
       if (!this.captchaToken) {
         const message = this.$t('Register_44');
@@ -137,11 +137,11 @@ export default {
     },
   },
   computed: {
-    // 提交禁用状态
+    
     submitDisabled() {
       return this.sendCodeDisabled || this.code.length != 6 || !this.agreeAgreement || !this.nickName || this.isRepeat;
     },
-    // 发送验证码禁用状态
+    
     sendCodeDisabled() {
       return !/\w[-\w.+]*@([A-Za-z0-9]+\.)+[A-Za-z]{1,30}/.test(this.email);
     },

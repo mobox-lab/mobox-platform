@@ -2,19 +2,11 @@
 // // 		<Header v-if="canShowHead" />
 // // 		<LandHeader v-if="false" />
 // // 		<Notification />
-// // 		<!-- 游戏 -->
 // 		<game-stack />
-// 		<!-- 提示弹窗 -->
 // 		<tip v-if="isShowTip" @close="closeTip" />
-		<!-- 钱包登录 -->
 		<wallet-login v-if="isShowWalletLogin" @close="isShowWalletLogin = false" />
-		<!-- 钱包侧边栏 -->
 		<wallet-sidebar />
-		<!-- 交易 -->
-		<transaction />
-		<!-- 路由 -->
-		<router-view />
-		<!-- 弹窗 -->
+
 		<!-- <dialog-banner /> -->
 	</div>
 </template>
@@ -88,7 +80,7 @@ export default {
 			window.localStorage.setItem('tip-time', Date.now() + (7 * 24 * 60 * 60 * 1000));
 		}
 
-		// 邀请注册默认显示钱包登录
+		
 		const route = this.$route;
 
 		if (route.path === '/cmcairdrop' && route.query.source && !window.localStorage.getItem('token')) {
@@ -96,12 +88,12 @@ export default {
 		}
 	},
 	methods: {
-		// 关闭提示
+		
 		closeTip() {
 			this.isShowTip = false;
 		}, 
 		async getAreas(){
-			// 获取区号 
+			
 			const res = await request(API_SMS_MOBILE_CODE, {
 				method: 'POST'
 			});
@@ -118,7 +110,7 @@ export default {
 			this.$store.commit('globalState/setAreas', areas);
 		},
 		async getLocalArea(){
-			// 获取区号 
+			
 			const res = await request(API_SMS_LOCAL_MOBILE_CODE, {
 				method: 'POST'
 			});

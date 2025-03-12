@@ -147,46 +147,46 @@ export default {
   },
   data() {
     return {
-      // 当前选择的区号
+      
       // area: areas[0],
-      // 区号列表
+      
       // areas: areas,
 
-      // 用户协议勾选状态
+      
       agreeAgreement: true,
-      // 是否显示区号列表
+      
       isShowArea: false,
-      // 邮箱
+      
       email: '',
-      // 手机
+      
       mobile: '',
-      // 验证码
+      
       code: '',
 
-      // 修改密码选择
+      
         selectSetPws:1,
 
-        // 密码
+        
       password: '',
-      // 确认密码
+      
       confirmPassword: '',
     };
   },
   
   methods: {
-// 选择区号
+
     selectArea(data) {
       this.$store.commit('globalState/setLocalArea', data);
       this.isShowArea = false;
     },
-    // 切换显示区域列表
+    
     toggleShowAreaList() {
       this.isShowArea = !this.isShowArea;
     },
     chooseSetPwd(idx) {
         this.selectSetPws = idx;
     },
-    // 下一步
+    
     async next() {
 
         // console.log(this.password)
@@ -228,7 +228,7 @@ export default {
             });
             this.$parent.$parent.closeModal();
 
-            // 保存用户信息
+            
             this.$store.commit('userState/setUserInfo', res.data);
         } else if(this.type === "mobile"){
             const data = {
@@ -241,7 +241,7 @@ export default {
             });
 
             this.$parent.$parent.closeModal();
-            // 保存用户信息
+            
             this.$store.commit('userState/setUserInfo', res.data);
 
         } else if(this.type === "password"){
@@ -283,7 +283,7 @@ export default {
     //     }
     // },
 
-    // 发送验证码
+    
     async sendMailCode() {
       try {
         const isPassword = this.type == 'password';
@@ -299,7 +299,7 @@ export default {
       }
     },
 
-    // 发送验证码
+    
     async sendPhoneCode() {
       try {
         const isPassword = this.type == 'password';
@@ -323,7 +323,7 @@ export default {
     area(){
       return this.localArea;
     },
-    // 返回title
+    
     getTitle() {
         if(this.type === "mail"){
             return this.$t('Setting_22')
@@ -335,21 +335,21 @@ export default {
             return ""
         }
     },
-    // 提交邮箱禁用状态
+    
     submitMailDisabled() {
       return this.sendMailCodeDisabled || this.code.length != 6 ;
     },
-    // 提交手机禁用状态
+    
     submitMobileDisabled() {
       return this.sendMobileCodeDisable || this.code.length != 6 ;
     },
-    // 发送邮箱验证码禁用状态
+    
     sendMailCodeDisabled() {
       // return !/^([a-zA-Z]|[0-9])(\w|-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/.test(this.email);
       return !/\w[-\w.+]*@([A-Za-z0-9]+\.)+[A-Za-z]{1,30}/.test(this.email);
     },
 
-    // 发送手机验证码禁用状态
+    
     sendMobileCodeDisable() {
       return !/^\d+$/.test(this.mobile);
     },
@@ -379,26 +379,26 @@ export default {
         }
       ];
     },
-    // 长度验证
+    
     verifyLength() {
       return this.password.length >= 8;
     },
-    // 包含大写
+    
     existCapitial() {
       return /^.*[A-Z]+.*$/.test(this.password);
     },
-    // 存在数字
+    
     existNumber() {
       return /^.*[0-9]+.*$/.test(this.password);
     },
-    // 不存在空格
+    
     notSpace() {
       return this.password && this.password.indexOf(' ') == -1;
     },
     shouldBeSame() {
       return this.password === this.confirmPassword && this.password;
     },
-    // 按钮禁用状态
+    
     submitPwsDisabled() {
         if(this.selectSetPws === 0){
             return ([
@@ -441,7 +441,7 @@ export default {
         background:white;
     }
 
-    // 选择区域按钮
+    
     .area-button {
       height: 28px;
       font-size: 14px;
@@ -462,7 +462,7 @@ export default {
       }
     }
 
-    // 区域列表
+    
     .area-list {
       margin: 0 30px;
       height: 190px;
@@ -515,7 +515,7 @@ export default {
             transition: transform 0.3s;
           }
 
-          // 激活状态
+          
           &.active {
             color: #FFFFFF;
 
@@ -539,7 +539,7 @@ export default {
       }
     }
 
-    // 隐藏
+    
     .area-list-hide {
       height: 0;
     }
@@ -604,7 +604,7 @@ export default {
             white-space: normal;
         }
 
-        // 成功状态
+        
         &.success {
             &::before {
             background-image: url('../../../assets/icon/userSystem/success.png');

@@ -32,7 +32,7 @@ export default {
       opacity: 0.7;
     }
 
-    // 禁用
+    
     &[disabled] {
       opacity: 0.5;
       cursor: not-allowed;

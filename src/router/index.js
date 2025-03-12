@@ -77,7 +77,7 @@ const routes = [
     name: "alliance",
     component: Alliance,
   },
-  // 新手指引 - 首页
+  
   {
     path: "/new-guidelines",
     name: "new-guidelines",
@@ -97,7 +97,7 @@ const routes = [
       },
     ],
   },
-  // 新手指南
+  
   {
     path: "/beginner-guide",
     component: BeginnerGuide,
@@ -128,7 +128,7 @@ const routes = [
       //   path: 'games/:name',
       //   component: Details,
       // },
-      // 治理
+      
       {
         path: "governance",
         name: "governance",
@@ -181,12 +181,12 @@ const routes = [
       hideHeader: true,
     },
   },
-  // 情人节
+  
   {
     path: '/valentines',
     component: Valentines,
   },
-  // 周年庆抽奖
+  
   {
     path: '/anniversary-raffle',
     component: AnniversaryRaffle,

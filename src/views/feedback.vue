@@ -49,13 +49,13 @@
     ],
     data() {
       return {
-        // 提交状态
+        
         loading: false,
         // body id
         bodyId: '',
-        // 邮箱
+        
         email: '',
-        // 反馈内容
+        
         content: '',
       };
     },
@@ -68,7 +68,7 @@
       }
     },
     methods: {
-      // 提交
+      
       async submit() {
         const reg = /^([a-zA-Z]|[0-9])(\w|-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
 
@@ -118,7 +118,7 @@
       transition: none !important;
     }
 
-    // 头部
+    
     .header {
       display: flex;
       flex-direction: column;
@@ -158,7 +158,7 @@
         }
       }
 
-      // 背景图
+      
       .bg-image {
         position: absolute;
         top: 0;
@@ -170,7 +170,7 @@
       }
     }
 
-    // 内容
+    
     .body {
       .form {
         border: 1px solid #F5F5F5;
@@ -227,7 +227,7 @@
         }
       }
 
-      // 提交按钮
+      
       .submit {
         width: 327px;
         height: 44px;

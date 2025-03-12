@@ -1,6 +1,6 @@
 <template>
   <div class="details">
-//     <!-- 首屏 -->
+
 //     <div class="first-screen">
 //       <video src="http://192.168.5.110:8080/videos/03.mp4" autoplay loop muted></video>
 //       <div class="info">
@@ -151,7 +151,7 @@
   export default {
     data() {
       return {
-        // 当前tab
+        
         tab: 0,
       };
     },
@@ -172,7 +172,7 @@
     }
   }
 
-  // 首屏幕
+  
   .first-screen {
     height: 100vh;
     position: relative;
@@ -298,7 +298,7 @@
     }
   }
 
-  // 信息
+  
   .content {
     position: relative;
 
@@ -315,7 +315,7 @@
       }
     }
 
-    // 社区
+    
     .community {
       li {
         width: 22px;
@@ -410,7 +410,7 @@
       }
     }
 
-    // 统计信息
+    
     .statistics {
       margin-top: 40px;
 
@@ -566,7 +566,7 @@
     }
   }
 
-  // 描述
+  
   @media (min-width: 1610px) {
     .description {
       .detail {
@@ -587,7 +587,7 @@
     }
   }
 
-  // 统计数据
+  
   @media (min-width: 1420px) {
     .statistics {
       display: flex;

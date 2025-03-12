@@ -4,11 +4,11 @@
 // 
 // export default {
   props: {
-    // 按钮禁用状态
+    
       type: Boolean,
       required: true,
     },
-    // 发送验证码
+    
     onSend: {
       type: Function,
       required: true,
@@ -16,9 +16,9 @@
   },
   data() {
     return {
-      // 定时器
+      
       interval: null,
-      // 倒计时
+      
       timer: 60,
     };
   },
@@ -32,7 +32,7 @@
     },
   },
   methods: {
-    // 发送
+    
     async send() {
       if (this.interval) {
         return;
@@ -41,7 +41,7 @@
       try {
         this.timer = 60;
         await this.onSend();
-        // 定时器
+        
         this.interval = setInterval(() => {
           this.timer--;
 

@@ -1,6 +1,6 @@
 // // <template>
 // //   <div class="layout">
-// //     <!-- 侧边栏 -->
+
 // //     <drawer v-model="isShowSidebar" :mask="isShowMask">
 // // //       <sidebar />
       <router-view />
@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      // 是否显示侧边栏遮罩
+      
       isShowMask: false,
     };
   },
@@ -35,14 +35,14 @@ export default {
     },
   },
   methods: {
-    // 窗口大小变化
+    
     windowResize() {
       this.isShowMask = document.body.offsetWidth <= 960;
       this.$store.commit('globalState/toggleShowSidebar', !this.isShowMask);
     },
   },
   created() {
-    // 手机端默认隐藏侧边栏
+    
     if (Common.isMobile()) {
       this.$store.commit('globalState/toggleShowSidebar', false);
       this.isShowMask = true;

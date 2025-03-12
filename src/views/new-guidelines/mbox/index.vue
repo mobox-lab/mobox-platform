@@ -201,7 +201,7 @@ export default {
     background-position: right;
   }
 
-  // 功能列表
+  
   .list {
     border: 1px solid #34363b;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.76);
@@ -229,14 +229,14 @@ export default {
         background: linear-gradient(180deg, #ffa400 0%, #805200 100%);
       }
 
-      // 背景
+      
       .bg {
         position: absolute;
         height: 100%;
         z-index: 0;
       }
 
-      // 标签
+      
       .tag {
         line-height: 1;
         background: #202226;
@@ -248,7 +248,7 @@ export default {
     }
   }
 
-  // 介绍
+  
   .introduce {
     & > li {
       margin-top: 120px;

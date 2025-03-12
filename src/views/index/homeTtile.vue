@@ -8,7 +8,7 @@
 
 export default {
     props: {
-        // 标题
+        
         title: {
             type: Array,
             required: true,

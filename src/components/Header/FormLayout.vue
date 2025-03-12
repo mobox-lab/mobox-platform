@@ -15,12 +15,12 @@
 <script>
 export default {
   props: {
-    // 标题
+    
     title: {
       type: String,
       required: true,
     },
-    // 描述
+    
     describe: {
       type: String,
       default: 'Register_3',
@@ -48,7 +48,7 @@ export default {
       }
     }
 
-    // 标题
+    
     .title {
       color: #264498;
       font-size: 22px;
@@ -56,7 +56,7 @@ export default {
       margin-bottom: 37px;
     }
 
-    // 描述
+    
     .describe {
       font-size: 12px;
       color: #343434;

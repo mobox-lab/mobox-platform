@@ -16,11 +16,11 @@
 <script>
   export default {
     props: {
-      // 标题
+      
       title: String,
-      // 状态
+      
       status: Boolean,
-      // 奖励图标
+      
       reward: String,
     },
     data() {

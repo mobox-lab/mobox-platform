@@ -168,7 +168,7 @@
 
         let headers;
 
-        // 签名
+        
         try {
           headers = await getSignHeader();
         } catch(_) {
@@ -179,7 +179,7 @@
         try {
           this.loading = true;
           const res = await luckDraw(headers);
-          // 开始抽奖动画
+          
           this.spin.play();
           const index = res - 1;
           this.$parent.getMohearts();

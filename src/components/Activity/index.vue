@@ -141,7 +141,7 @@ export default {
             this.sign = '';
         },
         toFAQ(){
-            // 去faq
+            
             let lang = Common.getStorageItem('lang') || 'en';
 			if(lang==="zh-CN"){lang="cn"}
 
@@ -215,7 +215,7 @@ export default {
 
                 // console.log(res)
             } else {
-                // 点击绑定
+                
                 this.$root.eventHub.$emit('landing-claimbox-2')
             }
         }

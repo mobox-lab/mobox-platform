@@ -29,7 +29,7 @@ export default {
     }),
   },
   methods: {
-    // 兑换
+    
     showSwap() {
       this.$emit('show-swap');
     },

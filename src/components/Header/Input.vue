@@ -1,7 +1,7 @@
 <template>
   <div class="input">
 //     <div class="label">{{label}}</div>
-//     <!-- 输入框 -->
+
 //     <div class="input-box">
       <slot name="prefix" />
       <input
@@ -25,29 +25,29 @@
 <script>
 export default {
   props: {
-    // 输入框值
+    
     value: String,
-    // 判断trim
+    
     isTrim: {
       type: Boolean,
       default: true,
     },
-    // 标签名
+    
     label: {
       type: String,
       required: true,
     },
-    // 输入提示
+    
     placeholder: {
       type: String,
       required: true,
     },
-    // 限制长度
+    
     maxlength: {
       type: String,
       default: "",
     },
-    // 输入框类型
+    
     type: String,
     confirmInput:{
       type:Function,
@@ -69,7 +69,7 @@ export default {
     };
   },
   watch: {
-    // 输入框变化
+    
     inputValue(value) {
       this.onWatchChange();
       
@@ -79,7 +79,7 @@ export default {
         this.$emit('input', value);
       }
     },
-    // 动态修改输入框
+    
     value(value) {
       this.inputValue = value;
     },
@@ -105,7 +105,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-  // 输入框高度
+  
   @input-height: 40px;
 
   .input {
@@ -123,7 +123,7 @@ export default {
       padding-left: 5px;
     }
 
-    // 输入框容器
+    
     .input-box {
       display: flex;
       align-items: center;
@@ -145,7 +145,7 @@ export default {
       }
     }
 
-    // 提示信息
+    
     .message {
       position: absolute;
       left: 0;

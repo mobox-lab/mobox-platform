@@ -47,19 +47,19 @@ export default {
   },
   data() {
     return {
-      // 密码
+      
       password: '',
-      // 确认密码
+      
       confirmPassword: '',
     };
   },
   methods: {
-    // 下一步
+    
     next() {
       this.$parent.formData.passwd = this.password;
       this.register();
     },
-    // 注册
+    
     async register() {
       if (this.loading) {
         return;
@@ -73,10 +73,10 @@ export default {
           data: this.$parent.formData,
         }, false);
 
-        // 保存token
+        
         this.$store.commit('userState/setToken', res.data.token);
         this.$root.eventHub.$emit("platform-setToken", res.data.token);
-        // 获取用户信息
+        
         this.$store.dispatch('userState/getUserInfo');
         this.$parent.next();
       } catch(error) {
@@ -91,7 +91,7 @@ export default {
     },
   },
   computed: {
-    // 规则
+    
     rules() {
       return [
         {
@@ -112,23 +112,23 @@ export default {
         },
       ];
     },
-    // 长度验证
+    
     verifyLength() {
       return this.password.length >= 8;
     },
-    // 包含大写
+    
     existCapitial() {
       return /^.*[A-Z]+.*$/.test(this.password);
     },
-    // 存在数字
+    
     existNumber() {
       return /^.*[0-9]+.*$/.test(this.password);
     },
-    // 不存在空格
+    
     notSpace() {
       return this.password && this.password.indexOf(' ') == -1;
     },
-    // 按钮禁用状态
+    
     disabled() {
       return [
         this.verifyLength,
@@ -178,7 +178,7 @@ export default {
         white-space: normal;
       }
 
-      // 成功状态
+      
       &.success {
         &::before {
           background-image: url('../../../assets/icon/userSystem/success.png');

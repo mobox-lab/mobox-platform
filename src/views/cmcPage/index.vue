@@ -637,21 +637,21 @@ export default {
         },
         heroScrollTo(side){
             if(side == 0){
-                // 往左
+                
                 console.log("????")
                 this.$refs.heroscroll.scrollBy(-80, 0)
             } else if(side == 1){
-                // 往右
+                
                 this.$refs.heroscroll.scrollBy(80, 0)
             }
         },
         epicScrollTo(side){
             if(side == 0){
-                // 往左
+                
                 console.log("????")
                 this.$refs.epicScroll.scrollBy(-80, 0)
             } else if(side == 1){
-                // 往右
+                
                 this.$refs.epicScroll.scrollBy(80, 0)
             }
         },
@@ -958,17 +958,17 @@ export default {
 
                 }
 
-                .scroll-area::-webkit-scrollbar {/*滚动条整体样式*/
-                    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+                .scroll-area::-webkit-scrollbar {
+                    width: 4px;     
                     height: 4px;
                     scrollbar-arrow-color:red;
                 }
-                .scroll-area::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+                .scroll-area::-webkit-scrollbar-thumb {
                     border-radius: 5px;
                     background: rgba(0,0,0,0.2);
                     scrollbar-arrow-color:red;
                 }
-                .scroll-area::-webkit-scrollbar-track {/*滚动条里面轨道*/
+                .scroll-area::-webkit-scrollbar-track {
                     border-radius: 0;
                     background: rgba(0,0,0,0.1);
                 }
@@ -1462,17 +1462,17 @@ export default {
                     overflow-y: hidden;
                 }
 
-                .heroscroll::-webkit-scrollbar {/*滚动条整体样式*/
-                    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+                .heroscroll::-webkit-scrollbar {
+                    width: 4px;     
                     height: 4px;
                     scrollbar-arrow-color:red;
                 }
-                .heroscroll::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+                .heroscroll::-webkit-scrollbar-thumb {
                     border-radius: 5px;
                     background: rgba(0,0,0,0.2);
                     scrollbar-arrow-color:red;
                 }
-                .heroscroll::-webkit-scrollbar-track {/*滚动条里面轨道*/
+                .heroscroll::-webkit-scrollbar-track {
                     border-radius: 0;
                     background: rgba(0,0,0,0.1);
                 }

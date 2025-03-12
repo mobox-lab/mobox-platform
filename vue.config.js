@@ -34,7 +34,6 @@ module.exports = {
   // chainWebpack: (config) => config.optimization.splitChunks({
   //   chunks: 'all',
   //   // maxInitialRequests: Infinity,
-  //   // minSize: 300000, // 依赖包超过300000bit将被单独打包
   //   // automaticNameDelimiter: '-',
   //   cacheGroups: {
   //     vue: {

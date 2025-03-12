@@ -286,32 +286,32 @@ export default {
 	},
 	data() {
 		return {
-			// 语言
+			
 			langArr: ["English", "繁體中文", "한국어"],
 			langNameToPos: ["en", "zh-CN", "kr"],
 			defaultSelectLangPos: 0,
-			// 注册弹窗显示状态
+			
 			isShowRegister: false,
-			// 登录弹窗显示状态
+			
 			isShowLogin: false,
-			// 密码找回弹窗显示状态
+			
 			isShowPwsForgot: false,
 			binderType:"password",
 
-			// 是否显示绑定去中心化钱包
+			
 			isShowBindWallet:false,
-			// 是否需要发送绑定请求
+			
 			isSendBindRequest:0,
 			isShowBindBinance:false,
 			isShowBinanceRes:false,
 			isShowBinanceFailed:false,
 			secretCode:'',
 
-			// 是否显示领取box界面
+			
 			isShowBoxes: false,
 			shouldOpenBox:false,
 
-			// 弹出通用确认框
+			
 			isShowConfirm : false,
 			isShowDeposite : false,
 
@@ -444,7 +444,7 @@ export default {
 		async sendCode(){
 			if(this.isEmailValid){
 				try {
-					this.setCd(); // 直接开始倒数屏蔽
+					this.setCd(); 
 					await sendEmailCode(this.email, 'MAIL_VERIFY');
 				} catch(error) {
 					if (error.code) {
@@ -478,7 +478,7 @@ export default {
 						this.showClaimBox(false);
 						this.showShareBox(true);
 
-						// 将link赋值
+						
 						this.shareLink = res.data.url;
 						this.shareMan = 0;
 					}
@@ -518,7 +518,7 @@ export default {
 		hidePwdForgot(){
 			this.isShowPwsForgot = false;
 		},
-		// 显示注册
+		
 		showShowRegister() {
 			// this.isShowRegister = true;
 
@@ -532,15 +532,15 @@ export default {
 			} else {
 				// 
 				this.showNotify(this.$t("Landing_118"), "error")
-				// console.log("抽奖")
+				
 				// this.$refs.activity.showAndClean()
 			}
 			
 			this.isShowPwsForgot = false;
 		},
 		close() {
-			// 上一个cmc活动代码 
-			// 如果没有绑定手机邮箱任意一个 直接进入绑定环节
+			
+			
 			// const {mail, mobile} = this.userInfo;
 			// if(!mail || !mobile) {
 			// 	this.binderType = !mail ? "mail" : "mobile";
@@ -550,7 +550,7 @@ export default {
 			// 	this.isShowBindWallet = true;
 			// }
 
-			// 此次活动代码
+			
 
 			// this.showBindBinance();
 			if(this.$router.history.current.name === "alliance"){
@@ -561,12 +561,12 @@ export default {
 
 			this.isShowRegister = false;
 		},
-		// 切换登录显示状态
+		
 		toggleLoginModal() {
 			// this.isShowLogin = !this.isShowLogin;
 			window.location.href = `${LOGINHEAD}?redirect=${encodeURIComponent(window.location.href)}`
 		},
-		// 退出登录
+		
 		logout() {
 			this.$store.commit('userState/logout');
 
@@ -574,7 +574,7 @@ export default {
 				this.$router.push('/');
 			}
 		},
-		// 消息监听
+		
 		messageListen(message) {
 			const data = message.data;
 
@@ -607,7 +607,7 @@ export default {
 			clearInterval(this.t1)
 			window.removeEventListener('message', this.messageListen, false);
 		},
-		// 设置语言
+		
 		setLang() {
 			let lang = Common.getStorageItem("lang") || "en";
 			this.$store.commit("globalState/setLang", lang);
@@ -615,7 +615,7 @@ export default {
 			this.defaultSelectLangPos = this.langNameToPos.indexOf(lang);
 			if (this.defaultSelectLangPos == -1) this.defaultSelectLangPos = 0;
 		},
-		// 语言切换
+		
 		onLangChange(index) {
 			let lang = this.langNameToPos[index];
 			this.$store.commit("globalState/setLang", lang);
@@ -787,7 +787,7 @@ export default {
 				// --
 				this.showDownPage(true);
 
-				// 旧代码
+				
 				// if(!mail || !mobile){
 				// 	this.binderType = !mail ? "mail" : "mobile";
 				// 	this.isShowPwsForgot = true;
@@ -795,9 +795,9 @@ export default {
 				// 	this.isSendBindRequest = true;
 				// 	this.isShowBindWallet = true;	
 				// } else {
-				// 	// 准备抽奖
+				
 				// 	// this.showNotify(this.$t("Landing_118"), "error")
-				// 	// console.log("抽奖")
+				
 				// 	this.$refs.activity.showAndClean()
 				// }
 			} else {
@@ -1340,7 +1340,7 @@ export default {
 				height: 40px;
 			}
 
-			// 标题
+			
 			.title {
 				display: flex;
 				padding-left: 20px;
@@ -1365,7 +1365,7 @@ export default {
 			}
 		}
 
-		// 导航菜单
+		
 		.nav {
 			height: 100%;
 			margin-left: 58px;
@@ -1378,7 +1378,7 @@ export default {
 				transition: color 0.3s;
 				position: relative;
 
-				// 下划线
+				
 				// &::after {
 				// 	position: absolute;
 				// 	bottom: 0;
@@ -1393,11 +1393,11 @@ export default {
 				// 	transition: transform 0.3s;
 				// }
 
-				// 激活状态
+				
 				&.router-link-active {
 					color: #ffffff;
 
-          // 下划线
+          
           &::after {
             transform: scaleX(1);
           }
@@ -1405,7 +1405,7 @@ export default {
 			}
 		}
 
-		// 右侧菜单
+		
 		.menu {
 			padding: 18px 0;
 			height: 100%;
@@ -1420,7 +1420,7 @@ export default {
 				margin: 0 5px;
 			}
 
-			// 用户信息
+			
 			.user-info {
 				display: flex;
 				align-items: center;
@@ -1447,12 +1447,12 @@ export default {
                 padding: 5px 10px;
 			}
 
-			// 注册
+			
 			.register {
 				background: linear-gradient(90deg, #4071D7 0%, #344DA7 100%);
 			}
 
-			// 链接钱包
+			
 			.connect-wallet {
 				background: #191B20;
 			}

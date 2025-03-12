@@ -1,11 +1,11 @@
 //   <div class="coinbase">
 //       <img src="@/assets/coinbase/head-logo.png" />
 //     </div>
-//     <!-- 描述 -->
+
 //     <Describe />
-//     <!-- 活动 -->
+
 //     <Activity />
-//     <!-- 底部提示 -->
+
     <div class="footer-tip">
       <img src="../../assets/coinbase/tip.png" />
       <p>ESTA PROMOÇÃO NÃO É PATROCINADA OU<br />ADMINISTRADA POR COINBASE OU COINBASE WALLET</p>

@@ -95,7 +95,7 @@ export default {
         getSrc(data){
             return this.isChin ? data.zh_CN.img : data.en.img
         },
-        // 获取轮播
+        
         async getBanner() {
             const { data } = await request(API_SYSTEM_BANNER, {
                 method: "POST",
@@ -106,7 +106,7 @@ export default {
 
             this.banners = data.map((item) => item.content);
             // this.bannerSource = data.map((item) => item.content);
-            // // 初始化轮播
+            
             this.$nextTick(() => {
                 this.setSwiper();
             });
@@ -130,10 +130,10 @@ export default {
                     clickable: true,
                     // dynamicBullets : true,
                     bulletElement : 'li',
-                    bulletClass : 'my-bullet',//需设置.my-bullet样式
+                    bulletClass : 'my-bullet',
                     bulletActiveClass: 'my-bullet-active',
                     // renderBullet: function (index, className) {
-                    //     // renderBullet。这个参数允许完全自定义分页器的指示点
+                    
                     //     return '<span class="' + className + '">' + (index + 1) + "</span>";
                     // },
                 },
@@ -283,19 +283,19 @@ export default {
             }
 
             .community-hotbooks::-webkit-scrollbar {
-                /*滚动条整体样式*/
-                width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+                
+                width: 4px; 
                 height: 4px;
                 // scrollbar-arrow-color: red;
             }
             .community-hotbooks::-webkit-scrollbar-thumb {
-                /*滚动条里面小方块*/
+                
                 border-radius: 5px;
                 background: rgba(0, 0, 0, 0.2);
                 // scrollbar-arrow-color: red;
             }
             .community-hotbooks::-webkit-scrollbar-track {
-                /*滚动条里面轨道*/
+                
                 border-radius: 0;
                 background: rgba(0, 0, 0, 0.1);
             }

@@ -11,14 +11,14 @@
 <script>
   export default {
     props: {
-      // 显示状态
+      
       value: Boolean,
-      // 方向
+      
       direction: {
         type: String,
         default: 'left',
       },
-      // 是否显示遮罩
+      
       mask: {
         type: Boolean,
         default: true,
@@ -76,7 +76,7 @@
   }
 }
 
-// 过度动画
+
 .animate-enter-active,
 .animate-leave-active {
   .mask {

@@ -489,8 +489,8 @@ export default {
             );
         },
         scrollInit() {
-            this.scroll1 = this.$refs.scroll1; // 获取DOM元素节点
-            // 添加监听事件（不同浏览器，事件方法不一样，所以可以作判断，也可以如下偷懒）
+            this.scroll1 = this.$refs.scroll1; 
+            
             this.scroll1.addEventListener(
                 "DOMMouseScroll",
                 this.handlerMouserScroll1,

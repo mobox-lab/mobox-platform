@@ -398,7 +398,7 @@
             // this.setRemainBoxes();
             // this.initChannel();
 
-            // 装载完所有节点后再清空window方法
+            
             window.initLanding();
         },
         computed:{
@@ -477,15 +477,15 @@
 
                 // const {user_id, mail, mobile, wallets} = this.userInfo;
                 // if(user_id) {
-                //     // 有账号  
+                
                 //     if(mail && mobile && wallets.length > 0) {
-                //         // 直接领奖
+                
                 //     } else {
-                //         // 跳转注册界面
+                
                 //         this.$root.eventHub.$emit('claim-box');
                 //     }
                 // } else {
-                //     // 没有账号
+                
                 //     this.$root.eventHub.$emit('claim-box');
                 // }
 
@@ -504,7 +504,7 @@
             },
             toHome(){
                 // this.$router.push('/');
-                // 另开一个网页
+                
                 window.open(window.location.origin)
             },
             openTele(){

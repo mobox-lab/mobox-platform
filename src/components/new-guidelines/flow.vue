@@ -24,9 +24,9 @@ export BlockTitle from "@/components/BlockTitle.vue";
 
 export default {
   props: {
-    // 标题
+    
     title: String,
-    // 步骤提示
+    
     steps: Array,
   },
   components: {
@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-// 流程
+
 .flow {
   .flow-header {
     background: url(../../assets/cmcnft/slogan.png);
@@ -70,7 +70,7 @@ export default {
 
 // mobile
 @media (max-width: 768px) {
-  // 流程
+  
   .flow {
     ul {
       .text {
@@ -91,7 +91,7 @@ export default {
 
 // pc
 @media (min-width: 768px) {
-  // 流程
+  
   .flow {
     img {
       max-width: 100%;

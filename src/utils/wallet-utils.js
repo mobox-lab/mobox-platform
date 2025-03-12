@@ -6,7 +6,7 @@ import Web3 from 'web3';
 // import SelectWallet from '@/components/select-wallet.vue';
 // import { Common } from '@/utils';
 
-// 选择钱包
+
 function selectWallet() {
   return new Promise((resolve) => {
     const Constructor = Vue.extend(SelectWallet);
@@ -21,13 +21,13 @@ function selectWallet() {
   });
 }
 
-// WalletConnect连接
+
 let connector;
 
 export default class WalletUtils {
   static web3 = new Web3(new Web3.providers.HttpProvider('https://bsc-dataseed.binance.org/'));
 
-  // 获取provider
+  
   static getProvider(wallet) {
     if (wallet === 'mobox') {
       return window.mbox.bscWeb3.currentProvider;
@@ -44,7 +44,7 @@ export default class WalletUtils {
     }
   }
 
-  // 连接钱包
+  
   static async connect(wallet) {
     if (!wallet) {
       wallet = await selectWallet();
@@ -58,13 +58,13 @@ export default class WalletUtils {
     };
   }
 
-  // 签名
+  
   static sign(address, wallet, message) {
     return new Promise(async (resolve, reject) => {
       let provider;
 
       if (wallet === 'mobox') {
-        // 签名
+        
         window.mbox?.bscWeb3.personal.sign(
           message,
           address,
@@ -79,7 +79,7 @@ export default class WalletUtils {
         );
         return;
       } else if (wallet === 'binance') {
-        // 签名
+        
         const { signature } = await window.BinanceChain.bnbSign(address, message);
         resolve(signature);
         return;
@@ -101,7 +101,7 @@ export default class WalletUtils {
 
       let params = [];
 
-      // coinbase参数顺序相反
+      
       if (provider.isCoinbaseWallet) {
         params = [message, address];
       } else {
@@ -117,7 +117,7 @@ export default class WalletUtils {
     });
   }
 
-  // 获取MOBalls
+  
   static getMOBalls(address) {
     const contract = new this.web3.eth.Contract([{
       "inputs": [
@@ -147,7 +147,7 @@ export default class WalletUtils {
     return contract.methods.balanceOf(address, 1).call();
   }
 
-  // 获取钱包地址
+  
   static getAccount(wallet) {
     return new Promise(async (resolve) => {
       let provider;
@@ -234,7 +234,7 @@ export default class WalletUtils {
     });
   }
 
-  // 获取BNB余额
+  
   static async getBNBBalance(address) {
     try {
       const balance = await this.web3.eth.getBalance(address);
@@ -244,7 +244,7 @@ export default class WalletUtils {
     }
   }
 
-  // 获取MBOX余额
+  
   static async getMboxBalance(address) {
     try {
       const balance = await this.getErc20Balance('0x3203c9E46cA618C8C1cE5dC67e7e9D75f5da2377', address);
@@ -254,7 +254,7 @@ export default class WalletUtils {
     }
   }
 
-  // 获取BUSD
+  
   static async getBusdBalance(address) {
     try {
       const balance = await this.getErc20Balance('0xe9e7cea3dedca5984780bafc599bd69add087d56', address);
@@ -264,7 +264,7 @@ export default class WalletUtils {
     }
   }
 
-  // 获取MEC余额
+  
   static async getMecBalance(address) {
     try {
       const balance = await this.get1155Balance('0x98387108842a7CfC7bA23E080030351f6ea68ac0', address, 1);
@@ -274,7 +274,7 @@ export default class WalletUtils {
     }
   }
   
-  // 获取mec box
+  
   static async getMecBoxBalance(address) {    
     try {
       const balance = await this.get1155Balance('0xed8711fEff83b446158259981FD97645856e82A5', address, 2);
@@ -284,7 +284,7 @@ export default class WalletUtils {
     }
   }
   
-  // 获取mec box
+  
   static async getBoxBalance(address) {    
     try {
       const balance = await this.get1155Balance('0xed8711fEff83b446158259981FD97645856e82A5', address, 1);
@@ -294,7 +294,7 @@ export default class WalletUtils {
     }
   }
 
-  // 获取ERC20
+  
   static async getErc20Balance(token, address) {
     const contract = new this.web3.eth.Contract([{
       type: "function",
@@ -312,7 +312,7 @@ export default class WalletUtils {
     return contract.methods.balanceOf(address).call();
   }
 
-  // 获取1155
+  
   static async get1155Balance(token, address, id) {
     const contract = new this.web3.eth.Contract([{
       name: 'balanceOfOneBatch',

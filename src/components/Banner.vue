@@ -17,27 +17,27 @@ export default {
 	// name:"Banner",
 	data(){
 		return {
-			n:0,//默认图片是第一张开始
+			n:0,
 			imgArray:[
 				require('@/assets/index/banner.jpg'),
 				require('@/assets/index/banner.jpg'),
 				require('@/assets/index/banner.jpg'),
-            ],//获取图片位置
+            ],
             swiperOptions:{
-                // 分页器配置
+                
                 // pagination: {
                 // el: '.swiper-pagination',
                 // clickable: true
                 // },
-                // // 设定初始化时slide的索引
+                
                 // initialSlide: 0,
-                // //Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)
+                
                 // loop:true
                 direction: 'horizontal',
 
                 // loop: true,
                 // speed: 400,
-                // // 自动切换图配置
+                
                 autoplay: {
                     delay: 1000,
                     // stopOnLastSlide: false,
@@ -45,23 +45,23 @@ export default {
                 },
                 // loop: true,
                 // autoplay: true,
-                // 箭头配置
+                
                 // navigation: {
                 // nextEl: '.swiper-button-next',
                 // prevEl: '.swiper-button-prev',
                 // },
-                // // 环状轮播
+                
                 // loop: true,
                 // // slidesPerView: 'auto',
                 // loopedSlides: 3,
                 // loopAdditionalSlides: 0,
-                // // 一个屏幕展示的数量
+                
                 // slidesPerView: 1,
-                // // 间距
+                
                 // // spaceBetween: 26,
-                // // 修改swiper自己或子元素时，自动初始化swiper
+                
                 // observer: true,
-                // // 修改swiper的父元素时，自动初始化swiper
+                
                 // observeParents: true
             }
 		}
@@ -75,7 +75,7 @@ export default {
 	},
 	methods:{
 		// play(){
-		// 	this.timer = setInterval(this.autoPlay, 5000);//用定时器控制每张图的显示时间
+		
 		// },
 		// autoPlay(){ 
 		// 	this.$data.n ++
@@ -84,13 +84,13 @@ export default {
 		// 	}
 		// },
 		// clickImg(index){
-		// 	this.n = index   //显示当前点击的图片
+		
 
 		// }
 
 	},
 	beforeDestroy(){
-		// clearInterval(this.timer)   //清除定时器
+		
 	},
 
 

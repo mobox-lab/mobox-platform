@@ -16,7 +16,7 @@
   export default {
     props: {
       value: Boolean,
-      // 奖品
+      
       prize: Object,
     },
   };
@@ -35,7 +35,7 @@
     justify-content: center;
     transition: all .3s !important;
   
-    // 遮罩层
+    
     .mask {
       position: fixed;
       background: rgba(4, 15, 26, .9);
@@ -50,7 +50,7 @@
       cursor: pointer;
     }
   
-    // 内容
+    
     .content {
       position: relative;
       z-index: 1;
@@ -185,7 +185,7 @@
     }
   }
   
-  // 过度动画
+  
   .bounce-enter-active,
   .bounce-leave-active {
     transition: opacity 0.3s;

@@ -241,7 +241,7 @@ export default {
                 }
             });
 
-            //设置选中效果
+            
             this.cutDiv()
         },
         cutDiv(){ 
@@ -255,21 +255,21 @@ export default {
                     }
 
                     var bin = atob(imgUrl.split(',')[1]);  
-                    //创建空的Uint8Array  
+                    
                     var buffer = new Uint8Array(bin.length);  
-                    //将图像数据逐字节放入Uint8Array中  
+                    
                     for (var i = 0; i < bin.length; i++) {  
                         buffer[i] = bin.charCodeAt(i);  
                     }  
-                    //利用Uint8Array创建Blob对象  
+                    
                     var blob = new Blob([buffer.buffer], {type: "image/png"});  
                     var fileReader = new FileReader();  
-                    //提取成功  
+                    
                     fileReader.onload=function(evt){  
                         if(evt.target.readyState == FileReader.DONE){    
-                            //二进制数据结果  
+                            
                             var imgFlag = evt.target.result;  
-                            //进行md5加密  
+                            
                             var spark = new SparkMD5();  
                             spark.appendBinary(imgFlag);  
                             let a = spark.end()

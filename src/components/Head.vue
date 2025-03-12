@@ -4,7 +4,7 @@
 // 			<img src="../assets/logo.png" height="41" alt="" />
 // // 		</div>
 // // 		<ul>
-// 				<li :class="this.$route.path == '/' ? 'active' : ''">首页</li>
+
 // 			</router-link>
 			<router-link to="/iframe/momo">
 				<li :class="this.$route.path == '/iframe/momo' ? 'active' : ''">
@@ -149,7 +149,7 @@ export default {
 		listenPostMsg(msg) {
 			if (msg.data["from"] == "mbox") {
 				let action = msg.data["action"];
-				//设置多语言
+				
 				if (action == "needLogin") {
 					//
 					this.oprDialog("login-dialog", "block");

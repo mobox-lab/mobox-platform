@@ -7,7 +7,7 @@ export TronWeb from "tronweb";
 // const regx = /@(.+?)\s/g;
 
 export default class Common {
-  // sha256加密
+  
   static sha256Encrypt(
     value,
     key = "Zbxn5@RnZzq&GbFG8Ie0YMN$^xhl9Id7U8lLf3J8AkpBpQyU6pllsMPRv^b0qfAt^GpVJnd&GVQVD&Bs_WaxvoNK*A#f7yR^DB9d^fEuB!H%RxwQzZ1"
@@ -15,7 +15,7 @@ export default class Common {
     return hmacSHA256(value, key).toString(hex);
   }
 
-  //日期格式化
+  
   static checkIsAppleDevice() {
     let u = navigator.userAgent;
     var ios = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
@@ -28,7 +28,7 @@ export default class Common {
     }
   }
 
-  //js判断是否为Android设备
+  
   static checkIsAndroidDevice() {
     var u = navigator.userAgent;
 
@@ -149,7 +149,7 @@ export default class Common {
     return newStr;
   }
 
-  // 获取url参数
+  
   static getUrlParams(paras) {
     const reg = new RegExp("(^|&)" + paras + "=([^&]*)(&|$)");
     const r = window.location.search.substr(1).match(reg);
@@ -182,7 +182,7 @@ export default class Common {
     }
   }
 
-  // 防抖
+  
   static debounce(fun, waitTime = 500) {
     let timeout = null;
 
@@ -197,7 +197,7 @@ export default class Common {
 
   static copyTextBoard(text) {
     var input = document.createElement("input");
-    // 防止手机上弹出软键盘
+    
     input.setAttribute("readonly", "readonly");
     input.setAttribute("value", text);
     document.body.appendChild(input);
@@ -246,7 +246,7 @@ export default class Common {
   }
 
   static convert(money) {
-    let s = money.toString().split("."); /**获取小数型数据**/
+    let s = money.toString().split("."); 
     return Number(s[0]).toLocaleString() + (Number(s[1]) ? `.${s[1]}` : "");
   }
 
@@ -261,13 +261,13 @@ export default class Common {
   }
 
   static dateCount(nowTs, endTime) {
-    // 现在时间
+    
     var now = new Date(nowTs);
-    //截止时间
+    
     var until = new Date(endTime);
-    // 计算时会发生隐式转换，调用valueOf()方法，转化成时间戳的形式
+    
     var days = (until - now) / 1000 / 3600 / 24;
-    // 下面都是简单的数学计算
+    
     var day = Math.floor(days);
     var hours = (days - day) * 24;
     var hour = Math.floor(hours);
@@ -356,13 +356,13 @@ export default class Common {
     }
   }
 
-  // 是否是手机
+  
   static isMobile() {
     const isMobile = navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i);
     return !!isMobile;
   }
 
-  // 金额格式化
+  
   static formatMoney(money, digit) {
     var tpMoney = "0.00";
     if (undefined != money) {

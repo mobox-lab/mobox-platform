@@ -1,12 +1,12 @@
 export default class Contract {
-// 	//查余额
+
 // // 	static balanceOf = {
 // // // 		name: 'balanceOf',
 // // 		inputs: [{
 // 			type: 'address',
 			name: 'ownerAddress'
 	}
-	//授权
+	
 		name: 'approve',
 		type: "function",
 		inputs: [{
@@ -17,7 +17,7 @@ export default class Contract {
 			name: '_value'
 		}]
 	}
-	//查授权
+	
 	static allowance = {
 		name: 'allowance',
 		type: "function",
@@ -33,7 +33,7 @@ export default class Contract {
 			name: "_value"
 		}],
 	}
-	//添加box--MomoMinter
+	
 	static addBox = {
 		name: 'addBox',
 		type: "function",
@@ -45,7 +45,7 @@ export default class Contract {
 			name: '_amount'
 		}],
 	}
-	//打开箱子--MomoMinter
+	
 	static mint = {
 		name: 'mint',
 		type: "function",
@@ -57,7 +57,7 @@ export default class Contract {
 			name: '_amount'
 		}],
 	}
-	//获取订单--MomoMinter
+	
 	static getOrder = {
 		name: 'getOrder',
 		type: "function",
@@ -75,7 +75,7 @@ export default class Contract {
 			}
 		],
 	}
-	//获取个人所有的ERC1155--MoMoMToken
+	
 	static balanceOfOneBatch = {
 		name: 'balanceOfOneBatch',
 		type: "function",
@@ -92,7 +92,7 @@ export default class Contract {
 		}],
 		stateMutability: "view",
 	}
-	//查询是否授权--MoMoMToken--MoMoToken
+	
 	static isApprovedForAll = {
 		name: 'isApprovedForAll',
 		type: "function",
@@ -109,7 +109,7 @@ export default class Contract {
 		}],
 		stateMutability: "view",
 	}
-	//授权给目标合约--MoMoMToken--MoMoToken
+	
 	static setApprovalForAll = {
 		name: 'setApprovalForAll',
 		type: "function",
@@ -121,7 +121,7 @@ export default class Contract {
 			name: '_approved'
 		}],
 	}
-	//升级--MomoToken
+	
 	static levelUp = {
 		name: 'levelUp',
 		type: "function",
@@ -139,7 +139,7 @@ export default class Contract {
 			name: '_tokensV4V5'
 		}],
 	}
-	//取名--MomoToken
+	
 	static setMomoName = {
 		name: 'setMomoName',
 		type: "function",
@@ -151,7 +151,7 @@ export default class Contract {
 			name: '_name'
 		}],
 	}
-	//写入故事---MomoToken
+	
 	static addMomoStory = {
 		name: 'addMomoStory',
 		type: "function",
@@ -163,7 +163,7 @@ export default class Contract {
 			name: '_name'
 		}],
 	}
-	//获取名字---MomoToken
+	
 	static getMomoName = {
 		name: 'getMomoName',
 		type: "function",
@@ -176,7 +176,7 @@ export default class Contract {
 			name: "_name"
 		}],
 	}
-	//获取故事---MomoToken
+	
 	static getMomoStory = {
 		name: 'getMomoStory',
 		type: "function",
@@ -200,7 +200,7 @@ export default class Contract {
 			}
 		],
 	}
-	//获取个人所有ERC721---MomoHelper
+	
 	static getMomos721 = {
 		name: 'getMomos721',
 		type: "function",
@@ -228,7 +228,7 @@ export default class Contract {
 			}
 		],
 	}
-	//获取大批名字---MomoHelper
+	
 	static getMomoNames = {
 		name: 'getMomoNames',
 		type: "function",
@@ -241,7 +241,7 @@ export default class Contract {
 			name: "_names"
 		}],
 	}
-	//质押挖矿--MomoStake
+	
 	static stake = {
 		name: 'stake',
 		type: "function",
@@ -256,7 +256,7 @@ export default class Contract {
 			name: '_tokenIds'
 		}],
 	}
-	//解冻质押---MomoStake
+	
 	static withdraw = {
 		name: 'withdraw',
 		type: "function",
@@ -271,13 +271,13 @@ export default class Contract {
 			name: '_tokenIds'
 		}],
 	}
-	//领取Mbox---MomoStake
+	
 	static getReward = {
 		name: 'getReward',
 		type: "function",
 		inputs: [],
 	}
-	//查询自己有多少Mbox可以领取 --MomoStake
+	
 	static earned = {
 		name: 'earned',
 		type: "function",
@@ -290,7 +290,7 @@ export default class Contract {
 			name: "_mbox"
 		}],
 	}
-	//查询自己质押的NFT的总算力 --MomoStake
+	
 	static userHashrate = {
 		name: 'userHashrate',
 		type: "function",
@@ -303,7 +303,7 @@ export default class Contract {
 			name: "_hashrate"
 		}],
 	}
-	//查询全链质押的NFT的总算力 --MomoStake
+	
 	static totalHashrate = {
 		name: 'totalHashrate',
 		type: "function",
@@ -313,7 +313,7 @@ export default class Contract {
 			name: "_hashrate"
 		}],
 	}
-	//查看玩家是否有资格领取avatar
+	
 	static avatarEligible = {
 		name: 'eligible',
 		type : "function",
@@ -326,7 +326,7 @@ export default class Contract {
 			name: "_hasticket"
 		}],
 	}
-	//查看玩家能领取的AvatartokenId
+	
 	static getMyTokenId = {
 		name: 'getMyTokenId',
 		type : "function",
@@ -339,7 +339,7 @@ export default class Contract {
 			name: "_hashrate"
 		}],
 	}
-	//AvatartokenId对应的属性
+	
 	static avatarTokenURI = {
 		name: 'tokenURI',
 		type : "function",
@@ -352,13 +352,13 @@ export default class Contract {
 			name: "dataURI"
 		}],
 	}
-	//Avatar领取
+	
 	static avatarClaim = {
 		name: 'claim',
 		type : "function",
 		inputs:[],
 	}
-	//AvatartokenId对应的owner
+	
 	static ownerOfAvatar = {
 		name: 'ownerOf',
 		type : "function",
@@ -372,7 +372,7 @@ export default class Contract {
 		}],
 	}
 	
-	//查看种子
+	
 	static avatarSeed = {
 		name: 'seed',
 		type : "function",
@@ -383,7 +383,7 @@ export default class Contract {
 		}],
 	}
 	
-	//领取coinbase活动moball
+	
 	static claimMoball = {
 		name: 'claim',
 		type : "function",
@@ -416,7 +416,7 @@ export default class Contract {
 		outputs: [],
 	}
 
-	//读取coinbase活动moball 数量
+	
 	static getMoballNum = {
 		name: 'balanceOf',
 		type : "function",

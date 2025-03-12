@@ -157,7 +157,7 @@
   export { clearCache, getSignHeader, register, getStatus, getTicket, getDailyTasks, getEventTasks, luckDraw, submitName, submitLink, getRecords, submitWalletID } from "@/utils/bitkeep";
   export Dialog from './dialog.vue';
 
-  // 奖品
+  
   const prizes = [
     {
       id: 5,
@@ -191,7 +191,7 @@
     },
   ];
 
-  // 奖品图片
+  
   const prizeImages = prizes.reduce((data, item) => {
     return {
       ...data,
@@ -206,35 +206,35 @@
     },
     data() {
       return {
-        // 抽奖转盘
+        
         spin: null,
-        // 地址
+        
         address: null,
-        // 状态
+        
         state: 0,
-        // 票
+        
         ticket: 0,
-        // 提交名称
+        
         isShowSubmitName: false,
-        // 提交链接
+        
         isShowSubmitLink: false,
-        // 记录显示状态
+        
         isShowRecord: false,
-        // 提交钱包id显示状态
+        
         isShowSubmitWalletID: false,
-        // twitter名称
+        
         twitterName: '',
-        // 链接
+        
         link: '',
-        // 钱包id
+        
         walletID: '',
-        // 抽奖状态
+        
         loading: false,
-        // 提示显示状态
+        
         isShowTip: false,
-        // 记录
+        
         records: [],
-        // 日常任务
+        
         dailyTask: [
           {
             id: 901,
@@ -261,7 +261,7 @@
             onClick: this.openMomoverse,
           },
         ],
-        // 事件任务
+        
         eventTask: [
           {
             id: 1,
@@ -270,7 +270,7 @@
             onClick: this.copy,
           },
         ],
-        // 其他时间
+        
         walletTasks: [
           {
             id: 2,
@@ -321,7 +321,7 @@
       }
     },
     methods: {
-      // 导航滚动
+      
       scrollIntoView(id) {
         const element = document.querySelector(`#${id}`);
 
@@ -330,7 +330,7 @@
           behavior: 'smooth'
         });
       },
-      // 切换显示提示
+      
       toggleShowTip() {
         this.isShowTip = !this.isShowTip;
       },
@@ -338,35 +338,35 @@
         const screenWidth = document.documentElement.clientWidth;
         document.documentElement.style.fontSize = `${screenWidth / 750}px`;
       },
-      // 切换提交名称显示弹窗
+      
       toggleShowSubmitName() {
         this.isShowSubmitName = !this.isShowSubmitName;
       },
-      // 切换提交连接显示
+      
       toggleShowSubmitLink() {
         this.isShowSubmitLink = !this.isShowSubmitLink;
       },
-      // 切换记录显示
+      
       toggleShowRecord() {
         this.isShowRecord = !this.isShowRecord;
       },
-      // 切换提交钱包id显示
+      
       toggleShowSubmitWalletID() {
         this.isShowSubmitWalletID = !this.isShowSubmitWalletID;
       },
-      // 链接钱包
+      
       async connectWallet() {
         return new Promise(async (resolve) => {
           const provider = window.bitkeep.ethereum;
 
           if (provider) {
-            // 请求地址
+            
             const res = await provider.request({
               method: "eth_requestAccounts",
             });
 
             this.address = res[0];
-            // 监听地址变化
+            
             provider.on('accountsChanged', this.accountsChanged);
             resolve();
           } else {
@@ -374,7 +374,7 @@
           }
         });
       },
-      // 轮训
+      
       async loop() {
         if (this.address) {
           clearTimeout(this.timeout);
@@ -392,13 +392,13 @@
           this.timeout = setTimeout(this.loop, 10000);
         }
       },
-      // 获取票量
+      
       async getTicket() {
         try {
           this.ticket = await getTicket(this.address);
         } catch(_) {}
       },
-      // 每日任务
+      
       async getDailyTasks() {
         const res = await getDailyTasks(this.address);
 
@@ -415,7 +415,7 @@
           }
         });
       },
-      // 事件任务
+      
       async getEventTasks() {
         const res = await getEventTasks(this.address);
 
@@ -439,7 +439,7 @@
           }
         });
       },
-      // 提交名称
+      
       async submitName() {
         if (this.twitterName.trim()) {
           try {
@@ -452,13 +452,13 @@
           }
         }
       },
-      // 提交钱包id
+      
       async submitWalletID() {
         console.log(this.walletID, '======');
         await submitWalletID(this.walletID);
         this.toggleShowSubmitWalletID();
       },
-      // 提交连接
+      
       async submitLink() {
         if (this.link.trim()) {
           try {
@@ -471,7 +471,7 @@
           }
         }
       },
-      // 获取记录
+      
       async getRecords() {
         try {
           this.checkRegister();
@@ -483,7 +483,7 @@
           }));
         } catch(_) {}
       },
-      // 初始化抽奖
+      
       initSpin() {
         this.spin = new LuckyWheel('#spin', {
           prizes: prizes.map(item => ({
@@ -520,21 +520,21 @@
           },
         });
       },
-      // 钱包账号变化
+      
       accountsChanged(accounts) {
         this.address = accounts[0];
-        // 清除缓存
+        
         clearCache();
-        // 初始化数据
+        
         this.loop();
       },
-      // 复制邀请链接
+      
       async copy() {
         await this.checkRegister();
         Common.copyTextBoard(`${window.origin}/#/bitget-event?source=${this.address ?? ''}`);
         this.showNotify(this.$t('Chat_29'), "success");
       },
-      // 检测注册状态
+      
       async checkRegister() {
         if (!this.address) {
           await this.connectWallet();
@@ -546,14 +546,14 @@
           this.loop();
         }
       },
-      // 获取状态
+      
       async getStatus() {
         try {
           const { data } = await getStatus(this.address);
           this.state = data.state;
         } catch(_) {}
       },
-      // 抽奖
+      
       async luckDraw() {
         await this.checkRegister();
 
@@ -568,7 +568,7 @@
 
         let headers;
 
-        // 签名
+        
         try {
           headers = await getSignHeader();
         } catch(_) {
@@ -577,9 +577,9 @@
 
         try {
           this.loading = true;
-          // 请求接口
+          
           const id = await luckDraw(headers);
-          // 开始抽奖动画
+          
           this.spin.play();
           await this.delayed(4000);
           const index = prizes.findIndex(item => item.id == id);
@@ -593,7 +593,7 @@
 
         this.loading = false;
       },
-      // 延迟
+      
       delayed(timer) {
         return new Promise((resolve) => {
           setTimeout(resolve, timer);
@@ -615,7 +615,7 @@
           window.open(link);
         } catch(_) {}
       },
-      // 初始化
+      
       async init() {
         await this.connectWallet();
 
@@ -628,7 +628,7 @@
       window.addEventListener('resize', this.setSize);
       this.setSize();
       this.init();
-      // 初始化抽奖
+      
       this.$nextTick(this.initSpin);
     },
     unmount() {
@@ -923,7 +923,7 @@
     }
   }
 
-  // 昵称输入框
+  
   .input {
     background: #FFFFFF;
     outline: none;
@@ -951,7 +951,7 @@
     }
   }
 
-  // 记录
+  
   .record-list {
     box-sizing: border-box;
     overflow-y: scroll;
