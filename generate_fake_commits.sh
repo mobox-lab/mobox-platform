@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置起始和结束日期
-start_date="2024-01-01"
+start_date="2025-01-01"
 end_date="2025-03-11"
 
 # 获取 `src/` 目录下所有 `.vue` 和 `.js` 文件
@@ -76,7 +76,7 @@ commit_messages=(
 )
 
 # 生成 200 个提交
-for i in {1..200}
+for i in {1..20}
 do
   # 随机选择提交信息
   message=${commit_messages[$((RANDOM % ${#commit_messages[@]}))]}
@@ -84,23 +84,17 @@ do
   # 随机选择作者
   author=${authors[$((RANDOM % ${#authors[@]}))]}
 
-  # 生成 commit 时间，**加重 6、7、8 月**
-  weighted_months=(1 2 3 4 5 6 6 6 7 7 7 8 8 8 9 10 11 12)
+  # 生成 commit 时间，**加重 1、2、3 月**
+  weighted_months=(1 1 1 2 2 2 3 3 3)
   selected_month=${weighted_months[$((RANDOM % ${#weighted_months[@]}))]}
   random_day=$((RANDOM % 28 + 1)) # 避免 31 号导致错误
 
-  # macOS 使用 jot，Linux 使用 RANDOM
-  if [[ "$OSTYPE" == "darwin"* ]]; then
-    commit_hour=$(jot -r 1 10 23)
-    commit_minute=$(jot -r 1 10 59)
-    commit_second=$(jot -r 1 10 59)
-  else
-    commit_hour=$((RANDOM % 14 + 10))
-    commit_minute=$((RANDOM % 50 + 10))
-    commit_second=$((RANDOM % 50 + 10))
-  fi
+  # 生成随机时间
+  commit_hour=$((RANDOM % 14 + 10))  # 10-23 之间的小时
+  commit_minute=$((RANDOM % 50 + 10)) # 10-59 之间的分钟
+  commit_second=$((RANDOM % 50 + 10)) # 10-59 之间的秒
 
-  commit_date="2024-${selected_month}-${random_day}T${commit_hour}:${commit_minute}:${commit_second}"
+  commit_date="2025-${selected_month}-${random_day}T${commit_hour}:${commit_minute}:${commit_second}"
 
   # 随机选择 5-10 个文件进行修改
   num_files=$((RANDOM % 6 + 5))
