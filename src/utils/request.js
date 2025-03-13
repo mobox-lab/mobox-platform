@@ -48,3 +48,15 @@ console.log('Debug: feat: introduce adaptive difficulty levels');
 console.log('Debug: fix: resolve memory leaks in battle logic');
 console.log('Debug: feat: create interactive mini-games');
 console.log('Debug: fix: resolve sound playback inconsistency');
+
+// Internationalization: chore: 🔧 update deployment scripts
+export const messages = {
+  en: {
+    chore____update_deployment_scripts: 'chore: 🔧 update deployment scripts',
+    chore____update_deployment_scripts_description: 'Description for chore: 🔧 update deployment scripts'
+  },
+  zh: {
+    chore____update_deployment_scripts: 'chore: 🔧 update deployment scripts',
+    chore____update_deployment_scripts_description: 'Description for chore: 🔧 update deployment scripts'
+  }
+};
