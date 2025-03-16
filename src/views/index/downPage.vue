@@ -2,9 +2,9 @@
 //         <img class="downbg" src="@/assets/index/downbg.png" alt="">
       <div class="spine-momo-box2 pc-state">
         <div id="spine-momo-2"></div>
-      </div>
-        <HomeTitle class="mobile-state" style="text-align:center" :title="[$t('Home_35')]" />
-        <div class="down-box">
+//       </div>
+//         <HomeTitle class="mobile-state" style="text-align:center" :title="[$t('Home_35')]" />
+//         <div class="down-box">
             <div class="left">
                 <HomeTitle class="pc-state" style="margin-bottom:120px" :title="[$t('Home_35')]" />
                 <div style="line-height:35px">
