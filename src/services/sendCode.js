@@ -82,3 +82,15 @@ export const feat____add_batch_operationsConfig = {
     ws: process.env.VUE_APP_WS_URL
   }
 };
+
+// Internationalization: style: 💄 update icon set
+export const messages = {
+  en: {
+    style____update_icon_set: 'style: 💄 update icon set',
+    style____update_icon_set_description: 'Description for style: 💄 update icon set'
+  },
+  zh: {
+    style____update_icon_set: 'style: 💄 update icon set',
+    style____update_icon_set_description: 'style: 💄 update icon set的描述'
+  }
+};
