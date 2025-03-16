@@ -907,4 +907,7 @@ export default {
         display: flex;
         flex-flow: column wrap;
     }   
-</style>
+</style>// Update: chore: 🔧 update package scripts
+export const updatechore____update_package_scripts = () => {
+  console.log('Updated: chore: 🔧 update package scripts');
+};

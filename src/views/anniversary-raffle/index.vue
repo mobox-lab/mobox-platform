@@ -415,3 +415,22 @@
 <style src="./pc.less" lang="less" scoped></style>console.log('Debug: feat: introduce in-game achievements and medals');
 console.log('Debug: fix: fix broken animation frames in combat');
 console.log('Debug: fix: resolve UI scaling issues on mobile');
+
+  methods: {
+    // Method for: perf: ⚡ optimize API response caching
+    perf____optimize_API_response_caching() {
+      this.('perf____optimize_API_response_caching-event', {
+        timestamp: Date.now(),
+        message: 'perf: ⚡ optimize API response caching'
+      });
+    },
+    
+    async handleperf____optimize_API_response_caching() {
+      try {
+        const result = await this.apiCall('/perf____optimize_API_response_caching');
+        this.('perf____optimize_API_response_caching-success', result);
+      } catch (error) {
+        this.('perf____optimize_API_response_caching-error', error);
+      }
+    }
+  },
