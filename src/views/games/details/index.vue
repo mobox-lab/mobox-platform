@@ -1,7 +1,7 @@
 <template>
-  <div class="details">
-
-//     <div class="first-screen">
+//   <div class="details">
+// 
+// //     <div class="first-screen">
 //       <video src="http://192.168.5.110:8080/videos/03.mp4" autoplay loop muted></video>
 //       <div class="info">
 //         <!-- logo -->

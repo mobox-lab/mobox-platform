@@ -370,3 +370,4 @@
   }
 </style>
 console.log('Debug: fix: resolve issue with player movement lag');
+console.log('Debug: fix: correct game score calculation');

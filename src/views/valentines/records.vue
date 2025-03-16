@@ -2,11 +2,11 @@
   <div class="records">
     <ul>
       <li v-for="item in list" :key="item.time">
-        </div>
-        <span class="amount">x1</span>
-        <span class="time">{{item.time}}</span>
-      </li>
-    </ul>
+//         </div>
+//         <span class="amount">x1</span>
+//         <span class="time">{{item.time}}</span>
+//       </li>
+//     </ul>
   </div>
 </template>
 

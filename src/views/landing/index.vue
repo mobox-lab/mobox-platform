@@ -2,11 +2,11 @@
     <div id="main" class="page-contain">
         <div id="scene1" ref="scene1" class="page-1">
         <!-- <div id="scene1" class="hide"> -->
-            <img class="bg1" src="@/assets/landing/bg1.jpg">
-            
-            <div class="page-content">
-                    <div class="page-head-title" v-html="$t('Landing_85').replace('#0#', `<span class='special' style='color:rgb(195,238,61);'>1000</span>`)"></div>
-                    <div>
+//             <img class="bg1" src="@/assets/landing/bg1.jpg">
+//             
+//             <div class="page-content">
+//                     <div class="page-head-title" v-html="$t('Landing_85').replace('#0#', `<span class='special' style='color:rgb(195,238,61);'>1000</span>`)"></div>
+//                     <div>
                         <img class="page-haed-img" width="348" src="@/assets/landing/elements/momobox.webp" alt="">
                     </div>
                     <!-- <div i18n-locale="Landing_16" class="page-slogan">{{$t('Landing_16')}}</div> -->

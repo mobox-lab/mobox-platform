@@ -1,9 +1,9 @@
 // <template>
-// //     <div class="claim-bg">
-// //         <div class="claim-info" >
-// //             <h2 class="claim-title" style="margin-top:46px">
-//                 {{$t('Home_2')}}
-            </h2>
+// // //     <div class="claim-bg">
+// // //         <div class="claim-info" >
+// // //             <h2 class="claim-title" style="margin-top:46px">
+// //                 {{$t('Home_2')}}
+//             </h2>
             <div class="claim-left">
                 <div class="topImg">
                   <div class="topAvatarImg" v-if="selectdIdx===2" v-html="svgContent">
