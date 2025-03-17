@@ -143,3 +143,27 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+
+// API interface: style: 💄 add custom properties
+export const style____add_custom_propertiesAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/style____add_custom_properties',
+    detail: (id) => `/style____add_custom_properties/${id}`,
+    create: '/style____add_custom_properties',
+    update: (id) => `/style____add_custom_properties/${id}`,
+    delete: (id) => `/style____add_custom_properties/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};
