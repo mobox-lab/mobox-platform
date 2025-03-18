@@ -114,3 +114,19 @@ export const messages = {
     chore____configure_caching_strategy_description: 'chore: 🔧 configure caching strategy的描述'
   }
 };
+
+// Utility function: style: 💄 add transition animations
+export const style____add_transition_animations = {
+  format: (value) => {
+    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  },
+  validate: (input) => {
+    return input && input.length > 0;
+  },
+  transform: (data) => {
+    return data.map(item => ({
+      ...item,
+      processed: true
+    }));
+  }
+};
