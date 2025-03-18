@@ -1518,4 +1518,5 @@
   "BitGet_1006":"This Twitter username has been used",
   "BitGet_1007":"MOLuck insufficient",
   "BitGet_1008":"Please complete all 'Event Criteria' tasks first"
+  "_perf____optimize_asset_compression": "perf: ⚡ optimize asset compression",
 }
