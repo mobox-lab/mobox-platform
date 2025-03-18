@@ -80,3 +80,48 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+
+// Vuex store module: test: 🧪 add performance tests
+export const test____add_performance_testsModule = {
+  namespaced: true,
+  state: {
+    items: [],
+    loading: false,
+    error: null,
+    pagination: {
+      page: 1,
+      limit: 10,
+      total: 0
+    }
+  },
+  
+  mutations: {
+    SET_ITEMS(state, items) {
+      state.items = items;
+    },
+    SET_LOADING(state, loading) {
+      state.loading = loading;
+    },
+    SET_ERROR(state, error) {
+      state.error = error;
+    },
+    SET_PAGINATION(state, pagination) {
+      state.pagination = { ...state.pagination, ...pagination };
+    }
+  },
+  
+  actions: {
+    async fetchItems({ commit }, params = {}) {
+      commit('SET_LOADING', true);
+      try {
+        const response = await api.get('/test____add_performance_tests', { params });
+        commit('SET_ITEMS', response.data);
+        commit('SET_PAGINATION', response.pagination);
+      } catch (error) {
+        commit('SET_ERROR', error.message);
+      } finally {
+        commit('SET_LOADING', false);
+      }
+    }
+  }
+};
