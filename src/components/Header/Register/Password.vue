@@ -1,11 +1,11 @@
   <FormLayout
 // //   >
 // //     <InputItem
-//       :label="$t('Register_14')"
-//       type="password"
-//       :placeholder="$t('Register_15')"
-//       v-model="password"
-//     />
+// //       :label="$t('Register_14')"
+// //       type="password"
+// //       :placeholder="$t('Register_15')"
+// //       v-model="password"
+// //     />
 //     <InputItem
       class="validation-password"
       :label="$t('Register_16')"
