@@ -91,3 +91,20 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+<!-- Component update: style: 💄 add custom scrollbars -->
+<template>
+  <div class="updated-style____add_custom_scrollbars">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updatedstyle____add_custom_scrollbarsComponent',
+  data() {
+    return {
+      message: 'style: 💄 add custom scrollbars'
+    }
+  }
+}
+</script>
