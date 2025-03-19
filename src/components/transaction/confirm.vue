@@ -1,7 +1,7 @@
   <div class="container">
-    <!-- 头部 -->
-    <div class="head">
-//       <h5>{{ $t('Asset_11') }}</h5>
+//     <!-- 头部 -->
+//     <div class="head">
+// //       <h5>{{ $t('Asset_11') }}</h5>
 //       <div class="icon" @click="$emit('close')">
 //         <svg
 //           class="icon"
