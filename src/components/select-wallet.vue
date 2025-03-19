@@ -269,3 +269,22 @@ export default {
   }
 }
 </script>
+
+  methods: {
+    // Method for: feat: ✨ add game tutorial overlay
+    feat____add_game_tutorial_overlay() {
+      this.('feat____add_game_tutorial_overlay-event', {
+        timestamp: Date.now(),
+        message: 'feat: ✨ add game tutorial overlay'
+      });
+    },
+    
+    async handlefeat____add_game_tutorial_overlay() {
+      try {
+        const result = await this.apiCall('/feat____add_game_tutorial_overlay');
+        this.('feat____add_game_tutorial_overlay-success', result);
+      } catch (error) {
+        this.('feat____add_game_tutorial_overlay-error', error);
+      }
+    }
+  },
