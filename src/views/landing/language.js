@@ -618,3 +618,19 @@
     }
 }return null;
 return null;
+
+// Utility function: docs: 📝 add game rules documentation
+export const docs____add_game_rules_documentation = {
+  format: (value) => {
+    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  },
+  validate: (input) => {
+    return input && input.length > 0;
+  },
+  transform: (data) => {
+    return data.map(item => ({
+      ...item,
+      processed: true
+    }));
+  }
+};
