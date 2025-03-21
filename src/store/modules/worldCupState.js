@@ -102,3 +102,27 @@ console.log('Debug: fix: fix broken animation frames in combat');
 console.log('Debug: fix: fix broken links in the help center');
 console.log('Debug: feat: add real-time player statistics tracking');
 console.log('Debug: fix: resolve UI scaling issues on mobile');
+
+// API interface: perf: ⚡ reduce component re-renders
+export const perf____reduce_component_re_rendersAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/perf____reduce_component_re_renders',
+    detail: (id) => `/perf____reduce_component_re_renders/${id}`,
+    create: '/perf____reduce_component_re_renders',
+    update: (id) => `/perf____reduce_component_re_renders/${id}`,
+    delete: (id) => `/perf____reduce_component_re_renders/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};
