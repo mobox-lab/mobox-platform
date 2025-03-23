@@ -5143,3 +5143,38 @@ export default {
   }
 }
 </script>
+
+  // Lifecycle hooks for: chore: 🔧 update git hooks
+  created() {
+    this.initializechore____update_git_hooks();
+  },
+  
+  mounted() {
+    this.setupchore____update_git_hooksListeners();
+  },
+  
+  beforeDestroy() {
+    this.cleanupchore____update_git_hooksListeners();
+  },
+  
+  methods: {
+    initializechore____update_git_hooks() {
+      // Initialize component for: chore: 🔧 update git hooks
+      this.loadData();
+    },
+    
+    setupchore____update_git_hooksListeners() {
+      // Setup event listeners for: chore: 🔧 update git hooks
+      window.addEventListener('resize', this.handleResize);
+    },
+    
+    cleanupchore____update_git_hooksListeners() {
+      // Cleanup listeners for: chore: 🔧 update git hooks
+      window.removeEventListener('resize', this.handleResize);
+    },
+    
+    handleResize() {
+      // Handle resize for: chore: 🔧 update git hooks
+      this.updateLayout();
+    }
+  },
