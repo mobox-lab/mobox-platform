@@ -1,9 +1,9 @@
 // import WalletUtils from "@/utils/wallet-utils";
 // import store from '@/store/';
-// 
-// // export async function getSignData() {
-//   const time = Math.floor(Date.now() / 1000);
-  const wallet = window.localStorage.getItem('world-cup-wallet');
+// // 
+// // // export async function getSignData() {
+// //   const time = Math.floor(Date.now() / 1000);
+//   const wallet = window.localStorage.getItem('world-cup-wallet');
 
   return {
     'x-bits-addr': address,

@@ -1,9 +1,9 @@
 <template>
 
-// //     <div class="container">
-// //       <div class="top">
-// //         <div class="title">
-            RESOURCE FOR<br />
+// // //     <div class="container">
+// // //       <div class="top">
+// // //         <div class="title">
+//             RESOURCE FOR<br />
             GETTING STARTED
           </p>
         </div>
