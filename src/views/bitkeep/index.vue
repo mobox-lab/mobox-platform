@@ -5,7 +5,6 @@
       <li @click="scrollIntoView('event-task')">{{$t('Valentine_35')}}</li>
     </ul>
     <div id="social" class="item-1">
-      <div class="info">
         <div class="logo">
           <div class="line"></div>
           <img src="@/assets/head1.png" />

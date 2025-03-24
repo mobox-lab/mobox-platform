@@ -6,7 +6,6 @@
       <connect-wallet v-else />
     </div>
 </template>
-<script>
   import { mapState } from "vuex";
   import Drawer from "../drawer.vue";
   import ConnectWallet from "./connect-wallet.vue";

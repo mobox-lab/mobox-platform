@@ -333,20 +333,20 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-import { Common } from "@/utils";
-import { CommonMethod } from "@/mixin";
-import Button from '@/components/Button';
-import Dialog from '@/components/Dialog';
-import FormLayout from '@/components/Header/FormLayout.vue';
-import InputItem from '@/components/Header/Input.vue';
-import SendCodeButton from '@/components/SendCodeButton.vue';
-import ReceiveBox from '@/components/ReceiveBox/index.vue';
-import { sendMobileCode } from '@/services/sendCode';
-import request from "@/utils/request";
-import {COST_TYPE} from "@/utils/enums.js";
-import {API_USER_WALLET_WITHDRAW ,API_USER_WITHDRAW, API_PAYMENT_LOGS, API_PAYMENT_LOGS_DETAIL} from '@/utils/constant';
-// import {API_USER_WALLET_WITHDRAW} from '@/utils/constant';
+export { mapState } from "vuex";
+export { Common } from "@/utils";
+export { CommonMethod } from "@/mixin";
+export Button from '@/components/Button';
+export Dialog from '@/components/Dialog';
+export FormLayout from '@/components/Header/FormLayout.vue';
+export InputItem from '@/components/Header/Input.vue';
+export SendCodeButton from '@/components/SendCodeButton.vue';
+export ReceiveBox from '@/components/ReceiveBox/index.vue';
+export { sendMobileCode } from '@/services/sendCode';
+export request from "@/utils/request";
+export {COST_TYPE} from "@/utils/enums.js";
+export {API_USER_WALLET_WITHDRAW ,API_USER_WITHDRAW, API_PAYMENT_LOGS, API_PAYMENT_LOGS_DETAIL} from '@/utils/constant';
+// export {API_USER_WALLET_WITHDRAW} from '@/utils/constant';
 
 export default {
     components:{
@@ -1247,7 +1247,7 @@ export default {
             //         background: linear-gradient(0deg, #EEF0FD 0%, #FFFFFF 100%);
             //         border-radius: 10px;
             //         padding: 20px 0;
-            //         margin: 0!important;
+            //         margin: 0!exportant;
 
             //         .text{
             //             margin-left: 10px;
