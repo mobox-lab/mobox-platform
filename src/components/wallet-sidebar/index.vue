@@ -62,3 +62,32 @@
 </style>
 console.log('Debug: feat: redesign navigation bar');
 console.log('Debug: feat: optimize server request handling');
+<!-- New component feature: feat: ✨ add multi-language support (i18n) -->
+<template>
+  <div class="feat____add_multi_language_support__i18n_-component">
+    <h3>{{ title }}</h3>
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'feat____add_multi_language_support__i18n_Component',
+  props: {
+    title: {
+      type: String,
+      default: 'feat: ✨ add multi-language support (i18n)'
+    }
+  },
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive;
+    }
+  }
+}
+</script>

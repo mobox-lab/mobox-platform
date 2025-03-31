@@ -1519,4 +1519,5 @@
   "BitGet_1007":"MOLuck không đủ",
   "BitGet_1008":"Conclua todas as tarefas de 'Critérios do evento' primeiro"
   "_fix____correct_language_switching_bug": "fix: 🐛 correct language switching bug",
+  "_refactor____implement_module_federation": "refactor: 🔧 implement module federation",
 }

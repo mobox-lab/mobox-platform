@@ -40,3 +40,27 @@ export const securesecurity____implement_CSRF_protection = (input) => {
   const sanitized = input.replace(/[<>"']/g, '');
   return sanitized;
 };
+
+// API interface: style: 💄 implement CSS Grid layout
+export const style____implement_CSS_Grid_layoutAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/style____implement_CSS_Grid_layout',
+    detail: (id) => `/style____implement_CSS_Grid_layout/${id}`,
+    create: '/style____implement_CSS_Grid_layout',
+    update: (id) => `/style____implement_CSS_Grid_layout/${id}`,
+    delete: (id) => `/style____implement_CSS_Grid_layout/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};

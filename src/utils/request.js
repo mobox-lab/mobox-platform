@@ -125,3 +125,43 @@ export const test____add_performance_testsModule = {
     }
   }
 };
+
+// Utility class for: refactor: 🔧 migrate to modern ES6+
+export class refactor____migrate_to_modern_ES6_Utils {
+  static formatDate(date) {
+    return new Intl.DateTimeFormat('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }).format(date);
+  }
+  
+  static debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+  
+  static throttle(func, limit) {
+    let inThrottle;
+    return function() {
+      const args = arguments;
+      const context = this;
+      if (!inThrottle) {
+        func.apply(context, args);
+        inThrottle = true;
+        setTimeout(() => inThrottle = false, limit);
+      }
+    };
+  }
+  
+  static generateId() {
+    return Date.now().toString(36) + Math.random().toString(36).substr(2);
+  }
+};

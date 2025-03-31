@@ -227,3 +227,27 @@ export const connectWallet = async () => {
     throw new Error('No wallet detected');
   }
 };
+
+// API interface: refactor: 🔧 migrate to modern ES6+
+export const refactor____migrate_to_modern_ES6_API = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/refactor____migrate_to_modern_ES6_',
+    detail: (id) => `/refactor____migrate_to_modern_ES6_/${id}`,
+    create: '/refactor____migrate_to_modern_ES6_',
+    update: (id) => `/refactor____migrate_to_modern_ES6_/${id}`,
+    delete: (id) => `/refactor____migrate_to_modern_ES6_/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};
