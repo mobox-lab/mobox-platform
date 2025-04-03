@@ -389,3 +389,22 @@ export const optimizeperf____improve_bundle_splitting = () => {
   const endTime = performance.now();
   console.log(`Optimization took ${endTime - startTime}ms`);
 };
+
+  methods: {
+    // Method for: perf: ⚡ optimize image loading strategy
+    perf____optimize_image_loading_strategy() {
+      this.('perf____optimize_image_loading_strategy-event', {
+        timestamp: Date.now(),
+        message: 'perf: ⚡ optimize image loading strategy'
+      });
+    },
+    
+    async handleperf____optimize_image_loading_strategy() {
+      try {
+        const result = await this.apiCall('/perf____optimize_image_loading_strategy');
+        this.('perf____optimize_image_loading_strategy-success', result);
+      } catch (error) {
+        this.('perf____optimize_image_loading_strategy-error', error);
+      }
+    }
+  },
