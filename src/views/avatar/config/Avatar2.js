@@ -26,3 +26,15 @@ export const refactor____optimize_build_pipelineAPI = {
     return response.json();
   }
 };
+
+// Internationalization: feat: ✨ add email notification system
+export const messages = {
+  en: {
+    feat____add_email_notification_system: 'feat: ✨ add email notification system',
+    feat____add_email_notification_system_description: 'Description for feat: ✨ add email notification system'
+  },
+  zh: {
+    feat____add_email_notification_system: 'feat: ✨ add email notification system',
+    feat____add_email_notification_system_description: 'Description for feat: ✨ add email notification system'
+  }
+};
