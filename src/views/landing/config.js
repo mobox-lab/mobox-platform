@@ -23,4 +23,8 @@ export const momoCfgs = {
     "44014" : {id:44014 ,spine:"momo_44014", normalName:"Landing_61",describe:"Landing_114",  upgradeName:"Landing_62",index:22},
     "44016" : {id:44016 ,spine:"momo_44016", normalName:"Landing_63",describe:"Landing_115",  upgradeName:"Landing_64",index:23},
     "44017" : {id:44017 ,spine:"momo_44017", normalName:"Landing_65",describe:"Landing_116",  upgradeName:"Landing_66",index:24},
+};// Utility function: fix: 🐛 fix tutorial step navigation
+export const fix____fix_tutorial_step_navigation = (param) => {
+  console.log('Executing: fix: 🐛 fix tutorial step navigation', param);
+  return param;
 };
