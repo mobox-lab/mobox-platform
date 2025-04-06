@@ -29,3 +29,27 @@ console.log('Debug: fix: optimize NPC pathfinding logic');
 export const updatestyle____add_custom_scrollbars = () => {
   console.log('Updated: style: 💄 add custom scrollbars');
 };
+
+// API interface: docs: 📝 update wallet integration guide
+export const docs____update_wallet_integration_guideAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/docs____update_wallet_integration_guide',
+    detail: (id) => `/docs____update_wallet_integration_guide/${id}`,
+    create: '/docs____update_wallet_integration_guide',
+    update: (id) => `/docs____update_wallet_integration_guide/${id}`,
+    delete: (id) => `/docs____update_wallet_integration_guide/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};

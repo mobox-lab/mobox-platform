@@ -168,3 +168,20 @@ export default {
 </style>
 console.log('Debug: feat: enhance security against exploits');
 console.log('Debug: feat: add AI-generated NPC interactions');
+<!-- Component update: docs: 📝 update wallet integration guide -->
+<template>
+  <div class="updated-docs____update_wallet_integration_guide">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updateddocs____update_wallet_integration_guideComponent',
+  data() {
+    return {
+      message: 'docs: 📝 update wallet integration guide'
+    }
+  }
+}
+</script>
