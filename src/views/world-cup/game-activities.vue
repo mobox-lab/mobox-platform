@@ -612,3 +612,20 @@ export default {
   }
 }
 </script>
+<!-- Component update: docs: 📝 add troubleshooting section -->
+<template>
+  <div class="updated-docs____add_troubleshooting_section">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updateddocs____add_troubleshooting_sectionComponent',
+  data() {
+    return {
+      message: 'docs: 📝 add troubleshooting section'
+    }
+  }
+}
+</script>
