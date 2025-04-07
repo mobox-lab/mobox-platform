@@ -697,3 +697,27 @@ export class chore____configure_backup_strategyUtils {
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
   }
 };
+
+// API interface: style: 💄 add micro-interactions
+export const style____add_micro_interactionsAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/style____add_micro_interactions',
+    detail: (id) => `/style____add_micro_interactions/${id}`,
+    create: '/style____add_micro_interactions',
+    update: (id) => `/style____add_micro_interactions/${id}`,
+    delete: (id) => `/style____add_micro_interactions/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};
