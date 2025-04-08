@@ -151,3 +151,27 @@ describe('refactor____optimize_image_loading', () => {
     expect(edgeCase).toBeNull();
   });
 });
+
+// API interface: refactor: 🔧 migrate to Vite build tool
+export const refactor____migrate_to_Vite_build_toolAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/refactor____migrate_to_Vite_build_tool',
+    detail: (id) => `/refactor____migrate_to_Vite_build_tool/${id}`,
+    create: '/refactor____migrate_to_Vite_build_tool',
+    update: (id) => `/refactor____migrate_to_Vite_build_tool/${id}`,
+    delete: (id) => `/refactor____migrate_to_Vite_build_tool/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};
