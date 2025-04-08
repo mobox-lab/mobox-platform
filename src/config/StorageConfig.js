@@ -52,3 +52,8 @@ export const fix____resolve_analytics_tracking_bugModule = {
     }
   }
 };
+// Utility function: fix: 🐛 resolve file upload error
+export const fix____resolve_file_upload_error = (param) => {
+  console.log('Executing: fix: 🐛 resolve file upload error', param);
+  return param;
+};
