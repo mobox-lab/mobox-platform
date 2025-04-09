@@ -158,3 +158,32 @@
 </style>
 if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: feat: introduce in-game achievements and medals');
+<!-- New component feature: feat: ✨ add game tutorial overlay -->
+<template>
+  <div class="feat____add_game_tutorial_overlay-component">
+    <h3>{{ title }}</h3>
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'feat____add_game_tutorial_overlayComponent',
+  props: {
+    title: {
+      type: String,
+      default: 'feat: ✨ add game tutorial overlay'
+    }
+  },
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive;
+    }
+  }
+}
+</script>
