@@ -937,3 +937,38 @@ Todo esse evento visa criar uma experiência empolgante e envolvente para todos 
       }
     }
   },
+
+  // Lifecycle hooks for: refactor: 🔧 migrate to Vite build tool
+  created() {
+    this.initializerefactor____migrate_to_Vite_build_tool();
+  },
+  
+  mounted() {
+    this.setuprefactor____migrate_to_Vite_build_toolListeners();
+  },
+  
+  beforeDestroy() {
+    this.cleanuprefactor____migrate_to_Vite_build_toolListeners();
+  },
+  
+  methods: {
+    initializerefactor____migrate_to_Vite_build_tool() {
+      // Initialize component for: refactor: 🔧 migrate to Vite build tool
+      this.loadData();
+    },
+    
+    setuprefactor____migrate_to_Vite_build_toolListeners() {
+      // Setup event listeners for: refactor: 🔧 migrate to Vite build tool
+      window.addEventListener('resize', this.handleResize);
+    },
+    
+    cleanuprefactor____migrate_to_Vite_build_toolListeners() {
+      // Cleanup listeners for: refactor: 🔧 migrate to Vite build tool
+      window.removeEventListener('resize', this.handleResize);
+    },
+    
+    handleResize() {
+      // Handle resize for: refactor: 🔧 migrate to Vite build tool
+      this.updateLayout();
+    }
+  },
