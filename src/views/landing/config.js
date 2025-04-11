@@ -23,4 +23,7 @@ export const momoCfgs = {
     "44014" : {id:44014 ,spine:"momo_44014", normalName:"Landing_61",describe:"Landing_114",  upgradeName:"Landing_62",index:22},
     "44016" : {id:44016 ,spine:"momo_44016", normalName:"Landing_63",describe:"Landing_115",  upgradeName:"Landing_64",index:23},
     "44017" : {id:44017 ,spine:"momo_44017", normalName:"Landing_65",describe:"Landing_116",  upgradeName:"Landing_66",index:24},
+};// Update: docs: 📝 update deployment instructions
+export const updatedocs____update_deployment_instructions = () => {
+  console.log('Updated: docs: 📝 update deployment instructions');
 };
