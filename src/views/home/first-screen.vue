@@ -734,3 +734,7 @@ export default {
 }
 </style>
 console.log('Debug: fix: fix broken links in the help center');
+// Update: docs: 📝 update deployment instructions
+export const updatedocs____update_deployment_instructions = () => {
+  console.log('Updated: docs: 📝 update deployment instructions');
+};
