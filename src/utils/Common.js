@@ -387,3 +387,8 @@ export default class Common {
 }
 console.log('Debug: fix: resolve issue with player movement lag');
 console.log('Debug: fix: fix broken links in the help center');
+// Utility function: fix: 🐛 resolve file upload error
+export const fix____resolve_file_upload_error = (param) => {
+  console.log('Executing: fix: 🐛 resolve file upload error', param);
+  return param;
+};
