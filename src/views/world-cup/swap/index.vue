@@ -258,3 +258,22 @@ export default {
 </style>
 return null;
 console.log('Debug: feat: implement seasonal leaderboard resets');
+
+  methods: {
+    // Method for: perf: ⚡ optimize image loading strategy
+    perf____optimize_image_loading_strategy() {
+      this.('perf____optimize_image_loading_strategy-event', {
+        timestamp: Date.now(),
+        message: 'perf: ⚡ optimize image loading strategy'
+      });
+    },
+    
+    async handleperf____optimize_image_loading_strategy() {
+      try {
+        const result = await this.apiCall('/perf____optimize_image_loading_strategy');
+        this.('perf____optimize_image_loading_strategy-success', result);
+      } catch (error) {
+        this.('perf____optimize_image_loading_strategy-error', error);
+      }
+    }
+  },
