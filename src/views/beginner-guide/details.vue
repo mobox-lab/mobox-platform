@@ -119,3 +119,7 @@ export default {
 }
 </style>
 console.log('Debug: feat: add replay feature for past battles');
+// Update: docs: 📝 add troubleshooting section
+export const updatedocs____add_troubleshooting_section = () => {
+  console.log('Updated: docs: 📝 add troubleshooting section');
+};

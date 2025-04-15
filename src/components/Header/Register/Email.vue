@@ -170,3 +170,20 @@ return null;
 if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: fix: fix broken links in the help center');
 console.log('Debug: feat: introduce a trade system between players');
+<!-- Component update: docs: 📝 add troubleshooting section -->
+<template>
+  <div class="updated-docs____add_troubleshooting_section">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updateddocs____add_troubleshooting_sectionComponent',
+  data() {
+    return {
+      message: 'docs: 📝 add troubleshooting section'
+    }
+  }
+}
+</script>
