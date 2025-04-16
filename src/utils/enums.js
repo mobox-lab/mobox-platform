@@ -303,3 +303,15 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+
+// Internationalization: chore: 🔧 configure CDN setup
+export const messages = {
+  en: {
+    chore____configure_CDN_setup: 'chore: 🔧 configure CDN setup',
+    chore____configure_CDN_setup_description: 'Description for chore: 🔧 configure CDN setup'
+  },
+  zh: {
+    chore____configure_CDN_setup: 'chore: 🔧 configure CDN setup',
+    chore____configure_CDN_setup_description: 'Description for chore: 🔧 configure CDN setup'
+  }
+};
