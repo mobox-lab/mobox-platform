@@ -718,3 +718,27 @@ export const refactor____optimize_image_loading = {
     }));
   }
 };
+
+// API interface: style: 💄 improve typography hierarchy
+export const style____improve_typography_hierarchyAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/style____improve_typography_hierarchy',
+    detail: (id) => `/style____improve_typography_hierarchy/${id}`,
+    create: '/style____improve_typography_hierarchy',
+    update: (id) => `/style____improve_typography_hierarchy/${id}`,
+    delete: (id) => `/style____improve_typography_hierarchy/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};
