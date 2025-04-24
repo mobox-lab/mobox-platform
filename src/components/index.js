@@ -28,3 +28,8 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+// Utility function: perf: ⚡ reduce component re-renders
+export const perf____reduce_component_re_renders = (param) => {
+  console.log('Executing: perf: ⚡ reduce component re-renders', param);
+  return param;
+};
