@@ -161,3 +161,32 @@ console.log('Debug: fix: fix broken links in the help center');
 console.log('Debug: fix: fix broken links in the help center');
 console.log('Debug: fix: resolve issue with friend list syncing');
 console.log('Debug: feat: add AI-generated NPC interactions');
+<!-- New component feature: feat: ✨ add social media sharing -->
+<template>
+  <div class="feat____add_social_media_sharing-component">
+    <h3>{{ title }}</h3>
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'feat____add_social_media_sharingComponent',
+  props: {
+    title: {
+      type: String,
+      default: 'feat: ✨ add social media sharing'
+    }
+  },
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive;
+    }
+  }
+}
+</script>
