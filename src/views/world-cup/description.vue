@@ -108,3 +108,32 @@ export default {
 </style>console.log('Debug: feat: introduce a trade system between players');
 console.log('Debug: fix: correct chat system auto-scroll behavior');
 console.log('Debug: feat: enhance battle camera angles');
+<!-- New component feature: feat: ✨ add game tutorial overlay -->
+<template>
+  <div class="feat____add_game_tutorial_overlay-component">
+    <h3>{{ title }}</h3>
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'feat____add_game_tutorial_overlayComponent',
+  props: {
+    title: {
+      type: String,
+      default: 'feat: ✨ add game tutorial overlay'
+    }
+  },
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive;
+    }
+  }
+}
+</script>
