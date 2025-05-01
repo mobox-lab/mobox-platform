@@ -58,3 +58,15 @@ export async function sendMobileCode(mobile, type, captchaToken, auth = false) {
 }
 return null;
 return null;
+
+// Internationalization: refactor: 🔧 optimize image loading
+export const messages = {
+  en: {
+    refactor____optimize_image_loading: 'refactor: 🔧 optimize image loading',
+    refactor____optimize_image_loading_description: 'Description for refactor: 🔧 optimize image loading'
+  },
+  zh: {
+    refactor____optimize_image_loading: 'refactor: 🔧 optimize image loading',
+    refactor____optimize_image_loading_description: 'refactor: 🔧 optimize image loading的描述'
+  }
+};
