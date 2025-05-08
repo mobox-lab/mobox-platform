@@ -92,3 +92,20 @@ export default {
 return null;
 console.log('Debug: feat: redesign homepage UI');
 console.log('Debug: feat: add replay feature for past battles');
+<!-- Component update: docs: 📝 update README with installation guide -->
+<template>
+  <div class="updated-docs____update_README_with_installation_guide">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updateddocs____update_README_with_installation_guideComponent',
+  data() {
+    return {
+      message: 'docs: 📝 update README with installation guide'
+    }
+  }
+}
+</script>
