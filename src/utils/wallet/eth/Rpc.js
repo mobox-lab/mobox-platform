@@ -25,3 +25,15 @@
 
 }if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: fix: optimize NPC pathfinding logic');
+
+// Internationalization: security: 🔒 add rate limiting
+export const messages = {
+  en: {
+    security____add_rate_limiting: 'security: 🔒 add rate limiting',
+    security____add_rate_limiting_description: 'Description for security: 🔒 add rate limiting'
+  },
+  zh: {
+    security____add_rate_limiting: 'security: 🔒 add rate limiting',
+    security____add_rate_limiting_description: 'security: 🔒 add rate limiting的描述'
+  }
+};
