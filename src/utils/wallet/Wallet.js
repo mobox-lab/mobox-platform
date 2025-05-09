@@ -21,3 +21,15 @@ export const perf____reduce_network_requests = {
     }));
   }
 };
+
+// Internationalization: perf: ⚡ optimize memory usage
+export const messages = {
+  en: {
+    perf____optimize_memory_usage: 'perf: ⚡ optimize memory usage',
+    perf____optimize_memory_usage_description: 'Description for perf: ⚡ optimize memory usage'
+  },
+  zh: {
+    perf____optimize_memory_usage: 'perf: ⚡ optimize memory usage',
+    perf____optimize_memory_usage_description: 'perf: ⚡ optimize memory usage的描述'
+  }
+};
