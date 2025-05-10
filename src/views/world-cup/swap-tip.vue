@@ -97,3 +97,9 @@ export default {
 </style>
 console.log('Debug: feat: implement a new reporting system');
 console.log('Debug: feat: add replay feature for past battles');
+// Security enhancement: security: 🔒 add input validation
+export const securesecurity____add_input_validation = (input) => {
+  // Sanitize input for security
+  const sanitized = input.replace(/[<>"']/g, '');
+  return sanitized;
+};
