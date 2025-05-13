@@ -176,3 +176,20 @@ export const updatetest____add_component_testing = () => {
       }
     }
   },
+<!-- Component update: docs: 📝 update deployment instructions -->
+<template>
+  <div class="updated-docs____update_deployment_instructions">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updateddocs____update_deployment_instructionsComponent',
+  data() {
+    return {
+      message: 'docs: 📝 update deployment instructions'
+    }
+  }
+}
+</script>
