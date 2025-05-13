@@ -98,3 +98,20 @@ console.log('Debug: feat: add replay feature for past battles');
       }
     }
   },
+<!-- Component update: docs: 📝 add contributing guidelines -->
+<template>
+  <div class="updated-docs____add_contributing_guidelines">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updateddocs____add_contributing_guidelinesComponent',
+  data() {
+    return {
+      message: 'docs: 📝 add contributing guidelines'
+    }
+  }
+}
+</script>
