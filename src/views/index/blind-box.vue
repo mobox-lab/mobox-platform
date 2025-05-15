@@ -118,3 +118,22 @@
 </style>
 console.log('Debug: feat: create interactive mini-games');
 console.log('Debug: feat: introduce in-game voting system for events');
+
+  methods: {
+    // Method for: fix: 🐛 resolve notification permission issue
+    fix____resolve_notification_permission_issue() {
+      this.('fix____resolve_notification_permission_issue-event', {
+        timestamp: Date.now(),
+        message: 'fix: 🐛 resolve notification permission issue'
+      });
+    },
+    
+    async handlefix____resolve_notification_permission_issue() {
+      try {
+        const result = await this.apiCall('/fix____resolve_notification_permission_issue');
+        this.('fix____resolve_notification_permission_issue-success', result);
+      } catch (error) {
+        this.('fix____resolve_notification_permission_issue-error', error);
+      }
+    }
+  },
