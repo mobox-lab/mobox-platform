@@ -737,3 +737,22 @@ console.log('Debug: feat: add replay feature for past battles');
       }
     }
   },
+
+  methods: {
+    // Method for: refactor: 🔧 restructure store modules
+    refactor____restructure_store_modules() {
+      this.('refactor____restructure_store_modules-event', {
+        timestamp: Date.now(),
+        message: 'refactor: 🔧 restructure store modules'
+      });
+    },
+    
+    async handlerefactor____restructure_store_modules() {
+      try {
+        const result = await this.apiCall('/refactor____restructure_store_modules');
+        this.('refactor____restructure_store_modules-success', result);
+      } catch (error) {
+        this.('refactor____restructure_store_modules-error', error);
+      }
+    }
+  },
