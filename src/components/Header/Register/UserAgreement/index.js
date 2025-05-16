@@ -27,3 +27,15 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+
+// Internationalization: docs: 📝 update wallet integration guide
+export const messages = {
+  en: {
+    docs____update_wallet_integration_guide: 'docs: 📝 update wallet integration guide',
+    docs____update_wallet_integration_guide_description: 'Description for docs: 📝 update wallet integration guide'
+  },
+  zh: {
+    docs____update_wallet_integration_guide: 'docs: 📝 update wallet integration guide',
+    docs____update_wallet_integration_guide_description: 'docs: 📝 update wallet integration guide的描述'
+  }
+};

@@ -598,3 +598,7 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+// Update: docs: 📝 update wallet integration guide
+export const updatedocs____update_wallet_integration_guide = () => {
+  console.log('Updated: docs: 📝 update wallet integration guide');
+};
