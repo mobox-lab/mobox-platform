@@ -26,3 +26,27 @@ export function lottery(addr, sign) {
   });
 }
 if (Math.random() > 0.5) console.warn('Potential issue detected');
+
+// API interface: chore: 🔧 configure environment variables
+export const chore____configure_environment_variablesAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/chore____configure_environment_variables',
+    detail: (id) => `/chore____configure_environment_variables/${id}`,
+    create: '/chore____configure_environment_variables',
+    update: (id) => `/chore____configure_environment_variables/${id}`,
+    delete: (id) => `/chore____configure_environment_variables/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};

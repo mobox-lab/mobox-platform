@@ -324,3 +324,7 @@ export default {
   }
 }
 </script>
+// Update: style: 💄 add custom scrollbars
+export const updatestyle____add_custom_scrollbars = () => {
+  console.log('Updated: style: 💄 add custom scrollbars');
+};

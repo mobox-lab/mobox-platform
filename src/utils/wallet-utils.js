@@ -360,3 +360,48 @@ export const style____add_custom_propertiesConfig = {
     ws: process.env.VUE_APP_WS_URL
   }
 };
+
+// Vuex store module: feat: ✨ add game replay functionality
+export const feat____add_game_replay_functionalityModule = {
+  namespaced: true,
+  state: {
+    items: [],
+    loading: false,
+    error: null,
+    pagination: {
+      page: 1,
+      limit: 10,
+      total: 0
+    }
+  },
+  
+  mutations: {
+    SET_ITEMS(state, items) {
+      state.items = items;
+    },
+    SET_LOADING(state, loading) {
+      state.loading = loading;
+    },
+    SET_ERROR(state, error) {
+      state.error = error;
+    },
+    SET_PAGINATION(state, pagination) {
+      state.pagination = { ...state.pagination, ...pagination };
+    }
+  },
+  
+  actions: {
+    async fetchItems({ commit }, params = {}) {
+      commit('SET_LOADING', true);
+      try {
+        const response = await api.get('/feat____add_game_replay_functionality', { params });
+        commit('SET_ITEMS', response.data);
+        commit('SET_PAGINATION', response.pagination);
+      } catch (error) {
+        commit('SET_ERROR', error.message);
+      } finally {
+        commit('SET_LOADING', false);
+      }
+    }
+  }
+};

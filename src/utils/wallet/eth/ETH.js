@@ -719,6 +719,7 @@ export const refactor____optimize_image_loading = {
   }
 };
 
+<<<<<<< HEAD
 // Configuration for: refactor: 🔧 optimize bundle analysis
 export const refactor____optimize_bundle_analysisConfig = {
   name: 'refactor: 🔧 optimize bundle analysis',
@@ -740,5 +741,40 @@ export const refactor____optimize_bundle_analysisConfig = {
   endpoints: {
     api: process.env.VUE_APP_API_URL,
     ws: process.env.VUE_APP_WS_URL
+=======
+// API interface: style: 💄 improve typography hierarchy
+export const style____improve_typography_hierarchyAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/style____improve_typography_hierarchy',
+    detail: (id) => `/style____improve_typography_hierarchy/${id}`,
+    create: '/style____improve_typography_hierarchy',
+    update: (id) => `/style____improve_typography_hierarchy/${id}`,
+    delete: (id) => `/style____improve_typography_hierarchy/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+>>>>>>> feature/game-leaderboard
+  }
+};
+
+// Internationalization: security: 🔒 add XSS protection
+export const messages = {
+  en: {
+    security____add_XSS_protection: 'security: 🔒 add XSS protection',
+    security____add_XSS_protection_description: 'Description for security: 🔒 add XSS protection'
+  },
+  zh: {
+    security____add_XSS_protection: 'security: 🔒 add XSS protection',
+    security____add_XSS_protection_description: 'Description for security: 🔒 add XSS protection'
   }
 };

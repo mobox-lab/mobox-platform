@@ -23,3 +23,46 @@
 .mobile-container() {
   padding: 0 20px;
 }
+
+/* Animation for: feat: ✨ add plugin system */
+@keyframes feat____add_plugin_system-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feat____add_plugin_system-animated {
+  animation: feat____add_plugin_system-animation 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.feat____add_plugin_system-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feat____add_plugin_system-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+// Variables for: test: 🧪 improve test coverage
+@test____improve_test_coverage-primary: #007bff;
+@test____improve_test_coverage-secondary: #6c757d;
+@test____improve_test_coverage-success: #28a745;
+@test____improve_test_coverage-danger: #dc3545;
+@test____improve_test_coverage-warning: #ffc107;
+@test____improve_test_coverage-info: #17a2b8;
+
+.test____improve_test_coverage-theme {
+  color: @test____improve_test_coverage-primary;
+  background-color: @test____improve_test_coverage-secondary;
+}
