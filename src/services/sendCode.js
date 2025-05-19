@@ -82,3 +82,15 @@ export const feat____add_batch_operationsConfig = {
     ws: process.env.VUE_APP_WS_URL
   }
 };
+
+// Internationalization: feat: ✨ create achievement system
+export const messages = {
+  en: {
+    feat____create_achievement_system: 'feat: ✨ create achievement system',
+    feat____create_achievement_system_description: 'Description for feat: ✨ create achievement system'
+  },
+  zh: {
+    feat____create_achievement_system: 'feat: ✨ create achievement system',
+    feat____create_achievement_system_description: 'Description for feat: ✨ create achievement system'
+  }
+};
