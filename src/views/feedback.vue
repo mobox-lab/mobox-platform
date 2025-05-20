@@ -301,3 +301,20 @@
       this.updateLayout();
     }
   },
+<!-- Component update: security: 🔒 add XSS protection -->
+<template>
+  <div class="updated-security____add_XSS_protection">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updatedsecurity____add_XSS_protectionComponent',
+  data() {
+    return {
+      message: 'security: 🔒 add XSS protection'
+    }
+  }
+}
+</script>
