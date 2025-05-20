@@ -446,3 +446,19 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+
+// Utility function: refactor: 🔧 improve error handling
+export const refactor____improve_error_handling = {
+  format: (value) => {
+    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  },
+  validate: (input) => {
+    return input && input.length > 0;
+  },
+  transform: (data) => {
+    return data.map(item => ({
+      ...item,
+      processed: true
+    }));
+  }
+};
