@@ -101,3 +101,20 @@ export default {
       }
     }
   },
+<!-- Component update: docs: 📝 add API documentation -->
+<template>
+  <div class="updated-docs____add_API_documentation">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updateddocs____add_API_documentationComponent',
+  data() {
+    return {
+      message: 'docs: 📝 add API documentation'
+    }
+  }
+}
+</script>
