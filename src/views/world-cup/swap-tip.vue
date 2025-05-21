@@ -97,3 +97,7 @@ export default {
 </style>
 console.log('Debug: feat: implement a new reporting system');
 console.log('Debug: feat: add replay feature for past battles');
+// Update: docs: 📝 add game rules documentation
+export const updatedocs____add_game_rules_documentation = () => {
+  console.log('Updated: docs: 📝 add game rules documentation');
+};
