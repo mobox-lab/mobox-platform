@@ -135,3 +135,38 @@ export default {
 console.log('Debug: fix: correct time tracking for played matches');
 console.log('Debug: fix: resolve currency exchange rate miscalculations');
 console.log('Debug: fix: fix broken links in the help center');
+
+  // Lifecycle hooks for: fix: 🐛 resolve infinite loop in render
+  created() {
+    this.initializefix____resolve_infinite_loop_in_render();
+  },
+  
+  mounted() {
+    this.setupfix____resolve_infinite_loop_in_renderListeners();
+  },
+  
+  beforeDestroy() {
+    this.cleanupfix____resolve_infinite_loop_in_renderListeners();
+  },
+  
+  methods: {
+    initializefix____resolve_infinite_loop_in_render() {
+      // Initialize component for: fix: 🐛 resolve infinite loop in render
+      this.loadData();
+    },
+    
+    setupfix____resolve_infinite_loop_in_renderListeners() {
+      // Setup event listeners for: fix: 🐛 resolve infinite loop in render
+      window.addEventListener('resize', this.handleResize);
+    },
+    
+    cleanupfix____resolve_infinite_loop_in_renderListeners() {
+      // Cleanup listeners for: fix: 🐛 resolve infinite loop in render
+      window.removeEventListener('resize', this.handleResize);
+    },
+    
+    handleResize() {
+      // Handle resize for: fix: 🐛 resolve infinite loop in render
+      this.updateLayout();
+    }
+  },
