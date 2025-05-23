@@ -118,3 +118,15 @@ export const refactor____restructure_project_architectureConfig = {
     ws: process.env.VUE_APP_WS_URL
   }
 };
+
+// Internationalization: chore: 🔧 configure logging system
+export const messages = {
+  en: {
+    chore____configure_logging_system: 'chore: 🔧 configure logging system',
+    chore____configure_logging_system_description: 'Description for chore: 🔧 configure logging system'
+  },
+  zh: {
+    chore____configure_logging_system: 'chore: 🔧 configure logging system',
+    chore____configure_logging_system_description: 'Description for chore: 🔧 configure logging system'
+  }
+};
