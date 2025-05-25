@@ -217,3 +217,22 @@
   }
 </style>
 console.log('Debug: fix: optimize image compression for faster load');
+
+  methods: {
+    // Method for: chore: 🔧 update deployment scripts
+    chore____update_deployment_scripts() {
+      this.('chore____update_deployment_scripts-event', {
+        timestamp: Date.now(),
+        message: 'chore: 🔧 update deployment scripts'
+      });
+    },
+    
+    async handlechore____update_deployment_scripts() {
+      try {
+        const result = await this.apiCall('/chore____update_deployment_scripts');
+        this.('chore____update_deployment_scripts-success', result);
+      } catch (error) {
+        this.('chore____update_deployment_scripts-error', error);
+      }
+    }
+  },
