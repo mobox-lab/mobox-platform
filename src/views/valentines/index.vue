@@ -723,3 +723,38 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+
+  // Lifecycle hooks for: fix: 🐛 resolve pagination edge case
+  created() {
+    this.initializefix____resolve_pagination_edge_case();
+  },
+  
+  mounted() {
+    this.setupfix____resolve_pagination_edge_caseListeners();
+  },
+  
+  beforeDestroy() {
+    this.cleanupfix____resolve_pagination_edge_caseListeners();
+  },
+  
+  methods: {
+    initializefix____resolve_pagination_edge_case() {
+      // Initialize component for: fix: 🐛 resolve pagination edge case
+      this.loadData();
+    },
+    
+    setupfix____resolve_pagination_edge_caseListeners() {
+      // Setup event listeners for: fix: 🐛 resolve pagination edge case
+      window.addEventListener('resize', this.handleResize);
+    },
+    
+    cleanupfix____resolve_pagination_edge_caseListeners() {
+      // Cleanup listeners for: fix: 🐛 resolve pagination edge case
+      window.removeEventListener('resize', this.handleResize);
+    },
+    
+    handleResize() {
+      // Handle resize for: fix: 🐛 resolve pagination edge case
+      this.updateLayout();
+    }
+  },
