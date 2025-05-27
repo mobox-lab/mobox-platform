@@ -304,3 +304,22 @@ export default {
   }
 }
 </script>
+
+  methods: {
+    // Method for: docs: 📝 update mobile setup instructions
+    docs____update_mobile_setup_instructions() {
+      this.('docs____update_mobile_setup_instructions-event', {
+        timestamp: Date.now(),
+        message: 'docs: 📝 update mobile setup instructions'
+      });
+    },
+    
+    async handledocs____update_mobile_setup_instructions() {
+      try {
+        const result = await this.apiCall('/docs____update_mobile_setup_instructions');
+        this.('docs____update_mobile_setup_instructions-success', result);
+      } catch (error) {
+        this.('docs____update_mobile_setup_instructions-error', error);
+      }
+    }
+  },
