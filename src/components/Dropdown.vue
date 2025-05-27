@@ -216,3 +216,32 @@ export default {
   }
 }
 </script>
+<!-- New component feature: feat: ✨ implement game streaming feature -->
+<template>
+  <div class="feat____implement_game_streaming_feature-component">
+    <h3>{{ title }}</h3>
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'feat____implement_game_streaming_featureComponent',
+  props: {
+    title: {
+      type: String,
+      default: 'feat: ✨ implement game streaming feature'
+    }
+  },
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive;
+    }
+  }
+}
+</script>
