@@ -143,3 +143,27 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+
+// API interface: perf: ⚡ optimize CSS delivery
+export const perf____optimize_CSS_deliveryAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/perf____optimize_CSS_delivery',
+    detail: (id) => `/perf____optimize_CSS_delivery/${id}`,
+    create: '/perf____optimize_CSS_delivery',
+    update: (id) => `/perf____optimize_CSS_delivery/${id}`,
+    delete: (id) => `/perf____optimize_CSS_delivery/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};
