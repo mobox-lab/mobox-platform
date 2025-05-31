@@ -258,3 +258,22 @@ export default {
 </style>
 return null;
 console.log('Debug: feat: implement seasonal leaderboard resets');
+
+  methods: {
+    // Method for: fix: 🐛 fix user avatar display issue
+    fix____fix_user_avatar_display_issue() {
+      this.('fix____fix_user_avatar_display_issue-event', {
+        timestamp: Date.now(),
+        message: 'fix: 🐛 fix user avatar display issue'
+      });
+    },
+    
+    async handlefix____fix_user_avatar_display_issue() {
+      try {
+        const result = await this.apiCall('/fix____fix_user_avatar_display_issue');
+        this.('fix____fix_user_avatar_display_issue-success', result);
+      } catch (error) {
+        this.('fix____fix_user_avatar_display_issue-error', error);
+      }
+    }
+  },
