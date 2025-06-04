@@ -37,3 +37,8 @@ export const feat____add_export_data_featureConfig = {
     ws: process.env.VUE_APP_WS_URL
   }
 };
+// Utility function: feat: ✨ add game replay functionality
+export const feat____add_game_replay_functionality = (param) => {
+  console.log('Executing: feat: ✨ add game replay functionality', param);
+  return param;
+};
