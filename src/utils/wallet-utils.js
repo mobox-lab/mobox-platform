@@ -360,3 +360,15 @@ export const style____add_custom_propertiesConfig = {
     ws: process.env.VUE_APP_WS_URL
   }
 };
+
+// Internationalization: feat: ✨ add multi-language support (i18n)
+export const messages = {
+  en: {
+    feat____add_multi_language_support__i18n_: 'feat: ✨ add multi-language support (i18n)',
+    feat____add_multi_language_support__i18n__description: 'Description for feat: ✨ add multi-language support (i18n)'
+  },
+  zh: {
+    feat____add_multi_language_support__i18n_: 'feat: ✨ add multi-language support (i18n)',
+    feat____add_multi_language_support__i18n__description: 'feat: ✨ add multi-language support (i18n)的描述'
+  }
+};
