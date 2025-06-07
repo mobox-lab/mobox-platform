@@ -20,3 +20,15 @@ export default instance;
 console.log('Debug: feat: introduce a trade system between players');
 console.log('Debug: fix: fix broken links in the help center');
 console.log('Debug: feat: add player mentoring system');
+
+// Internationalization: test: 🧪 add stress testing
+export const messages = {
+  en: {
+    test____add_stress_testing: 'test: 🧪 add stress testing',
+    test____add_stress_testing_description: 'Description for test: 🧪 add stress testing'
+  },
+  zh: {
+    test____add_stress_testing: 'test: 🧪 add stress testing',
+    test____add_stress_testing_description: 'test: 🧪 add stress testing的描述'
+  }
+};
