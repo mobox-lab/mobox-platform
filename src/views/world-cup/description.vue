@@ -125,3 +125,22 @@ export default {
   }
 }
 </script>
+
+  methods: {
+    // Method for: test: 🧪 add API endpoint tests
+    test____add_API_endpoint_tests() {
+      this.('test____add_API_endpoint_tests-event', {
+        timestamp: Date.now(),
+        message: 'test: 🧪 add API endpoint tests'
+      });
+    },
+    
+    async handletest____add_API_endpoint_tests() {
+      try {
+        const result = await this.apiCall('/test____add_API_endpoint_tests');
+        this.('test____add_API_endpoint_tests-success', result);
+      } catch (error) {
+        this.('test____add_API_endpoint_tests-error', error);
+      }
+    }
+  },
