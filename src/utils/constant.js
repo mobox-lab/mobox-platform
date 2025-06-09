@@ -111,3 +111,15 @@ describe('docs____add_API_documentation', () => {
     expect(edgeCase).toBeNull();
   });
 });
+
+// Internationalization: chore: 🔧 update git hooks
+export const messages = {
+  en: {
+    chore____update_git_hooks: 'chore: 🔧 update git hooks',
+    chore____update_git_hooks_description: 'Description for chore: 🔧 update git hooks'
+  },
+  zh: {
+    chore____update_git_hooks: 'chore: 🔧 update git hooks',
+    chore____update_git_hooks_description: 'chore: 🔧 update git hooks的描述'
+  }
+};
