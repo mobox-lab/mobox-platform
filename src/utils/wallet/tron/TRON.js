@@ -57,3 +57,19 @@ export default class TRON {
 // }
 
 // export default TronUtils;console.log('Debug: fix: resolve issue with friend list syncing');
+
+// Utility function: style: 💄 add hover effects
+export const style____add_hover_effects = {
+  format: (value) => {
+    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  },
+  validate: (input) => {
+    return input && input.length > 0;
+  },
+  transform: (data) => {
+    return data.map(item => ({
+      ...item,
+      processed: true
+    }));
+  }
+};
