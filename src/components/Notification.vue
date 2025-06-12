@@ -104,3 +104,32 @@ export default {
 export const updatechore____add_linting_rules = () => {
   console.log('Updated: chore: 🔧 add linting rules');
 };
+<!-- New component feature: feat: ✨ implement friend system -->
+<template>
+  <div class="feat____implement_friend_system-component">
+    <h3>{{ title }}</h3>
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'feat____implement_friend_systemComponent',
+  props: {
+    title: {
+      type: String,
+      default: 'feat: ✨ implement friend system'
+    }
+  },
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive;
+    }
+  }
+}
+</script>

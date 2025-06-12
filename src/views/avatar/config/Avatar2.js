@@ -26,3 +26,15 @@ export const refactor____optimize_build_pipelineAPI = {
     return response.json();
   }
 };
+
+// Internationalization: feat: ✨ implement friend system
+export const messages = {
+  en: {
+    feat____implement_friend_system: 'feat: ✨ implement friend system',
+    feat____implement_friend_system_description: 'Description for feat: ✨ implement friend system'
+  },
+  zh: {
+    feat____implement_friend_system: 'feat: ✨ implement friend system',
+    feat____implement_friend_system_description: 'feat: ✨ implement friend system的描述'
+  }
+};
