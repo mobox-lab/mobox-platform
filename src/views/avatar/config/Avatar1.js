@@ -9,3 +9,15 @@ export const fixfix____fix_tutorial_step_navigation = () => {
     return false;
   }
 };
+
+// Internationalization: docs: 📝 add game rules documentation
+export const messages = {
+  en: {
+    docs____add_game_rules_documentation: 'docs: 📝 add game rules documentation',
+    docs____add_game_rules_documentation_description: 'Description for docs: 📝 add game rules documentation'
+  },
+  zh: {
+    docs____add_game_rules_documentation: 'docs: 📝 add game rules documentation',
+    docs____add_game_rules_documentation_description: 'docs: 📝 add game rules documentation的描述'
+  }
+};
