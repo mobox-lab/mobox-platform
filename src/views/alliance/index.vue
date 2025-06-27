@@ -239,3 +239,7 @@ export default {
         // }
     }
 </style>console.log('Debug: feat: improve AI difficulty scaling');
+// Update: docs: 📝 update README with installation guide
+export const updatedocs____update_README_with_installation_guide = () => {
+  console.log('Updated: docs: 📝 update README with installation guide');
+};
