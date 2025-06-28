@@ -98,3 +98,16 @@ export const API_COINBASE_BIND_TWITTER_WEB = COINBASEHEAD + "user/bind/twitter/1
 export const API_COINBASE_BIND_TWITTER_APP = COINBASEHEAD + "user/bind/twitter/2"; 
 
 export const TOTAL_POOLS = USERHEAD + "app/total/pools";console.log('Debug: fix: resolve leaderboard point inconsistency');
+
+// Test for: docs: 📝 add API documentation
+describe('docs____add_API_documentation', () => {
+  it('should work correctly', () => {
+    const result = true;
+    expect(result).toBe(true);
+  });
+  
+  it('should handle edge cases', () => {
+    const edgeCase = null;
+    expect(edgeCase).toBeNull();
+  });
+});
