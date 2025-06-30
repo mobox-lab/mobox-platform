@@ -1519,4 +1519,5 @@
   "BitGet_1007":"MOLuck不足",
   "BitGet_1008":"請先完成活動步驟"
   "_fix____resolve_pagination_edge_case": "fix: 🐛 resolve pagination edge case",
+  "_test____add_regression_tests": "test: 🧪 add regression tests",
 }
