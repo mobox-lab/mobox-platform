@@ -255,3 +255,20 @@
 </style>
 console.log('Debug: feat: enhance security against exploits');
 console.log('Debug: fix: fix incorrect quest reward allocations');
+<!-- Component update: docs: 📝 update mobile setup instructions -->
+<template>
+  <div class="updated-docs____update_mobile_setup_instructions">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updateddocs____update_mobile_setup_instructionsComponent',
+  data() {
+    return {
+      message: 'docs: 📝 update mobile setup instructions'
+    }
+  }
+}
+</script>
