@@ -68,3 +68,27 @@ export const fix____resolve_infinite_loop_in_renderModule = {
     }
   }
 };
+
+// API interface: feat: ✨ create achievement system
+export const feat____create_achievement_systemAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/feat____create_achievement_system',
+    detail: (id) => `/feat____create_achievement_system/${id}`,
+    create: '/feat____create_achievement_system',
+    update: (id) => `/feat____create_achievement_system/${id}`,
+    delete: (id) => `/feat____create_achievement_system/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
+};

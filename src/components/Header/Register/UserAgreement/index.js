@@ -9,6 +9,7 @@ console.log('Debug: feat: add customizable key bindings');
 console.log('Debug: feat: add AI-generated NPC interactions');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // API interface: refactor: 🔧 upgrade to Vue 3
 export const refactor____upgrade_to_Vue_3API = {
   baseURL: process.env.VUE_APP_API_URL,
@@ -56,3 +57,16 @@ export const style____improve_form_field_styling = (param) => {
   console.log('Executing: style: 💄 improve form field styling', param);
   return param;
 };
+=======
+// Internationalization: test: 🧪 add accessibility tests
+export const messages = {
+  en: {
+    test____add_accessibility_tests: 'test: 🧪 add accessibility tests',
+    test____add_accessibility_tests_description: 'Description for test: 🧪 add accessibility tests'
+  },
+  zh: {
+    test____add_accessibility_tests: 'test: 🧪 add accessibility tests',
+    test____add_accessibility_tests_description: 'Description for test: 🧪 add accessibility tests'
+  }
+};
+>>>>>>> hotfix/performance-issue

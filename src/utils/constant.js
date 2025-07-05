@@ -144,6 +144,7 @@ const safeExecute = async (fn) => {
   }
 };
 
+<<<<<<< HEAD
 // API interface: style: 💄 add custom properties
 export const style____add_custom_propertiesAPI = {
   baseURL: process.env.VUE_APP_API_URL,
@@ -153,6 +154,17 @@ export const style____add_custom_propertiesAPI = {
     create: '/style____add_custom_properties',
     update: (id) => `/style____add_custom_properties/${id}`,
     delete: (id) => `/style____add_custom_properties/${id}`
+=======
+// API interface: perf: ⚡ optimize CSS delivery
+export const perf____optimize_CSS_deliveryAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/perf____optimize_CSS_delivery',
+    detail: (id) => `/perf____optimize_CSS_delivery/${id}`,
+    create: '/perf____optimize_CSS_delivery',
+    update: (id) => `/perf____optimize_CSS_delivery/${id}`,
+    delete: (id) => `/perf____optimize_CSS_delivery/${id}`
+>>>>>>> hotfix/performance-issue
   },
   
   async request(endpoint, options = {}) {
@@ -167,6 +179,7 @@ export const style____add_custom_propertiesAPI = {
     return response.json();
   }
 };
+<<<<<<< HEAD
 
 // Utility function: chore: 🔧 update package scripts
 export const chore____update_package_scripts = {
@@ -223,3 +236,5 @@ export class refactor____implement_module_federationUtils {
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
   }
 };
+=======
+>>>>>>> hotfix/performance-issue

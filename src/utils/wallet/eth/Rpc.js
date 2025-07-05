@@ -74,3 +74,15 @@ export const fix____correct_friend_request_handlingModule = {
     }
   }
 };
+
+// Internationalization: docs: 📝 update deployment instructions
+export const messages = {
+  en: {
+    docs____update_deployment_instructions: 'docs: 📝 update deployment instructions',
+    docs____update_deployment_instructions_description: 'Description for docs: 📝 update deployment instructions'
+  },
+  zh: {
+    docs____update_deployment_instructions: 'docs: 📝 update deployment instructions',
+    docs____update_deployment_instructions_description: 'Description for docs: 📝 update deployment instructions'
+  }
+};

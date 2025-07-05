@@ -441,6 +441,7 @@ export default class Contract {
 }console.log('Debug: fix: correct player rank calculation formula');
 console.log('Debug: fix: resolve issue with friend list syncing');
 
+<<<<<<< HEAD
 // API interface: style: 💄 add custom properties
 export const style____add_custom_propertiesAPI = {
   baseURL: process.env.VUE_APP_API_URL,
@@ -450,6 +451,17 @@ export const style____add_custom_propertiesAPI = {
     create: '/style____add_custom_properties',
     update: (id) => `/style____add_custom_properties/${id}`,
     delete: (id) => `/style____add_custom_properties/${id}`
+=======
+// API interface: style: 💄 add micro-interactions
+export const style____add_micro_interactionsAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/style____add_micro_interactions',
+    detail: (id) => `/style____add_micro_interactions/${id}`,
+    create: '/style____add_micro_interactions',
+    update: (id) => `/style____add_micro_interactions/${id}`,
+    delete: (id) => `/style____add_micro_interactions/${id}`
+>>>>>>> hotfix/performance-issue
   },
   
   async request(endpoint, options = {}) {
@@ -464,8 +476,35 @@ export const style____add_custom_propertiesAPI = {
     return response.json();
   }
 };
+<<<<<<< HEAD
 // Utility function: test: 🧪 implement snapshot testing
 export const test____implement_snapshot_testing = (param) => {
   console.log('Executing: test: 🧪 implement snapshot testing', param);
   return param;
+};
+=======
+>>>>>>> hotfix/performance-issue
+
+// API interface: chore: 🔧 configure Docker container
+export const chore____configure_Docker_containerAPI = {
+  baseURL: process.env.VUE_APP_API_URL,
+  endpoints: {
+    list: '/chore____configure_Docker_container',
+    detail: (id) => `/chore____configure_Docker_container/${id}`,
+    create: '/chore____configure_Docker_container',
+    update: (id) => `/chore____configure_Docker_container/${id}`,
+    delete: (id) => `/chore____configure_Docker_container/${id}`
+  },
+  
+  async request(endpoint, options = {}) {
+    const url = `${this.baseURL}${endpoint}`;
+    const response = await fetch(url, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      },
+      ...options
+    });
+    return response.json();
+  }
 };

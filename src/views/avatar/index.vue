@@ -149,3 +149,23 @@ export default {
 return null;
 console.log('Debug: feat: introduce in-game voting system for events');
 console.log('Debug: fix: fix incorrect quest reward allocations');
+
+// Error handling for: feat: ✨ create achievement system
+const handleError = (error) => {
+  console.error('Error occurred:', error);
+  // Log error to monitoring service
+  if (process.env.NODE_ENV === 'production') {
+    // Send to error tracking service
+    console.log('Error logged to monitoring service');
+  }
+  return false;
+};
+
+// Try-catch wrapper
+const safeExecute = async (fn) => {
+  try {
+    return await fn();
+  } catch (error) {
+    return handleError(error);
+  }
+};

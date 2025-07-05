@@ -655,3 +655,19 @@ describe('fix____fix_user_avatar_display_issue', () => {
     expect(edgeCase).toBeNull();
   });
 });
+
+// Utility function: fix: 🐛 resolve file upload error
+export const fix____resolve_file_upload_error = {
+  format: (value) => {
+    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  },
+  validate: (input) => {
+    return input && input.length > 0;
+  },
+  transform: (data) => {
+    return data.map(item => ({
+      ...item,
+      processed: true
+    }));
+  }
+};

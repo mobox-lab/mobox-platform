@@ -24,3 +24,14 @@ export const momoCfgs = {
     "44016" : {id:44016 ,spine:"momo_44016", normalName:"Landing_63",describe:"Landing_115",  upgradeName:"Landing_64",index:23},
     "44017" : {id:44017 ,spine:"momo_44017", normalName:"Landing_65",describe:"Landing_116",  upgradeName:"Landing_66",index:24},
 };
+// Internationalization: chore: 🔧 update Node.js version
+export const messages = {
+  en: {
+    chore____update_Node_js_version: 'chore: 🔧 update Node.js version',
+    chore____update_Node_js_version_description: 'Description for chore: 🔧 update Node.js version'
+  },
+  zh: {
+    chore____update_Node_js_version: 'chore: 🔧 update Node.js version',
+    chore____update_Node_js_version_description: 'Description for chore: 🔧 update Node.js version'
+  }
+};

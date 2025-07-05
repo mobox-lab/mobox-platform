@@ -196,20 +196,37 @@
 console.log('Debug: feat: improve tutorial experience for new players');
 console.log('Debug: feat: introduce a trade system between players');
 console.log('Debug: fix: resolve issue with friend list syncing');
+<<<<<<< HEAD
 <!-- Component update: perf: ⚡ reduce JavaScript bundle size -->
 <template>
   <div class="updated-perf____reduce_JavaScript_bundle_size">
+=======
+<!-- Component update: perf: ⚡ improve bundle splitting -->
+<template>
+  <div class="updated-perf____improve_bundle_splitting">
+>>>>>>> hotfix/performance-issue
     <p>{{ message }}</p>
   </div>
 </template>
 
 <script>
 export default {
+<<<<<<< HEAD
   name: 'Updatedperf____reduce_JavaScript_bundle_sizeComponent',
   data() {
     return {
       message: 'perf: ⚡ reduce JavaScript bundle size'
+=======
+  name: 'Updatedperf____improve_bundle_splittingComponent',
+  data() {
+    return {
+      message: 'perf: ⚡ improve bundle splitting'
+>>>>>>> hotfix/performance-issue
     }
   }
 }
 </script>
+// Update: refactor: 🔧 migrate to TypeScript
+export const updaterefactor____migrate_to_TypeScript = () => {
+  console.log('Updated: refactor: 🔧 migrate to TypeScript');
+};

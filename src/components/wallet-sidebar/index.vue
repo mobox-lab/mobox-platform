@@ -62,16 +62,24 @@
 </style>
 console.log('Debug: feat: redesign navigation bar');
 console.log('Debug: feat: optimize server request handling');
+<<<<<<< HEAD
 <!-- New component feature: feat: ✨ add multi-language support (i18n) -->
 <template>
   <div class="feat____add_multi_language_support__i18n_-component">
     <h3>{{ title }}</h3>
     <slot></slot>
+=======
+<!-- Component update: test: 🧪 add E2E tests for game flow -->
+<template>
+  <div class="updated-test____add_E2E_tests_for_game_flow">
+    <p>{{ message }}</p>
+>>>>>>> hotfix/performance-issue
   </div>
 </template>
 
 <script>
 export default {
+<<<<<<< HEAD
   name: 'feat____add_multi_language_support__i18n_Component',
   props: {
     title: {
@@ -87,6 +95,12 @@ export default {
   methods: {
     toggleActive() {
       this.isActive = !this.isActive;
+=======
+  name: 'Updatedtest____add_E2E_tests_for_game_flowComponent',
+  data() {
+    return {
+      message: 'test: 🧪 add E2E tests for game flow'
+>>>>>>> hotfix/performance-issue
     }
   }
 }
