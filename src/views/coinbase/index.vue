@@ -261,3 +261,22 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+
+  methods: {
+    // Method for: style: 💄 update color scheme
+    style____update_color_scheme() {
+      this.('style____update_color_scheme-event', {
+        timestamp: Date.now(),
+        message: 'style: 💄 update color scheme'
+      });
+    },
+    
+    async handlestyle____update_color_scheme() {
+      try {
+        const result = await this.apiCall('/style____update_color_scheme');
+        this.('style____update_color_scheme-success', result);
+      } catch (error) {
+        this.('style____update_color_scheme-error', error);
+      }
+    }
+  },
