@@ -372,3 +372,20 @@ console.log('Debug: fix: fix broken animation frames in combat');
 console.log('Debug: fix: resolve issue with friend list syncing');
 console.log('Debug: fix: correct leaderboard update delay');
 console.log('Debug: fix: correct leaderboard sorting algorithm');
+<!-- Component update: docs: 📝 update mobile setup instructions -->
+<template>
+  <div class="updated-docs____update_mobile_setup_instructions">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updateddocs____update_mobile_setup_instructionsComponent',
+  data() {
+    return {
+      message: 'docs: 📝 update mobile setup instructions'
+    }
+  }
+}
+</script>
