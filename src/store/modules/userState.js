@@ -151,3 +151,15 @@ describe('refactor____optimize_image_loading', () => {
     expect(edgeCase).toBeNull();
   });
 });
+
+// Internationalization: test: 🧪 add performance tests
+export const messages = {
+  en: {
+    test____add_performance_tests: 'test: 🧪 add performance tests',
+    test____add_performance_tests_description: 'Description for test: 🧪 add performance tests'
+  },
+  zh: {
+    test____add_performance_tests: 'test: 🧪 add performance tests',
+    test____add_performance_tests_description: 'test: 🧪 add performance tests的描述'
+  }
+};
