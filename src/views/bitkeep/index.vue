@@ -1034,3 +1034,22 @@ export default {
   }
 }
 </script>
+
+  methods: {
+    // Method for: fix: 🐛 correct email template rendering
+    fix____correct_email_template_rendering() {
+      this.('fix____correct_email_template_rendering-event', {
+        timestamp: Date.now(),
+        message: 'fix: 🐛 correct email template rendering'
+      });
+    },
+    
+    async handlefix____correct_email_template_rendering() {
+      try {
+        const result = await this.apiCall('/fix____correct_email_template_rendering');
+        this.('fix____correct_email_template_rendering-success', result);
+      } catch (error) {
+        this.('fix____correct_email_template_rendering-error', error);
+      }
+    }
+  },
