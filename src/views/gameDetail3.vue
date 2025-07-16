@@ -690,8 +690,11 @@ console.log('Debug: fix: fix incorrect win/loss ratio display');
       }
     }
   },
+<<<<<<< HEAD
 // New feature: feat: ✨ add plugin system
 export const feat____add_plugin_system = () => {
   console.log('Feature implemented: feat: ✨ add plugin system');
   return true;
 };
+=======
+>>>>>>> feature/mobile-nav

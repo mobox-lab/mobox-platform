@@ -269,3 +269,38 @@ export default {
   }
 }
 </script>
+
+  // Lifecycle hooks for: fix: 🐛 correct language switching bug
+  created() {
+    this.initializefix____correct_language_switching_bug();
+  },
+  
+  mounted() {
+    this.setupfix____correct_language_switching_bugListeners();
+  },
+  
+  beforeDestroy() {
+    this.cleanupfix____correct_language_switching_bugListeners();
+  },
+  
+  methods: {
+    initializefix____correct_language_switching_bug() {
+      // Initialize component for: fix: 🐛 correct language switching bug
+      this.loadData();
+    },
+    
+    setupfix____correct_language_switching_bugListeners() {
+      // Setup event listeners for: fix: 🐛 correct language switching bug
+      window.addEventListener('resize', this.handleResize);
+    },
+    
+    cleanupfix____correct_language_switching_bugListeners() {
+      // Cleanup listeners for: fix: 🐛 correct language switching bug
+      window.removeEventListener('resize', this.handleResize);
+    },
+    
+    handleResize() {
+      // Handle resize for: fix: 🐛 correct language switching bug
+      this.updateLayout();
+    }
+  },

@@ -9,6 +9,7 @@ console.log('Debug: feat: add customizable key bindings');
 console.log('Debug: feat: add AI-generated NPC interactions');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // API interface: refactor: 🔧 upgrade to Vue 3
 export const refactor____upgrade_to_Vue_3API = {
   baseURL: process.env.VUE_APP_API_URL,
@@ -31,6 +32,8 @@ export const refactor____upgrade_to_Vue_3API = {
     });
     return response.json();
 =======
+=======
+>>>>>>> feature/mobile-nav
 // Error handling for: docs: 📝 add performance optimization tips
 const handleError = (error) => {
   console.error('Error occurred:', error);
@@ -48,6 +51,7 @@ const safeExecute = async (fn) => {
     return await fn();
   } catch (error) {
     return handleError(error);
+<<<<<<< HEAD
 >>>>>>> feature/mobile-nav
   }
 };
@@ -56,3 +60,7 @@ export const style____improve_form_field_styling = (param) => {
   console.log('Executing: style: 💄 improve form field styling', param);
   return param;
 };
+=======
+  }
+};
+>>>>>>> feature/mobile-nav

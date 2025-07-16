@@ -107,3 +107,48 @@ export const fix____correct_data_export_format = (param) => {
   console.log('Executing: fix: 🐛 correct data export format', param);
   return param;
 };
+
+// Vuex store module: refactor: 🔧 restructure routing logic
+export const refactor____restructure_routing_logicModule = {
+  namespaced: true,
+  state: {
+    items: [],
+    loading: false,
+    error: null,
+    pagination: {
+      page: 1,
+      limit: 10,
+      total: 0
+    }
+  },
+  
+  mutations: {
+    SET_ITEMS(state, items) {
+      state.items = items;
+    },
+    SET_LOADING(state, loading) {
+      state.loading = loading;
+    },
+    SET_ERROR(state, error) {
+      state.error = error;
+    },
+    SET_PAGINATION(state, pagination) {
+      state.pagination = { ...state.pagination, ...pagination };
+    }
+  },
+  
+  actions: {
+    async fetchItems({ commit }, params = {}) {
+      commit('SET_LOADING', true);
+      try {
+        const response = await api.get('/refactor____restructure_routing_logic', { params });
+        commit('SET_ITEMS', response.data);
+        commit('SET_PAGINATION', response.pagination);
+      } catch (error) {
+        commit('SET_ERROR', error.message);
+      } finally {
+        commit('SET_LOADING', false);
+      }
+    }
+  }
+};
