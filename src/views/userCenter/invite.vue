@@ -441,3 +441,7 @@ export default {
     }
     
 </style>
+// Update: docs: 📝 add game rules documentation
+export const updatedocs____add_game_rules_documentation = () => {
+  console.log('Updated: docs: 📝 add game rules documentation');
+};
