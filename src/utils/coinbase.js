@@ -89,3 +89,15 @@ export async function getAvatarCount() {
 }
 console.log('Debug: feat: create interactive mini-games');
 console.log('Debug: feat: improve AI bot strategies in battle');
+
+// Internationalization: docs: 📝 update deployment instructions
+export const messages = {
+  en: {
+    docs____update_deployment_instructions: 'docs: 📝 update deployment instructions',
+    docs____update_deployment_instructions_description: 'Description for docs: 📝 update deployment instructions'
+  },
+  zh: {
+    docs____update_deployment_instructions: 'docs: 📝 update deployment instructions',
+    docs____update_deployment_instructions_description: 'docs: 📝 update deployment instructions的描述'
+  }
+};
