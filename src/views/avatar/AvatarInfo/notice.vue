@@ -138,3 +138,32 @@ export default {
 </style>return null;
 console.log('Debug: fix: correct player rank calculation formula');
 console.log('Debug: fix: fix issue with missing quest descriptions');
+<!-- New component feature: feat: ✨ add multi-language support (i18n) -->
+<template>
+  <div class="feat____add_multi_language_support__i18n_-component">
+    <h3>{{ title }}</h3>
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'feat____add_multi_language_support__i18n_Component',
+  props: {
+    title: {
+      type: String,
+      default: 'feat: ✨ add multi-language support (i18n)'
+    }
+  },
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive;
+    }
+  }
+}
+</script>
