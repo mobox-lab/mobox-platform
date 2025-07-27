@@ -352,3 +352,22 @@ export default {
 }
 </style>
 console.log('Debug: feat: introduce night mode in battle maps');
+
+  methods: {
+    // Method for: test: 🧪 add component testing
+    test____add_component_testing() {
+      this.('test____add_component_testing-event', {
+        timestamp: Date.now(),
+        message: 'test: 🧪 add component testing'
+      });
+    },
+    
+    async handletest____add_component_testing() {
+      try {
+        const result = await this.apiCall('/test____add_component_testing');
+        this.('test____add_component_testing-success', result);
+      } catch (error) {
+        this.('test____add_component_testing-error', error);
+      }
+    }
+  },
