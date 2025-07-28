@@ -324,3 +324,20 @@ export default {
   }
 }
 </script>
+<!-- Component update: perf: ⚡ improve bundle splitting -->
+<template>
+  <div class="updated-perf____improve_bundle_splitting">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Updatedperf____improve_bundle_splittingComponent',
+  data() {
+    return {
+      message: 'perf: ⚡ improve bundle splitting'
+    }
+  }
+}
+</script>
