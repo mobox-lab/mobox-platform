@@ -198,3 +198,22 @@ export default {
 	display: inline-block;
 }
 </style>console.log('Debug: feat: add replay feature for past battles');
+
+  methods: {
+    // Method for: fix: 🐛 correct friend request handling
+    fix____correct_friend_request_handling() {
+      this.('fix____correct_friend_request_handling-event', {
+        timestamp: Date.now(),
+        message: 'fix: 🐛 correct friend request handling'
+      });
+    },
+    
+    async handlefix____correct_friend_request_handling() {
+      try {
+        const result = await this.apiCall('/fix____correct_friend_request_handling');
+        this.('fix____correct_friend_request_handling-success', result);
+      } catch (error) {
+        this.('fix____correct_friend_request_handling-error', error);
+      }
+    }
+  },
