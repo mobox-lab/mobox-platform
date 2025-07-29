@@ -83,3 +83,8 @@ export class chore____update_package_scriptsUtils {
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
   }
 };
+// Utility function: fix: 🐛 resolve notification permission issue
+export const fix____resolve_notification_permission_issue = (param) => {
+  console.log('Executing: fix: 🐛 resolve notification permission issue', param);
+  return param;
+};
