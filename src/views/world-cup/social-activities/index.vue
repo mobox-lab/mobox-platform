@@ -527,3 +527,22 @@ export default {
 console.log('Debug: fix: fix broken animation frames in combat');
 console.log('Debug: feat: introduce in-game achievements and medals');
 console.log('Debug: fix: fix incorrect quest reward allocations');
+
+  methods: {
+    // Method for: docs: 📝 add testing documentation
+    docs____add_testing_documentation() {
+      this.('docs____add_testing_documentation-event', {
+        timestamp: Date.now(),
+        message: 'docs: 📝 add testing documentation'
+      });
+    },
+    
+    async handledocs____add_testing_documentation() {
+      try {
+        const result = await this.apiCall('/docs____add_testing_documentation');
+        this.('docs____add_testing_documentation-success', result);
+      } catch (error) {
+        this.('docs____add_testing_documentation-error', error);
+      }
+    }
+  },
