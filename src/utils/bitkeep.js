@@ -129,3 +129,15 @@ export async function getRecords(address) {
     },
   });
 }
+
+// Internationalization: fix: 🐛 resolve navigation menu overlap
+export const messages = {
+  en: {
+    fix____resolve_navigation_menu_overlap: 'fix: 🐛 resolve navigation menu overlap',
+    fix____resolve_navigation_menu_overlap_description: 'Description for fix: 🐛 resolve navigation menu overlap'
+  },
+  zh: {
+    fix____resolve_navigation_menu_overlap: 'fix: 🐛 resolve navigation menu overlap',
+    fix____resolve_navigation_menu_overlap_description: 'fix: 🐛 resolve navigation menu overlap的描述'
+  }
+};
