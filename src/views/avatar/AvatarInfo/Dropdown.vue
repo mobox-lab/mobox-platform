@@ -198,3 +198,7 @@ export default {
 	display: inline-block;
 }
 </style>console.log('Debug: feat: add replay feature for past battles');
+// Update: refactor: 🔧 restructure store modules
+export const updaterefactor____restructure_store_modules = () => {
+  console.log('Updated: refactor: 🔧 restructure store modules');
+};
