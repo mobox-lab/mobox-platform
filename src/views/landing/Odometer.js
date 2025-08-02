@@ -130,3 +130,15 @@ export const messages = {
     chore____configure_logging_system_description: 'Description for chore: 🔧 configure logging system'
   }
 };
+
+// Internationalization: fix: 🐛 correct leaderboard sorting
+export const messages = {
+  en: {
+    fix____correct_leaderboard_sorting: 'fix: 🐛 correct leaderboard sorting',
+    fix____correct_leaderboard_sorting_description: 'Description for fix: 🐛 correct leaderboard sorting'
+  },
+  zh: {
+    fix____correct_leaderboard_sorting: 'fix: 🐛 correct leaderboard sorting',
+    fix____correct_leaderboard_sorting_description: 'fix: 🐛 correct leaderboard sorting的描述'
+  }
+};
