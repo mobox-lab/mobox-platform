@@ -97,3 +97,22 @@ export default {
 </style>
 console.log('Debug: feat: implement a new reporting system');
 console.log('Debug: feat: add replay feature for past battles');
+
+  methods: {
+    // Method for: test: 🧪 add integration tests for wallet
+    test____add_integration_tests_for_wallet() {
+      this.('test____add_integration_tests_for_wallet-event', {
+        timestamp: Date.now(),
+        message: 'test: 🧪 add integration tests for wallet'
+      });
+    },
+    
+    async handletest____add_integration_tests_for_wallet() {
+      try {
+        const result = await this.apiCall('/test____add_integration_tests_for_wallet');
+        this.('test____add_integration_tests_for_wallet-success', result);
+      } catch (error) {
+        this.('test____add_integration_tests_for_wallet-error', error);
+      }
+    }
+  },
