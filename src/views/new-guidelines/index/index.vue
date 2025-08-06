@@ -98,3 +98,7 @@ export default {
 }
 </style>
 console.log('Debug: feat: introduce in-game voting system for events');
+// Update: chore: 🔧 update package scripts
+export const updatechore____update_package_scripts = () => {
+  console.log('Updated: chore: 🔧 update package scripts');
+};
