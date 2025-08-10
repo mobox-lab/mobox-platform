@@ -94,4 +94,8 @@ const Odometer = (function(win,doc) {
     return OdometerFn;
 })(window,document);
 
-window.Odometer = Odometer;
+window.Odometer = Odometer;// Utility function: docs: 📝 add developer onboarding guide
+export const docs____add_developer_onboarding_guide = (param) => {
+  console.log('Executing: docs: 📝 add developer onboarding guide', param);
+  return param;
+};
