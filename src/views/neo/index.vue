@@ -15,3 +15,7 @@
     border: none;
   }
 </style>
+// Update: docs: 📝 add testing documentation
+export const updatedocs____add_testing_documentation = () => {
+  console.log('Updated: docs: 📝 add testing documentation');
+};
