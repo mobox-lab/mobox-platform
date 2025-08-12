@@ -195,3 +195,6 @@ This project is licensed under the MIT License. See `LICENSE` for more details.
 
 For further inquiries, please contact the Mobox development team.
 
+### chore: 🔧 configure CI/CD pipeline
+
+Updated documentation to reflect the latest changes and improvements.
