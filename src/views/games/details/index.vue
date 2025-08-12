@@ -801,3 +801,22 @@
 </style>
 console.log('Debug: fix: correct ranking calculation formula');
 console.log('Debug: feat: implement auto-reconnect for multiplayer mode');
+
+  methods: {
+    // Method for: docs: 📝 update README with installation guide
+    docs____update_README_with_installation_guide() {
+      this.('docs____update_README_with_installation_guide-event', {
+        timestamp: Date.now(),
+        message: 'docs: 📝 update README with installation guide'
+      });
+    },
+    
+    async handledocs____update_README_with_installation_guide() {
+      try {
+        const result = await this.apiCall('/docs____update_README_with_installation_guide');
+        this.('docs____update_README_with_installation_guide-success', result);
+      } catch (error) {
+        this.('docs____update_README_with_installation_guide-error', error);
+      }
+    }
+  },
