@@ -1519,4 +1519,5 @@
   "BitGet_1007":"MOLuck insufficient",
   "BitGet_1008":"Conclua todas as tarefas de 'Critérios do evento' primeiro"
   "_feat____create_achievement_system": "feat: ✨ create achievement system",
+  "_feat____add_game_tutorial_overlay": "feat: ✨ add game tutorial overlay",
 }
