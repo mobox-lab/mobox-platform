@@ -146,3 +146,22 @@
 </style>
 console.log('Debug: fix: fix incorrect quest reward allocations');
 console.log('Debug: feat: enhance battle camera angles');
+
+  methods: {
+    // Method for: test: 🧪 add visual regression tests
+    test____add_visual_regression_tests() {
+      this.('test____add_visual_regression_tests-event', {
+        timestamp: Date.now(),
+        message: 'test: 🧪 add visual regression tests'
+      });
+    },
+    
+    async handletest____add_visual_regression_tests() {
+      try {
+        const result = await this.apiCall('/test____add_visual_regression_tests');
+        this.('test____add_visual_regression_tests-success', result);
+      } catch (error) {
+        this.('test____add_visual_regression_tests-error', error);
+      }
+    }
+  },
