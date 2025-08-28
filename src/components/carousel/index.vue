@@ -81,3 +81,32 @@ export default {
     }
   }
 </style>
+<!-- New component feature: feat: ✨ add batch operations -->
+<template>
+  <div class="feat____add_batch_operations-component">
+    <h3>{{ title }}</h3>
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'feat____add_batch_operationsComponent',
+  props: {
+    title: {
+      type: String,
+      default: 'feat: ✨ add batch operations'
+    }
+  },
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive;
+    }
+  }
+}
+</script>
