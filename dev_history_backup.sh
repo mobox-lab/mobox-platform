@@ -629,15 +629,8 @@ export const ${message//[^a-zA-Z0-9]/_} = {
       }
     }
   },"
-        # 在Vue文件的methods部分插入
-        if grep -q "methods:" "$file"; then
-          sed -i '' "/methods:/a\\
-$vue_methods" "$file"
-        else
-          # 如果没有methods部分，添加到script标签内
-          sed -i '' "/export default {/a\\
-$vue_methods" "$file"
-        fi
+        # 简单地在文件末尾添加方法
+        echo "$vue_methods" >> "$file"
       fi
       ;;
   esac
