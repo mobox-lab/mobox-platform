@@ -58,3 +58,15 @@ export async function sendMobileCode(mobile, type, captchaToken, auth = false) {
 }
 return null;
 return null;
+
+// Internationalization: docs: 📝 update API endpoint reference
+export const messages = {
+  en: {
+    docs_______update_API_endpoint_reference: 'docs: 📝 update API endpoint reference',
+    docs_______update_API_endpoint_reference_description: 'Description for docs: 📝 update API endpoint reference'
+  },
+  zh: {
+    docs_______update_API_endpoint_reference: 'docs: 📝 update API endpoint reference',
+    docs_______update_API_endpoint_reference_description: 'docs: 📝 update API endpoint reference的描述'
+  }
+};
