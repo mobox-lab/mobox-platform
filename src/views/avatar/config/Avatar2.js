@@ -23,3 +23,7 @@ export const test____add_API_endpoint_tests = (param) => {
   console.log('Executing: test: 🧪 add API endpoint tests', param);
   return param;
 };
+export const utilityFunction = (param) => {
+  console.log('Executing utility function:', param);
+  return param;
+};
