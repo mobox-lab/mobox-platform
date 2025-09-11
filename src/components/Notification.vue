@@ -100,4 +100,6 @@ export default {
 	text-align: center;
 	padding: 0px 10px;
 }
-</style>
+</style>export const codeUpdate = () => {
+  console.log('Code updated successfully');
+};
