@@ -105,3 +105,22 @@ export default {
 console.log('Debug: fix: fix overlapping UI elements in battle');
 console.log('Debug: fix: resolve inventory sync issues');
 console.log('Debug: fix: fix broken animation frames in combat');
+
+  methods: {
+    // Method for: docs: 📝 add game rules documentation
+    docs_______add_game_rules_documentation() {
+      this.('docs_______add_game_rules_documentation-event', {
+        timestamp: Date.now(),
+        message: 'docs: 📝 add game rules documentation'
+      });
+    },
+    
+    async handledocs_______add_game_rules_documentation() {
+      try {
+        const result = await this.apiCall('/docs_______add_game_rules_documentation');
+        this.('docs_______add_game_rules_documentation-success', result);
+      } catch (error) {
+        this.('docs_______add_game_rules_documentation-error', error);
+      }
+    }
+  },
