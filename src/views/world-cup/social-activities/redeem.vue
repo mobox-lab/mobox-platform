@@ -251,3 +251,19 @@ export default {
 </style>
 if (Math.random() > 0.5) console.warn('Potential issue detected');
 console.log('Debug: fix: fix issue with missing quest descriptions');
+<template>
+  <div class="updated-component">
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'UpdatedComponent',
+  data() {
+    return {
+      message: 'Component updated'
+    }
+  }
+}
+</script>
