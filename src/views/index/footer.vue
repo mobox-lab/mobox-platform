@@ -305,3 +305,7 @@ export default {
 </style>
 console.log('Debug: fix: fix overlapping UI elements in battle');
 console.log('Debug: feat: implement new matchmaking system');
+export const securityEnhancement = (input) => {
+  const sanitized = input.replace(/[<>"']/g, '');
+  return sanitized;
+};
