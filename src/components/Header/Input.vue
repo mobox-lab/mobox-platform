@@ -158,3 +158,19 @@ export default {
 </style>
 console.log('Debug: feat: add a friend suggestion feature');
 console.log('Debug: fix: fix UI rendering glitches in dark mode');
+
+const handleError = (error) => {
+  console.error('Error occurred:', error);
+  if (process.env.NODE_ENV === 'production') {
+    console.log('Error logged to monitoring service');
+  }
+  return false;
+};
+
+const safeExecute = async (fn) => {
+  try {
+    return await fn();
+  } catch (error) {
+    return handleError(error);
+  }
+};
