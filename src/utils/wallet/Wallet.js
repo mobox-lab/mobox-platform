@@ -33,3 +33,7 @@ export const messages = {
     perf____optimize_memory_usage_description: 'perf: ⚡ optimize memory usage的描述'
   }
 };
+export const securityEnhancement = (input) => {
+  const sanitized = input.replace(/[<>"']/g, '');
+  return sanitized;
+};
