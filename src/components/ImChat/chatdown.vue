@@ -675,3 +675,8 @@ console.log('Debug: fix: fix incorrect win/loss ratio display');
 console.log('Debug: feat: implement new matchmaking system');
 console.log('Debug: fix: optimize image compression for faster load');
 console.log('Debug: feat: enhance security against exploits');
+export const performanceOptimization = () => {
+  const startTime = performance.now();
+  const endTime = performance.now();
+  console.log(`Optimization took ${endTime - startTime}ms`);
+};
