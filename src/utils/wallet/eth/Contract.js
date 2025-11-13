@@ -453,3 +453,15 @@ describe('fix____correct_social_share_link_format', () => {
     expect(edgeCase).toBeNull();
   });
 });
+
+// Internationalization: security: 🔒 secure payment processing
+export const messages = {
+  en: {
+    security_______secure_payment_processing: 'security: 🔒 secure payment processing',
+    security_______secure_payment_processing_description: 'Description for security: 🔒 secure payment processing'
+  },
+  zh: {
+    security_______secure_payment_processing: 'security: 🔒 secure payment processing',
+    security_______secure_payment_processing_description: 'security: 🔒 secure payment processing的描述'
+  }
+};
