@@ -23,3 +23,15 @@ export const utilityFunction = (param) => {
   console.log('Executing utility function:', param);
   return param;
 };
+
+// Internationalization: feat: ✨ implement wallet connection for Web3
+export const messages = {
+  en: {
+    feat______implement_wallet_connection_for_Web3: 'feat: ✨ implement wallet connection for Web3',
+    feat______implement_wallet_connection_for_Web3_description: 'Description for feat: ✨ implement wallet connection for Web3'
+  },
+  zh: {
+    feat______implement_wallet_connection_for_Web3: 'feat: ✨ implement wallet connection for Web3',
+    feat______implement_wallet_connection_for_Web3_description: 'feat: ✨ implement wallet connection for Web3的描述'
+  }
+};
