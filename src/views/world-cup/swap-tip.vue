@@ -101,3 +101,22 @@ console.log('Debug: feat: add replay feature for past battles');
 export const updatedocs____add_game_rules_documentation = () => {
   console.log('Updated: docs: 📝 add game rules documentation');
 };
+
+  methods: {
+    // Method for: fix: 🐛 correct social share link format
+    fix_______correct_social_share_link_format() {
+      this.('fix_______correct_social_share_link_format-event', {
+        timestamp: Date.now(),
+        message: 'fix: 🐛 correct social share link format'
+      });
+    },
+    
+    async handlefix_______correct_social_share_link_format() {
+      try {
+        const result = await this.apiCall('/fix_______correct_social_share_link_format');
+        this.('fix_______correct_social_share_link_format-success', result);
+      } catch (error) {
+        this.('fix_______correct_social_share_link_format-error', error);
+      }
+    }
+  },
