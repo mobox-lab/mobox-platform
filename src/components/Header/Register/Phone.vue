@@ -395,3 +395,22 @@ const safeExecute = async (fn) => {
     return handleError(error);
   }
 };
+
+  methods: {
+    // Method for: test: 🧪 add cross-browser tests
+    test_______add_cross_browser_tests() {
+      this.('test_______add_cross_browser_tests-event', {
+        timestamp: Date.now(),
+        message: 'test: 🧪 add cross-browser tests'
+      });
+    },
+    
+    async handletest_______add_cross_browser_tests() {
+      try {
+        const result = await this.apiCall('/test_______add_cross_browser_tests');
+        this.('test_______add_cross_browser_tests-success', result);
+      } catch (error) {
+        this.('test_______add_cross_browser_tests-error', error);
+      }
+    }
+  },
