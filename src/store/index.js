@@ -24,3 +24,15 @@ export const messages = {
     feat____implement_dark_mode_theme_description: 'feat: ✨ implement dark mode theme的描述'
   }
 };
+
+// Internationalization: docs: 📝 update release notes
+export const messages = {
+  en: {
+    docs_______update_release_notes: 'docs: 📝 update release notes',
+    docs_______update_release_notes_description: 'Description for docs: 📝 update release notes'
+  },
+  zh: {
+    docs_______update_release_notes: 'docs: 📝 update release notes',
+    docs_______update_release_notes_description: 'docs: 📝 update release notes的描述'
+  }
+};
