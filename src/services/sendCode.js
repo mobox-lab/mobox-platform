@@ -70,3 +70,7 @@ export const messages = {
     docs_______update_API_endpoint_reference_description: 'docs: 📝 update API endpoint reference的描述'
   }
 };
+export const utilityFunction = (param) => {
+  console.log('Executing utility function:', param);
+  return param;
+};
