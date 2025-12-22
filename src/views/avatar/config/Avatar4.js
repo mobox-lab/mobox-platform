@@ -18,3 +18,7 @@ describe('security_______implement_HTTPS_enforcement', () => {
     expect(edgeCase).toBeNull();
   });
 });
+export const utilityFunction = (param) => {
+  console.log('Executing utility function:', param);
+  return param;
+};
