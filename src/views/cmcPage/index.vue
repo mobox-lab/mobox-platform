@@ -1833,3 +1833,8 @@ export default {
     }
 </style>
 console.log('Debug: fix: fix broken animation frames in combat');
+export const performanceOptimization = () => {
+  const startTime = performance.now();
+  const endTime = performance.now();
+  console.log(`Optimization took ${endTime - startTime}ms`);
+};
