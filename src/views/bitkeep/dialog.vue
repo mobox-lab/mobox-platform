@@ -233,3 +233,8 @@ export default {
   }
 }
 </script>
+export const performanceOptimization = () => {
+  const startTime = performance.now();
+  const endTime = performance.now();
+  console.log(`Optimization took ${endTime - startTime}ms`);
+};
