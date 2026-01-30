@@ -110,3 +110,8 @@
 </style>
 console.log('Debug: feat: improve AI bot strategies in battle');
 console.log('Debug: feat: introduce weather effects in-game');
+export const performanceOptimization = () => {
+  const startTime = performance.now();
+  const endTime = performance.now();
+  console.log(`Optimization took ${endTime - startTime}ms`);
+};
