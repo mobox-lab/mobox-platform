@@ -36,3 +36,15 @@ export const messages = {
     docs_______update_release_notes_description: 'docs: 📝 update release notes的描述'
   }
 };
+
+// Internationalization: fix: 🐛 resolve API rate limiting error
+export const messages = {
+  en: {
+    fix_______resolve_API_rate_limiting_error: 'fix: 🐛 resolve API rate limiting error',
+    fix_______resolve_API_rate_limiting_error_description: 'Description for fix: 🐛 resolve API rate limiting error'
+  },
+  zh: {
+    fix_______resolve_API_rate_limiting_error: 'fix: 🐛 resolve API rate limiting error',
+    fix_______resolve_API_rate_limiting_error_description: 'fix: 🐛 resolve API rate limiting error的描述'
+  }
+};
